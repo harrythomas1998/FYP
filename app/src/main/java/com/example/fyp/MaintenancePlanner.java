@@ -5,15 +5,22 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 
+import android.content.RestrictionEntry;
 import android.content.pm.PackageManager;
 import android.location.Location;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 
 
-
+import com.example.fyp.Fragments.EventsFragment;
+import com.example.fyp.Fragments.WeatherFragment;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.GoogleApiClient.ConnectionCallbacks;
@@ -21,6 +28,7 @@ import com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListe
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.material.tabs.TabLayout;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -28,7 +36,12 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.ProtocolException;
+import java.net.URL;
 import java.util.ArrayList;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -38,7 +51,7 @@ import javax.xml.parsers.ParserConfigurationException;
 import static android.Manifest.permission.ACCESS_FINE_LOCATION;
 
 
-public class MaintenancePlanner extends AppCompatActivity implements ConnectionCallbacks, OnConnectionFailedListener  {
+public class MaintenancePlanner extends AppCompatActivity implements ConnectionCallbacks, OnConnectionFailedListener {
 
 
 
@@ -52,11 +65,16 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
     String degrees;
     double latitude, longitude;
 
-    ArrayList<Weather> weathers = new ArrayList<Weather>();
+
+    public ArrayList<Weather> weathers = new ArrayList<Weather>();
 
 
     private GoogleApiClient googleApiClient;
     FusedLocationProviderClient fusedLocationProviderClient;
+
+
+
+
 
 
 
@@ -77,9 +95,25 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
 
 
-      
+
+        TabLayout tabLayout = findViewById(R.id.tab_layout);
+        ViewPager viewPager = findViewById(R.id.view_pager);
+
+        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
+
+        viewPagerAdapter.addFragment(new EventsFragment(), "My Jobs");
+        viewPagerAdapter.addFragment(new WeatherFragment(), "Times");
+
+
+        viewPager.setAdapter(viewPagerAdapter);
+
+        tabLayout.setupWithViewPager(viewPager);
+
+
+
 
     }
+
 
     @Override
     protected void onStart() {
@@ -142,137 +176,96 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
     }
 
 
-    MaintenancePlanner var;
-
-    public void DomParser(){
-
-        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-        try {
-            DocumentBuilder builder = factory.newDocumentBuilder();
-
-            String url = "http://metwdb-openaccess.ichec.ie/metno-wdb2ts/locationforecast?lat="+var.latitude+";long="+var.longitude;
-
-            Document doc = builder.parse(url);
-
-            NodeList weatherList = doc.getElementsByTagName("weatherdata");
-
-            for(int i = 0; i < weatherList.getLength(); i++) {
-
-                Node w = weatherList.item(i);
-
-                if(w.getNodeType() == Node.ELEMENT_NODE) {
-
-                    Element data = (Element) w;
-
-
-                    NodeList forecastList = data.getElementsByTagName("product");
-
-                    for(int j= 0; j < forecastList.getLength(); j++) {
-
-                        Node n = forecastList.item(j);
-
-                        if(n.getNodeType() == Node.ELEMENT_NODE) {
-
-                            Element f = (Element) n;
-                            //=====================================================
-
-                            NodeList timeList = f.getElementsByTagName("time");
-
-                            for(int l = 0; l < timeList.getLength(); l++) {
-
-                                Node a = timeList.item(l);
-
-                                if(a.getNodeType() == Node.ELEMENT_NODE) {
-
-                                    Element e = (Element) a;
-
-                                    time = e.getAttribute("from");
-
-                                    //===========================================================
-
-
-                                    NodeList locationList = e.getElementsByTagName("location");
-
-                                    for(int v = 0; v < locationList.getLength(); v++) {
-
-                                        Node s = locationList.item(v);
-
-                                        if(s.getNodeType() == Node.ELEMENT_NODE) {
-
-                                            Element loc = (Element) s;
-                                            //===========================================================
-
-                                            NodeList tempList = loc.getElementsByTagName("temperature");
-
-                                            for(int y = 0; y < tempList.getLength(); y++){
-
-                                                Node temp = tempList.item(y);
-
-                                                if(temp.getNodeType() == Node.ELEMENT_NODE){
-
-                                                    //Temperature
-                                                    Element tempNode = (Element) temp;
-
-                                                    degrees = tempNode.getAttribute("value");
-
-                                                }
-                                            }
-
-                                            NodeList symbolList = loc.getElementsByTagName("symbol");
-
-                                            for(int r = 0; r < symbolList.getLength(); r++) {
-
-                                                Node sym =  symbolList.item(r);
-
-                                                if(sym.getNodeType() == Node.ELEMENT_NODE) {
-
-                                                    Element weatherType = (Element) sym;
-
-                                                    weathr = weatherType.getAttribute("id");
-                                                }
-
-                                            }
-
-
-
-
-                                        }
-                                    }
 
 
 
 
 
-                                }
+    class ViewPagerAdapter extends FragmentPagerAdapter {
 
-                            }
+        private ArrayList<Fragment> fragments;
+        private ArrayList<String> titles;
 
-                            weathers.add(new Weather(weathr, time, degrees));
+        ViewPagerAdapter(FragmentManager fm){
 
-                        }
+            super(fm);
+            this.fragments = new ArrayList<>();
+            this.titles = new ArrayList<>();
+        }
+
+        @NonNull
+        @Override
+        public Fragment getItem(int position) {
+            return fragments.get(position);
+        }
+
+        @Override
+        public int getCount() {
+            return fragments.size();
+        }
+
+        public void addFragment(Fragment fragment, String title){
+
+            fragments.add(fragment);
+            titles.add(title);
+        }
 
 
+        @Nullable
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return titles.get(position);
+        }
+    }
+
+
+    private class GetDataTask extends AsyncTask<String, Void, String>{
+
+
+        @Override
+        protected String doInBackground(String[] params) {
+
+            String result = "";
+            String urlString = params[0];
+
+            try{
+
+                URL url = new URL("http://metwdb-openaccess.ichec.ie/metno-wdb2ts/locationforecast?lat="+latitude+";long="+longitude);
+                HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                httpURLConnection.setRequestMethod("GET");
+
+
+                if(httpURLConnection.getResponseCode() == 200){
+
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(httpURLConnection.getInputStream()));
+                    StringBuilder stringBuilder = new StringBuilder();
+                    String line;
+
+                    while((line = reader.readLine()) != null){
+
+                        stringBuilder.append(line);
                     }
 
+                    result = stringBuilder.toString();
 
-
-
-
-
+                    httpURLConnection.disconnect();
                 }
+
+                else{
+
+                    result = "";
+                }
+            }catch (IOException e){
+
+                e.printStackTrace();
             }
 
-        } catch (ParserConfigurationException | SAXException | IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+            return result;
         }
 
 
 
     }
-
-
-
     
 
 

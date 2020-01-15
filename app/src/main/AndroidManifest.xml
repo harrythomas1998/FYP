@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MyGarden"></activity>
+        <activity android:name=".CreateEvent"></activity>
+        <activity android:name=".MyGarden" />
 
         <meta-data
             android:name="com.google.android.gms.version"

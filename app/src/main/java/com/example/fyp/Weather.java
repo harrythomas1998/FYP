@@ -16,6 +16,8 @@ public class Weather {
         this.temperature = temperature;
     }
 
+
+
     public Weather(){}
 
 
