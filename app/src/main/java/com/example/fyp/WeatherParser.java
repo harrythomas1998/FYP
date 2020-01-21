@@ -19,13 +19,11 @@ public class WeatherParser extends AsyncTask {
 
     URL url;
 
-    ArrayList<Weather> weatherArrayList = new ArrayList<>();
 
-    String time;
-    String degrees;
-    String weatherType;
 
-    Weather weather = new Weather();
+   ArrayList<Weather> w = new ArrayList<>();
+
+
 
 
     @Override
@@ -36,54 +34,19 @@ public class WeatherParser extends AsyncTask {
 
             XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
             factory.setNamespaceAware(false);
-            XmlPullParser xpp = factory.newPullParser();
+            XmlPullParser parser = factory.newPullParser();
 
-            xpp.setInput(url.openConnection().getInputStream(), "UTF_8");
+            parser.setInput(url.openConnection().getInputStream(), "UTF_8");
 
-
-            boolean insideItem = false;
-
-            int eventType = xpp.getEventType();
-
-            while (eventType != XmlPullParser.END_DOCUMENT) {
-
-                if (eventType == XmlPullParser.START_TAG) {
-
-                    if (xpp.getName().equalsIgnoreCase("time")) {
-
-                        insideItem = true;
-                        time = xpp.getAttributeValue(1);
-
-                        Log.i("Tag","Time: " + time);
-
-                    }
-
-                    else if (xpp.getName().equalsIgnoreCase("location")) {
-
-                        insideItem = true;
-
-                        if(xpp.getName().equalsIgnoreCase("temperature") && insideItem){
-
-                            degrees = xpp.getAttributeValue(2);
-
-                        }
-                    }
-
-                    else if (xpp.getName().equalsIgnoreCase("symbol")) {
-
-                        if(insideItem){
-
-                            weatherType = xpp.getAttributeValue(0);
-
-                        }
-                    }
+            ArrayList<Weather> weatherArrayList = parseXML(parser);
 
 
+            for(Weather weather: weatherArrayList ){
 
-                    weatherArrayList.add(new Weather(weatherType, time, degrees));
-                }
+                w.add(weather);
+
+
             }
-
 
 
         }catch (MalformedURLException e) {
@@ -94,8 +57,48 @@ public class WeatherParser extends AsyncTask {
             e.printStackTrace();
         }
 
-        return weatherArrayList;
+        return w;
+
     }
+
+    private ArrayList<Weather> parseXML(XmlPullParser parser) throws XmlPullParserException, IOException{
+
+        ArrayList<Weather> weathers = null;
+
+        int eventType = parser.getEventType();
+        Weather weather = null;
+
+        while(eventType != XmlPullParser.END_DOCUMENT){
+            String name;
+            switch(eventType){
+                case XmlPullParser.START_DOCUMENT:
+                    weathers = new ArrayList<>();
+                    break;
+                case XmlPullParser.START_TAG:
+                    name = parser.getName();
+                    if(name.equals("time")){
+                        weather = new Weather();
+                        weather.time = parser.getAttributeValue(null, "from");
+                        Log.i("Weather", parser.getAttributeValue(null, "from"));
+                    }
+                    else if(weather != null){
+                        if(name.equals("temperature")){
+                            weather.temperature = parser.getAttributeValue(null, "value");
+                        }
+                        else if(name.equals("symbol")){
+                            weather.weatherType = parser.getAttributeValue(null, "id");
+                            Log.i("Weather", parser.getAttributeValue(null, "id"));
+                        }
+                    }
+
+
+            }
+
+        }
+
+        return weathers;
+    }
+
 
     public InputStream getInputStream(URL url) {
         try {
@@ -107,6 +110,6 @@ public class WeatherParser extends AsyncTask {
 
     public ArrayList<Weather> weathers()
     {
-        return weatherArrayList;
+        return w;
     }
 }
