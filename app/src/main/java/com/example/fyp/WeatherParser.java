@@ -1,115 +1,165 @@
 package com.example.fyp;
 
 import android.os.AsyncTask;
-import android.util.Log;
 
-import org.xmlpull.v1.XmlPullParser;
-import org.xmlpull.v1.XmlPullParserException;
-import org.xmlpull.v1.XmlPullParserFactory;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
+import java.util.Objects;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+
+public class WeatherParser extends AsyncTask{
 
 
 
-public class WeatherParser extends AsyncTask {
+    MaintenancePlanner mp;
 
-    URL url;
-
-
-
-   ArrayList<Weather> w = new ArrayList<>();
+    private String weatherT, degrees, time;
 
 
 
+    ArrayList<Weather> weatherArrayList = new ArrayList<>();
 
-    @Override
-    protected Object doInBackground(Object[] objects) {
+    public Object doInBackground(Object[] objects){
 
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         try {
-            url = new URL("http://metwdb-openaccess.ichec.ie/metno-wdb2ts/locationforecast?lat=54.7210798611;long=-8.7237392806");
+            DocumentBuilder builder = factory.newDocumentBuilder();
 
-            XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
-            factory.setNamespaceAware(false);
-            XmlPullParser parser = factory.newPullParser();
+            String url = "http://metwdb-openaccess.ichec.ie/metno-wdb2ts/locationforecast?lat=" + mp.latitude + ";long=" + mp.longitude;
 
-            parser.setInput(url.openConnection().getInputStream(), "UTF_8");
+            Document doc = builder.parse(url);
 
-            ArrayList<Weather> weatherArrayList = parseXML(parser);
+            NodeList weatherList = doc.getElementsByTagName("weatherdata");
+
+            for (int i = 0; i < weatherList.getLength(); i++) {
+
+                Node w = weatherList.item(i);
+
+                if (w.getNodeType() == Node.ELEMENT_NODE) {
+
+                    Element data = (Element) w;
 
 
-            for(Weather weather: weatherArrayList ){
+                    NodeList forecastList = data.getElementsByTagName("product");
 
-                w.add(weather);
+                    for (int j = 0; j < forecastList.getLength(); j++) {
+
+                        Node n = forecastList.item(j);
+
+                        if (n.getNodeType() == Node.ELEMENT_NODE) {
+
+                            Element f = (Element) n;
+                            //=====================================================
+
+                            NodeList timeList = f.getElementsByTagName("time");
+
+                            for (int l = 0; l < timeList.getLength(); l++) {
+
+                                Node a = timeList.item(l);
+
+                                if (a.getNodeType() == Node.ELEMENT_NODE) {
+
+                                    Element e = (Element) a;
+
+                                    time = e.getAttribute("from");
+
+                                    //===========================================================
 
 
+                                    NodeList locationList = e.getElementsByTagName("location");
+
+                                    for (int v = 0; v < locationList.getLength(); v++) {
+
+                                        Node s = locationList.item(v);
+
+                                        if (s.getNodeType() == Node.ELEMENT_NODE) {
+
+                                            Element loc = (Element) s;
+                                            //===========================================================
+
+                                            NodeList tempList = loc.getElementsByTagName("temperature");
+
+                                            for (int y = 0; y < tempList.getLength(); y++) {
+
+                                                Node temp = tempList.item(y);
+
+                                                if (temp.getNodeType() == Node.ELEMENT_NODE) {
+
+                                                    //Temperature
+                                                    Element tempNode = (Element) temp;
+
+                                                    degrees = tempNode.getAttribute("value");
+
+                                                }
+                                            }
+
+                                            NodeList symbolList = loc.getElementsByTagName("symbol");
+
+                                            for (int r = 0; r < symbolList.getLength(); r++) {
+
+                                                Node sym = symbolList.item(r);
+
+                                                if (sym.getNodeType() == Node.ELEMENT_NODE) {
+
+                                                    Element weatherType = (Element) sym;
+
+                                                    weatherT = weatherType.getAttribute("id");
+                                                }
+
+                                            }
+
+
+                                        }
+                                    }
+
+
+                                }
+
+                            }
+
+                            weatherArrayList.add(new Weather(weatherT, time, degrees));
+
+                        }
+
+
+                    }
+
+
+                }
             }
 
 
-        }catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (XmlPullParserException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+        }catch (ParserConfigurationException | SAXException | IOException e) {
+            // TODO Auto-generated catch block
             e.printStackTrace();
         }
 
-        return w;
-
-    }
-
-    private ArrayList<Weather> parseXML(XmlPullParser parser) throws XmlPullParserException, IOException{
-
-        ArrayList<Weather> weathers = null;
-
-        int eventType = parser.getEventType();
-        Weather weather = null;
-
-        while(eventType != XmlPullParser.END_DOCUMENT){
-            String name;
-            switch(eventType){
-                case XmlPullParser.START_DOCUMENT:
-                    weathers = new ArrayList<>();
-                    break;
-                case XmlPullParser.START_TAG:
-                    name = parser.getName();
-                    if(name.equals("time")){
-                        weather = new Weather();
-                        weather.time = parser.getAttributeValue(null, "from");
-                        Log.i("Weather", parser.getAttributeValue(null, "from"));
-                    }
-                    else if(weather != null){
-                        if(name.equals("temperature")){
-                            weather.temperature = parser.getAttributeValue(null, "value");
-                        }
-                        else if(name.equals("symbol")){
-                            weather.weatherType = parser.getAttributeValue(null, "id");
-                            Log.i("Weather", parser.getAttributeValue(null, "id"));
-                        }
-                    }
-
-
-            }
-
-        }
-
-        return weathers;
+        return weatherArrayList;
     }
 
 
-    public InputStream getInputStream(URL url) {
-        try {
-            return url.openConnection().getInputStream();
-        } catch (IOException e) {
-            return null;
-        }
+
+
+
+
+
+
+    public ArrayList<Weather> getWeatherArrayList() {
+        return weatherArrayList;
     }
 
-    public ArrayList<Weather> weathers()
-    {
-        return w;
-    }
+
+
 }

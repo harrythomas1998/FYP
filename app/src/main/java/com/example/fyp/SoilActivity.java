@@ -43,6 +43,7 @@ public class SoilActivity extends AppCompatActivity {
         soilAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spin1.setAdapter(soilAdapter);
 
+
         spin1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {

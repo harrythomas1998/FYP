@@ -5,8 +5,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
-
-
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 
 import android.content.pm.PackageManager;
@@ -16,7 +16,8 @@ import android.os.Bundle;
 import android.util.Log;
 
 
-
+import com.example.fyp.Adapters.MyAdapter;
+import com.example.fyp.Adapters.MyHolder;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.GoogleApiClient.ConnectionCallbacks;
@@ -25,36 +26,25 @@ import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.tasks.OnSuccessListener;
 
+
 import java.util.ArrayList;
-
-
 
 import static android.Manifest.permission.ACCESS_FINE_LOCATION;
 
 
 public class MaintenancePlanner extends AppCompatActivity implements ConnectionCallbacks, OnConnectionFailedListener {
 
-
-
-
     public static final int RequestPermissionCode = 1;
-
-
     double latitude, longitude;
 
-
-    public ArrayList<Weather> weathers = new ArrayList<Weather>();
-
+    WeatherParser wp;
 
     private GoogleApiClient googleApiClient;
     FusedLocationProviderClient fusedLocationProviderClient;
 
 
-
-
-
-
-
+    RecyclerView recyclerView;
+    MyAdapter myAdapter;
 
 
 
@@ -72,13 +62,28 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
 
 
+        recyclerView = findViewById(R.id.weather_recycler);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-
-
-
-
+        myAdapter = new MyAdapter(this, getMyList());
+        recyclerView.setAdapter(myAdapter);
 
     }
+
+    private ArrayList<Weather> getMyList(){
+
+        ArrayList<Weather> weatherData = new ArrayList<>();
+
+        for(Weather weather: wp.getWeatherArrayList()){
+
+            weatherData.add(weather);
+        }
+        return weatherData;
+
+    }
+
+
+
 
 
     @Override
