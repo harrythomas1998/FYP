@@ -2,10 +2,12 @@ package com.example.fyp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -15,6 +17,7 @@ import java.util.List;
 public class SoilActivity extends AppCompatActivity {
 
     Spinner spin1;
+    Button b1;
     TextView soilType, ph, fertility, vegetation, climate, drainage;
 
     @Override
@@ -23,6 +26,8 @@ public class SoilActivity extends AppCompatActivity {
         setContentView(R.layout.activity_soil);
 
         spin1 = findViewById(R.id.soilDropDown);
+        b1 = findViewById(R.id.findSoilBtn);
+
 
         soilType = findViewById(R.id.soilType);
         ph = findViewById(R.id.ph);
@@ -39,9 +44,27 @@ public class SoilActivity extends AppCompatActivity {
         soils.add("Podzol Soil");
         soils.add("Peaty Soil");
 
+
+
+
+
+
+
+
         ArrayAdapter<String> soilAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, soils);
         soilAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spin1.setAdapter(soilAdapter);
+
+
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i = new Intent(SoilActivity.this, FindSoilType.class);
+                startActivity(i);
+            }
+        });
+
 
 
         spin1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {

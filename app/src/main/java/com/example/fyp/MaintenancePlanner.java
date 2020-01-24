@@ -12,8 +12,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.pm.PackageManager;
 import android.location.Location;
 
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 
 import com.example.fyp.Adapters.MyAdapter;
@@ -27,7 +29,24 @@ import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.tasks.OnSuccessListener;
 
 
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
+
+import javax.net.ssl.HttpsURLConnection;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 
 import static android.Manifest.permission.ACCESS_FINE_LOCATION;
 
@@ -37,6 +56,7 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
     public static final int RequestPermissionCode = 1;
     double latitude, longitude;
 
+
     WeatherParser wp;
 
     private GoogleApiClient googleApiClient;
@@ -45,6 +65,8 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
 
     RecyclerView recyclerView;
     MyAdapter myAdapter;
+
+
 
 
 
@@ -68,9 +90,13 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
         myAdapter = new MyAdapter(this, getMyList());
         recyclerView.setAdapter(myAdapter);
 
+
+
+
+
     }
 
-    private ArrayList<Weather> getMyList(){
+    private ArrayList<Weather> getMyList() {
 
         ArrayList<Weather> weatherData = new ArrayList<>();
 
@@ -78,12 +104,10 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
 
             weatherData.add(weather);
         }
+
         return weatherData;
 
     }
-
-
-
 
 
     @Override
@@ -96,7 +120,7 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
     protected void onStop() {
 
         super.onStop();
-        if(googleApiClient.isConnected()){
+        if (googleApiClient.isConnected()) {
 
             googleApiClient.disconnect();
 
@@ -106,10 +130,9 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
     @Override
     public void onConnected(@Nullable Bundle bundle) {
 
-        if(ActivityCompat.checkSelfPermission(this, ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED){
+        if (ActivityCompat.checkSelfPermission(this, ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             requestPermission();
-        }
-        else {
+        } else {
             fusedLocationProviderClient.getLastLocation().addOnSuccessListener(this, new OnSuccessListener<Location>() {
                 @Override
                 public void onSuccess(Location location) {
@@ -150,17 +173,6 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
 
 
 
-
-
-
-
-
-
-
-
-
-
-    
 
 
 

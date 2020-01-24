@@ -10,7 +10,11 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
 
 
@@ -19,7 +23,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
 
-public class WeatherParser extends AsyncTask{
+public class WeatherParser extends AsyncTask<String, Void, String>{
 
 
 
@@ -31,15 +35,53 @@ public class WeatherParser extends AsyncTask{
 
     ArrayList<Weather> weatherArrayList = new ArrayList<>();
 
-    public Object doInBackground(Object[] objects){
+    public String doInBackground(String[] params){
+
+        String result = "";
+
+        String urlString = "http://metwdb-openaccess.ichec.ie/metno-wdb2ts/locationforecast?lat=" + mp.latitude + ";long=" + mp.longitude;
+
+        try{
+
+            URL url = new URL(urlString);
+            HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+            httpURLConnection.setRequestMethod("GET");
+
+            if(httpURLConnection.getResponseCode() == 200){
+                BufferedReader reader = new BufferedReader(new InputStreamReader(httpURLConnection.getInputStream()));
+                StringBuilder stringBuilder = new StringBuilder();
+                String line;
+                while((line = reader.readLine()) != null){
+                    stringBuilder.append(line);
+                }
+                result = stringBuilder.toString();
+
+                httpURLConnection.disconnect();
+            }
+            else{
+
+                result = "";
+            }
+        }catch (IOException e){
+
+            e.printStackTrace();
+        }
+
+        return result;
+    }
+
+
+
+    protected void onPostExecute(String result){
+
+        super.onPostExecute(result);
 
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         try {
             DocumentBuilder builder = factory.newDocumentBuilder();
 
-            String url = "http://metwdb-openaccess.ichec.ie/metno-wdb2ts/locationforecast?lat=" + mp.latitude + ";long=" + mp.longitude;
 
-            Document doc = builder.parse(url);
+            Document doc = builder.parse(result);
 
             NodeList weatherList = doc.getElementsByTagName("weatherdata");
 
@@ -146,17 +188,17 @@ public class WeatherParser extends AsyncTask{
             e.printStackTrace();
         }
 
-        return weatherArrayList;
+
+
     }
 
 
 
 
 
-
-
-
     public ArrayList<Weather> getWeatherArrayList() {
+
+
         return weatherArrayList;
     }
 
