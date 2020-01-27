@@ -2,6 +2,7 @@ package com.example.fyp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -17,7 +18,9 @@ public class FindSoilType extends AppCompatActivity {
 
     EditText prov;
     Spinner s1;
-    Button b1;
+    Button b1, b2;
+
+    String name, ph, fertility, comVeg, climate, drainage;
 
 
 
@@ -29,6 +32,7 @@ public class FindSoilType extends AppCompatActivity {
         prov = findViewById(R.id.provName);
         s1 = findViewById(R.id.spinner);
         b1 = findViewById(R.id.button);
+        b2 = findViewById(R.id.button2);
 
         List<String> leinster = new ArrayList<>();
         leinster.add("- Choose your area -");
@@ -144,9 +148,52 @@ public class FindSoilType extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String areaSelected = s1.getSelectedItem().toString();
 
-                if(areaSelected.equals("Dublin")){
+                if(areaSelected.equals("Monaghan- South") || areaSelected.equals("Louth- East") || areaSelected.equals("Mayo- South-East") || areaSelected.equals("Galway- East") || areaSelected.equals("Roscommon- South") || areaSelected.equals("Longford") || areaSelected.equals("Meath") || areaSelected.equals("Westmeath") || areaSelected.equals("Dublin") || areaSelected.equals("Offaly- West") || areaSelected.equals("Kildare- East")
+                        || areaSelected.equals("Laois") || areaSelected.equals("Clare- North") || areaSelected.equals("Clare- East") || areaSelected.equals("Tipperary") || areaSelected.equals("Wicklow")
+                        || areaSelected.equals("Carlow") || areaSelected.equals("Kilkenny") || areaSelected.equals("Limerick- East") || areaSelected.equals("Waterford") || areaSelected.equals("Cork")){
+
+                    name = "Brown Soil";
+                    ph = "Slightly Acidic";
+                    fertility = "High";
+                    comVeg = "Grassland, Woodland, Farmland";
+                    climate = "Humid";
+                    drainage = "Very Good";
 
 
+                }
+                else if( areaSelected.equals("Donegal") || areaSelected.equals("Sligo") || areaSelected.equals("Leitrim- North-West") || areaSelected.equals("Mayo- South-West") || areaSelected.equals("Mayo- North") || areaSelected.equals("Galway- West")
+                        || areaSelected.equals("Offaly- East") || areaSelected.equals("Kildare- West") || areaSelected.equals("Laois- North-East") || areaSelected.equals("Wicklow- Central") || areaSelected.equals("Wexford- North-West")
+                        || areaSelected.equals("Cork- South-West") || areaSelected.equals("Kerry- South")){
+
+                    name = "Peaty Soil";
+                    ph = "Strongly Acidic";
+                    fertility = "Poor";
+                    comVeg = "Bogland";
+                    climate = "Humid";
+                    drainage = "Poor";
+
+
+                }
+
+                else if(areaSelected.equals("Leitrim") || areaSelected.equals("Cavan- North") || areaSelected.equals("Monaghan- North") || areaSelected.equals("Mayo- East") || areaSelected.equals("Roscommon- North") || areaSelected.equals("Clare- West") ||
+                        areaSelected.equals("Clare- Central") || areaSelected.equals("Limerick- West") || areaSelected.equals("Kerry- North")){
+
+                    name = "Gley Soil";
+                    ph = "Acidic";
+                    fertility = "High";
+                    comVeg = "Bogland, Farmland";
+                    climate = "All Cliamtes";
+                    drainage = "Poor";
+
+                }
+                else{
+
+                    name = "Podzol Soil";
+                    ph = "Strongly Acidic";
+                    fertility = "Poor";
+                    comVeg = "Coniferous Woodland, Grazing";
+                    climate = "Humid";
+                    drainage = "Poor";
                 }
             }
 
@@ -156,6 +203,24 @@ public class FindSoilType extends AppCompatActivity {
             }
         });
 
+
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                Intent intent= new Intent(FindSoilType.this, SoilActivity.class);
+
+                intent.putExtra("NAME", name);
+                intent.putExtra("PH", ph);
+                intent.putExtra("FERTILITY", fertility);
+                intent.putExtra("COMVEG", comVeg);
+                intent.putExtra("CLIMATE", climate);
+                intent.putExtra("DRAINAGE", drainage);
+
+                startActivity(intent);
+            }
+        });
 
 
 

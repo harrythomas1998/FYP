@@ -45,6 +45,14 @@ public class SoilActivity extends AppCompatActivity {
         soils.add("Peaty Soil");
 
 
+        Intent intent = getIntent();
+
+        soilType.setText(intent.getStringExtra("NAME"));
+        ph.setText(intent.getStringExtra("PH"));
+        fertility.setText(intent.getStringExtra("FERTILITY"));
+        vegetation.setText(intent.getStringExtra("COMVEG"));
+        climate.setText(intent.getStringExtra("CLIMATE"));
+        drainage.setText(intent.getStringExtra("DRAINAGE"));
 
 
 
