@@ -56,18 +56,15 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
     public static final int RequestPermissionCode = 1;
     double latitude, longitude;
 
+    WeatherParser wp = new WeatherParser();
 
-    WeatherParser wp;
+    ArrayList<Weather> weatherData = new ArrayList<>();
 
     private GoogleApiClient googleApiClient;
     FusedLocationProviderClient fusedLocationProviderClient;
 
-
     RecyclerView recyclerView;
     MyAdapter myAdapter;
-
-
-
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,14 +88,9 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
         recyclerView.setAdapter(myAdapter);
 
 
-
-
-
     }
 
     private ArrayList<Weather> getMyList() {
-
-        ArrayList<Weather> weatherData = new ArrayList<>();
 
         for(Weather weather: wp.getWeatherArrayList()){
 
@@ -168,6 +160,8 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
         Log.e("MaintenancePlanner", "Connection failed " + connectionResult.getErrorCode());
 
     }
+
+
 
 
 

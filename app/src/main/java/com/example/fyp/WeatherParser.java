@@ -53,21 +53,23 @@ public class WeatherParser extends AsyncTask<String, Void, String>{
                 String line;
                 while((line = reader.readLine()) != null){
                     stringBuilder.append(line);
+                    System.out.println("LINE APPENDED :"+line);
                 }
                 result = stringBuilder.toString();
 
                 httpURLConnection.disconnect();
             }
             else{
-
+                System.out.println("RESULT SET TO BLANK, HTTP CODE not 200");
                 result = "";
             }
         }catch (IOException e){
 
             e.printStackTrace();
         }
-
+        System.out.println("RESULT FINALLY RETURNED :"+result);
         return result;
+
     }
 
 
@@ -79,7 +81,6 @@ public class WeatherParser extends AsyncTask<String, Void, String>{
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         try {
             DocumentBuilder builder = factory.newDocumentBuilder();
-
 
             Document doc = builder.parse(result);
 
@@ -171,7 +172,10 @@ public class WeatherParser extends AsyncTask<String, Void, String>{
 
                             }
 
-                            weatherArrayList.add(new Weather(weatherT, time, degrees));
+                            Weather weather = new Weather(weatherT, time, degrees);
+                            weatherArrayList.add(weather);
+                            System.out.println("WEATHER DATA ADDED TO LIST: "+weatherT);
+                            System.out.println("WEATHER LIST SIZE: "+weatherArrayList.size());
 
                         }
 
@@ -198,6 +202,7 @@ public class WeatherParser extends AsyncTask<String, Void, String>{
 
     public ArrayList<Weather> getWeatherArrayList() {
 
+        weatherArrayList.add(new Weather("Cloudy", "28/01/2020", "9"));
 
         return weatherArrayList;
     }
