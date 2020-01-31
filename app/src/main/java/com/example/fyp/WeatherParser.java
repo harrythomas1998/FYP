@@ -27,7 +27,7 @@ public class WeatherParser extends AsyncTask<String, Void, String>{
 
 
 
-    MaintenancePlanner mp;
+    MaintenancePlanner mp = new MaintenancePlanner();
 
     private String weatherT, degrees, time;
 
@@ -186,19 +186,16 @@ public class WeatherParser extends AsyncTask<String, Void, String>{
                 }
             }
 
+            Weather weather = new Weather(weatherT, time, degrees);
+            weatherArrayList.add(weather);
+
 
         }catch (ParserConfigurationException | SAXException | IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
 
-
-
     }
-
-
-
-
 
     public ArrayList<Weather> getWeatherArrayList() {
 
@@ -206,7 +203,5 @@ public class WeatherParser extends AsyncTask<String, Void, String>{
 
         return weatherArrayList;
     }
-
-
 
 }
