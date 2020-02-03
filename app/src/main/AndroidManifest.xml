@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FindSoilType"></activity>
+        <activity android:name=".PlantsActivity"></activity>
+        <activity android:name=".FindSoilType" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".SoilActivity" />
         <activity android:name=".CreateEvent" />

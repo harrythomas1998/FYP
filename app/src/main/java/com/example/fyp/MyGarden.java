@@ -10,6 +10,8 @@ import android.widget.Button;
 public class MyGarden extends AppCompatActivity {
 
     Button soilB;
+    Button plantsB;
+    Button addPlants;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +19,8 @@ public class MyGarden extends AppCompatActivity {
         setContentView(R.layout.activity_my_garden);
 
         soilB = findViewById(R.id.soilButton);
+        plantsB = findViewById(R.id.plantsButton);
+        addPlants = findViewById(R.id.addPlantsButton);
 
 
         soilB.setOnClickListener(new View.OnClickListener() {
@@ -29,6 +33,23 @@ public class MyGarden extends AppCompatActivity {
 
             }
         });
+
+        plantsB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+            }
+        });
+
+        addPlants.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+
 
 
     }
