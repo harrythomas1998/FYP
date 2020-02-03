@@ -12,7 +12,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class HomeActivity extends AppCompatActivity {
 
     Button logOut;
-    Button grassPlnr;
+    Button maintainPlnr;
     Button myGarden;
     FirebaseAuth mFireBaseAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
@@ -22,9 +22,9 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        logOut = findViewById(R.id.logOut);
-        grassPlnr = findViewById(R.id.grassPlannerButton);
-        myGarden = findViewById(R.id.plantsButton);
+        logOut = findViewById(R.id.menuButton6);
+        maintainPlnr = findViewById(R.id.menuButton2);
+        myGarden = findViewById(R.id.menuButton1);
 
 
         logOut.setOnClickListener(new View.OnClickListener() {
@@ -38,7 +38,7 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        grassPlnr.setOnClickListener(new View.OnClickListener() {
+        maintainPlnr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intToPlanner = new Intent(HomeActivity.this, MaintenancePlanner.class);
