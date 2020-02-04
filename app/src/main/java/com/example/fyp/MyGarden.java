@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.fyp.plants.ConifersActivity;
+
 public class MyGarden extends AppCompatActivity {
 
     Button soilB;
@@ -45,6 +47,9 @@ public class MyGarden extends AppCompatActivity {
         addPlants.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                Intent i = new Intent(MyGarden.this, ConifersActivity.class);
+                startActivity(i);
 
             }
         });

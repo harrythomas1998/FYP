@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FirstScreen"
-    android:background="@drawable/first_screen_img">
+    android:background="@drawable/gardeningpicture">
 
     <TextView
         android:id="@+id/textView3"
