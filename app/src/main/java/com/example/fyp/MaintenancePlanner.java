@@ -57,7 +57,7 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
     public static final int RequestPermissionCode = 1;
     double latitude, longitude;
 
-    WeatherParser wp = new WeatherParser();
+    WeatherParser wp;
 
     ArrayList<Weather> weatherData = new ArrayList<>();
 
@@ -87,6 +87,7 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
 
         myAdapter = new MyAdapter(this, getMyList() );
         recyclerView.setAdapter(myAdapter);
+        wp = new WeatherParser();
 
         new WeatherParser().execute();
 

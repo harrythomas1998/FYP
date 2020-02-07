@@ -26,6 +26,8 @@ import javax.xml.parsers.ParserConfigurationException;
 public class WeatherParser extends AsyncTask<String, Void, String>{
 
 
+    String url = "http://api.openweathermap.org/data/2.5/forecast?lat=35&lon=120&APPID=43ef55f9e03de2e95cc48537a99240ec";
+
 
     MaintenancePlanner mp = new MaintenancePlanner();
 

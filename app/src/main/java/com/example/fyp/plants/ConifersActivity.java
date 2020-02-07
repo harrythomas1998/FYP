@@ -64,12 +64,6 @@ public class ConifersActivity extends AppCompatActivity {
             }
         });
 
-        b1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(ConifersActivity.this, PlantsActivity.class);
-                startActivity(i);
-            }
-        });
+
     }
 }
