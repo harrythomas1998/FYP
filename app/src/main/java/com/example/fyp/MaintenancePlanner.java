@@ -3,70 +3,81 @@ package com.example.fyp;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 
-import android.os.AsyncTask;
 import android.os.Bundle;
+
 import android.util.Log;
 import android.widget.Toast;
 
 
-import com.example.fyp.Adapters.MyAdapter;
-import com.example.fyp.Adapters.MyHolder;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.Api;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.GoogleApiClient.ConnectionCallbacks;
 import com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListener;
+import com.google.android.gms.common.api.PendingResult;
+import com.google.android.gms.common.api.Status;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.tasks.OnSuccessListener;
 
 
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
-import javax.net.ssl.HttpsURLConnection;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
+
 
 import static android.Manifest.permission.ACCESS_FINE_LOCATION;
 
 
-public class MaintenancePlanner extends AppCompatActivity implements ConnectionCallbacks, OnConnectionFailedListener {
+public class MaintenancePlanner extends AppCompatActivity implements ConnectionCallbacks, OnConnectionFailedListener, WeatherAdapter.OnItemClickListener {
+
+    public static final String WEATHER = "weather";
+    public static final String TIME = "time";
+    public static final String DATE = "date";
+    public static final String TEMP = "temp";
 
     public static final int RequestPermissionCode = 1;
-    double latitude, longitude;
-
-    WeatherParser wp;
-
-    ArrayList<Weather> weatherData = new ArrayList<>();
 
     private GoogleApiClient googleApiClient;
-    FusedLocationProviderClient fusedLocationProviderClient;
+    private FusedLocationProviderClient fusedLocationProviderClient;
 
-    RecyclerView recyclerView;
-    MyAdapter myAdapter;
+    double latitude, longitude;
 
+    SimpleDateFormat myFormat = new SimpleDateFormat("dd/MM/yyyy");
+    SimpleDateFormat fromUser = new SimpleDateFormat("yyyy-MM-dd");
+
+
+
+
+
+    private RecyclerView recyclerView;
+    private WeatherAdapter weatherAdapter;
+    private RequestQueue requestQueue;
+    private ArrayList<Weather> weatherData;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,209 +90,20 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
                 .addApi(LocationServices.API)
                 .build();
 
+
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
+
+        weatherData = new ArrayList<>();
 
 
         recyclerView = findViewById(R.id.weather_recycler);
+        recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        myAdapter = new MyAdapter(this, getMyList() );
-        recyclerView.setAdapter(myAdapter);
-        wp = new WeatherParser();
 
-        new WeatherParser().execute();
 
-
-    }
-
-    private ArrayList<Weather> getMyList() {
-
-        for(Weather weather: wp.getWeatherArrayList()){
-
-            weatherData.add(weather);
-        }
-
-        return weatherData;
-
-    }
-
-    private class WeatherParser extends AsyncTask<String, Void, String>{
-
-
-        private String weatherT, degrees, time;
-
-
-
-        ArrayList<Weather> weatherArrayList = new ArrayList<>();
-
-        public String doInBackground(String[] params){
-
-            String result = "";
-
-            String urlString = "http://metwdb-openaccess.ichec.ie/metno-wdb2ts/locationforecast?lat=" + latitude + ";long=" + longitude;
-
-            try{
-
-                URL url = new URL(urlString);
-                HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
-                httpURLConnection.setRequestMethod("GET");
-
-                if(httpURLConnection.getResponseCode() == 200){
-                    BufferedReader reader = new BufferedReader(new InputStreamReader(httpURLConnection.getInputStream()));
-                    StringBuilder stringBuilder = new StringBuilder();
-                    String line;
-                    while((line = reader.readLine()) != null){
-                        stringBuilder.append(line);
-                        System.out.println("LINE APPENDED :"+line);
-                    }
-                    result = stringBuilder.toString();
-
-                    httpURLConnection.disconnect();
-                }
-                else{
-                    System.out.println("RESULT SET TO BLANK, HTTP CODE not 200");
-                    result = "";
-                }
-            }catch (IOException e){
-
-                e.printStackTrace();
-            }
-            System.out.println("RESULT FINALLY RETURNED :"+result);
-            return result;
-
-        }
-
-
-
-        protected void onPostExecute(String result){
-
-            super.onPostExecute(result);
-
-            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-            try {
-                DocumentBuilder builder = factory.newDocumentBuilder();
-
-                Document doc = builder.parse(result);
-
-                NodeList weatherList = doc.getElementsByTagName("weatherdata");
-
-                for (int i = 0; i < weatherList.getLength(); i++) {
-
-                    Node w = weatherList.item(i);
-
-                    if (w.getNodeType() == Node.ELEMENT_NODE) {
-
-                        Element data = (Element) w;
-
-
-                        NodeList forecastList = data.getElementsByTagName("product");
-
-                        for (int j = 0; j < forecastList.getLength(); j++) {
-
-                            Node n = forecastList.item(j);
-
-                            if (n.getNodeType() == Node.ELEMENT_NODE) {
-
-                                Element f = (Element) n;
-                                //=====================================================
-
-                                NodeList timeList = f.getElementsByTagName("time");
-
-                                for (int l = 0; l < timeList.getLength(); l++) {
-
-                                    Node a = timeList.item(l);
-
-                                    if (a.getNodeType() == Node.ELEMENT_NODE) {
-
-                                        Element e = (Element) a;
-
-                                        time = e.getAttribute("from");
-
-                                        //===========================================================
-
-
-                                        NodeList locationList = e.getElementsByTagName("location");
-
-                                        for (int v = 0; v < locationList.getLength(); v++) {
-
-                                            Node s = locationList.item(v);
-
-                                            if (s.getNodeType() == Node.ELEMENT_NODE) {
-
-                                                Element loc = (Element) s;
-                                                //===========================================================
-
-                                                NodeList tempList = loc.getElementsByTagName("temperature");
-
-                                                for (int y = 0; y < tempList.getLength(); y++) {
-
-                                                    Node temp = tempList.item(y);
-
-                                                    if (temp.getNodeType() == Node.ELEMENT_NODE) {
-
-                                                        //Temperature
-                                                        Element tempNode = (Element) temp;
-
-                                                        degrees = tempNode.getAttribute("value");
-
-                                                    }
-                                                }
-
-                                                NodeList symbolList = loc.getElementsByTagName("symbol");
-
-                                                for (int r = 0; r < symbolList.getLength(); r++) {
-
-                                                    Node sym = symbolList.item(r);
-
-                                                    if (sym.getNodeType() == Node.ELEMENT_NODE) {
-
-                                                        Element weatherType = (Element) sym;
-
-                                                        weatherT = weatherType.getAttribute("id");
-                                                    }
-
-                                                }
-
-
-                                            }
-                                        }
-
-
-                                    }
-
-                                }
-
-                                Weather weather = new Weather(weatherT, time, degrees);
-                                weatherArrayList.add(weather);
-                                System.out.println("WEATHER DATA ADDED TO LIST: "+weatherT);
-                                System.out.println("WEATHER LIST SIZE: "+weatherArrayList.size());
-
-                            }
-
-
-                        }
-
-
-                    }
-                }
-
-                Weather weather = new Weather(weatherT, time, degrees);
-                weatherArrayList.add(weather);
-
-
-            }catch (ParserConfigurationException | SAXException | IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
-
-        }
-
-        public ArrayList<Weather> getWeatherArrayList() {
-
-            weatherArrayList.add(new Weather("Cloudy", "28/01/2020", "9"));
-
-            return weatherArrayList;
-        }
+        requestQueue = Volley.newRequestQueue(this);
+        parseJSON(latitude , longitude);
 
     }
 
@@ -289,60 +111,159 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
     @Override
     protected void onStart() {
         super.onStart();
-        googleApiClient.connect();
-    }
+        if(googleApiClient != null) {
 
-    @Override
-    protected void onStop() {
-
-        super.onStop();
-        if (googleApiClient.isConnected()) {
-
-            googleApiClient.disconnect();
+            googleApiClient.connect();
 
         }
     }
+
+    @Override
+    protected void onStop(){
+        super.onStop();
+
+        if(googleApiClient.isConnected()){
+            googleApiClient.disconnect();
+        }
+    }
+
 
     @Override
     public void onConnected(@Nullable Bundle bundle) {
 
-        if (ActivityCompat.checkSelfPermission(this, ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+        Toast.makeText(MaintenancePlanner.this, "Im here", Toast.LENGTH_LONG).show();
+
+
+        if(ActivityCompat.checkSelfPermission(this, ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED){
+
             requestPermission();
-        } else {
-            fusedLocationProviderClient.getLastLocation().addOnSuccessListener(this, new OnSuccessListener<Location>() {
-                @Override
-                public void onSuccess(Location location) {
-
-                    if (location != null) {
-                        latitude = location.getLatitude();
-                        longitude = location.getLongitude();
-                    }
-
-                }
-            });
         }
+        else {
+            fusedLocationProviderClient.getLastLocation()
+                    .addOnSuccessListener(this, new OnSuccessListener<Location>() {
+                        @Override
+                        public void onSuccess(Location location) {
+                            if (location != null) {
 
-    }
+                                latitude = location.getLatitude();
+                                longitude =location.getLongitude();
 
-    private void requestPermission() {
-        ActivityCompat.requestPermissions(MaintenancePlanner.this, new
-                String[]{ACCESS_FINE_LOCATION}, RequestPermissionCode);
+                                Toast.makeText(MaintenancePlanner.this, "Longitude" + longitude, Toast.LENGTH_LONG).show();
+                            }
+                        }
+                    });
 
-
+        }
     }
 
     @Override
     public void onConnectionSuspended(int i) {
 
-        Log.e("MaintenancePlanner", "Connection suspended");
+        Log.e("Message", "Connection Suspended");
 
     }
 
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
 
-        Log.e("MaintenancePlanner", "Connection failed " + connectionResult.getErrorCode());
+        Log.e("Error", "Connection Failed: " + connectionResult.getErrorCode());
 
     }
 
+    private void requestPermission(){
+
+        ActivityCompat.requestPermissions(MaintenancePlanner.this, new
+                String[]{ACCESS_FINE_LOCATION}, RequestPermissionCode);
+    }
+
+
+    private void parseJSON(double la , double lo) {
+
+        double lat = la;
+        double longi = lo;
+        String url = "https://api.openweathermap.org/data/2.5/forecast?lat=" + 53.338519 + "&lon=" + -6.266483 + "&APPID=43ef55f9e03de2e95cc48537a99240ec";
+
+        JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null,
+                new Response.Listener<JSONObject>() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+
+                        try {
+
+                            JSONArray jsonArray = response.getJSONArray("list");
+
+                            for(int i = 0; i < jsonArray.length(); i++){
+
+
+                                JSONObject list = jsonArray.getJSONObject(i);
+
+                                String dateTime = list.getString("dt_txt");
+                                String[] parts = dateTime.split(" ");
+                                String date = parts[0];
+                                String time = parts[1];
+
+
+
+                                String reformattedDate = myFormat.format(fromUser.parse(date));
+
+
+
+                                JSONObject main = list.getJSONObject("main");
+                                int temp = main.getInt("temp");
+
+                                JSONArray weather = list.getJSONArray("weather");
+
+
+                                JSONObject b = weather.getJSONObject(0);
+
+                                String weatherType = b.getString("description");
+
+
+
+                                weatherData.add(new Weather(weatherType, time, temp, reformattedDate));
+
+
+
+
+
+                            }
+
+                            weatherAdapter = new WeatherAdapter(MaintenancePlanner.this, weatherData);
+                            recyclerView.setAdapter(weatherAdapter);
+                            weatherAdapter.setOnItemClickListener(MaintenancePlanner.this);
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        } catch (ParseException e) {
+                            e.printStackTrace();
+                        }
+
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                error.printStackTrace();
+
+            }
+        });
+
+        requestQueue.add(request);
+    }
+
+
+    @Override
+    public void onItemClick(int position) {
+
+        Intent i = new Intent(this, JobActivity.class);
+        Weather clickedWeatherItem = weatherData.get(position);
+
+        i.putExtra(WEATHER, clickedWeatherItem.getWeatherType());
+        i.putExtra(TIME, clickedWeatherItem.getTime());
+        i.putExtra(DATE, clickedWeatherItem.getDate());
+        i.putExtra(TEMP, clickedWeatherItem.getTemperature());
+
+        startActivity(i);
+
+
+    }
 }

@@ -14,6 +14,7 @@ public class HomeActivity extends AppCompatActivity {
     Button logOut;
     Button maintainPlnr;
     Button myGarden;
+    Button myJobs;
     FirebaseAuth mFireBaseAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
 
@@ -25,6 +26,7 @@ public class HomeActivity extends AppCompatActivity {
         logOut = findViewById(R.id.menuButton6);
         maintainPlnr = findViewById(R.id.menuButton2);
         myGarden = findViewById(R.id.menuButton1);
+        myJobs = findViewById(R.id.menuButton5);
 
 
         logOut.setOnClickListener(new View.OnClickListener() {
@@ -55,6 +57,13 @@ public class HomeActivity extends AppCompatActivity {
         });
 
 
+        myJobs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intToGarden = new Intent(HomeActivity.this, MyJobs.class);
+                startActivity(intToGarden);
+            }
+        });
 
 
 

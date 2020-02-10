@@ -4,15 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
-import com.example.fyp.Adapters.MyAdapter;
 import com.example.fyp.Adapters.PlantAdapter;
 import com.example.fyp.Plant;
-import com.example.fyp.PlantsActivity;
 import com.example.fyp.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;

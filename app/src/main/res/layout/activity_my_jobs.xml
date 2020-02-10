@@ -3,16 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MaintenancePlanner"
-     android:background="@drawable/background9">
-
+    android:layout_height="match_parent"
+    tools:context=".MyJobs"
+    android:background="@drawable/background9">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select a time..."
+        android:text="My Jobs"
         android:textSize="35sp"
         android:textColor="#FFF"
         android:textStyle="bold"
@@ -20,10 +19,9 @@
         android:layout_marginLeft="10dp"
         android:layout_marginBottom="15dp"/>
 
-
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/weather_recycler"/>
+        android:id="@+id/jobs_recycler"/>
 
 </LinearLayout>

@@ -7,41 +7,31 @@ public class Weather {
 
     String weatherType;
     String time;
-    String temperature;
+    double temperature;
+    String date;
 
 
-    public Weather(String weatherType, String time, String temperature) {
+    public Weather(String weatherType, String time, int temperature, String date) {
         this.weatherType = weatherType;
         this.time = time;
         this.temperature = temperature;
+        this.date = date;
     }
-
-
-
-    public Weather(){}
 
 
     public String getWeatherType() {
         return weatherType;
     }
 
-    public void setWeatherType(String weatherType) {
-        this.weatherType = weatherType;
-    }
-
     public String getTime() {
         return time;
     }
 
-    public void setTime(String time) {
-        this.time = time;
-    }
-
-    public String getTemperature() {
+    public double getTemperature() {
         return temperature;
     }
 
-    public void setTemperature(String temperature) {
-        this.temperature = temperature;
+    public String getDate() {
+        return date;
     }
 }
