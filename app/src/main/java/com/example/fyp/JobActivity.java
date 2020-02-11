@@ -8,6 +8,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 
@@ -20,8 +26,13 @@ public class JobActivity extends AppCompatActivity {
 
     Button addJob;
     EditText title, description;
+    private String userID;
+    Job job;
 
     ArrayList<Job> jobs;
+
+
+    private DatabaseReference myRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,16 +61,26 @@ public class JobActivity extends AppCompatActivity {
         dateTxt.setText(date);
         tempTxt.setText("" + (Math.round(temp - 273.15)) + "°C");
 
-        final String titleTxt = title.getText().toString();
-        final String descriptionTxt = description.getText().toString();
+        job = new Job();
+        myRef = FirebaseDatabase.getInstance().getReference().child("Job");
+
 
 
         addJob.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Job job = new Job(date, time, weather, titleTxt, descriptionTxt, temp );
-                jobs.add(job);
+
+               job.setDate(date);
+               job.setDescription(description.getText().toString());
+               job.setTemp(Math.round(temp - 273.15));
+               job.setTime(time);
+               job.setWeatherType(weather);
+               job.setTitle(title.getText().toString());
+
+                myRef.push().setValue(job);
+
+                Toast.makeText(JobActivity.this, "Job has been created", Toast.LENGTH_SHORT).show();
 
 
             }

@@ -27,9 +27,11 @@
                 android:layout_height="wrap_content"
                 android:text="Job Title "
                 android:textSize="30dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
                 android:textStyle="bold"
                 android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="20dp"/>
 
 
 
@@ -42,10 +44,12 @@
             android:layout_weight="4">
 
             <ImageButton
+                android:id="@+id/removeBtn"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_gravity="right"
-                android:background="@drawable/checkbox"/>
+                android:background="@drawable/checkbox"
+                android:layout_margin="5dp"/>
 
 
 
