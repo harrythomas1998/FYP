@@ -9,14 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-
 import java.util.ArrayList;
-
 import static com.example.fyp.MaintenancePlanner.DATE;
 import static com.example.fyp.MaintenancePlanner.TEMP;
 import static com.example.fyp.MaintenancePlanner.TIME;

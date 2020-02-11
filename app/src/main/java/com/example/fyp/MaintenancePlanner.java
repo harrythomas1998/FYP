@@ -28,12 +28,9 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.api.Api;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.GoogleApiClient.ConnectionCallbacks;
 import com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListener;
-import com.google.android.gms.common.api.PendingResult;
-import com.google.android.gms.common.api.Status;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -100,10 +97,8 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-
-
         requestQueue = Volley.newRequestQueue(this);
-        parseJSON(latitude , longitude);
+        parseJSON();
 
     }
 
@@ -177,11 +172,13 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
     }
 
 
-    private void parseJSON(double la , double lo) {
+    private void parseJSON() {
 
-        double lat = la;
-        double longi = lo;
-        String url = "https://api.openweathermap.org/data/2.5/forecast?lat=" + 53.338519 + "&lon=" + -6.266483 + "&APPID=43ef55f9e03de2e95cc48537a99240ec";
+
+
+        double latt = 53.338519;
+        double longg = -6.266483;
+        String url = "https://api.openweathermap.org/data/2.5/forecast?lat=" + latt + "&lon=" + longg + "&APPID=43ef55f9e03de2e95cc48537a99240ec";
 
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null,
                 new Response.Listener<JSONObject>() {
@@ -202,10 +199,7 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
                                 String date = parts[0];
                                 String time = parts[1];
 
-
-
                                 String reformattedDate = myFormat.format(fromUser.parse(date));
-
 
 
                                 JSONObject main = list.getJSONObject("main");
@@ -218,13 +212,7 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
 
                                 String weatherType = b.getString("description");
 
-
-
                                 weatherData.add(new Weather(weatherType, time, temp, reformattedDate));
-
-
-
-
 
                             }
 
