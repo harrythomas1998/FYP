@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.fyp.Objects.Job;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import java.util.ArrayList;
@@ -83,10 +85,6 @@ public class JobActivity extends AppCompatActivity {
 
     }
 
-    public ArrayList<Job> getJobs(){
-
-        return jobs;
-    }
 
 
 }

@@ -27,6 +27,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.fyp.Adapters.WeatherAdapter;
+import com.example.fyp.Objects.Weather;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.GoogleApiClient.ConnectionCallbacks;
@@ -62,7 +64,7 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
     private GoogleApiClient googleApiClient;
     private FusedLocationProviderClient fusedLocationProviderClient;
 
-    double latitude, longitude;
+    Double latitude, longitude;
 
     SimpleDateFormat myFormat = new SimpleDateFormat("dd/MM/yyyy");
     SimpleDateFormat fromUser = new SimpleDateFormat("yyyy-MM-dd");
@@ -93,6 +95,8 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
         weatherData = new ArrayList<>();
 
 
+
+
         recyclerView = findViewById(R.id.weather_recycler);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -100,26 +104,6 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
         requestQueue = Volley.newRequestQueue(this);
         parseJSON();
 
-    }
-
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        if(googleApiClient != null) {
-
-            googleApiClient.connect();
-
-        }
-    }
-
-    @Override
-    protected void onStop(){
-        super.onStop();
-
-        if(googleApiClient.isConnected()){
-            googleApiClient.disconnect();
-        }
     }
 
 
@@ -140,10 +124,11 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
                         public void onSuccess(Location location) {
                             if (location != null) {
 
-                                latitude = location.getLatitude();
-                                longitude =location.getLongitude();
+                                latitude =  location.getLatitude();
+                                System.out.print("");
+                                longitude = location.getLongitude();
 
-                                Toast.makeText(MaintenancePlanner.this, "Longitude" + longitude, Toast.LENGTH_LONG).show();
+                                Toast.makeText(MaintenancePlanner.this, "Longitude: " + longitude, Toast.LENGTH_LONG).show();
                             }
                         }
                     });
@@ -151,40 +136,20 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
         }
     }
 
-    @Override
-    public void onConnectionSuspended(int i) {
-
-        Log.e("Message", "Connection Suspended");
-
-    }
-
-    @Override
-    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-
-        Log.e("Error", "Connection Failed: " + connectionResult.getErrorCode());
-
-    }
-
-    private void requestPermission(){
-
-        ActivityCompat.requestPermissions(MaintenancePlanner.this, new
-                String[]{ACCESS_FINE_LOCATION}, RequestPermissionCode);
-    }
-
 
     private void parseJSON() {
 
-
-
         double latt = 53.338519;
         double longg = -6.266483;
-        String url = "https://api.openweathermap.org/data/2.5/forecast?lat=" + latt + "&lon=" + longg + "&APPID=43ef55f9e03de2e95cc48537a99240ec";
+
+        String url = "https://api.openweathermap.org/data/2.5/forecast?lat=" + latitude + "&lon=" + longitude + "&APPID=43ef55f9e03de2e95cc48537a99240ec";
 
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null,
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
 
+                        System.out.println("Got weather");
                         try {
 
                             JSONArray jsonArray = response.getJSONArray("list");
@@ -236,7 +201,49 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
         });
 
         requestQueue.add(request);
+
+
     }
+
+    @Override
+    public void onConnectionSuspended(int i) {
+
+        Log.e("Message", "Connection Suspended");
+
+    }
+
+    @Override
+    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+
+        Log.e("Error", "Connection Failed: " + connectionResult.getErrorCode());
+
+    }
+
+    private void requestPermission(){
+
+        ActivityCompat.requestPermissions(MaintenancePlanner.this, new
+                String[]{ACCESS_FINE_LOCATION}, RequestPermissionCode);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if(googleApiClient != null) {
+
+            googleApiClient.connect();
+
+        }
+    }
+
+    @Override
+    protected void onStop(){
+        super.onStop();
+
+        if(googleApiClient.isConnected()){
+            googleApiClient.disconnect();
+        }
+    }
+
 
 
     @Override

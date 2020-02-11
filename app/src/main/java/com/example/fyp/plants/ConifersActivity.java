@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import com.example.fyp.Adapters.PlantAdapter;
-import com.example.fyp.Plant;
+import com.example.fyp.Objects.Plant;
 import com.example.fyp.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;

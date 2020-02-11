@@ -7,9 +7,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.fyp.Plant;
+import com.example.fyp.Objects.Plant;
 import com.example.fyp.R;
-import com.example.fyp.plants.ConifersActivity;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;

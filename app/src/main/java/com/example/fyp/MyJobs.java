@@ -5,8 +5,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageButton;
+
+import com.example.fyp.Adapters.JobAdapter;
+import com.example.fyp.Objects.Job;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -21,7 +22,6 @@ public class MyJobs extends AppCompatActivity {
     private ArrayList<Job> jobData;
     DatabaseReference reference;
 
-    ImageButton removeBtn;
 
 
 
@@ -34,7 +34,7 @@ public class MyJobs extends AppCompatActivity {
         recyclerView = findViewById(R.id.jobs_recycler);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        removeBtn = findViewById(R.id.removeBtn);
+
 
         jobData = new ArrayList<>();
 

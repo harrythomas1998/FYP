@@ -1,4 +1,4 @@
-package com.example.fyp;
+package com.example.fyp.Adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,6 +8,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.fyp.R;
+import com.example.fyp.Objects.Weather;
 
 import java.util.ArrayList;
 
