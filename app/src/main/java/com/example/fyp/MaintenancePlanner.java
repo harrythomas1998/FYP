@@ -3,7 +3,6 @@ package com.example.fyp;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -12,11 +11,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 
 import android.content.Intent;
+
+
 import android.content.pm.PackageManager;
 import android.location.Location;
-
 import android.os.Bundle;
-
 import android.util.Log;
 import android.widget.Toast;
 
@@ -31,10 +30,8 @@ import com.example.fyp.Adapters.WeatherAdapter;
 import com.example.fyp.Objects.Weather;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.GoogleApiClient.ConnectionCallbacks;
-import com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListener;
-import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnSuccessListener;
 
 
@@ -47,30 +44,26 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
-
-
 import static android.Manifest.permission.ACCESS_FINE_LOCATION;
 
 
-public class MaintenancePlanner extends AppCompatActivity implements ConnectionCallbacks, OnConnectionFailedListener, WeatherAdapter.OnItemClickListener {
+public class MaintenancePlanner extends AppCompatActivity implements WeatherAdapter.OnItemClickListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
 
     public static final String WEATHER = "weather";
     public static final String TIME = "time";
     public static final String DATE = "date";
     public static final String TEMP = "temp";
 
+    String latitude, longitude;
+
     public static final int RequestPermissionCode = 1;
 
     private GoogleApiClient googleApiClient;
     private FusedLocationProviderClient fusedLocationProviderClient;
 
-    Double latitude, longitude;
 
     SimpleDateFormat myFormat = new SimpleDateFormat("dd/MM/yyyy");
     SimpleDateFormat fromUser = new SimpleDateFormat("yyyy-MM-dd");
-
-
-
 
 
     private RecyclerView recyclerView;
@@ -82,6 +75,7 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maintenance_planner);
 
+        weatherData = new ArrayList<>();
 
         googleApiClient = new GoogleApiClient.Builder(this)
                 .addConnectionCallbacks(this)
@@ -92,57 +86,22 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
 
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
 
-        weatherData = new ArrayList<>();
-
-
-
-
         recyclerView = findViewById(R.id.weather_recycler);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         requestQueue = Volley.newRequestQueue(this);
-        parseJSON();
 
     }
 
 
-    @Override
-    public void onConnected(@Nullable Bundle bundle) {
 
-        Toast.makeText(MaintenancePlanner.this, "Im here", Toast.LENGTH_LONG).show();
-
-
-        if(ActivityCompat.checkSelfPermission(this, ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED){
-
-            requestPermission();
-        }
-        else {
-            fusedLocationProviderClient.getLastLocation()
-                    .addOnSuccessListener(this, new OnSuccessListener<Location>() {
-                        @Override
-                        public void onSuccess(Location location) {
-                            if (location != null) {
-
-                                latitude =  location.getLatitude();
-                                System.out.print("");
-                                longitude = location.getLongitude();
-
-                                Toast.makeText(MaintenancePlanner.this, "Longitude: " + longitude, Toast.LENGTH_LONG).show();
-                            }
-                        }
-                    });
-
-        }
-    }
-
-
-    private void parseJSON() {
+    private void parseJSON(String la, String lo) {
 
         double latt = 53.338519;
         double longg = -6.266483;
 
-        String url = "https://api.openweathermap.org/data/2.5/forecast?lat=" + latitude + "&lon=" + longitude + "&APPID=43ef55f9e03de2e95cc48537a99240ec";
+        String url = "https://api.openweathermap.org/data/2.5/forecast?lat=" + la + "&lon=" + lo + "&APPID=43ef55f9e03de2e95cc48537a99240ec";
 
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null,
                 new Response.Listener<JSONObject>() {
@@ -203,6 +162,32 @@ public class MaintenancePlanner extends AppCompatActivity implements ConnectionC
         requestQueue.add(request);
 
 
+    }
+
+    @Override
+    public void onConnected(@Nullable Bundle bundle) {
+
+
+        if(ActivityCompat.checkSelfPermission(this, ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED){
+
+            requestPermission();
+        }
+        else {
+            fusedLocationProviderClient.getLastLocation()
+                    .addOnSuccessListener(this, new OnSuccessListener<Location>() {
+                        @Override
+                        public void onSuccess(Location location) {
+                            if (location != null) {
+
+                                latitude =  String.valueOf(location.getLatitude());
+                                longitude = String.valueOf(location.getLongitude());
+
+                                parseJSON(latitude, longitude);
+                            }
+                        }
+                    });
+
+        }
     }
 
     @Override

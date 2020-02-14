@@ -31,7 +31,7 @@
                 android:gravity="center_horizontal"
                 android:textStyle="bold"
                 android:layout_marginLeft="5dp"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginTop="13dp"/>
 
 
 
@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_weight="10">
+            android:layout_weight="9">
 
             <CheckBox
                 android:layout_width="match_parent"
