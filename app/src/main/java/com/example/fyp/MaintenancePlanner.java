@@ -7,19 +7,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-
-
 import android.content.Intent;
-
-
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Toast;
-
-
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -33,13 +25,9 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnSuccessListener;
-
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -92,6 +80,7 @@ public class MaintenancePlanner extends AppCompatActivity implements WeatherAdap
 
         requestQueue = Volley.newRequestQueue(this);
 
+
     }
 
 
@@ -108,7 +97,6 @@ public class MaintenancePlanner extends AppCompatActivity implements WeatherAdap
                     @Override
                     public void onResponse(JSONObject response) {
 
-                        System.out.println("Got weather");
                         try {
 
                             JSONArray jsonArray = response.getJSONArray("list");
@@ -183,6 +171,7 @@ public class MaintenancePlanner extends AppCompatActivity implements WeatherAdap
                                 longitude = String.valueOf(location.getLongitude());
 
                                 parseJSON(latitude, longitude);
+
                             }
                         }
                     });

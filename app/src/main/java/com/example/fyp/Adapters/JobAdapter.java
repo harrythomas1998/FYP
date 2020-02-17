@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -19,9 +20,17 @@ public class JobAdapter extends RecyclerView.Adapter<JobAdapter.Viewholder> {
 
     private Context mContext;
     private ArrayList<Job> mJobList;
+    private OnItemClickListener mListener;
 
+    public interface OnItemClickListener{
 
+        void onItemClick(int position);
+    }
 
+    public void setOnItemClickListener(JobAdapter.OnItemClickListener listener){
+
+        mListener = listener;
+    }
 
     public JobAdapter(Context context, ArrayList<Job> jobList){
 
@@ -47,6 +56,11 @@ public class JobAdapter extends RecyclerView.Adapter<JobAdapter.Viewholder> {
 
         holder.jobTxt.setText(title);
 
+        if(title.contains("grass") || title.contains("Grass")){
+
+            holder.imageView.setImageResource(R.drawable.grass);
+        }
+
 
 
     }
@@ -59,6 +73,7 @@ public class JobAdapter extends RecyclerView.Adapter<JobAdapter.Viewholder> {
     public class Viewholder extends RecyclerView.ViewHolder{
 
         public TextView jobTxt;
+        public ImageView imageView;
 
 
 
@@ -66,6 +81,23 @@ public class JobAdapter extends RecyclerView.Adapter<JobAdapter.Viewholder> {
             super(itemView);
 
             jobTxt = itemView.findViewById(R.id.title_text);
+            imageView = itemView.findViewById(R.id.image_view_job);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    if(mListener !=null){
+
+                        int position = getAdapterPosition();
+
+                        if(position != RecyclerView.NO_POSITION){
+
+                            mListener.onItemClick(position);
+                        }
+                    }
+                }
+            });
 
 
         }

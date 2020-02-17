@@ -4,10 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.fyp.Adapters.JobAdapter;
 import com.example.fyp.Objects.Job;
+import com.example.fyp.Objects.Weather;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -15,12 +17,20 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
-public class MyJobs extends AppCompatActivity {
+public class MyJobs extends AppCompatActivity implements JobAdapter.OnItemClickListener {
 
     private RecyclerView recyclerView;
     private JobAdapter jobAdapter;
     private ArrayList<Job> jobData;
     DatabaseReference reference;
+
+    public static final String WEATHER = "weather";
+    public static final String TIME = "time";
+    public static final String DATE = "date";
+    public static final String TEMP = "temp";
+    public static final String DESCRIPTION = "description";
+    public static final String TITLE = "title";
+
 
 
 
@@ -52,6 +62,7 @@ public class MyJobs extends AppCompatActivity {
 
                 jobAdapter = new JobAdapter(MyJobs.this, jobData);
                 recyclerView.setAdapter(jobAdapter);
+                jobAdapter.setOnItemClickListener(MyJobs.this);
 
             }
 
@@ -63,6 +74,24 @@ public class MyJobs extends AppCompatActivity {
 
 
 
+
+
+    }
+
+    @Override
+    public void onItemClick(int position) {
+
+        Intent i = new Intent(this, ViewJob.class);
+        Job clickedJobItem = jobData.get(position);
+
+        i.putExtra(WEATHER, clickedJobItem.getWeatherType());
+        i.putExtra(TIME, clickedJobItem.getTime());
+        i.putExtra(DATE, clickedJobItem.getDate());
+        i.putExtra(TEMP, clickedJobItem.getTemp());
+        i.putExtra(DESCRIPTION, clickedJobItem.getDescription());
+        i.putExtra(TITLE, clickedJobItem.getTitle());
+
+        startActivity(i);
 
 
     }
