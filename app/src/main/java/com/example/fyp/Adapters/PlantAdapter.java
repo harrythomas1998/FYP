@@ -6,51 +6,47 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.example.fyp.Objects.Plant;
 import com.example.fyp.R;
 import com.squareup.picasso.Picasso;
-
 import java.util.ArrayList;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder>{
 
-    Context context;
-    ArrayList<Plant> plants;
+    Context mContext;
+    ArrayList<Plant> mPlants;
 
 
-    public PlantAdapter(Context c, ArrayList<Plant> p){
+    public PlantAdapter(Context context, ArrayList<Plant> plants){
 
-        context = c;
-        plants = p;
+        mContext = context;
+        mPlants = plants;
     }
 
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new MyViewHolder(LayoutInflater.from(context).inflate(R.layout.plant_card_view, parent,false));
+        View v = LayoutInflater.from(mContext).inflate(R.layout.plant_card_view, parent, false);
+        return new MyViewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
+        Plant currentItem = mPlants.get(position);
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        String name = currentItem.getName();
+        String image = currentItem.getPicture();
 
-            }
-        });
-        holder.name.setText(plants.get(position).getName());
-        Picasso.get().load(plants.get(position).getPicture()).into(holder.plantPic);
+        holder.name.setText(name);
+        Picasso.get().load(image).fit().centerInside().into(holder.plantPic);
     }
 
     @Override
     public int getItemCount() {
-        return plants.size();
+        return mPlants.size();
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder {

@@ -12,6 +12,8 @@ import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
+
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -87,6 +89,7 @@ public class MaintenancePlanner extends AppCompatActivity implements WeatherAdap
 
     private void parseJSON(String la, String lo) {
 
+
         double latt = 53.338519;
         double longg = -6.266483;
 
@@ -96,6 +99,8 @@ public class MaintenancePlanner extends AppCompatActivity implements WeatherAdap
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
+
+                        Toast.makeText(MaintenancePlanner.this, "In parse method", Toast.LENGTH_SHORT).show();
 
                         try {
 
@@ -125,6 +130,8 @@ public class MaintenancePlanner extends AppCompatActivity implements WeatherAdap
                                 String weatherType = b.getString("description");
 
                                 weatherData.add(new Weather(weatherType, time, temp, reformattedDate));
+
+
 
                             }
 
@@ -156,13 +163,17 @@ public class MaintenancePlanner extends AppCompatActivity implements WeatherAdap
     public void onConnected(@Nullable Bundle bundle) {
 
 
+
         if(ActivityCompat.checkSelfPermission(this, ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED){
 
             requestPermission();
         }
         else {
+
+
             fusedLocationProviderClient.getLastLocation()
                     .addOnSuccessListener(this, new OnSuccessListener<Location>() {
+
                         @Override
                         public void onSuccess(Location location) {
                             if (location != null) {
@@ -172,6 +183,9 @@ public class MaintenancePlanner extends AppCompatActivity implements WeatherAdap
 
                                 parseJSON(latitude, longitude);
 
+                            }
+                            else{
+                                Toast.makeText(MaintenancePlanner.this, "Didnt get location", Toast.LENGTH_SHORT).show();
                             }
                         }
                     });

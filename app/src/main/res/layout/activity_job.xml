@@ -20,26 +20,26 @@
         android:layout_marginLeft="10dp"/>
 
     <TextView
-    android:layout_marginTop="40dp"
-    android:id="@+id/job_time"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="time goes here"
-    android:textStyle="bold"
-    android:textColor="#FFF"
-    android:textSize="25dp"
-    android:layout_marginLeft="10dp"/>
+        android:layout_marginTop="40dp"
+        android:id="@+id/job_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="time goes here"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:textSize="25dp"
+        android:layout_marginLeft="10dp"/>
 
     <TextView
-    android:layout_marginTop="10dp"
-    android:id="@+id/job_date"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="date goes here"
-    android:textStyle="bold"
-    android:textColor="#FFF"
-    android:textSize="25dp"
-    android:layout_marginLeft="10dp"/>
+        android:layout_marginTop="10dp"
+        android:id="@+id/job_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="date goes here"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:textSize="25dp"
+        android:layout_marginLeft="10dp"/>
 
     <TextView
         android:layout_marginTop="10dp"

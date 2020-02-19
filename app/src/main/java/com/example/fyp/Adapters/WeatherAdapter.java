@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -59,6 +60,27 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.Viewhold
         holder.time.setText(time);
         holder.date.setText(date);
 
+        if(weatherType.contains("clouds")){
+
+            holder.weatherImage.setImageResource(R.drawable.clouds);
+        }
+        if(weatherType.contains("rain")){
+
+            holder.weatherImage.setImageResource(R.drawable.rain);
+        }
+        if(weatherType.contains("snow")){
+
+            holder.weatherImage.setImageResource(R.drawable.snow);
+        }
+        if(weatherType.contains("clear") && temp > 5){
+
+            holder.weatherImage.setImageResource(R.drawable.sun);
+        }
+        if(weatherType.contains("clear") && temp <= 5){
+
+            holder.weatherImage.setImageResource(R.drawable.cold);
+        }
+
 
     }
 
@@ -73,6 +95,7 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.Viewhold
         public TextView temp;
         public TextView time;
         public TextView date;
+        public ImageView weatherImage;
 
 
         public Viewholder(@NonNull View itemView) {
@@ -81,7 +104,8 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.Viewhold
             weatherTxt = itemView.findViewById(R.id.weather);
             temp = itemView.findViewById(R.id.degrees);
             time = itemView.findViewById(R.id.time);
-            date = itemView.findViewById(R.id.date);
+            date = itemView.findViewById(R.id.date_text);
+            weatherImage = itemView.findViewById(R.id.weather_image);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
