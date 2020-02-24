@@ -15,6 +15,7 @@ public class HomeActivity extends AppCompatActivity {
     Button maintainPlnr;
     Button myGarden;
     Button myJobs;
+    Button forum;
 
 
     @Override
@@ -26,6 +27,7 @@ public class HomeActivity extends AppCompatActivity {
         maintainPlnr = findViewById(R.id.menuButton2);
         myGarden = findViewById(R.id.menuButton1);
         myJobs = findViewById(R.id.menuButton5);
+        forum = findViewById(R.id.menuButton4);
 
 
         logOut.setOnClickListener(new View.OnClickListener() {
@@ -65,6 +67,16 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+
+        forum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intToForum = new Intent(HomeActivity.this, MainActivity.class);
+                startActivity(intToForum);
+
+            }
+        });
 
 
 

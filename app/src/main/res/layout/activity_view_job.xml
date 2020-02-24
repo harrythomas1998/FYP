@@ -8,99 +8,111 @@
     tools:context=".ViewJob"
     android:background="@drawable/background9">
 
-    <TextView
-        android:layout_marginTop="20dp"
-        android:id="@+id/view_job_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Title goes here"
-        android:textStyle="bold"
-        android:textColor="#FFF"
-        android:textSize="35sp"
-        android:layout_marginLeft="10dp"/>
-
-
-    <TextView
-        android:layout_marginTop="40dp"
-        android:id="@+id/view_job_time"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="time goes here"
-        android:textStyle="bold"
-        android:textColor="#FFF"
-        android:textSize="25sp"
-        android:layout_marginLeft="10dp"/>
-
-    <TextView
-        android:layout_marginTop="10dp"
-        android:id="@+id/view_job_date"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="date goes here"
-        android:textStyle="bold"
-        android:textColor="#FFF"
-        android:textSize="25sp"
-        android:layout_marginLeft="10dp"/>
-
-    <TextView
-        android:layout_marginTop="10dp"
-        android:id="@+id/view_job_weather"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="weather goes here"
-        android:textStyle="bold"
-        android:textColor="#FFF"
-        android:textSize="25sp"
-        android:layout_marginLeft="10dp"/>
-
-    <TextView
-        android:layout_marginTop="10dp"
-        android:id="@+id/view_job_temp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="temp goes here"
-        android:textStyle="bold"
-        android:textColor="#FFF"
-        android:textSize="25sp"
-        android:layout_marginLeft="10dp"/>
-
-    <TextView
-        android:layout_marginTop="30dp"
-        android:id="@+id/view_job_description"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="description goes here"
-        android:textStyle="bold"
-        android:textColor="#FFF"
-        android:textSize="25sp"
-        android:layout_marginLeft="10dp"/>
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp">
+        android:orientation="vertical">
 
 
-        <Button
-            android:id="@+id/mark_as_done_button"
-            android:layout_width="190dp"
-            android:layout_height="50dp"
-            android:text="Mark as Done"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="230dp"
-            android:textStyle="bold"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/view_job_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title goes here"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"/>
 
-        <Button
-            android:id="@+id/edit_button"
-            android:layout_width="190dp"
-            android:layout_height="50dp"
-            android:text="Edit Details"
-            android:layout_marginTop="230dp"
-            android:layout_marginLeft="10dp"
-            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:id="@+id/view_job_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="time goes here"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/view_job_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="date goes here"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/view_job_weather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="weather goes here"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/view_job_temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="temp goes here"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:id="@+id/view_job_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="description goes here"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="100dp">
+
+
+            <Button
+                android:id="@+id/mark_as_done_button"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="35dp"
+                android:text="Mark as Done"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/edit_button"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:text="Edit Details"
+                android:layout_marginLeft="15dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+
     </LinearLayout>
+
+
+
+
 
 
 

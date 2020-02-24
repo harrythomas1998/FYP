@@ -16,9 +16,9 @@ import java.util.List;
 
 public class FindSoilType extends AppCompatActivity {
 
-    EditText prov;
-    Spinner s1;
-    Button b1, b2;
+
+    Spinner s1, s2;
+    Button b2;
 
     String name, ph, fertility, comVeg, climate, drainage;
 
@@ -29,14 +29,20 @@ public class FindSoilType extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_find_soil_type);
 
-        prov = findViewById(R.id.provName);
-        s1 = findViewById(R.id.spinner);
-        b1 = findViewById(R.id.button);
-        b2 = findViewById(R.id.button2);
+        s2 = findViewById(R.id.spinnerProvince);
+        s1 = findViewById(R.id.spinnerArea);
+        b2 = findViewById(R.id.button);
+
+
+        List<String> provinces = new ArrayList<>();
+        provinces.add("-Choose your Province-");
+        provinces.add("Leinster");
+        provinces.add("Munster");
+        provinces.add("Ulster");
+        provinces.add("Connaught");
 
         List<String> leinster = new ArrayList<>();
         leinster.add("- Choose your area -");
-        leinster.add("- Choose your Area -");
         leinster.add("Louth- West");
         leinster.add("Louth- East");
         leinster.add("Longford");
@@ -97,6 +103,10 @@ public class FindSoilType extends AppCompatActivity {
         ulster.add("Monaghan- North");
         ulster.add("Monaghan- South");
 
+        ArrayAdapter<String> provinceAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, provinces);
+        provinceAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        s2.setAdapter(provinceAdapter);
+
         final ArrayAdapter<String> leinsterAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, leinster);
         leinsterAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
@@ -112,13 +122,13 @@ public class FindSoilType extends AppCompatActivity {
 
 
 
-        b1.setOnClickListener(new View.OnClickListener() {
 
 
+        s2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onClick(View v) {
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-               String province = prov.getText().toString();
+                String province = s2.getSelectedItem().toString();
 
 
                 if(province.equalsIgnoreCase("Leinster")){
@@ -138,10 +148,13 @@ public class FindSoilType extends AppCompatActivity {
                     s1.setAdapter(ulsterAdapter);
                 }
 
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
 
             }
         });
-
 
         s1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override

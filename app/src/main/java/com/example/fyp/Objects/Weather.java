@@ -19,6 +19,9 @@ public class Weather {
     }
 
 
+
+
+
     public String getWeatherType() {
         return weatherType;
     }
@@ -34,4 +37,6 @@ public class Weather {
     public String getDate() {
         return date;
     }
+
+
 }

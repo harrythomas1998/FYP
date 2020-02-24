@@ -52,7 +52,7 @@ public class MaintenancePlanner extends AppCompatActivity implements WeatherAdap
     private FusedLocationProviderClient fusedLocationProviderClient;
 
 
-    SimpleDateFormat myFormat = new SimpleDateFormat("dd/MM/yyyy");
+    SimpleDateFormat myFormat = new SimpleDateFormat("EEE, dd/MM/yyyy");
     SimpleDateFormat fromUser = new SimpleDateFormat("yyyy-MM-dd");
 
 
