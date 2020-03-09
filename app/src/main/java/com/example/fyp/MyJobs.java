@@ -6,10 +6,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.CheckBox;
 
 import com.example.fyp.Adapters.JobAdapter;
 import com.example.fyp.Objects.Job;
 import com.example.fyp.Objects.Weather;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.FirebaseUserMetadata;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -23,6 +27,9 @@ public class MyJobs extends AppCompatActivity implements JobAdapter.OnItemClickL
     private JobAdapter jobAdapter;
     private ArrayList<Job> jobData;
     DatabaseReference reference;
+    private FirebaseUser user;
+    private FirebaseAuth firebaseAuth;
+    private CheckBox checkBox;
 
     public static final String WEATHER = "weather";
     public static final String TIME = "time";
@@ -48,8 +55,10 @@ public class MyJobs extends AppCompatActivity implements JobAdapter.OnItemClickL
 
         jobData = new ArrayList<>();
 
+        firebaseAuth = FirebaseAuth.getInstance();
 
-        reference = FirebaseDatabase.getInstance().getReference().child("Job");
+        user = firebaseAuth.getCurrentUser();
+        reference = FirebaseDatabase.getInstance().getReference().child("Job").child(user.getUid());
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -71,7 +80,6 @@ public class MyJobs extends AppCompatActivity implements JobAdapter.OnItemClickL
 
             }
         });
-
 
 
 

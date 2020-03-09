@@ -100,8 +100,6 @@ public class MaintenancePlanner extends AppCompatActivity implements WeatherAdap
                     @Override
                     public void onResponse(JSONObject response) {
 
-                        Toast.makeText(MaintenancePlanner.this, "In parse method", Toast.LENGTH_SHORT).show();
-
                         try {
 
                             JSONArray jsonArray = response.getJSONArray("list");

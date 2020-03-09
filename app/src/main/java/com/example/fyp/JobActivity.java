@@ -6,11 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.fyp.Objects.Job;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import java.util.ArrayList;
@@ -23,8 +26,9 @@ public class JobActivity extends AppCompatActivity {
 
     Button addJob;
     EditText title, description;
-    private String userID;
     Job job;
+    private FirebaseUser mCurrentUser;
+    private FirebaseAuth firebaseAuth;
 
     ArrayList<Job> jobs;
 
@@ -59,7 +63,10 @@ public class JobActivity extends AppCompatActivity {
         tempTxt.setText("" + (Math.round(temp - 273.15)) + "°C");
 
         job = new Job();
-        myRef = FirebaseDatabase.getInstance().getReference().child("Job");
+
+        firebaseAuth = FirebaseAuth.getInstance();
+        mCurrentUser = firebaseAuth.getCurrentUser();
+        myRef = FirebaseDatabase.getInstance().getReference().child("Job").child(mCurrentUser.getUid());
 
 
 

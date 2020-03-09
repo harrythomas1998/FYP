@@ -26,8 +26,8 @@ public class FragmentMonday extends Fragment {
 
 
 
-    public FragmentMonday(){
-
+    public FragmentMonday( ArrayList<Weather> weatherData){
+        lstWeather = weatherData;
     }
 
     @Nullable
@@ -41,19 +41,5 @@ public class FragmentMonday extends Fragment {
         return v;
     }
 
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
 
-
-
-
-
-
-        Bundle extras = getActivity().getIntent().getExtras();
-
-
-
-
-    }
 }

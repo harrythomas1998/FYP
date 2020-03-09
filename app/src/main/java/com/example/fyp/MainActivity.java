@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.viewPager);
         adapter = new ViewPagerAdapter(getSupportFragmentManager());
 
-        adapter.AddFragment(new FragmentMonday(), "Monday");
+        //adapter.AddFragment(new FragmentMonday(), "Monday");
         adapter.AddFragment(new FragmentTuesday(), "Tuesday");
         adapter.AddFragment(new FragmentWednesday(), "Wednesday");
         adapter.AddFragment(new FragmentThursday(), "Thursday");

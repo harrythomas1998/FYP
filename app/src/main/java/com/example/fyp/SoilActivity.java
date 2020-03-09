@@ -11,6 +11,15 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.example.fyp.Objects.SoilType;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +28,10 @@ public class SoilActivity extends AppCompatActivity {
 
     Button b1;
     TextView soilType, ph, fertility, vegetation, climate, drainage;
+
+    DatabaseReference reference;
+    private FirebaseUser user;
+    private FirebaseAuth firebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,14 +50,33 @@ public class SoilActivity extends AppCompatActivity {
         drainage = findViewById(R.id.drainage);
 
 
-        Intent intent = getIntent();
+        firebaseAuth = FirebaseAuth.getInstance();
 
-        soilType.setText(intent.getStringExtra("NAME"));
-        ph.setText(intent.getStringExtra("PH"));
-        fertility.setText(intent.getStringExtra("FERTILITY"));
-        vegetation.setText(intent.getStringExtra("COMVEG"));
-        climate.setText(intent.getStringExtra("CLIMATE"));
-        drainage.setText(intent.getStringExtra("DRAINAGE"));
+        user = firebaseAuth.getCurrentUser();
+        reference = FirebaseDatabase.getInstance().getReference().child("SoilType").child(user.getUid());
+        reference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                for(DataSnapshot snapshot1: dataSnapshot.getChildren()){
+
+                    SoilType soil = snapshot1.getValue(SoilType.class);
+
+                    soilType.setText(soil.getName());
+                    ph.setText(soil.getPh());
+                    fertility.setText(soil.getFertility());
+                    vegetation.setText(soil.getComVeg());
+                    climate.setText(soil.getClimate());
+                    drainage.setText(soil.getDrainage());
+
+
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
 
 
         b1.setOnClickListener(new View.OnClickListener() {

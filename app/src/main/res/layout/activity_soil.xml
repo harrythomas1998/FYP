@@ -60,7 +60,7 @@
             android:id="@+id/soilType"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="soil type goes here"
+            android:text=""
             android:textSize="15sp"
             android:textColor="#fff"
             android:layout_weight="1"/>
@@ -89,7 +89,7 @@
             android:id="@+id/ph"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ph goes here"
+            android:text=""
             android:textSize="15sp"
             android:textColor="#fff"
             android:layout_weight="1"/>
@@ -118,7 +118,7 @@
             android:id="@+id/fertility"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="fertility goes here"
+            android:text=""
             android:textSize="15sp"
             android:textColor="#fff"
             android:layout_weight="1"/>
@@ -147,7 +147,7 @@
             android:id="@+id/vegetation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="common vegetation goes here"
+            android:text=""
             android:textSize="15sp"
             android:textColor="#fff"
             android:layout_weight="1"/>
@@ -176,7 +176,7 @@
             android:id="@+id/climate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="climate goes here"
+            android:text=""
             android:textSize="15sp"
             android:textColor="#fff"
             android:layout_weight="1"/>
@@ -205,7 +205,7 @@
             android:id="@+id/drainage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="drainage goes here"
+            android:text=""
             android:textSize="15sp"
             android:textColor="#fff"
             android:layout_weight="1"/>

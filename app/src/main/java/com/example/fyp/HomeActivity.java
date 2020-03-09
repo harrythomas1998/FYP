@@ -1,10 +1,22 @@
 package com.example.fyp;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.PopupWindow;
+
 import com.google.firebase.auth.FirebaseAuth;
 
 
@@ -16,6 +28,10 @@ public class HomeActivity extends AppCompatActivity {
     Button myGarden;
     Button myJobs;
     Button forum;
+    Button closePopup;
+    ImageView info;
+
+    private Context mContext;
 
 
     @Override
@@ -28,6 +44,20 @@ public class HomeActivity extends AppCompatActivity {
         myGarden = findViewById(R.id.menuButton1);
         myJobs = findViewById(R.id.menuButton5);
         forum = findViewById(R.id.menuButton4);
+
+
+        info = findViewById(R.id.info);
+        mContext = getApplicationContext();
+
+        info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Popup popUpClass = new Popup();
+                popUpClass.showPopupWindow(v);
+
+            }
+        });
 
 
         logOut.setOnClickListener(new View.OnClickListener() {

@@ -10,6 +10,13 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
+
+import com.example.fyp.Objects.SoilType;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,17 +24,23 @@ import java.util.List;
 public class FindSoilType extends AppCompatActivity {
 
 
-    Spinner s1, s2;
-    Button b2;
+    private Spinner s1, s2;
+    private Button b2;
 
-    String name, ph, fertility, comVeg, climate, drainage;
+    private String name, ph, fertility, comVeg, climate, drainage;
 
+    private SoilType soilType;
+
+    private FirebaseUser mCurrentUser;
+    private FirebaseAuth firebaseAuth;
+    private DatabaseReference myRef;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_find_soil_type);
+
 
         s2 = findViewById(R.id.spinnerProvince);
         s1 = findViewById(R.id.spinnerArea);
@@ -165,12 +178,12 @@ public class FindSoilType extends AppCompatActivity {
                         || areaSelected.equals("Laois") || areaSelected.equals("Clare- North") || areaSelected.equals("Clare- East") || areaSelected.equals("Tipperary") || areaSelected.equals("Wicklow")
                         || areaSelected.equals("Carlow") || areaSelected.equals("Kilkenny") || areaSelected.equals("Limerick- East") || areaSelected.equals("Waterford") || areaSelected.equals("Cork")){
 
-                    name = "Brown Soil";
-                    ph = "Slightly Acidic";
-                    fertility = "High";
-                    comVeg = "Grassland, Woodland, Farmland";
-                    climate = "Humid";
-                    drainage = "Very Good";
+                    soilType.setName("Brown Soil");
+                    soilType.setPh("Slightly Acidic");
+                    soilType.setFertility("High");
+                    soilType.setComVeg("Grassland, Woodland, Farmland");
+                    soilType.setClimate("Humid");
+                    soilType.setDrainage("Very Good");
 
 
                 }
@@ -178,12 +191,12 @@ public class FindSoilType extends AppCompatActivity {
                         || areaSelected.equals("Offaly- East") || areaSelected.equals("Kildare- West") || areaSelected.equals("Laois- North-East") || areaSelected.equals("Wicklow- Central") || areaSelected.equals("Wexford- North-West")
                         || areaSelected.equals("Cork- South-West") || areaSelected.equals("Kerry- South")){
 
-                    name = "Peaty Soil";
-                    ph = "Strongly Acidic";
-                    fertility = "Poor";
-                    comVeg = "Bogland";
-                    climate = "Humid";
-                    drainage = "Poor";
+                    soilType.setName("Peaty Soil");
+                    soilType.setPh("Strongly Acidic");
+                    soilType.setFertility("Poor");
+                    soilType.setComVeg("Bogland");
+                    soilType.setClimate("Humid");
+                    soilType.setDrainage("Poor");
 
 
                 }
@@ -191,22 +204,22 @@ public class FindSoilType extends AppCompatActivity {
                 else if(areaSelected.equals("Leitrim") || areaSelected.equals("Cavan- North") || areaSelected.equals("Monaghan- North") || areaSelected.equals("Mayo- East") || areaSelected.equals("Roscommon- North") || areaSelected.equals("Clare- West") ||
                         areaSelected.equals("Clare- Central") || areaSelected.equals("Limerick- West") || areaSelected.equals("Kerry- North")){
 
-                    name = "Gley Soil";
-                    ph = "Acidic";
-                    fertility = "High";
-                    comVeg = "Bogland, Farmland";
-                    climate = "All Cliamtes";
-                    drainage = "Poor";
+                    soilType.setName("Gley Soil");
+                    soilType.setPh("Acidic");
+                    soilType.setFertility("High");
+                    soilType.setComVeg("Bogland, Farmland");
+                    soilType.setClimate("All Cliamtes");
+                    soilType.setDrainage("Poor");
 
                 }
                 else{
 
-                    name = "Podzol Soil";
-                    ph = "Strongly Acidic";
-                    fertility = "Poor";
-                    comVeg = "Coniferous Woodland, Grazing";
-                    climate = "Humid";
-                    drainage = "Poor";
+                    soilType.setName("Podzol Soil");
+                    soilType.setPh("Strongly Acidic");
+                    soilType.setFertility("Poor");
+                    soilType.setComVeg("Coniferous Woodland, Grazing");
+                    soilType.setClimate("Humid");
+                    soilType.setDrainage("Poor");
                 }
             }
 
@@ -216,20 +229,23 @@ public class FindSoilType extends AppCompatActivity {
             }
         });
 
+        soilType = new SoilType();
+
+        firebaseAuth = FirebaseAuth.getInstance();
+        mCurrentUser = firebaseAuth.getCurrentUser();
+        myRef = FirebaseDatabase.getInstance().getReference().child("SoilType").child(mCurrentUser.getUid());
 
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
 
-                Intent intent= new Intent(FindSoilType.this, SoilActivity.class);
+                myRef.push().setValue(soilType);
 
-                intent.putExtra("NAME", name);
-                intent.putExtra("PH", ph);
-                intent.putExtra("FERTILITY", fertility);
-                intent.putExtra("COMVEG", comVeg);
-                intent.putExtra("CLIMATE", climate);
-                intent.putExtra("DRAINAGE", drainage);
+                Toast.makeText(FindSoilType.this, "Job has been created", Toast.LENGTH_SHORT).show();
+
+
+                Intent intent= new Intent(FindSoilType.this, SoilActivity.class);
 
                 startActivity(intent);
             }

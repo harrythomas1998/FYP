@@ -9,6 +9,10 @@ public class SoilType {
     String climate;
     String drainage;
 
+
+    public SoilType() {
+    }
+
     public SoilType(String name, String ph, String fertility, String comVeg, String climate, String drainage) {
         this.name = name;
         this.ph = ph;
