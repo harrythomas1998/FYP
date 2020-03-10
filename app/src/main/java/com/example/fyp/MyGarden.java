@@ -48,7 +48,7 @@ public class MyGarden extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(MyGarden.this, ConifersActivity.class);
+                Intent i = new Intent(MyGarden.this, SelectPlantsMenu.class);
                 startActivity(i);
 
             }

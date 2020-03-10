@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background9"
+    android:orientation="vertical"
+    tools:context=".SelectPlantsMenu">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Select a Plant type..."
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <View
+        style="@style/Divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="60dp"/>
+
+    <Button
+        android:id="@+id/conifersButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="-Conifers"
+        android:textAlignment="viewStart"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:drawableEnd="@drawable/arrow2"/>
+
+    <View
+        style="@style/Divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="-2"
+        android:textAlignment="viewStart"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:drawableEnd="@drawable/arrow2"/>
+
+    <View
+        style="@style/Divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="-3"
+        android:textAlignment="viewStart"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:drawableEnd="@drawable/arrow2"/>
+
+    <View
+        style="@style/Divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableEnd="@drawable/arrow2"
+        android:text="-4"
+        android:textAlignment="viewStart"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <View
+        style="@style/Divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

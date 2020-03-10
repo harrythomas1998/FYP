@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".SelectPlantsMenu"></activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".ViewJob" />
         <activity android:name=".MyJobs" />
         <activity android:name=".JobActivity" />
