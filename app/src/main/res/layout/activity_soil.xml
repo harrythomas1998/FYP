@@ -221,7 +221,7 @@
         android:layout_width="150dp"
         android:layout_height="30dp"
         android:layout_gravity="center"
-        android:background="#8FD862"
+        android:background="#A0C676"
         android:text="Find My Soil Type"
         android:layout_marginTop="5dp"
         android:padding="5dp"/>

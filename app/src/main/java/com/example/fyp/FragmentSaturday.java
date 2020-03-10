@@ -8,20 +8,29 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-public class FragmentSaturday extends Fragment {
+import com.example.fyp.Adapters.WeatherAdapter;
+
+public class FragmentSaturday extends Fragment implements ArrayInterface {
 
     View v;
+    private RecyclerView recyclerView;
 
-    public FragmentSaturday(){
 
+    public FragmentSaturday() {
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-
         v = inflater.inflate(R.layout.saturday_fragment, container, false);
+        recyclerView = v.findViewById(R.id.saturday_recycler);
+        WeatherAdapter weatherAdapter = new WeatherAdapter(getContext(), saturdayData);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        recyclerView.setAdapter(weatherAdapter);
+        recyclerView.setHasFixedSize(true);
         return v;
     }
 }

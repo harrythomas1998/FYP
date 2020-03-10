@@ -3,10 +3,13 @@ package com.example.fyp;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager.widget.ViewPager;
+
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -27,6 +30,8 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.material.tabs.TabLayout;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -37,7 +42,7 @@ import java.util.ArrayList;
 import static android.Manifest.permission.ACCESS_FINE_LOCATION;
 
 
-public class MaintenancePlanner extends AppCompatActivity implements WeatherAdapter.OnItemClickListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
+public class MaintenancePlanner extends AppCompatActivity implements ArrayInterface, WeatherAdapter.OnItemClickListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
 
     public static final String WEATHER = "weather";
     public static final String TIME = "time";
@@ -59,13 +64,18 @@ public class MaintenancePlanner extends AppCompatActivity implements WeatherAdap
     private RecyclerView recyclerView;
     private WeatherAdapter weatherAdapter;
     private RequestQueue requestQueue;
-    private ArrayList<Weather> weatherData;
+
+    private TabLayout tabLayout;
+    private ViewPager viewPager;
+    private ViewPagerAdapter adapter;
+
+
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maintenance_planner);
 
-        weatherData = new ArrayList<>();
+
 
         googleApiClient = new GoogleApiClient.Builder(this)
                 .addConnectionCallbacks(this)
@@ -76,12 +86,26 @@ public class MaintenancePlanner extends AppCompatActivity implements WeatherAdap
 
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
 
-        recyclerView = findViewById(R.id.weather_recycler);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         requestQueue = Volley.newRequestQueue(this);
 
+        tabLayout = findViewById(R.id.tab_layout);
+        viewPager = findViewById(R.id.viewPager);
+        adapter = new ViewPagerAdapter(getSupportFragmentManager());
+
+        adapter.AddFragment(new FragmentMonday(), "Monday");
+        adapter.AddFragment(new FragmentTuesday(), "Tuesday");
+        adapter.AddFragment(new FragmentWednesday(), "Wednesday");
+        adapter.AddFragment(new FragmentThursday(), "Thursday");
+        adapter.AddFragment(new FragmentFriday(), "Friday");
+        adapter.AddFragment(new FragmentSaturday(), "Saturday");
+        adapter.AddFragment(new FragmentSunday(), "Sunday");
+
+
+        viewPager.setAdapter(adapter);
+        tabLayout.setupWithViewPager(viewPager);
+
+        ActionBar actionBar = getSupportActionBar();
 
     }
 
@@ -127,15 +151,40 @@ public class MaintenancePlanner extends AppCompatActivity implements WeatherAdap
 
                                 String weatherType = b.getString("description");
 
-                                weatherData.add(new Weather(weatherType, time, temp, reformattedDate));
+
+                                if(reformattedDate.contains("Mon")){
+
+                                    mondayData.add(new Weather(weatherType, time, temp, reformattedDate));
+                                }
+                                else if(reformattedDate.contains("Tue")){
+
+                                    tuesdayData.add(new Weather(weatherType, time, temp, reformattedDate));
+                                }
+                                else if(reformattedDate.contains("Wed")){
+
+                                    wednesdayData.add(new Weather(weatherType, time, temp, reformattedDate));
+                                }
+                                else if(reformattedDate.contains("Thu")){
+
+                                    thursdayData.add(new Weather(weatherType, time, temp, reformattedDate));
+                                }
+                                else if(reformattedDate.contains("Fri")){
+
+                                    fridayData.add(new Weather(weatherType, time, temp, reformattedDate));
+                                }
+                                else if(reformattedDate.contains("Sat")){
+
+                                    saturdayData.add(new Weather(weatherType, time, temp, reformattedDate));
+                                }
+                                else if(reformattedDate.contains("Sun")){
+
+                                    sundayData.add(new Weather(weatherType, time, temp, reformattedDate));
+                                }
 
 
 
                             }
 
-                            weatherAdapter = new WeatherAdapter(MaintenancePlanner.this, weatherData);
-                            recyclerView.setAdapter(weatherAdapter);
-                            weatherAdapter.setOnItemClickListener(MaintenancePlanner.this);
 
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -236,7 +285,7 @@ public class MaintenancePlanner extends AppCompatActivity implements WeatherAdap
     public void onItemClick(int position) {
 
         Intent i = new Intent(this, JobActivity.class);
-        Weather clickedWeatherItem = weatherData.get(position);
+        Weather clickedWeatherItem = mondayData.get(position);
 
         i.putExtra(WEATHER, clickedWeatherItem.getWeatherType());
         i.putExtra(TIME, clickedWeatherItem.getTime());

@@ -13,31 +13,31 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.fyp.Adapters.WeatherAdapter;
-import com.example.fyp.Objects.Weather;
-
-import java.util.ArrayList;
 
 
-public class FragmentMonday extends Fragment {
+
+
+
+public class FragmentMonday extends Fragment implements ArrayInterface {
 
     View v;
     private RecyclerView recyclerView;
-    private ArrayList<Weather> lstWeather = new ArrayList<>();
 
 
+    public FragmentMonday(){
 
-    public FragmentMonday( ArrayList<Weather> weatherData){
-        lstWeather = weatherData;
     }
+
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         v = inflater.inflate(R.layout.monday_fragment, container, false);
         recyclerView = v.findViewById(R.id.monday_recycler);
-        WeatherAdapter weatherAdapter = new WeatherAdapter(getContext(), lstWeather);
+        WeatherAdapter weatherAdapter = new WeatherAdapter(getContext(), mondayData);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(weatherAdapter);
+        recyclerView.setHasFixedSize(true);
         return v;
     }
 

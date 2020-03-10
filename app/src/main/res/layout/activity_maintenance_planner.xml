@@ -9,21 +9,24 @@
      android:background="@drawable/background9">
 
 
-    <TextView
+    <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select a time..."
-        android:textSize="35sp"
-        android:textColor="#FFF"
-        android:textStyle="bold"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginBottom="15dp"/>
+        android:background="#69A730"
+        app:tabMode="scrollable"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/colorAccent"
+        android:id="@+id/tab_layout"
+        app:tabTextColor="#fff">
+
+    </com.google.android.material.tabs.TabLayout>
 
 
-    <androidx.recyclerview.widget.RecyclerView
+    <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/weather_recycler"/>
+        android:id="@+id/viewPager">
+
+    </androidx.viewpager.widget.ViewPager>
 
 </LinearLayout>
