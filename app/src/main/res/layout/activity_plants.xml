@@ -8,7 +8,10 @@
     android:background="@drawable/background9"
     tools:context=".PlantsActivity">
 
+
+
     <ImageView
+        android:id="@+id/plant_view_image"
         android:layout_width="match_parent"
         android:layout_height="230dp"
         android:layout_marginLeft="50dp"
@@ -17,6 +20,7 @@
         android:padding="5dp"/>
 
     <TextView
+        android:id="@+id/plant_view_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="25sp"
@@ -27,14 +31,7 @@
         android:gravity="center"/>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:layout_marginTop="50dp"
-        android:textColor="#FFF"
-        android:text="Sunlight" />
-
-    <TextView
+        android:id="@+id/plant_view_position"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="18sp"
@@ -42,6 +39,7 @@
         android:textColor="#FFF"
             android:text="Position" />
     <TextView
+        android:id="@+id/plant_view_soil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="18sp"
@@ -50,6 +48,7 @@
         android:text="Soil" />
 
     <TextView
+        android:id="@+id/plant_view_growth"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="18sp"
@@ -58,6 +57,7 @@
         android:text="Rate of Growth" />
 
     <TextView
+        android:id="@+id/plant_view_care"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="18sp"

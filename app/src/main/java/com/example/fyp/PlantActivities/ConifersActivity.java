@@ -34,7 +34,7 @@ public class ConifersActivity extends AppCompatActivity implements PlantAdapter.
     public static final String IMAGE = "image";
     public static final String POSITION = "position";
     public static final String SOIL = "soil";
-    public static final String GROWRTH = "growth";
+    public static final String GROWTH = "growth";
     public static final String CARE = "care";
 
 
@@ -85,11 +85,12 @@ public class ConifersActivity extends AppCompatActivity implements PlantAdapter.
                 String care = jo_inside.getString("care");
 
 
-                list.add(new Plant(name, image, position, soil, growth, care));
+                list.add(new Plant(name, soil, care, position, growth, image));
 
 
                 adapter = new PlantAdapter(ConifersActivity.this, list);
                 recyclerView.setAdapter(adapter);
+                adapter.setOnItemClickListener(ConifersActivity.this);
 
             }
 
@@ -113,7 +114,7 @@ public class ConifersActivity extends AppCompatActivity implements PlantAdapter.
         i.putExtra(IMAGE, clickedWeatherItem.getPicture());
         i.putExtra(POSITION, clickedWeatherItem.getPosition());
         i.putExtra(SOIL, clickedWeatherItem.getSoil());
-        i.putExtra(GROWRTH, clickedWeatherItem.getGrowth());
+        i.putExtra(GROWTH, clickedWeatherItem.getGrowth());
         i.putExtra(CARE, clickedWeatherItem.getCare());
 
 

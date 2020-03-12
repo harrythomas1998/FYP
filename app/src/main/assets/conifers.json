@@ -3,7 +3,7 @@
   "conifers": [
     {
       "name": "Rocky Mountain Juniper",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/62/pl2000036298.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/62/pl2000036298.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Any Well-drained Soil",
       "growth": "Rate Of Growth: Average",
@@ -11,7 +11,7 @@
     },
     {
       "name": "Monterey Cypress",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/83/pl2000038351.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/83/pl2000038351.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -27,7 +27,7 @@
     },
     {
       "name": "English Yew",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/72/pl2000037288.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/72/pl2000037288.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Any Fertile, Well-drained Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -35,7 +35,7 @@
     },
     {
       "name": "Sawara Cypress 'Blue Moon'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/02/49/pl2000024924.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/02/49/pl2000024924.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -43,7 +43,7 @@
     },
     {
       "name": "Flaky Juniperus",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/00/00/00/17/pl0000001783.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/00/00/00/17/pl0000001783.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Lightly Dappled Shade",
       "soil": "Soil: Any Well-drained Soil",
       "growth": "Rate Of Growth: Average",
@@ -51,7 +51,7 @@
     },
     {
       "name": "Juniper 'Repanda'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037715.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037715.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Any Well-drained Soil",
       "growth": "Rate Of Growth: Average",
@@ -59,7 +59,7 @@
     },
     {
       "name": "English Yew",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/00/00/00/62/pl0000006230.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/00/00/00/62/pl0000006230.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Any Fertile, Well-drained Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -67,7 +67,7 @@
     },
     {
       "name": "White Cedar",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/76/pl2000037606.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/76/pl2000037606.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Deep, Moist, Well-drained Soil",
       "growth": "Rate Of Growth: Average",
@@ -75,7 +75,7 @@
     },
     {
       "name": "Japanese Cedar 'Vilmoriniana'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037711.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037711.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -83,7 +83,7 @@
     },
     {
       "name": "Dwarf Mountain Pine 'Wintergold'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037728.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037728.jpg?width=940&height=940",
       "position": "Position: Full Sun",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -91,7 +91,7 @@
     },
     {
       "name": "Pine",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037729.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037729.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -99,7 +99,7 @@
     },
     {
       "name": "Chinese Golden Cedar - ( Syn Thuja Orientalis Aurea Nana )",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/80/pl2000038042.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/80/pl2000038042.jpg?width=940&height=940",
       "position": "Position: Full Sun",
       "soil": "Soil: Deep, Moist, Well-drained Soil",
       "growth": "Rate Of Growth: Average",
@@ -107,7 +107,7 @@
     },
     {
       "name": "Lawson's Cypress�'ellwoods Pillar'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037700.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037700.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -115,7 +115,7 @@
     },
     {
       "name": "Nordmann Fir",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/78/pl2000037846.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/78/pl2000037846.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -123,7 +123,7 @@
     },
     {
       "name": "Western Red Cedar",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037740.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037740.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Average",
@@ -131,7 +131,7 @@
     },
     {
       "name": "Lawson's Cypress 'Snow White'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037704.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037704.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -139,7 +139,7 @@
     },
     {
       "name": "Norway Spruce 'Little Gem'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/78/pl2000037833.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/78/pl2000037833.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -147,7 +147,7 @@
     },
     {
       "name": "Grannies' Ringlets",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037710.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037710.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -155,7 +155,7 @@
     },
     {
       "name": "White Spruce 'Alberta Globe'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037723.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037723.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -163,7 +163,7 @@
     },
     {
       "name": "Monterey Cypress",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037712.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037712.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -171,7 +171,7 @@
     },
     {
       "name": "Western Red Cedar",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/02/12/pl2000021274.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/02/12/pl2000021274.jpg?width=940&height=940",
       "position": "Position: Full Sun",
       "soil": "Soil: Deep, Moist, Well-drained Soil",
       "growth": "Rate Of Growth: Average",
@@ -179,7 +179,7 @@
     },
     {
       "name": "White Cedar",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037735.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037735.jpg?width=940&height=940",
       "position": "Position: Full Sun To Partial Shade",
       "soil": "Soil: Deep, Moist, Well-drained Soil",
       "growth": "Rate Of Growth: Slow",
@@ -187,7 +187,7 @@
     },
     {
       "name": "English Yew",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037734.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037734.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Any Fertile, Well-drained Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -195,7 +195,7 @@
     },
     {
       "name": "Creeping Juniper Golden Carpet",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/02/08/pl2000020867.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/02/08/pl2000020867.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Any Well-drained Soil",
       "growth": "Rate Of Growth: Slow To Average",
@@ -203,7 +203,7 @@
     },
     {
       "name": "Alpine Totara",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037730.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037730.jpg?width=940&height=940",
       "position": "Position: Full Sun",
       "soil": "Soil: Moist, Well-drained Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -211,7 +211,7 @@
     },
     {
       "name": "White Cedar 'Danica'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037736.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037736.jpg?width=940&height=940",
       "position": "Position: Full Sun To Partial Shade",
       "soil": "Soil: Deep, Moist, Well-drained Soil",
       "growth": "Rate Of Growth: Slow",
@@ -219,7 +219,7 @@
     },
     {
       "name": "Rocky Mountain Juniper",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/02/08/pl2000020864.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/02/08/pl2000020864.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Any Well-drained Soil",
       "growth": "Rate Of Growth: Average",
@@ -227,7 +227,7 @@
     },
     {
       "name": "Mountain Pine",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/80/pl2000038033.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/80/pl2000038033.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -235,7 +235,7 @@
     },
     {
       "name": "White Cedar",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/76/pl2000037605.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/76/pl2000037605.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Deep, Moist, Well-drained Soil",
       "growth": "Rate Of Growth: Average",
@@ -243,7 +243,7 @@
     },
     {
       "name": "Colorado Spruce",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037724.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037724.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -251,7 +251,7 @@
     },
     {
       "name": "Golden Deodar Cedar",
-      "image-src": "",
+      "image-src": "https://www.google.com/search?q=golden+deodar+cedar&rlz=1C5CHFA_enIE887IE891&sxsrf=ALeKk03q377dtcBL4RkKBUUsFlZsGl9v0A:1584019855496&source=lnms&tbm=isch&sa=X&ved=2ahUKEwii-rbmhZXoAhXJUxUIHdcJC7gQ_AUoAXoECBUQAw#imgrc=o18FhxnhTOfy3M",
       "position": "Position: Full Sun",
       "soil": "Soil: Well-drained Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -259,7 +259,7 @@
     },
     {
       "name": "Lawson's Cypress 'Minima Glauca'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/76/pl2000037699.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/76/pl2000037699.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -267,7 +267,7 @@
     },
     {
       "name": "Colorado Spruce 'Hoopsii'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037725.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037725.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -275,7 +275,7 @@
     },
     {
       "name": "Hinoki Cypress 'Nana Gracilis'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037707.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037707.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -283,7 +283,7 @@
     },
     {
       "name": "English Yew",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/80/pl2000038031.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/80/pl2000038031.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -291,7 +291,7 @@
     },
     {
       "name": "Sawara Cypress 'Filifera Nana'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037708.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037708.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -299,7 +299,7 @@
     },
     {
       "name": "Golden Irish Yew",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/72/pl2000037287.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/72/pl2000037287.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Any Fertile, Well-drained Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -307,7 +307,7 @@
     },
     {
       "name": "Abies",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/78/pl2000037831.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/78/pl2000037831.jpg?width=940&height=940",
       "position": "Position: Full Sun",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -315,7 +315,7 @@
     },
     {
       "name": "English Yew",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/02/48/pl2000024896.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/02/48/pl2000024896.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Any Fertile, Well-drained Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -323,7 +323,7 @@
     },
     {
       "name": "White Cedar",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/02/08/pl2000020865.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/02/08/pl2000020865.jpg?width=940&height=940",
       "position": "Position: Full Sun",
       "soil": "Soil: Deep, Moist, Well-drained Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -331,7 +331,7 @@
     },
     {
       "name": "Monkey Puzzle",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/00/00/00/70/pl0000007011.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/00/00/00/70/pl0000007011.jpg?width=940&height=940",
       "position": "Position: Full Sun",
       "soil": "Soil: Fertile, Moist But Well-drained Soil",
       "growth": "Rate Of Growth:  Slow",
@@ -339,7 +339,7 @@
     },
     {
       "name": "White Cedar 'Rheingold'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037738.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037738.jpg?width=940&height=940",
       "position": "Position: Full Sun To Partial Shade",
       "soil": "Soil: Deep, Moist, Well-drained Soil",
       "growth": "Rate Of Growth: Slow",
@@ -347,7 +347,7 @@
     },
     {
       "name": "Lawson's Cypress 'Minima Aurea'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037702.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037702.jpg?width=940&height=940",
       "position": "Position: Full Sun",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow",
@@ -355,7 +355,7 @@
     },
     {
       "name": "Alberta Spruce 'Conica'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037721.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037721.jpg?width=940&height=940",
       "position": "Position: Full Sun",
       "soil": "Soil: Deep, Moist, Well-drained, Neutral To Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -363,7 +363,7 @@
     },
     {
       "name": "English Yew",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/01/44/pl2000014490.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/01/44/pl2000014490.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Any Fertile, Well-drained Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -371,7 +371,7 @@
     },
     {
       "name": "Juniper 'Old Gold'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/02/08/pl2000020869.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/02/08/pl2000020869.jpg?width=940&height=940",
       "position": "Position: Full Sun",
       "soil": "Soil: Any Well-drained Soil",
       "growth": "Rate Of Growth: Average",
@@ -379,7 +379,7 @@
     },
     {
       "name": "Maidenhair Tree",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/00/00/00/17/pl0000001759.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/00/00/00/17/pl0000001759.jpg?width=940&height=940",
       "position": "Position: Sun",
       "soil": "Soil: Fertile, Well-drained Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -387,7 +387,7 @@
     },
     {
       "name": "White Spruce 'Daisy's White'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037722.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037722.jpg?width=940&height=940",
       "position": "Position: Full Sun",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -395,7 +395,7 @@
     },
     {
       "name": "Lawson's Cypress�'ellwoods Pillar'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037701.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037701.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -403,7 +403,7 @@
     },
     {
       "name": "White Cedar",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037749.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037749.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Deep, Moist, Well-drained Soil",
       "growth": "Rate Of Growth: Average",
@@ -411,7 +411,7 @@
     },
     {
       "name": "White Cedar 'Danica'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/00/00/00/62/pl0000006236.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/00/00/00/62/pl0000006236.jpg?width=940&height=940",
       "position": "Position: Full Sun To Partial Shade",
       "soil": "Soil: Deep, Moist, Well-drained Soil",
       "growth": "Rate Of Growth: Slow",
@@ -419,7 +419,7 @@
     },
     {
       "name": "Chinese Juniper 'Stricta'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037714.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037714.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -427,7 +427,7 @@
     },
     {
       "name": "Flaky Juniperus 'Blue Star'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037718.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037718.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Lightly Dappled Shade",
       "soil": "Soil: Any Well-drained Soil",
       "growth": "Rate Of Growth: Average",
@@ -435,7 +435,7 @@
     },
     {
       "name": "Corsican Pine",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/80/pl2000038034.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/80/pl2000038034.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -443,7 +443,7 @@
     },
     {
       "name": "Lawson's Cypress 'Ivonne'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037705.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037705.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -451,7 +451,7 @@
     },
     {
       "name": "Golden Spanish Fir",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/80/pl2000038038.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/80/pl2000038038.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -459,7 +459,7 @@
     },
     {
       "name": "Japanese Cedar 'Sekkan-sugi'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037709.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037709.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Tolerates Most, But Prefers A Deep, Fertile, Moist But Freely Draining",
       "growth": "Rate Of Growth: Quite Slow",
@@ -467,7 +467,7 @@
     },
     {
       "name": "Scots Pine",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/80/pl2000038032.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/80/pl2000038032.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Any Well-drained Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -475,7 +475,7 @@
     },
     {
       "name": "Korean Fir",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/80/pl2000038027.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/80/pl2000038027.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -483,7 +483,7 @@
     },
     {
       "name": "Chinese Golden Cedar - ( Syn Thuja Orientalis Aurea Nana )",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/72/pl2000037289.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/72/pl2000037289.jpg?width=940&height=940",
       "position": "Position: Full Sun",
       "soil": "Soil: Deep, Moist, Well-drained Soil",
       "growth": "Rate Of Growth: Average",
@@ -491,7 +491,7 @@
     },
     {
       "name": "Sawara Cypress 'Sungold'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/80/pl2000038036.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/80/pl2000038036.jpg?width=940&height=940",
       "position": "Position: Full Sun",
       "soil": "Soil: Prefers Moist, Well-drained Neutral To Slightly Acid Soil, But Will Tolerate Most (Including Chalk)",
       "growth": "Rate Of Growth: Slow-growing",
@@ -499,7 +499,7 @@
     },
     {
       "name": "Yew 'David'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037733.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037733.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -507,7 +507,7 @@
     },
     {
       "name": "Common Yew 'Summergold'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/79/pl2000037969.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/79/pl2000037969.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Any Fertile, Well-drained Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -515,7 +515,7 @@
     },
     {
       "name": "Juniper Green Carpet",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037716.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037716.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Lightly Dappled Shade",
       "soil": "Soil: Any Well-drained Soil",
       "growth": "Rate Of Growth: Slow",
@@ -523,7 +523,7 @@
     },
     {
       "name": "Creeping Juniper",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/80/pl2000038029.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/80/pl2000038029.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -531,7 +531,7 @@
     },
     {
       "name": "Lawson's Cypress 'Pembury Blue'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037703.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037703.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -539,7 +539,7 @@
     },
     {
       "name": "Japanese Cedar",
-      "image-src": "",
+      "image-src": "https://www.google.com/search?q=Japanese+Cedar&rlz=1C5CHFA_enIE887IE891&sxsrf=ALeKk01Jq0RiNJOu5Hhg-xe2tvAAn3yxJg:1584019950912&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj93PaThpXoAhWiunEKHYfxAT0Q_AUoAXoECBwQAw#imgrc=rDrhwPkFTWf4mM",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -547,7 +547,7 @@
     },
     {
       "name": "Dwarf Mountain Pine 'Mops'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037727.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037727.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -555,7 +555,7 @@
     },
     {
       "name": "Juniper 'Green Carpet'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/02/50/pl2000025093_card2_lg.jpg",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/02/50/pl2000025093_card2_lg.jpg",
       "position": "Position: Full Sun Or Lightly Dappled Shade",
       "soil": "Soil: Any Well-drained Soil",
       "growth": "Rate Of Growth: Slow",
@@ -563,7 +563,7 @@
     },
     {
       "name": "Lawson's Cypress 'Pembury Blue'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/83/pl2000038350.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/83/pl2000038350.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -571,7 +571,7 @@
     },
     {
       "name": "Maidenhair Tree",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037713.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037713.jpg?width=940&height=940",
       "position": "Position: Sun",
       "soil": "Soil: Fertile, Well-drained Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -579,7 +579,7 @@
     },
     {
       "name": "Blue Atlas Cedar 'Glauca'",
-      "image-src": "",
+      "image-src": "https://www.google.com/search?q=Blue+Atlas+Cedar+%27Glauca%27&rlz=1C5CHFA_enIE887IE891&sxsrf=ALeKk01JIxrC_MeGQem21fvF04etj8aY7w:1584019982372&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj_4_aihpXoAhVaURUIHTqQAkwQ_AUoAXoECBMQAw#imgrc=voGdGY04mg41rM",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -587,7 +587,7 @@
     },
     {
       "name": "Thujopsis",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037741.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037741.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -595,7 +595,7 @@
     },
     {
       "name": "Siberian Carpet Cypress",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/78/pl2000037832.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/78/pl2000037832.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -603,7 +603,7 @@
     },
     {
       "name": "Lawson's Cypress 'Ivonne'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037706.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037706.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -611,7 +611,7 @@
     },
     {
       "name": "Alpine Totara",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037731.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037731.jpg?width=940&height=940",
       "position": "Position: Full Sun",
       "soil": "Soil: Moist, Well-drained Neutral To Slightly Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -619,7 +619,7 @@
     },
     {
       "name": "Alberta Spruce 'Conica'",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/00/00/00/18/pl0000001806.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/00/00/00/18/pl0000001806.jpg?width=940&height=940",
       "position": "Position: Full Sun",
       "soil": "Soil: Deep, Moist, Well-drained, Neutral To Acid Soil",
       "growth": "Rate Of Growth: Slow-growing",
@@ -627,7 +627,7 @@
     },
     {
       "name": "Rocky Mountain Juniper",
-      "image-src": "//Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037717.jpg?width=940&height=940",
+      "image-src": "http://Img.crocdn.co.uk/images/products2/pl/20/00/03/77/pl2000037717.jpg?width=940&height=940",
       "position": "Position: Full Sun Or Partial Shade",
       "soil": "Soil: Any Well-drained Soil",
       "growth": "Rate Of Growth: Average",

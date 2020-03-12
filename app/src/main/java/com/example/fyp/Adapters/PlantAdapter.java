@@ -80,7 +80,7 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
         care = currentItem.getCare();
 
         holder.name.setText(name);
-        Picasso.get().load(image).resize(130, 130).into(holder.plantPic);
+        Picasso.get().load(image).fit().into(holder.plantPic);
 
 
     }
