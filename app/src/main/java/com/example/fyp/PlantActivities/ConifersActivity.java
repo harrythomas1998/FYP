@@ -1,23 +1,18 @@
-package com.example.fyp.plants;
+package com.example.fyp.PlantActivities;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.example.fyp.Adapters.PlantAdapter;
 import com.example.fyp.Objects.Plant;
+import com.example.fyp.PlantsActivity;
 import com.example.fyp.R;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -27,15 +22,21 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
-import java.util.HashMap;
 
-public class ConifersActivity extends AppCompatActivity {
+public class ConifersActivity extends AppCompatActivity implements PlantAdapter.OnItemClickListener {
 
-    DatabaseReference reference;
     RecyclerView recyclerView;
     ArrayList<Plant> list = new ArrayList<>();
     PlantAdapter adapter;
     Button b1;
+
+    public static final String NAME = "namew";
+    public static final String IMAGE = "image";
+    public static final String POSITION = "position";
+    public static final String SOIL = "soil";
+    public static final String GROWRTH = "growth";
+    public static final String CARE = "care";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,28 +49,6 @@ public class ConifersActivity extends AppCompatActivity {
 
 
         b1 = findViewById(R.id.addButton);
-
-        /*reference = FirebaseDatabase.getInstance().getReference().child("conifers");
-        reference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-
-                for(DataSnapshot snapshot1: dataSnapshot.getChildren()){
-
-                    Plant p = snapshot1.getValue(Plant.class);
-                    list.add(p);
-                }
-
-                adapter = new PlantAdapter(ConifersActivity.this, list);
-                recyclerView.setAdapter(adapter);
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        }); */
 
 
         loadJSONFromAsset();
@@ -121,5 +100,25 @@ public class ConifersActivity extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+    }
+
+
+    @Override
+    public void onItemClick(int position) {
+
+        Intent i = new Intent(this, PlantsActivity.class);
+        Plant clickedWeatherItem = list.get(position);
+
+        i.putExtra(NAME, clickedWeatherItem.getName());
+        i.putExtra(IMAGE, clickedWeatherItem.getPicture());
+        i.putExtra(POSITION, clickedWeatherItem.getPosition());
+        i.putExtra(SOIL, clickedWeatherItem.getSoil());
+        i.putExtra(GROWRTH, clickedWeatherItem.getGrowth());
+        i.putExtra(CARE, clickedWeatherItem.getCare());
+
+
+        startActivity(i);
+
+
     }
 }

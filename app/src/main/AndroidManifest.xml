@@ -18,7 +18,7 @@
         <activity android:name=".ViewJob" />
         <activity android:name=".MyJobs" />
         <activity android:name=".JobActivity" />
-        <activity android:name=".plants.ConifersActivity" />
+        <activity android:name=".PlantActivities.ConifersActivity" />
         <activity android:name=".PlantsActivity" />
         <activity android:name=".FindSoilType" />
         <activity android:name=".RegisterActivity" />

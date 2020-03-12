@@ -27,7 +27,7 @@ public class JobAdapter extends RecyclerView.Adapter<JobAdapter.Viewholder> {
         void onItemClick(int position);
     }
 
-    public void setOnItemClickListener(JobAdapter.OnItemClickListener listener){
+    public void setOnItemClickListener(OnItemClickListener listener){
 
         mListener = listener;
     }

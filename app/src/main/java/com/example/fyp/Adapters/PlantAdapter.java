@@ -32,6 +32,26 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
 
     Context mContext;
     ArrayList<Plant> mPlants;
+    private OnItemClickListener mListener;
+
+    String name;
+    String image;
+    String pos;
+    String soil;
+    String growth;
+    String care;
+
+
+    public interface OnItemClickListener{
+
+        void onItemClick(int position);
+    }
+
+    public void setOnItemClickListener(OnItemClickListener listener){
+
+        mListener = listener;
+    }
+
 
 
     public PlantAdapter(Context context, ArrayList<Plant> plants){
@@ -52,17 +72,15 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
 
         Plant currentItem = mPlants.get(position);
 
-        String name = currentItem.getName();
-        String image = currentItem.getPicture();
+        name = currentItem.getName();
+        image = currentItem.getPicture();
+        pos = currentItem.getPosition();
+        soil = currentItem.getSoil();
+        growth = currentItem.getGrowth();
+        care = currentItem.getCare();
 
         holder.name.setText(name);
-        //Picasso.get().load(image).resize(130, 130).into(holder.plantPic);
-
-        holder.plantPic.setImageResource(R.drawable.grass);
-        new DownloadImageTask(holder.plantPic).execute(image);
-
-
-
+        Picasso.get().load(image).resize(130, 130).into(holder.plantPic);
 
 
     }
@@ -83,32 +101,27 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
             name = itemView.findViewById(R.id.name);
             plantPic = itemView.findViewById(R.id.plantPic);
 
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    if(mListener !=null){
+
+                        int position = getAdapterPosition();
+
+                        if(position != RecyclerView.NO_POSITION){
+
+                            mListener.onItemClick(position);
+                        }
+                    }
+                }
+            });
+
         }
     }
 
-    private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
-        ImageView bmImage;
 
-        public DownloadImageTask(ImageView bmImage) {
-            this.bmImage = bmImage;
-        }
-        protected Bitmap doInBackground(String... urls) {
-            String urldisplay = urls[0];
-            Bitmap mIcon = null;
-            try {
-                InputStream in = new java.net.URL(urldisplay).openStream();
-                mIcon = BitmapFactory.decodeStream(in);
-            } catch (Exception e) {
-                Log.e("Error", e.getMessage());
-                e.printStackTrace();
-            }
-            return mIcon;
-        }
-
-        protected void onPostExecute(Bitmap result) {
-            bmImage.setImageBitmap(result);
-        }
-    }
 
 
 

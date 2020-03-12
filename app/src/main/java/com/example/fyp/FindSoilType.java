@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -27,7 +29,6 @@ public class FindSoilType extends AppCompatActivity {
     private Spinner s1, s2;
     private Button b2;
 
-    private String name, ph, fertility, comVeg, climate, drainage;
 
     private SoilType soilType;
 
@@ -40,6 +41,13 @@ public class FindSoilType extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_find_soil_type);
+
+        if (android.os.Build.VERSION.SDK_INT >= 21) {
+            Window window = this.getWindow();
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            window.setStatusBarColor(this.getResources().getColor(R.color.statusBar));
+        }
 
 
         s2 = findViewById(R.id.spinnerProvince);
@@ -242,7 +250,7 @@ public class FindSoilType extends AppCompatActivity {
 
                 myRef.push().setValue(soilType);
 
-                Toast.makeText(FindSoilType.this, "Job has been created", Toast.LENGTH_SHORT).show();
+
 
 
                 Intent intent= new Intent(FindSoilType.this, SoilActivity.class);

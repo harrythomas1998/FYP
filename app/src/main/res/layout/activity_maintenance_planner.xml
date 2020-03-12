@@ -9,6 +9,16 @@
      android:background="@drawable/background9">
 
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#69A730"
+        android:text=" Select a Time..."
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:textStyle="bold"/>
+
+
     <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,9 +27,7 @@
         app:tabGravity="fill"
         app:tabIndicatorColor="@color/colorAccent"
         android:id="@+id/tab_layout"
-        app:tabTextColor="#fff">
-
-    </com.google.android.material.tabs.TabLayout>
+        app:tabTextColor="#fff"/>
 
 
     <androidx.viewpager.widget.ViewPager

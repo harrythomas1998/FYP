@@ -1,4 +1,4 @@
-package com.example.fyp;
+package com.example.fyp.Adapters;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;

@@ -13,15 +13,18 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.fyp.Adapters.WeatherAdapter;
+import com.example.fyp.Objects.Weather;
 
 
-
-
-
-public class FragmentMonday extends Fragment implements ArrayInterface {
+public class FragmentMonday extends Fragment implements ArrayInterface, WeatherAdapter.OnItemClickListener {
 
     View v;
     private RecyclerView recyclerView;
+
+    public static final String WEATHER = "weather";
+    public static final String TIME = "time";
+    public static final String DATE = "date";
+    public static final String TEMP = "temp";
 
 
     public FragmentMonday(){
@@ -37,8 +40,25 @@ public class FragmentMonday extends Fragment implements ArrayInterface {
         WeatherAdapter weatherAdapter = new WeatherAdapter(getContext(), mondayData);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(weatherAdapter);
+        weatherAdapter.setOnItemClickListener(FragmentMonday.this);
         recyclerView.setHasFixedSize(true);
         return v;
+    }
+
+    @Override
+    public void onItemClick(int position) {
+
+        Intent i = new Intent(getActivity(), JobActivity.class);
+        Weather clickedWeatherItem = mondayData.get(position);
+
+        i.putExtra(WEATHER, clickedWeatherItem.getWeatherType());
+        i.putExtra(TIME, clickedWeatherItem.getTime());
+        i.putExtra(DATE, clickedWeatherItem.getDate());
+        i.putExtra(TEMP, clickedWeatherItem.getTemperature());
+
+        startActivity(i);
+
+
     }
 
 

@@ -3,11 +3,8 @@ package com.example.fyp;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
@@ -15,6 +12,8 @@ import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -23,6 +22,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.fyp.Adapters.ViewPagerAdapter;
 import com.example.fyp.Adapters.WeatherAdapter;
 import com.example.fyp.Objects.Weather;
 import com.google.android.gms.common.ConnectionResult;
@@ -37,7 +37,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 
 import static android.Manifest.permission.ACCESS_FINE_LOCATION;
 
@@ -60,9 +59,6 @@ public class MaintenancePlanner extends AppCompatActivity implements ArrayInterf
     SimpleDateFormat myFormat = new SimpleDateFormat("EEE, dd/MM/yyyy");
     SimpleDateFormat fromUser = new SimpleDateFormat("yyyy-MM-dd");
 
-
-    private RecyclerView recyclerView;
-    private WeatherAdapter weatherAdapter;
     private RequestQueue requestQueue;
 
     private TabLayout tabLayout;
@@ -75,6 +71,20 @@ public class MaintenancePlanner extends AppCompatActivity implements ArrayInterf
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maintenance_planner);
 
+        if (android.os.Build.VERSION.SDK_INT >= 21) {
+            Window window = this.getWindow();
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            window.setStatusBarColor(this.getResources().getColor(R.color.statusBar));
+        }
+
+        mondayData.clear();
+        tuesdayData.clear();
+        wednesdayData.clear();
+        thursdayData.clear();
+        fridayData.clear();
+        saturdayData.clear();
+        sundayData.clear();
 
 
         googleApiClient = new GoogleApiClient.Builder(this)
@@ -101,11 +111,9 @@ public class MaintenancePlanner extends AppCompatActivity implements ArrayInterf
         adapter.AddFragment(new FragmentSaturday(), "Saturday");
         adapter.AddFragment(new FragmentSunday(), "Sunday");
 
-
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
 
-        ActionBar actionBar = getSupportActionBar();
 
     }
 
@@ -181,10 +189,12 @@ public class MaintenancePlanner extends AppCompatActivity implements ArrayInterf
                                     sundayData.add(new Weather(weatherType, time, temp, reformattedDate));
                                 }
 
+                                else{
 
+                                    Toast.makeText(MaintenancePlanner.this, "No data to display", Toast.LENGTH_SHORT).show();
+                                }
 
                             }
-
 
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -209,14 +219,11 @@ public class MaintenancePlanner extends AppCompatActivity implements ArrayInterf
     @Override
     public void onConnected(@Nullable Bundle bundle) {
 
-
-
         if(ActivityCompat.checkSelfPermission(this, ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED){
 
             requestPermission();
         }
         else {
-
 
             fusedLocationProviderClient.getLastLocation()
                     .addOnSuccessListener(this, new OnSuccessListener<Location>() {
