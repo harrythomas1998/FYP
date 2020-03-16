@@ -28,10 +28,10 @@
         android:id="@+id/conifersButton"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:text="-Conifers"
         android:textAlignment="viewStart"
-        android:textSize="25dp"
+        android:textSize="20dp"
         android:textStyle="bold"
         android:drawableEnd="@drawable/arrow2"/>
 
@@ -41,12 +41,13 @@
         android:layout_height="1dp" />
 
     <Button
+        android:id="@+id/alpinesButton"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="-2"
+        android:layout_height="60dp"
+        android:text="-Alpines and Rockeries"
         android:textAlignment="viewStart"
-        android:textSize="25dp"
+        android:textSize="20dp"
         android:textStyle="bold"
         android:drawableEnd="@drawable/arrow2"/>
 
@@ -56,12 +57,13 @@
         android:layout_height="1dp" />
 
     <Button
+        android:id="@+id/beddingButton"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="-3"
+        android:layout_height="60dp"
+        android:text="-Bedding"
         android:textAlignment="viewStart"
-        android:textSize="25dp"
+        android:textSize="20dp"
         android:textStyle="bold"
         android:drawableEnd="@drawable/arrow2"/>
 
@@ -71,13 +73,14 @@
         android:layout_height="1dp"/>
 
     <Button
+        android:id="@+id/climbersButton"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:drawableEnd="@drawable/arrow2"
-        android:text="-4"
+        android:text="-Climbers"
         android:textAlignment="viewStart"
-        android:textSize="25dp"
+        android:textSize="20dp"
         android:textStyle="bold"/>
 
     <View

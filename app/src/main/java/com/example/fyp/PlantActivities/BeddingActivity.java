@@ -12,7 +12,6 @@ import com.example.fyp.Adapters.PlantAdapter;
 import com.example.fyp.Objects.Plant;
 import com.example.fyp.PlantsActivity;
 import com.example.fyp.R;
-import com.google.firebase.database.DatabaseReference;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -23,7 +22,7 @@ import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
-public class ConifersActivity extends AppCompatActivity implements PlantAdapter.OnItemClickListener {
+public class BeddingActivity extends AppCompatActivity  implements PlantAdapter.OnItemClickListener {
 
     RecyclerView recyclerView;
     ArrayList<Plant> list = new ArrayList<>();
@@ -41,7 +40,7 @@ public class ConifersActivity extends AppCompatActivity implements PlantAdapter.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_conifers);
+        setContentView(R.layout.activity_bedding);
 
         recyclerView = findViewById(R.id.myRecycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -59,7 +58,7 @@ public class ConifersActivity extends AppCompatActivity implements PlantAdapter.
 
         String json;
         try {
-            InputStream is = getAssets().open("conifers.json");
+            InputStream is = getAssets().open("bedding.json");
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
@@ -68,7 +67,7 @@ public class ConifersActivity extends AppCompatActivity implements PlantAdapter.
 
 
             JSONObject obj = new JSONObject(json);
-            JSONArray m_jArry = obj.getJSONArray("conifers");
+            JSONArray m_jArry = obj.getJSONArray("bedding");
 
 
 
@@ -88,9 +87,9 @@ public class ConifersActivity extends AppCompatActivity implements PlantAdapter.
                 list.add(new Plant(name, image, position, soil, growth, care));
 
 
-                adapter = new PlantAdapter(ConifersActivity.this, list);
+                adapter = new PlantAdapter(BeddingActivity.this, list);
                 recyclerView.setAdapter(adapter);
-                adapter.setOnItemClickListener(ConifersActivity.this);
+                adapter.setOnItemClickListener(BeddingActivity.this);
 
             }
 

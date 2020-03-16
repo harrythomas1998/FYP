@@ -41,14 +41,14 @@ import java.text.SimpleDateFormat;
 import static android.Manifest.permission.ACCESS_FINE_LOCATION;
 
 
-public class MaintenancePlanner extends AppCompatActivity implements ArrayInterface, WeatherAdapter.OnItemClickListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
+public class MaintenancePlanner extends AppCompatActivity implements ArrayInterface, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
 
     public static final String WEATHER = "weather";
     public static final String TIME = "time";
     public static final String DATE = "date";
     public static final String TEMP = "temp";
 
-    String latitude, longitude;
+    private String latitude, longitude;
 
     public static final int RequestPermissionCode = 1;
 
@@ -286,21 +286,4 @@ public class MaintenancePlanner extends AppCompatActivity implements ArrayInterf
         }
     }
 
-
-
-    @Override
-    public void onItemClick(int position) {
-
-        Intent i = new Intent(this, JobActivity.class);
-        Weather clickedWeatherItem = mondayData.get(position);
-
-        i.putExtra(WEATHER, clickedWeatherItem.getWeatherType());
-        i.putExtra(TIME, clickedWeatherItem.getTime());
-        i.putExtra(DATE, clickedWeatherItem.getDate());
-        i.putExtra(TEMP, clickedWeatherItem.getTemperature());
-
-        startActivity(i);
-
-
-    }
 }

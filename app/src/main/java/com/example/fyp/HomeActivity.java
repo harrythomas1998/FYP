@@ -30,10 +30,7 @@ public class HomeActivity extends AppCompatActivity {
     Button myGarden;
     Button myJobs;
     Button forum;
-    Button closePopup;
     ImageView info;
-
-    private Context mContext;
 
 
     @Override
@@ -56,7 +53,6 @@ public class HomeActivity extends AppCompatActivity {
 
 
         info = findViewById(R.id.info);
-        mContext = getApplicationContext();
 
         info.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -111,8 +107,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intToForum = new Intent(HomeActivity.this, MainActivity.class);
-                startActivity(intToForum);
+
 
             }
         });

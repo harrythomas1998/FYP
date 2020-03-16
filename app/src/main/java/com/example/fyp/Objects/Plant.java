@@ -7,7 +7,7 @@ public class Plant {
     public Plant() {
     }
 
-    public Plant(String name, String soil, String care, String position, String growth, String picture) {
+    public Plant(String name, String picture, String position, String soil, String growth, String care) {
         this.name = name;
         this.soil = soil;
         this.care = care;

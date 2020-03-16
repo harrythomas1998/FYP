@@ -12,7 +12,6 @@ import com.example.fyp.Adapters.PlantAdapter;
 import com.example.fyp.Objects.Plant;
 import com.example.fyp.PlantsActivity;
 import com.example.fyp.R;
-import com.google.firebase.database.DatabaseReference;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -23,7 +22,7 @@ import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
-public class ConifersActivity extends AppCompatActivity implements PlantAdapter.OnItemClickListener {
+public class ClimbersActivity extends AppCompatActivity implements PlantAdapter.OnItemClickListener {
 
     RecyclerView recyclerView;
     ArrayList<Plant> list = new ArrayList<>();
@@ -41,7 +40,7 @@ public class ConifersActivity extends AppCompatActivity implements PlantAdapter.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_conifers);
+        setContentView(R.layout.activity_climbers);
 
         recyclerView = findViewById(R.id.myRecycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -59,7 +58,7 @@ public class ConifersActivity extends AppCompatActivity implements PlantAdapter.
 
         String json;
         try {
-            InputStream is = getAssets().open("conifers.json");
+            InputStream is = getAssets().open("climbers.json");
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
@@ -68,7 +67,7 @@ public class ConifersActivity extends AppCompatActivity implements PlantAdapter.
 
 
             JSONObject obj = new JSONObject(json);
-            JSONArray m_jArry = obj.getJSONArray("conifers");
+            JSONArray m_jArry = obj.getJSONArray("climbers");
 
 
 
@@ -81,16 +80,16 @@ public class ConifersActivity extends AppCompatActivity implements PlantAdapter.
                 String image = jo_inside.getString("image-src");
                 String position = jo_inside.getString("position");
                 String soil = jo_inside.getString("soil");
-                String growth = jo_inside.getString("growth");
+                String growth = jo_inside.getString("rateOfGrowth");
                 String care = jo_inside.getString("care");
 
 
                 list.add(new Plant(name, image, position, soil, growth, care));
 
 
-                adapter = new PlantAdapter(ConifersActivity.this, list);
+                adapter = new PlantAdapter(ClimbersActivity.this, list);
                 recyclerView.setAdapter(adapter);
-                adapter.setOnItemClickListener(ConifersActivity.this);
+                adapter.setOnItemClickListener(ClimbersActivity.this);
 
             }
 
