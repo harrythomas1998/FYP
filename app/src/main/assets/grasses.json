@@ -1,0 +1,708 @@
+{
+  "grasses": [
+    {
+      "name": "golden hakonechloa",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/19/pl2000011921.jpg?width=940&height=940",
+      "position": "Position: full sun or partial shade",
+      "soil": "Soil: moist but well-drained soil",
+      "growth": "Rate of growth: average",
+      "flowering": "Flowering period: August - September",
+      "care": "Garden care: Incorporate lots of well-rotted garden compost into the planting hole. Leave flower heads to dry out through the winter, adding valuable texture to plantings.  Apply a light mulch (3cm) of well-rotted garden compost after cutting back old foliage and before new growth emerges in spring."
+    },
+    {
+      "name": "switch grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/19/pl2000011923.jpg?width=940&height=940",
+      "position": "Position: full sun",
+      "soil": "Soil: moderately fertile, well-drained soil",
+      "growth": "Rate of Growth: average",
+      "flowering": "Flowering period: August and September",
+      "care": "Garden care: Lift and divide congested colonies between mid-spring and summer"
+    },
+    {
+      "name": "fountain grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/85/pl2000038516.jpg?width=940&height=940",
+      "position": "Position:  full or partial shade",
+      "soil": "Soil:  fertile, humus-rich, well-drained soil",
+      "growth": "Rate of growth:  average",
+      "flowering": "Hardiness:  fully hardy\n\n`'''''''''''",
+      "care": null
+    },
+    {
+      "name": "Chinese silver grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/84/pl2000028476.jpg?width=940&height=940",
+      "position": "Position: full sun",
+      "soil": "Soil: fertile, moist, well drained or sandy",
+      "growth": "Rate of growth: average",
+      "flowering": "Flowering period: August to September",
+      "care": "Garden care: Cut down to the ground in late winter before the new foliage appears."
+    },
+    {
+      "name": "hakonechloa",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/47/pl2000024769.jpg?width=940&height=940",
+      "position": "Position: prefers a cool, moist environment in sun or part shade",
+      "soil": "Soil: moist, humus-rich soil",
+      "growth": "Rate of growth: slow, non-invasive",
+      "flowering": "Flowering period: August - September",
+      "care": "Garden care: Incorporate lots of well-rotted garden compost into the planting hold.  Leave flower heads to dry out through the winter, adding valuable texture to plantings.  Apply a light mulch (3cm) of well-rotted garden compost after cutting back old foliage and before new growth emerges in spring."
+    },
+    {
+      "name": "sedge",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/86/pl2000028687.jpg?width=940&height=940",
+      "position": "Position:   full sun or partial shade",
+      "soil": "Soil:   any, well-drained soil",
+      "growth": "Rate of growth:  average",
+      "flowering": "Flowering period:   July to August",
+      "care": "Garden care: Comb through the plant in winter to remove dead foliage. Feed with a general purpose fertiliser during  the growing season and if necessary, lift and divide over-large clumps in early  spring."
+    },
+    {
+      "name": "silver grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/78/pl2000027802.jpg?width=940&height=940",
+      "position": "Position:  full sun",
+      "soil": "Soil:  fertile, moist, well drained or sandy",
+      "growth": "Rate of Growth:  average",
+      "flowering": "Flowering period:  August and September",
+      "care": "Garden care:   Protect from excessive winter wet. Cut down to the ground in late winter, before new foliage appears."
+    },
+    {
+      "name": "feather reed grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/82/pl2000028247.jpg?width=940&height=940",
+      "position": "Position: full sun or partial shade",
+      "soil": "Soil: dry or wet, well-drained soil",
+      "growth": "Rate of growth: fast growing",
+      "flowering": "Flowering period: early summer to autumn",
+      "care": "Garden care: Very low maintenance, it simply needs to be cut down to the ground in February. Don�t be tempted to chop it earlier, as its wheat-coloured stems add drama and strong winter presence to the garden."
+    },
+    {
+      "name": "tufted hair grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/72/pl2000017260.jpg?width=940&height=940",
+      "position": "Position: full sun or partial shade",
+      "soil": "Soil: dry to moist, neutral to acid soil",
+      "growth": "Rate of growth: average to fast-growing",
+      "flowering": "Flowering period: June to August",
+      "care": "Garden care: Remove the faded flower-heads in late winter before new growth appears. If the foliage has also started to look tatty at that time of the year, then this too can be cut back hard. In warm areas the plant has a tendency to self-seed freely. Where this is the case remove unwanted seedlings as part of routine border maintenance."
+    },
+    {
+      "name": "",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/85/pl2000038514.jpg?width=940&height=940",
+      "position": "Position:  full or partial shade",
+      "soil": "Soil:  fertile, humus-rich, well-drained soil",
+      "growth": "Rate of growth:  average",
+      "flowering": "Hardiness:  fully hardy\n\n`'''''''''''",
+      "care": null
+    },
+    {
+      "name": "Japanese rush",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/83/pl2000038363.jpg?width=940&height=940",
+      "position": "Position: full sun",
+      "soil": "Soil: pool margins or very moist soil",
+      "growth": "Rate of growth: average",
+      "flowering": "Flowering period: July",
+      "care": "Other features: beautiful grass-like, golden yellow leaves"
+    },
+    {
+      "name": "fountain grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/85/pl2000028514.jpg?width=940&height=940",
+      "position": "Position: full sun",
+      "soil": "Soil: light, well-drained soil",
+      "growth": "Rate of growth: average",
+      "flowering": "Flowering period: July to September",
+      "care": "Garden care: A generous layer of mulch in autumn will help keep the roots warmer in winter. Prune back the previous years growth each spring."
+    },
+    {
+      "name": "hakonechloa",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/72/pl2000027258.jpg?width=940&height=940",
+      "position": "Position: partial shade",
+      "soil": "Soil: moist but well-drained soil",
+      "growth": "Rate of growth: average",
+      "flowering": "Flowering period: August - September",
+      "care": "Garden care: Incorporate lots of well-rotted garden compost into the planting hole.  Leave flower heads to dry out through the winter, adding valuable texture to plantings.  Apply a light mulch (3cm) of well-rotted garden compost after cutting back old foliage and before new growth emerges in spring."
+    },
+    {
+      "name": "leatherleaf sedge",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/85/pl2000038505.jpg?width=940&height=940",
+      "position": "",
+      "soil": null,
+      "growth": null,
+      "flowering": null,
+      "care": null
+    },
+    {
+      "name": "sedge",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/19/pl2000011918.jpg?width=940&height=940",
+      "position": "Position:   full sun or partial shade",
+      "soil": "Soil: fertile, moist, well-drained soil",
+      "growth": "Rate of growth:  average",
+      "flowering": "Flowering period:  April to June",
+      "care": "Garden care: Comb through the plant in winter with your fingers to remove dead foliage and snip out any leaves in summer."
+    },
+    {
+      "name": "ficinia",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/34/pl2000033446.jpg?width=940&height=940",
+      "position": "Position:  full sun",
+      "soil": "Soil: moist, moderately fertile, slightly acidic soil",
+      "growth": "Rate of growth: average",
+      "flowering": "Flowering period: June to August",
+      "care": "Garden care: Keep well watered, particularly during the warmer  months, and protect plants from frost. In colder regions, it's best kept in a pot so it can be moved to a sheltered spot during the winter."
+    },
+    {
+      "name": "snowy woodrush",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/70/pl2000037059.jpg?width=940&height=940",
+      "position": "Position:  partial to full shade",
+      "soil": "Soil:  poor to moderately-fertile,humus-rich, moist but well-drained soil",
+      "growth": "Rate of growth:  slow-growing",
+      "flowering": "Flowering period:  June to July",
+      "care": "Garden care:  Lift and divide congested colonies between April and June.  Remove tatty foliage in early spring."
+    },
+    {
+      "name": "golden hakonechloa",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/19/pl0000001996.jpg?width=940&height=940",
+      "position": "Position: full sun or partial shade",
+      "soil": "Soil: moist but well-drained soil",
+      "growth": "Rate of growth: average",
+      "flowering": "Flowering period: August - September",
+      "care": "Garden care: Incorporate lots of well-rotted garden compost into the planting hole.  Leave flower heads to dry out through the winter, adding valuable texture to plantings.  Apply a light mulch (3cm) of well-rotted garden compost after cutting back old foliage and before new growth emerges in spring."
+    },
+    {
+      "name": "fountain grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/85/pl2000038518.jpg?width=940&height=940",
+      "position": "Position:  full or partial shade",
+      "soil": "Soil:  fertile, humus-rich, well-drained soil",
+      "growth": "Rate of growth:  average",
+      "flowering": "Hardiness:  fully hardy\n\n`'''''''''''",
+      "care": null
+    },
+    {
+      "name": "pheasant grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/35/pl2000013574.jpg?width=940&height=940",
+      "position": "Position: full sun",
+      "soil": "Soil: moderately fertile, medium to light, well-drained soil",
+      "growth": "Rate of growth: average",
+      "flowering": "Flowering period: June to September",
+      "care": "Garden care: Cut down to the ground in late winter, before the new foliage appears."
+    },
+    {
+      "name": "Lesser quaking grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/10/00/00/10/pl1000001090.jpg?width=940&height=940",
+      "position": "Position: full sun",
+      "soil": "Soil: any well-drained soil",
+      "growth": "Rate of growth: fast-growing",
+      "flowering": "Flowering period: May to August",
+      "care": "Garden care: Cut down to the ground in late winter before the new foliage appears."
+    },
+    {
+      "name": "pheasant's tail grass (syn. Stipa arundinacea )",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/20/pl0000002043.jpg?width=940&height=940",
+      "position": "Position: full sun or partial shade",
+      "soil": "Soil: moderately fertile, medium to light, well-drained soil",
+      "growth": "Rate of growth: fast-growing",
+      "flowering": "Flowering period: June to September",
+      "care": "Garden care: In spring, tease out dead foliage by gently running your fingers through it as if it were hair. It may self-seed, but simply pull out seedlings when you see them."
+    },
+    {
+      "name": "moor grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/35/pl2000013592.jpg?width=940&height=940",
+      "position": "Position: full sun or partial shade",
+      "soil": "Soil:  any moist but well-drained, preferably acid to neutral soil",
+      "growth": "Rate of growth:  average",
+      "flowering": "Flowering period: May to September",
+      "care": "Garden care:  Cut back in late winter before the new foliage appears."
+    },
+    {
+      "name": "Chinese fountain grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/85/pl2000038517.jpg?width=940&height=940",
+      "position": "Position: full sun",
+      "soil": "Soil:  light, moderately fertile, well-drained soil",
+      "growth": "Rate of growth: average",
+      "flowering": "Flowering period: July to September",
+      "care": "Garden care: A generous layer of mulch in autumn will help keep the roots warmer in winter. Prune back the previous years growth each spring."
+    },
+    {
+      "name": "Chinese silver grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/12/pl2000031286.jpg?width=940&height=940",
+      "position": "Position: full sun",
+      "soil": "Soil:  fertile, moist, well drained or sandy",
+      "growth": "Rate of growth:  slow to average",
+      "flowering": "Flowering period:  August to September",
+      "care": "Garden care: Cut down to the ground in late winter, before the new foliage appears."
+    },
+    {
+      "name": "feathertop",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/23/pl2000012391.jpg?width=940&height=940",
+      "position": "Position: full sun",
+      "soil": "Soil:  light, moderately fertile, well-drained soil",
+      "growth": "Rate of growth: average",
+      "flowering": "Flowering period: July to September",
+      "care": "Garden care: A generous layer of mulch in autumn will help keep the roots warmer in winter. Prune back the previous years growth each spring."
+    },
+    {
+      "name": "Korean feather reed grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/00/67/pl2000006788.jpg?width=940&height=940",
+      "position": "Position:  full sun or partial shade",
+      "soil": "Soil: moist, humus-rich soil",
+      "growth": "Rate of growth: slow-growing",
+      "flowering": "Flowering period: June to August",
+      "care": "Garden care: Cut back to ground level in late winter before the new growth appears."
+    },
+    {
+      "name": "feather reed grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/23/pl2000012392.jpg?width=940&height=940",
+      "position": "Position: full sun or partial shade",
+      "soil": "Soil: dry or wet, well-drained soil",
+      "growth": "Rate of growth: fast growing",
+      "flowering": "Flowering period: early summer to autumn",
+      "care": "Garden care: Very low maintenance, it simply needs to be cut down to the ground in February. Don�t be tempted to chop it earlier, as its wheat-coloured stems add drama and strong winter presence to the garden."
+    },
+    {
+      "name": "Bowles' golden grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/20/pl0000002007.jpg?width=940&height=940",
+      "position": "Position: partial shade",
+      "soil": "Soil: humus-rich, moist but well-drained soil",
+      "growth": "Rate of growth: slow growing",
+      "flowering": "Flowering period: May to July",
+      "care": "Garden care:  Divide in spring if clumps start to look tatty."
+    },
+    {
+      "name": "tufted hair grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/00/28/pl2000002817.jpg?width=940&height=940",
+      "position": "Position: full sun or partial shade",
+      "soil": "Soil: dry to moist, neutral to acid soil",
+      "growth": "Rate of growth: average to fast-growing",
+      "flowering": "Flowering period: June to August",
+      "care": "Garden care: Remove the faded flower-heads in late winter before new growth appears. If the foliage has also started to look tatty at that time of the year, then this too can be cut back hard. In warm areas the plant has a tendency to self-seed freely. Where this is the case remove unwanted seedlings as part of routine border maintenance."
+    },
+    {
+      "name": "Chinese silver grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/46/pl2000024650.jpg?width=940&height=940",
+      "position": "Position:  full sun",
+      "soil": "Soil: fertile, moist, well drained or sandy",
+      "growth": "Rate of growth: average",
+      "flowering": "Flowering period: August to September",
+      "care": "Garden care:  Cut down to the ground in late winter before the new foliage appears."
+    },
+    {
+      "name": "bush grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/35/pl2000033549.jpg?width=940&height=940",
+      "position": "Position:  full sun or partial shade",
+      "soil": "Soil: moist, humus-rich soil",
+      "growth": "Rate of growth: slow-growing",
+      "flowering": "Flowering period: June to August",
+      "care": "Garden care: Cut back to ground level in late winter before the new growth appears."
+    },
+    {
+      "name": "golden oats",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/20/pl0000002048.jpg?width=940&height=940",
+      "position": "Position:  full sun",
+      "soil": "Soil:  moderately fertile, medium to light, well-drained soil",
+      "growth": "Rate of growth:  average",
+      "flowering": "Flowering period:  June and July",
+      "care": "Garden care:  When planting always wear stout gardening gloves to protect against the sharp edges of the basal leaves. Wearing gloves, comb through the plant in early spring to remove dead foliage."
+    },
+    {
+      "name": "sedge",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/06/pl0000000688.jpg?width=940&height=940",
+      "position": "Position:   full sun or partial shade",
+      "soil": "Soil:   any, well-drained soil",
+      "growth": "Rate of growth:  average",
+      "flowering": "Flowering period:   July to August",
+      "care": "Garden care: Comb through the plant in winter to remove dead foliage"
+    },
+    {
+      "name": "Wisley Piet Oudolf Border Collection",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/86/pl2000028667.jpg?width=940&height=940",
+      "position": "Position: full sun",
+      "soil": "Soil: light, moderately fertile, humus-rich, moist but well- drained soil",
+      "growth": "Rate of growth:  average",
+      "flowering": "Flowering period:  June to October",
+      "care": "Sanguisorba officinalis 'Red Thunder':  One of Piet Oudolf's favourites. In spring the deciduous feathery, green foliage  emerges and forms attractive groundcover, but it is the summer when the  unusual red flowers top the slender, upright sems that it really becomes a head-turner. Perfect for prairie style planting schemes, as it looks righ at   home swaying sea of grasses. bees. Grows to 1.2m."
+    },
+    {
+      "name": "blue oat grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/13/pl2000021336.jpg?width=940&height=940",
+      "position": "Position: full sun or partial shade",
+      "soil": "Soil: well-drained, poor to moderately fertile, preferably alkaline soil",
+      "growth": "Rate of growth: average",
+      "flowering": "Flowering period: June and July",
+      "care": "Garden care:  Remove dead foliage and flowering stems in late winter or early spring."
+    },
+    {
+      "name": "Hakonechloa collection",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/73/pl2000027307.jpg?width=940&height=940",
+      "position": "Position: full sun or partial shade",
+      "soil": "Soil: moist but well-drained soil",
+      "growth": "Rate of growth: average",
+      "flowering": "Flowering period: August - September",
+      "care": "Hakonechloa macra:Slowly spreading to form a generous clump of arching linear green leaves, the soft form of this grass looks wonderful when teamed with plants that have a striking silhouette. The flowerheads create a frothy effect amongst the foliage in late summer. Height to 35cm."
+    },
+    {
+      "name": "hakonechloa",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/00/44/pl2000004400.jpg?width=940&height=940",
+      "position": null,
+      "soil": null,
+      "growth": null,
+      "flowering": null,
+      "care": null
+    },
+    {
+      "name": "silver grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/26/pl2000012665.jpg?width=940&height=940",
+      "position": "Position: open sunny position",
+      "soil": "Soil: moderately-fertile, moist but well-drained",
+      "growth": "Rate of growth: average.",
+      "flowering": "Flowering period: October to November",
+      "care": "Garden care: Leave top growth standing through winter. Cut back to ground level late February as new shoots appear within the crown."
+    },
+    {
+      "name": "tufted hair grass  (syn. Golden Dew)",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/19/pl0000001985.jpg?width=940&height=940",
+      "position": "Position: full sun or partial shade",
+      "soil": "Soil: dry to moist, neutral to acid soil",
+      "growth": "Rate of growth: average to fast-growing",
+      "flowering": "Flowering period: June to August",
+      "care": "Garden care: Remove the faded flower-heads in late winter before new growth appears. If the foliage has also started to look tatty at that time of the year, then this too can be cut back hard. In warm areas the plant has a tendency to self-seed freely. Where this is the case remove unwanted seedlings as part of routine border maintenance."
+    },
+    {
+      "name": "pampas grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/09/pl0000000996.jpg?width=940&height=940",
+      "position": "Position:  full sun",
+      "soil": "Soil:  fertile, well-drained soil",
+      "growth": "Rate of growth: average",
+      "flowering": "Flowering period: August",
+      "care": "Garden care: Protect the crowns of young plants during the first winter with a deep, dry mulch. Each year in late-winter or early-spring wearing stout gardening gloves remove the previous year's stems by cutting and combing. Make sure you do wear stout gardening gloves when you are working with these plants as the leaves have sharp margins which can cut your hands."
+    },
+    {
+      "name": "Japanese blood grass (syn Imperata Red Baron )",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/19/pl2000011922.jpg?width=940&height=940",
+      "position": "Position: full sun or partial shade",
+      "soil": "Soil: well-drained soil",
+      "growth": "Rate of growth: slow-average",
+      "flowering": "Flowering period: June to August",
+      "care": "Garden care: Cut down to the ground in February.  In cold areas, protect the roots by mulching with straw or well-rotted compost.  If you are growing it in a container, keep it well watered."
+    },
+    {
+      "name": "blue fescue",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/19/pl0000001993.jpg?width=940&height=940",
+      "position": "Position: full sun",
+      "soil": "Soil: well-drained soil",
+      "growth": "Rate of growth:  average",
+      "flowering": "Flowering period:  June to July",
+      "care": "Garden care:   Comb through the plant with your fingers in winter to remove dead foliage.  Container-grown specimens should be watered well when they are establishing.  Plants need replacing every few years as they become tatty-looking."
+    },
+    {
+      "name": "switch grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/19/pl0000001999.jpg?width=940&height=940",
+      "position": "Position:  full sun",
+      "soil": "Soil:  moderately fertile, well-drained soil",
+      "growth": "Rate of growth:  average",
+      "flowering": "Flowering period:  August and September",
+      "care": "Garden care:  Lift and divide congested colonies between mid-spring and summer"
+    },
+    {
+      "name": "ficinia",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/72/pl2000027211.jpg?width=940&height=940",
+      "position": "Position:  full sun",
+      "soil": "Soil: moist, moderately fertile, slightly acidic soil",
+      "growth": "Rate of growth: average",
+      "flowering": "Flowering period: June to August",
+      "care": "Garden care: Keep well watered, particularly during the warmer  months, and protect plants from frost. In colder regions, it's best kept in a pot so it can be moved to a sheltered spot during the winter."
+    },
+    {
+      "name": "common quaking grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/08/pl2000030880.jpg?width=940&height=940",
+      "position": "Position:  full sun or light shade",
+      "soil": "Soil:  fertile, moist, well-drained soil",
+      "growth": "Rate of growth:   average",
+      "flowering": "Flowering period:   May-June",
+      "care": "Garden care: Collect the seed before it disperses to use the following year.  Dig out dead plants in early spring."
+    },
+    {
+      "name": "sedge",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/80/pl2000028064.jpg?width=940&height=940",
+      "position": "Position:   full sun or partial shade",
+      "soil": "Soil: fertile, moist, well-drained soil",
+      "growth": "Rate of growth:  average",
+      "flowering": "Flowering period:  April to June",
+      "care": "Garden care: Comb through the plant in winter with your fingers to remove dead foliage and snip out any leaves in summer."
+    },
+    {
+      "name": "switch grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/35/pl2000013573.jpg?width=940&height=940",
+      "position": "Position:  full sun",
+      "soil": "Soil:  moderately fertile, well-drained soil",
+      "growth": "Rate of growth:  average",
+      "flowering": "Flowering period:  August and September",
+      "care": "Garden care:  Lift and divide congested colonies between mid-spring and summer"
+    },
+    {
+      "name": "snowy woodrush",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/99/pl2000019911.jpg?width=940&height=940",
+      "position": "Position:  partial to full shade",
+      "soil": "Soil:  poor to moderately-fertile,humus-rich, moist but well-drained soil",
+      "growth": "Rate of growth:  slow-growing",
+      "flowering": "Flowering period:  June to July",
+      "care": "Garden care:  Lift and divide congested colonies between April and June.  Remove tatty foliage in early spring."
+    },
+    {
+      "name": "sedge",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/74/pl2000027488_card2.jpg",
+      "position": "Position:   full sun or partial shade",
+      "soil": "Soil: fertile, moist, well-drained soil",
+      "growth": "Rate of growth:  average",
+      "flowering": "Flowering period:  April to June",
+      "care": "Garden care: Comb through the plant in winter with your fingers to remove dead foliage and snip out any leaves in summer."
+    },
+    {
+      "name": "Chinese silver grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/85/pl2000028573.jpg?width=940&height=940",
+      "position": "Position: full sun",
+      "soil": "Soil:  fertile, moist, well drained or sandy",
+      "growth": "Rate of growth:  slow to average",
+      "flowering": "Flowering period:  August to September",
+      "care": "Garden care: Cut down to the ground in late winter, before the new foliage appears."
+    },
+    {
+      "name": "wild grass plug plant collection",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/00/41/pl2000004163.jpg?width=940&height=940",
+      "position": "Meadow Foxtail, Alopecurus pratensis - 60-120cm tall",
+      "soil": "Marram Grass, Ammophila arenaria - rhizomatous perennial",
+      "growth": "Sweet Vernal Grass, Anthoxanthum odoratum - yellow-green grass 30-45cm tall",
+      "flowering": "Quaking Grass, Briza media - 30cm tall with quaking seedheads all summer",
+      "care": "White Sedge, Carex curta - 50cm tall at flowering"
+    },
+    {
+      "name": "golden oats",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/64/pl2000016494.jpg?width=940&height=940",
+      "position": "Position:  full sun",
+      "soil": "Soil:  moderately fertile, medium to light, well-drained soil",
+      "growth": "Rate of growth:  average",
+      "flowering": "Flowering period:  June and July",
+      "care": "Garden care:  When planting always wear stout gardening gloves to protect against the sharp edges of the basal leaves. Wearing gloves, comb through the plant in early spring to remove dead foliage."
+    },
+    {
+      "name": "hakonechloa",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/82/pl2000028246.jpg?width=940&height=940",
+      "position": "Position: prefers a cool, moist environment in sun or part shade",
+      "soil": "Soil: moist, humus-rich soil",
+      "growth": "Rate of growth: slow, non-invasive",
+      "flowering": "Flowering period: August - September",
+      "care": "Garden care: Incorporate lots of well-rotted garden compost into the planting hold.  Leave flower heads to dry out through the winter, adding valuable texture to plantings.  Apply a light mulch (3cm) of well-rotted garden compost after cutting back old foliage and before new growth emerges in spring."
+    },
+    {
+      "name": "festuca",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/56/pl2000015677.jpg?width=940&height=940",
+      "position": "Position:  full sun",
+      "soil": "Soil:  well-drained soil",
+      "growth": "Rate of growth:   average",
+      "flowering": "Flowering period:  June to July",
+      "care": "Other features:   evergreen, bright-blue leaves"
+    },
+    {
+      "name": "Japanese silver grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/85/pl2000038511.jpg?width=940&height=940",
+      "position": "Position:  full or partial shade",
+      "soil": "Soil:  fertile, humus-rich, well-drained soil",
+      "growth": "Rate of growth:  average",
+      "flowering": "Hardiness:  fully hardy\n\n`'''''''''''",
+      "care": null
+    },
+    {
+      "name": "Chinese silver grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/20/pl0000002023.jpg?width=940&height=940",
+      "position": "Position: full sun",
+      "soil": "Soil:   moderately fertile, well-drained soil",
+      "growth": "Rate of growth:  initially slow to establish but faster as it matures",
+      "flowering": "Flowering period: September and October",
+      "care": "Garden care:  Cut back in late winter before the new foliage appears."
+    },
+
+    {
+      "name": "greater pond sedge",
+      "image-src": "https://warehouse1.indicia.org.uk/upload/Sedge,%20Greater%20Pond-%20(Carex%20riparia)%20%20Old%20Fosse%20Sapcote%20SP%205013%209260%20(taken%201.5.2006).JPG",
+      "position": "Position: full sun or partial shade",
+      "soil": "Soil: fertile, moist or wet soil",
+      "growth": "Rate of growth:  average",
+      "flowering": "Flowering period:  June to July",
+      "care": null
+    },
+    {
+      "name": "sedge",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/85/pl2000028510.jpg?width=940&height=940",
+      "position": "Position:   full sun or partial shade",
+      "soil": "Soil:   any, well-drained soil",
+      "growth": "Rate of growth:  average",
+      "flowering": "Flowering period:   July to August",
+      "care": "Garden care: Comb through the plant in winter to remove dead foliage."
+    },
+    {
+      "name": "hakonechloa",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/74/pl2000027485_card2.jpg",
+      "position": "Position: prefers a cool, moist environment in sun or part shade",
+      "soil": "Soil: moist, humus-rich soil",
+      "growth": "Rate of growth: slow, non-invasive",
+      "flowering": "Flowering period: August - September",
+      "care": "Garden care: Incorporate lots of well-rotted garden compost into the planting hold.  Leave flower heads to dry out through the winter, adding valuable texture to plantings.  Apply a light mulch (3cm) of well-rotted garden compost after cutting back old foliage and before new growth emerges in spring."
+    },
+    {
+      "name": "blue fescue",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/96/pl2000019616.jpg?width=940&height=940",
+      "position": "Position: full sun",
+      "soil": "Soil: well-drained soil",
+      "growth": "Rate of growth:  average",
+      "flowering": "Flowering period:  June to July",
+      "care": "Garden care: Comb through the plant with your fingers in winter to remove dead foliage.  Container-grown specimens should be watered well when they are establishing. Plants may need replacing every few years as they may become tatty-looking."
+    },
+    {
+      "name": "little bluestem (syn. Andropogon scoparius )",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/49/pl2000024911.jpg?width=940&height=940",
+      "position": "Position: full sun",
+      "soil": "Soil: moderately fertile, well-drained soil",
+      "growth": "Rate of Growth: average",
+      "flowering": "Flowering period: August and September",
+      "care": "Garden care: Cut the old stems back to their base in   early winter and divide larger clumps in spring."
+    },
+    {
+      "name": "hakonechloa",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/83/pl2000028312.jpg?width=940&height=940",
+      "position": "Position: prefers a cool, moist environment in sun or part shade",
+      "soil": "Soil: moist, humus-rich soil",
+      "growth": "Rate of growth: slow, non-invasive",
+      "flowering": "Flowering period: August - September",
+      "care": "Garden care: Incorporate lots of well-rotted garden compost into the planting hold.  Leave flower heads to dry out through the winter, adding valuable texture to plantings.  Apply a light mulch (3cm) of well-rotted garden compost after cutting back old foliage and before new growth emerges in spring."
+    },
+    {
+      "name": "switch grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/46/pl2000024653.jpg?width=940&height=940",
+      "position": "Position: full sun",
+      "soil": "Soil: moderately fertile, well-drained soil",
+      "growth": "Rate of growth: slow-average",
+      "flowering": "Flowering period: August and September",
+      "care": "Garden care:  Cut it back when it starts to look tatty. Lift and divide between mid-spring and summer."
+    },
+    {
+      "name": "switch grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/74/pl2000027483_card2.jpg",
+      "position": "Position: full sun",
+      "soil": "Soil: moderately fertile, well-drained soil",
+      "growth": "Rate of growth: slow-average",
+      "flowering": "Flowering period: August and September",
+      "care": "Garden care:  Cut it back when it starts to look tatty. Lift and divide between mid-spring and summer."
+    },
+    {
+      "name": "fountain grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/85/pl2000028569.jpg?width=940&height=940",
+      "position": "Position: full sun",
+      "soil": "Soil: light, well-drained soil",
+      "growth": "Rate of growth: average",
+      "flowering": "Flowering period: July to September",
+      "care": "Garden care: A generous layer of mulch in autumn will help keep the roots warmer in winter. Prune back the previous years growth each spring."
+    },
+    {
+      "name": "Chinese silver grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/00/28/pl2000002831.jpg?width=940&height=940",
+      "position": "Position: full sun",
+      "soil": "Soil:  fertile, moist, well drained or sandy",
+      "growth": "Rate of growth:  slow to average",
+      "flowering": "Flowering period:  August to September",
+      "care": "Garden care: Cut down to the ground in late winter, before the new foliage appears."
+    },
+    {
+      "name": "black lilyturf - Ophiopogon planiscapus Nigrescens",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/32/pl0000003278.jpg?width=940&height=940",
+      "position": "Position: full sun or partial shade",
+      "soil": "Soil: moist, well-drained, slightly acidic soil",
+      "growth": "Rate of growth: average",
+      "flowering": "Flowering period: June to August",
+      "care": "Garden care: Top-dress plants in autumn with leaf mould."
+    },
+    {
+      "name": "Chinese silver grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/00/28/pl2000002832.jpg?width=940&height=940",
+      "position": "Position:  full sun",
+      "soil": "Soil: fertile, moist, well drained or sandy",
+      "growth": "Rate of growth: average",
+      "flowering": "Flowering period: August to September",
+      "care": "Garden care: Cut down to the ground in late winter before the new foliage appears."
+    },
+    {
+      "name": "moor grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/07/78/pl0000077815.jpg?width=940&height=940",
+      "position": "Position: grows in both full sun/light shade",
+      "soil": "Soil: tolerant of most, but prefers alkaline soils",
+      "growth": "Rate of growth: average",
+      "flowering": "Flowering period: June to October",
+      "care": "Garden care: cut back old foliage in the spring to encourage fresh new grow growth and to maintain good form and habit of plants. Avoid waterlogged conditions in winter."
+    },
+    {
+      "name": "stipa ( syn. Stipa tenuifolia )",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/10/00/00/00/pl1000000022.jpg?width=940&height=940",
+      "position": "Position: full sun",
+      "soil": "Soil: moderately fertile, medium to light, well-drained soil",
+      "growth": "Rate of growth:  fast-growing",
+      "flowering": "Flowering period: June to September",
+      "care": "Garden care:  Cut back in early spring before the new foliage appears"
+    },
+    {
+      "name": "hakonechloa",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/29/pl2000022946.jpg?width=940&height=940",
+      "position": "Position: prefers a cool, moist environment in sun or part shade",
+      "soil": "Soil: moist, humus-rich soil",
+      "growth": "Rate of growth: slow, non-invasive",
+      "flowering": "Flowering period: August - September",
+      "care": "Garden care: Incorporate lots of well-rotted garden compost into the planting hold.  Leave flower heads to dry out through the winter, adding valuable texture to plantings.  Apply a light mulch (3cm) of well-rotted garden compost after cutting back old foliage and before new growth emerges in spring."
+    },
+    {
+      "name": "zebra grass",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/20/pl0000002027.jpg?width=940&height=940",
+      "position": "Position: full sun",
+      "soil": "Soil: fertile, moist, well drained or sandy",
+      "growth": "Rate of growth: average",
+      "flowering": "Flowering period: August to September",
+      "care": "Garden care: Cut down to the ground in late winter before the new foliage appears."
+    },
+
+    {
+      "name": "stipa ( syn. Stipa tenuifolia )",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/94/pl2000019473.jpg?width=940&height=940",
+      "position": "Position:  full sun",
+      "soil": "Soil:  moderately fertile, medium to light, well-drained soil",
+      "growth": "Rate of growth:  fast-growing",
+      "flowering": "Flowering period:  June to September",
+      "care": "Garden care:  Cut back in early spring before the new foliage appears"
+    },
+    {
+      "name": "Bowles' golden sedge",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/07/77/pl0000077799.jpg?width=940&height=940",
+      "position": "Position: full sun or partial shade",
+      "soil": "Soil: fertile, moist or wet soil",
+      "growth": "Rate of growth:  average",
+      "flowering": "Flowering period:  June to July",
+      "care": "Garden care: These plants are potted up (using a suitable aquatic compost) into 1-litre aquatic pots. These pots are made of a fine mesh, which allows water to circulate through the compost, providing the plants with both oxygen and nutrients. If you are using them as a aquatic plant, they can be placed straight into the pond, however they will preform better if planted out sooner rather than later. To enhance flowering divide congested clumps every three to five years."
+    },
+    {
+      "name": "sedge",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/86/pl2000028686.jpg?width=940&height=940",
+      "position": "Position:   full sun or partial shade",
+      "soil": "Soil:   any, well-drained soil",
+      "growth": "Rate of growth:  average",
+      "flowering": "Flowering period:  July to August",
+      "care": "Garden care: Comb through the plant in late winter to remove any dead foliage. Feed with a general purpose fertiliser  during the growing season and if necessary, lift and divide over-large  clumps in early spring."
+    },
+    {
+      "name": "Siberian melic",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/97/pl2000019725.jpg?width=940&height=940",
+      "position": "Position: full sun or partial shade",
+      "soil": "Soil:fertile, well-drained",
+      "growth": "Rate of growth: average to fast-growing",
+      "flowering": "Flowering period: May to June",
+      "care": "Garden care:Cut down to the ground in early spring, before the new foliage appears."
+    },
+    {
+      "name": "pheasant's tail grass (syn. Stipa arundinacea)",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/19/pl2000011924.jpg?width=940&height=940",
+      "position": "Position: full sun or partial shade",
+      "soil": "Soil: moderately fertile, medium to light, well-drained soil",
+      "growth": "Rate of growth: fast-growing",
+      "flowering": "Flowering period: June to September",
+      "care": "Garden care: In spring, tease out dead foliage by gently running your fingers through it as if it were hair. It may self-seed, but simply pull out seedlings when you see them."
+    }
+  ]
+}

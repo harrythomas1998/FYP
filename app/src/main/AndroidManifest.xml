@@ -13,7 +13,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PlantActivities.ClimbersActivity"></activity>
+        <activity android:name=".PlantActivities.HedgesActivity"></activity>
+        <activity android:name=".PlantActivities.GrassesActivity" />
+        <activity android:name=".PlantActivities.FernActivity" />
+        <activity android:name=".PlantActivities.ExoticActivity" />
+        <activity android:name=".PlantActivities.ClimbersActivity" />
         <activity android:name=".PlantActivities.BeddingActivity" />
         <activity android:name=".PlantActivities.AlpineRockeryActivity" />
         <activity android:name=".SelectPlantsMenu" />

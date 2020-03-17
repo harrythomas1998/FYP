@@ -1,0 +1,292 @@
+{
+  "exotic": [
+    {
+      "name": "Japanese banana",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/10/00/00/07/pl1000000746.jpg?width=940&height=940",
+      "position": "Position: mainly sunny, with a little midday shade",
+      "soil": "Soil: rich and fertile or loam based compost in pots",
+      "growth": "Rate of growth: average to fast",
+      "care": null
+    },
+    {
+      "name": "elephant's ears",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/00/21/pl2000002156.jpg?width=940&height=940",
+      "position": "Position: full sun or partial shade",
+      "soil": "Soil: moist to boggy, slightly acidic soil",
+      "growth": "Rate of growth: fast-growing",
+      "care": null
+    },
+    {
+      "name": "half hardy hyacinth orchid bulb",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/00/21/pl2000002123.jpg?width=940&height=940",
+      "position": "Position: partial shade in summer",
+      "soil": "Soil: moist, well-drained, humus-rich soil",
+      "growth": "Flowering period: June to July",
+      "care": null
+    },
+    {
+      "name": "Indian shot",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/91/pl2000019150.jpg?width=940&height=940",
+      "position": "Position: full sun (or indoors in full light shaded from hot sun)",
+      "soil": "Soil: fertile, well-drained soil or loam-less potting compost",
+      "growth": "Flowering period: June to September",
+      "care": null
+    },
+    {
+      "name": "peruvian daffodil (syn Hymenocallis _ festalis )",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/02/pl2000020275.jpg?width=940&height=940",
+      "position": "Position: full sun or partial shade",
+      "soil": "Soil: moderately fertile, moist but well-drained soil or John Innes No2 with a little added grit",
+      "growth": "Rate of growth:  average",
+      "care": null
+    },
+    {
+      "name": "Chinese yellow banana",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/10/00/00/07/pl1000000712.jpg?width=940&height=940",
+      "position": "Position: full sun to partial shade",
+      "soil": "Soil: fertile, moist but well-drained soil",
+      "growth": "Rate of growth: average",
+      "care": null
+    },
+    {
+      "name": "umbrella bamboo",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/25/pl2000022501.jpg?width=940&height=940",
+      "position": "Position: full sun or partial shade",
+      "soil": "Soil: humus-rich, moist, well-drained soil",
+      "growth": "Rate of growth: average to fast growing",
+      "care": null
+    },
+    {
+      "name": "Indian shot bulbs",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/16/pl2000021673.jpg?width=940&height=940",
+      "position": "Position: full sun (or indoors in full light shaded from hot sun)",
+      "soil": "Soil: fertile, well-drained soil or loam-less potting compost",
+      "growth": "Flowering period: June to September",
+      "care": null
+    },
+    {
+      "name": "Indian shot bulbs",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/18/pl2000021821_card2_lg.jpg",
+      "position": "Position: full sun (or indoors in full light shaded from hot sun)",
+      "soil": "Soil: fertile, well-drained soil or loam-less potting compost",
+      "growth": "Flowering period: June to September",
+      "care": null
+    },
+    {
+      "name": "cobra lily",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/23/pl2000012370.jpg?width=940&height=940",
+      "position": "Position: partial shade",
+      "soil": "Soil: moist but well drained, neutral to acidic",
+      "growth": "Flowering period: May - June",
+      "care": null
+    },
+    {
+      "name": "canna collection",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/02/pl2000020293.jpg?width=940&height=940",
+      "position": "Position: full sun (or indoors in full light shaded from hot sun)",
+      "soil": "Soil: fertile, well-drained soil or loam-less potting compost",
+      "growth": "Flowering period: June to September",
+      "care": null
+    },
+    {
+      "name": "umbrella bamboo (syn Fargesia scabrida �Asian Wonder')",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/48/pl2000034898.jpg?width=940&height=940",
+      "position": "Position: full sun or partial shade",
+      "soil": "Soil: humus-rich, moist, well-drained soil",
+      "growth": "Rate of growth: average to fast growing",
+      "care": null
+    },
+    {
+      "name": "umbrella bamboo",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/15/pl0000001583.jpg?width=940&height=940",
+      "position": "Position: full sun or partial shade",
+      "soil": "Soil: humus-rich, moist, well-drained soil",
+      "growth": "Rate of growth: average to fast growing",
+      "care": null
+    },
+    {
+      "name": "black bamboo",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/41/pl2000034144.jpg?width=940&height=940",
+      "position": "Position:  full sun or partial shade",
+      "soil": "Soil: humus-rich, moist, well-drained soil",
+      "growth": "Rate of growth:  fast growing",
+      "care": null
+    },
+    {
+      "name": "canna (syn  Tropicanna )",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/30/pl2000013003.jpg?width=940&height=940",
+      "position": "Position: full sun",
+      "soil": "Soil: fertile, well-drained soil or loam-less potting compost",
+      "growth": "Flowering period: June to September",
+      "care": null
+    },
+    {
+      "name": "arrow bamboo",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/16/pl0000001620.jpg?width=940&height=940",
+      "position": "Position: full sun or partial shade",
+      "soil": "Soil: humus-rich, moist, well-drained soil",
+      "growth": "Rate of growth:  fast-growing",
+      "care": "Garden care:  Plant in a large container or surround the roots with a non-perishable barrier that restricts the plant's spread."
+    },
+    {
+      "name": "Indian shot bulbs",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/00/21/pl2000002159.jpg?width=940&height=940",
+      "position": "Position: full sun (or indoors in full light shaded from hot sun)",
+      "soil": "Soil: fertile, well-drained soil or loam-less potting compost",
+      "growth": "Flowering period: June to September",
+      "care": null
+    },
+    {
+      "name": "Hawaiian garland flower / tuberose",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/00/21/pl2000002158.jpg?width=940&height=940",
+      "position": "Position: full sun",
+      "soil": "Soil: moderately fertile, well-drained soil",
+      "growth": "Flowering period:  June to September",
+      "care": null
+    },
+    {
+      "name": "bamboo",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/08/pl2000030881.jpg?width=940&height=940",
+      "position": "Position:  full sun or partial shade",
+      "soil": "Soil:  humus-rich, moist, well-drained soil",
+      "growth": "Rate of growth:   fast growing",
+      "care": "Garden care: In smaller gardens surround the roots with a non-perishable barrier (such as our bamboo control system) that will restrict the plant's spread."
+    },
+    {
+      "name": "Indian shot bulb",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/77/pl2000017769.jpg?width=940&height=940",
+      "position": "Position: full sun",
+      "soil": "Soil: fertile, well-drained soil or loam-less potting compost",
+      "growth": "Flowering period: June to September",
+      "care": null
+    },
+    {
+      "name": "cup and saucer plant",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/47/pl2000014763.jpg?width=940&height=940",
+      "position": "Position: full sun",
+      "soil": "Soil: moderately fertile, moist, well-drained soil",
+      "growth": "Rate of growth:  fast-growing",
+      "care": "Sow:  February-May"
+    },
+    {
+      "name": "glory lily",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/00/21/pl2000002144.jpg?width=940&height=940",
+      "position": "Position: full sun",
+      "soil": "Soil: fertile, well-drained soil or John Innes No2 compost with some added grit",
+      "growth": "Rate of growth:  average",
+      "care": null
+    },
+    {
+      "name": "showy yellow-groove bamboo",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/15/pl0000001593.jpg?width=940&height=940",
+      "position": "Position:   full sun or partial shade",
+      "soil": "Soil:    humus-rich, moist, well-drained soil",
+      "growth": "Rate of growth:   average",
+      "care": "Garden care:  In smaller gardens, surround the roots with a non-perishable barrier that restricts the plant's spread."
+    },
+    {
+      "name": "red abyssinian / Ethiopian banana (syn. Musa ensete rubra)",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/10/00/00/07/pl1000000795.jpg?width=940&height=940",
+      "position": "Position: full sun or partial shade",
+      "soil": "Soil: humus-rich soil (or loam-based potting compost - John Innes no. 3 for container-grown specimens)",
+      "growth": "Rate of growth:  fast-growing",
+      "care": null
+    },
+    {
+      "name": "honey bush",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/07/83/pl0000078311.jpg?width=940&height=940",
+      "position": "Position:  full sun",
+      "soil": "Soil:  moderately fertile, moist but well-drained soil",
+      "growth": "Rate of growth:  average to fast-growing",
+      "care": null
+    },
+    {
+      "name": "showy yellow-groove bamboo",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/08/pl2000020847.jpg?width=940&height=940",
+      "position": "Position:   full sun or partial shade",
+      "soil": "Soil:    humus-rich, moist, well-drained soil",
+      "growth": "Rate of growth:    average",
+      "care": "Garden care: In smaller gardens surround the roots with a non-perishable barrier (such as our bamboo control system) that will restrict the plant's spread."
+    },
+    {
+      "name": "Indian shot bulbs",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/18/pl2000021819.jpg?width=940&height=940",
+      "position": "Position: full sun (or indoors in full light shaded from hot sun)",
+      "soil": "Soil: fertile, well-drained soil or loam-less potting compost",
+      "growth": "Flowering period: June to September",
+      "care": null
+    },
+    {
+      "name": "nerine collection",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/18/pl2000021829.jpg?width=940&height=940",
+      "position": "Position: full sun",
+      "soil": "Soil: fertile, well-drained",
+      "growth": "Rate of growth: average to fast",
+      "care": "Nerine bowdenii 'Ostara'\n\nEmerging from the bulb in autumn, the upright stem is crowned with soft pink flowers, each with slender segments that become more recurved as they age. Very pretty when planted with soft violets and blues. Grows to 50cm."
+    },
+    {
+      "name": "Indian shot bulbs",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/16/pl2000021672.jpg?width=940&height=940",
+      "position": "Position: full sun (or indoors in full light shaded from hot sun)",
+      "soil": "Soil: fertile, well-drained soil or loam-less potting compost",
+      "growth": "Flowering period: June to September",
+      "care": null
+    },
+    {
+      "name": "Japanese banana",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/72/pl2000037235.jpg?width=940&height=940",
+      "position": "Position: mainly sunny, with a little midday shade",
+      "soil": "Soil: rich and fertile or loam based compost in pots",
+      "growth": "Rate of growth: average to fast",
+      "care": null
+    },
+    {
+      "name": "half hardy orchid  bulb / Bletilla striata alba",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/00/21/pl2000002124.jpg?width=940&height=940",
+      "position": "Position: partial shade in summer",
+      "soil": "Soil: moist, well-drained, humus-rich soil",
+      "growth": "Flowering period: June to July",
+      "care": null
+    },
+    {
+      "name": "black bamboo",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/08/pl2000030875.jpg?width=940&height=940",
+      "position": "Position:  full sun or partial shade",
+      "soil": "Soil: humus-rich, moist, well-drained soil",
+      "growth": "Rate of growth:  fast growing",
+      "care": null
+    },
+    {
+      "name": "umbrella bamboo",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/25/pl2000022533_card2.jpg",
+      "position": "Position: full sun or partial shade",
+      "soil": "Soil: humus-rich, moist, well-drained soil",
+      "growth": "Rate of growth: average to fast growing",
+      "care": null
+    },
+    {
+      "name": "broad-leaved bamboo",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/16/pl0000001622.jpg?width=940&height=940",
+      "position": "Position: full sun or to deep shade",
+      "soil": "Soil: tolerant of most soils except dry soils if planting in full sun",
+      "growth": "Rate of growth:  fast growing",
+      "care": "Garden care:  Plant in a large container or surround the roots with a non-perishable barrier that restricts the plant's spread."
+    },
+    {
+      "name": "tuberose",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/07/pl2000030709.jpg?width=940&height=940",
+      "position": "Position: full sun",
+      "soil": "Soil: moderately fertile, well-drained soil",
+      "growth": "Flowering period:  June to August",
+      "care": null
+    },
+    {
+      "name": "fishpole bamboo",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/08/pl2000030872.jpg?width=940&height=940",
+      "position": "Position: full sun or partial shade",
+      "soil": "Soil: humus-rich, moist, well-drained soil",
+      "growth": "Rate of growth:  average",
+      "care": "Garden care: In smaller gardens surround the roots with a non-perishable barrier (such as our bamboo control system) that will restrict the plant's spread."
+    }
+  ]
+}

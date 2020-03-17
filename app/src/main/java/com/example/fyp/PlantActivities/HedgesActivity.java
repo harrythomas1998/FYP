@@ -24,7 +24,7 @@ import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
-public class AlpineRockeryActivity extends AppCompatActivity implements PlantAdapter.OnItemClickListener {
+public class HedgesActivity extends AppCompatActivity implements PlantAdapter.OnItemClickListener {
 
     RecyclerView recyclerView;
     ArrayList<Plant> list = new ArrayList<>();
@@ -42,22 +42,18 @@ public class AlpineRockeryActivity extends AppCompatActivity implements PlantAda
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_alpine_rockery);
+        setContentView(R.layout.activity_hedges);
 
-        if (android.os.Build.VERSION.SDK_INT >= 21) {
-            Window window = this.getWindow();
-            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-            window.setStatusBarColor(this.getResources().getColor(R.color.statusBar));
-        }
+        Window window = this.getWindow();
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        window.setStatusBarColor(this.getResources().getColor(R.color.statusBar));
 
         recyclerView = findViewById(R.id.myRecycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
 
-
         b1 = findViewById(R.id.addButton);
-
 
         loadJSONFromAsset();
 
@@ -67,7 +63,7 @@ public class AlpineRockeryActivity extends AppCompatActivity implements PlantAda
 
         String json;
         try {
-            InputStream is = getAssets().open("alpinesRockeries.json");
+            InputStream is = getAssets().open("hedges.json");
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
@@ -76,7 +72,7 @@ public class AlpineRockeryActivity extends AppCompatActivity implements PlantAda
 
 
             JSONObject obj = new JSONObject(json);
-            JSONArray m_jArry = obj.getJSONArray("alpinesRockeries");
+            JSONArray m_jArry = obj.getJSONArray("hedges");
 
 
 
@@ -89,16 +85,16 @@ public class AlpineRockeryActivity extends AppCompatActivity implements PlantAda
                 String image = jo_inside.getString("image-src");
                 String position = jo_inside.getString("position");
                 String soil = jo_inside.getString("soil");
-                String growth = jo_inside.getString("rateOfGrowth");
+                String growth = jo_inside.getString("growth");
                 String care = jo_inside.getString("care");
 
 
                 list.add(new Plant(name, image, position, soil, growth, care));
 
 
-                adapter = new PlantAdapter(AlpineRockeryActivity.this, list);
+                adapter = new PlantAdapter(HedgesActivity.this, list);
                 recyclerView.setAdapter(adapter);
-                adapter.setOnItemClickListener(AlpineRockeryActivity.this);
+                adapter.setOnItemClickListener(HedgesActivity.this);
 
             }
 

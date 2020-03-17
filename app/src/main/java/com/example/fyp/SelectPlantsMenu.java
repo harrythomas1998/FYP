@@ -13,6 +13,10 @@ import com.example.fyp.PlantActivities.AlpineRockeryActivity;
 import com.example.fyp.PlantActivities.BeddingActivity;
 import com.example.fyp.PlantActivities.ClimbersActivity;
 import com.example.fyp.PlantActivities.ConifersActivity;
+import com.example.fyp.PlantActivities.ExoticActivity;
+import com.example.fyp.PlantActivities.FernActivity;
+import com.example.fyp.PlantActivities.GrassesActivity;
+import com.example.fyp.PlantActivities.HedgesActivity;
 
 public class SelectPlantsMenu extends AppCompatActivity {
 
@@ -20,6 +24,10 @@ public class SelectPlantsMenu extends AppCompatActivity {
     Button alpines;
     Button bedding;
     Button climbers;
+    Button exotic;
+    Button ferns;
+    Button grasses;
+    Button hedges;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,12 +45,15 @@ public class SelectPlantsMenu extends AppCompatActivity {
         alpines = findViewById(R.id.alpinesButton);
         bedding = findViewById(R.id.beddingButton);
         climbers = findViewById(R.id.climbersButton);
+        exotic = findViewById(R.id.exoticButton);
+        ferns = findViewById(R.id.fernButton);
+        grasses = findViewById(R.id.grassesButton);
+        hedges = findViewById(R.id.hedgesButton);
 
 
         conifers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
 
                 Intent i = new Intent(SelectPlantsMenu.this, ConifersActivity.class);
                 startActivity(i);
@@ -53,7 +64,6 @@ public class SelectPlantsMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
                 Intent ii = new Intent(SelectPlantsMenu.this, AlpineRockeryActivity.class);
                 startActivity(ii);
             }
@@ -63,7 +73,6 @@ public class SelectPlantsMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
                 Intent iii = new Intent(SelectPlantsMenu.this, BeddingActivity.class);
                 startActivity(iii);
             }
@@ -72,8 +81,45 @@ public class SelectPlantsMenu extends AppCompatActivity {
         climbers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent iiii = new Intent(SelectPlantsMenu.this, ClimbersActivity.class);
-                startActivity(iiii);
+
+                Intent iv = new Intent(SelectPlantsMenu.this, ClimbersActivity.class);
+                startActivity(iv);
+            }
+        });
+
+        exotic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent vv = new Intent(SelectPlantsMenu.this, ExoticActivity.class);
+                startActivity(vv);
+            }
+        });
+
+        ferns.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent vi = new Intent(SelectPlantsMenu.this, FernActivity.class);
+                startActivity(vi);
+            }
+        });
+
+        grasses.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent vi = new Intent(SelectPlantsMenu.this, GrassesActivity.class);
+                startActivity(vi);
+            }
+        });
+
+        hedges.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent vii = new Intent(SelectPlantsMenu.this, HedgesActivity.class);
+                startActivity(vii);
             }
         });
     }

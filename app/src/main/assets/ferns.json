@@ -1,0 +1,348 @@
+{
+  "ferns": [
+    {
+      "name": "soft shield fern",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/17/pl2000011785_card2_lg.jpg",
+      "position": "Position:  full or partial shade",
+      "soil": "Soil:  fertile, humus-rich, well-drained soil",
+      "growth": "Rate of growth:  average",
+      "care": "Garden care:  Incorporate lots of well-rotted leaf mould, composted pine needles or garden compost into the planting hole.Remove dead foliage in spring."
+    },
+    {
+      "name": "soft shield fern (syn. Plumosum Densum)",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/17/pl2000011787.jpg?width=940&height=940",
+      "position": "Position:  full or partial shade",
+      "soil": "Soil:  fertile, humus-rich, well-drained soil",
+      "growth": "Rate of growth:  average",
+      "care": "Garden care:  Incorporate lots of well-rotted leaf mould, composted pine needles or garden compost into the planting hole."
+    },
+    {
+      "name": "Japanese tassel fern",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/18/pl0000001840.jpg?width=940&height=940",
+      "position": "Position:  full or partial shade",
+      "soil": "Soil:  fertile, humus-rich, well-drained soil",
+      "growth": "Rate of growth:  average",
+      "care": "Garden care:  Incorporate lots of well-rotted leaf mould, composted pine needles or garden compost into the planting hole"
+    },
+    {
+      "name": "hard fern , deer fern",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/18/pl0000001816.jpg?width=940&height=940",
+      "position": "Position: partial or deep shade",
+      "soil": "Soil:  moist, humus-rich, acid soil",
+      "growth": "Rate of growth:  average",
+      "care": "Garden care: Incorporate lots of well-rotted leaf mould, composted pine needles or garden compost into the planting hole."
+    },
+    {
+      "name": "Aleutian maidenhair 'Imbricatum'",
+      "image-src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Adiantum_pedatum_09905.JPG/1200px-Adiantum_pedatum_09905.JPG",
+      "position": "Position:  full or partial shade",
+      "soil": "Soil:  fertile, humus-rich, well-drained soil",
+      "growth": "Rate of growth:  average",
+      "care": "Garden care:  Incorporate lots of well-rotted leaf mould, composted pine needles or garden compost into the planting hole.Remove dead foliage in spring."
+    },
+    {
+      "name": "ostrich fern",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/17/pl2000011780.jpg?width=940&height=940",
+      "position": "Position:  partial shade",
+      "soil": "Soil:  humus-rich, moist but well-drained, neutral to slightly acid soil",
+      "growth": "Rate of growth:  average",
+      "care": "Garden care: Remove dead fronds in early spring.  Lift and divide large colonies in spring."
+    },
+    {
+      "name": "royal fern",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/17/pl2000011782.jpg?width=940&height=940",
+      "position": "Position:  partial shade",
+      "soil": "Soil:  moist, fertile, humus-rich, preferably acid soil",
+      "growth": "Rate of growth: average",
+      "care": "Garden care: Lift and divide congested colonies in autumn or early spring."
+    },
+    {
+      "name": "hard fern , deer fern",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/74/pl2000027454.jpg?width=940&height=940",
+      "position": "Position: partial or deep shade",
+      "soil": "Soil:  moist, humus-rich, acid soil",
+      "growth": "Rate of growth:  average",
+      "care": "Garden care:  It will usually require some winter   protection for the first few years. Incorporate lots of well-rotted leaf mould or garden compost into the planting hole. Keep well watered during the growing season."
+    },
+    {
+      "name": "alpine water fern",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/09/pl2000020998.jpg?width=940&height=940",
+      "position": "Position: partial or deep shade",
+      "soil": "Soil:  moist, humus-rich, acid soil",
+      "growth": "Rate of growth:  average",
+      "care": "Garden care: Incorporate lots of well-rotted leaf mould or garden compost into the planting hole. Keep well watered during the growing season."
+    },
+    {
+      "name": "eared lady fern",
+      "image-src": "https://img.agriexpo.online/images_ag/photo-g/178142-12612935.jpg",
+      "position": "Position:  full or partial shade",
+      "soil": "Soil:  fertile, humus-rich, well-drained soil",
+      "growth": "Rate of growth:  average",
+      "care": "Garden care:  Incorporate lots of well-rotted leaf mould, composted pine needles or garden compost into the planting hole.Remove dead foliage in spring."
+    },
+    {
+      "name": "common polypody",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/17/pl2000011783.jpg?width=940&height=940",
+      "position": "Position: full sun or dappled shade",
+      "soil": "Soil: moderately fertile, humus-rich, gritty or stony, well-drained soil",
+      "growth": "Rate of growth: average",
+      "care": "Garden care: Wrap the rhizomes in moss and tie to a suitable rooting medium and keep moist until established. Shelter from cold, drying winds."
+    },
+    {
+      "name": "common polypody",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/18/pl0000001835.jpg?width=940&height=940",
+      "position": "Position: full sun or dappled shade",
+      "soil": "Soil: moderately fertile, humus-rich, gritty or stony, well-drained soil",
+      "growth": "Rate of growth: average",
+      "care": "Garden care: This easy plant can also be grown  epiphytically in bright filtered light. Wrap the rhizomes in moss and tie to a suitable rooting medium and keep moist until established. Shelter from cold, drying winds."
+    },
+    {
+      "name": "sensitive fern",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/17/pl2000011781.jpg?width=940&height=940",
+      "position": "Position:  partial shade",
+      "soil": "Soil: moist, fertile, humus-rich, preferably acid soil",
+      "growth": "Rate of growth:  average to fast-growing",
+      "care": "Garden care: Incorporate lots of well-rotted leaf mould or composted pine needles when planting. Ensure that the compost or soil is kept moist - water during dry spells."
+    },
+    {
+      "name": "common rasp-fern",
+      "image-src": "https://pics.davesgarden.com/pics/2016/04/09/palmbob/75f156.jpg",
+      "position": "Position: partial shade to full shade",
+      "soil": "Soil: moist, but well-drained humus-rich soil",
+      "growth": "Rate of growth: average",
+      "care": "Garden care: Incorporate lots of well-rotted leaf mould or garden compost into the planting hole. Cut back decayed fronds in winter to allow new growth to emerge."
+    },
+    {
+      "name": "alpine wood fern",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/45/pl2000034503.jpg?width=940&height=940",
+      "position": "Position: partial shade",
+      "soil": "Soil: moist, humus-rich soil",
+      "growth": "Rate of growth: average",
+      "care": "Garden care: Incorporate lots of well rotted leaf mould, composted pine needles of garden compost into the planting hole.  Cut back dead fronds in winter"
+    },
+    {
+      "name": "lady fern",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/17/pl2000011773.jpg?width=940&height=940",
+      "position": "Position: full or partial shade",
+      "soil": "Soil: moist, fertile, neutral to acid soil",
+      "growth": "Rate of growth: average",
+      "care": "Garden care: Incorporate lots of well-rotted leaf mould, composted pine needles or garden compost into the planting hole. In cold areas in late autumn protect the crown of the plant with a dry mulch of straw or bracken."
+    },
+    {
+      "name": "variegated bamboo fern",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/73/pl2000037393.jpg?width=940&height=940",
+      "position": "Position:  partial shade",
+      "soil": "Soil:  moist but freely draining,fertile, neutral to acidic soil",
+      "growth": "Rate of growth: average",
+      "care": "Garden care: Provide shelter from cold, drying winds and protect from excessively low temperaturs or hard frosts."
+    },
+    {
+      "name": "lady in red fern",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/72/pl2000017257.jpg?width=940&height=940",
+      "position": "Position: full or partial shade",
+      "soil": "Soil: moist, fertile, neutral to acid soil",
+      "growth": "Rate of growth: average",
+      "care": "Garden care: Incorporate lots of well-rotted leaf mould, composted pine needles or garden compost into the planting hole. In cold areas in late autumn protect the crown of the plant with a dry mulch of straw or bracken. It can take a 2-3 years  for these ferns to mature and develop the striking red stems."
+    },
+    {
+      "name": "Japanese painted fern",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/18/pl0000001813.jpg?width=940&height=940",
+      "position": "Position: full or partial shade",
+      "soil": "Soil: moist, fertile, neutral to acid soil",
+      "growth": "Rate of growth: average",
+      "care": "Garden care: Incorporate lots of well-rotted leaf mould, composted pine needles or garden compost into the planting hole. In cold areas in late autumn protect the crown of the plant with a dry mulch of straw or bracken"
+    },
+    {
+      "name": "lady fern",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/34/pl2000033468.jpg?width=940&height=940",
+      "position": "Position: full or partial shade",
+      "soil": "Soil: moist, fertile, neutral to acid soil",
+      "growth": "Rate of growth: average",
+      "care": "Garden care:Incorporate lots of well-rotted leaf mould or garden  compost into the planting hole. In cold areas in late autumn protect the crown of the plant with a dry mulch of straw or bracken."
+    },
+    {
+      "name": "hard fern , deer fern",
+      "image-src": "https://img.crocdn.co.uk/images/products2/pl/00/00/00/18/pl0000001816.jpg?width=940&height=940",
+      "position": "Position: partial or deep shade",
+      "soil": "Soil:  moist, humus-rich, acid soil",
+      "growth": "Rate of growth:  average",
+      "care": "Garden care: Incorporate lots of well-rotted leaf mould, composted pine needles or garden compost into the planting hole."
+    },
+    {
+      "name": "sword fern",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/18/pl0000001838.jpg?width=940&height=940",
+      "position": "Position:  full or partial shade",
+      "soil": "Soil:  fertile, humus-rich, well-drained soil",
+      "growth": "Rate of growth:  average",
+      "care": "Garden care:  Incorporate lots of well-rotted leaf mould, composted pine needles or garden compost into the planting hole."
+    },
+    {
+      "name": "painted lady fern 'Silver Falls'",
+      "image-src": "https://img.crocdn.co.uk/images/products2/pl/20/00/03/84/pl2000038493.jpg?width=940&height=940",
+      "position": "Position:  full or partial shade",
+      "soil": "Soil:  fertile, humus-rich, well-drained soil",
+      "growth": "Rate of growth:  average",
+      "care": "Garden care:  Incorporate lots of well-rotted leaf mould, composted pine needles or garden compost into the planting hole.Remove dead foliage in spring."
+    },
+    {
+      "name": "fortune's cyrtomium",
+      "image-src": "https://www.greatplantpicks.org/images/cyrtomium-fortunei-ras-05-2013-01-gpp1.jpg",
+      "position": "Position: partial to full shade",
+      "soil": "Soil: moderately fertile, humus-rich, moist but well-drained soil",
+      "growth": "Rate of growth: average",
+      "care": null
+    },
+    {
+      "name": "Japanese lace fern",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/17/pl2000011784.jpg?width=940&height=940",
+      "position": "Position:  full or partial shade",
+      "soil": "Soil:  fertile, humus-rich, well-drained soil",
+      "growth": "Rate of growth:  average",
+      "care": "Garden care:  Incorporate lots of well-rotted leaf mould, composted pine needles or garden compost into the planting hole"
+    },
+    {
+      "name": "male fern",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/17/pl2000011778.jpg?width=940&height=940",
+      "position": "Position: partial shade",
+      "soil": "Soil: moist, humus-rich soil",
+      "growth": "Rate of growth: average",
+      "care": "Garden care: Incorporate lots of well-rotted leaf mould, composted pine needles or garden compost into the planting hole. Cut back decayed fronds in winter to allow new growth to emerge."
+    },
+    {
+      "name": "five-fingered maidenhair fern (syn Adiantum pedatum )",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/00/47/pl2000004780.jpg?width=940&height=940",
+      "position": "Position: partial shade to full shade",
+      "soil": "Soil: moist, but well-drained humus-rich soil",
+      "growth": "Rate of growth: average",
+      "care": "Garden care: Incorporate lots of well-rotted leaf mould, composted pine needles or garden compost into the planting hole. Cut back decayed fronds in winter to allow new growth to emerge."
+    },
+    {
+      "name": "soft shield fern",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/18/pl0000001842.jpg?width=940&height=940",
+      "position": "Position:  full or partial shade",
+      "soil": "Soil:  fertile, humus-rich, well-drained soil",
+      "growth": "Rate of growth:  average",
+      "care": "Garden care:  Incorporate lots of well-rotted leaf mould, composted pine needles or garden compost into the planting hole.Remove dead foliage in spring."
+    },
+    {
+      "name": "alpine wood fern",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/17/pl2000011779.jpg?width=940&height=940",
+      "position": "Position: partial shade",
+      "soil": "Soil: moist, humus-rich soil",
+      "growth": "Rate of growth: average",
+      "care": "Garden care: Incorporate lots of well rotted leaf mould, composted pine needles of garden compost into the planting hole.  Cut back dead fronds in winter"
+    },
+    {
+      "name": "Japanese shield fern",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/17/pl2000011776.jpg?width=940&height=940",
+      "position": "Position: partial shade",
+      "soil": "Soil: moist, humus-rich soil",
+      "growth": "Rate of growth: slow-growing",
+      "care": "Garden care: Incorporate lots of well-rotted leaf mould, composted pine needles or garden compost into the planting hole. Cut back decayed fronds in winter to allow new growth to emerge."
+    },
+    {
+      "name": "white-striped Cretan brake",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/83/pl2000038311.jpg?width=940&height=940",
+      "position": null,
+      "soil": null,
+      "growth": null,
+      "care": null
+    },
+    {
+      "name": "giant chain fern",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/09/pl2000020983.jpg?width=940&height=940",
+      "position": "Position: partial shade",
+      "soil": "Soil: moderately fertile, damp soil with a neutral to acidic pH",
+      "growth": "Rate of growth: average",
+      "care": "Garden care: Water regularly during the growing season, ensuring that the soil or compost does not dry out while the plant is getting established. Shelter from cold, drying winds and apply a generous layer of protective mulch in autumn. Remove any tatty or damaged fronds in early spring before the new growth emerges."
+    },
+    {
+      "name": "fortune's cyrtomium",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/00/46/pl2000004668.jpg?width=940&height=940",
+      "position": "Position: partial to full shade",
+      "soil": "Soil: moderately fertile, humus-rich, moist but well-drained soil",
+      "growth": "Rate of growth: average",
+      "care": null
+    },
+    {
+      "name": "soft shield fern (syn. Plumosum Densum)",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/18/pl0000001845.jpg?width=940&height=940",
+      "position": "Position:  full or partial shade",
+      "soil": "Soil:  fertile, humus-rich, well-drained soil",
+      "growth": "Rate of growth:  average",
+      "care": "Garden care:  Incorporate lots of well-rotted leaf mould, composted pine needles or garden compost into the planting hole."
+    },
+    {
+      "name": "soft shield fern",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/18/pl0000001846.jpg?width=940&height=940",
+      "position": "Position:  full or partial shade",
+      "soil": "Soil:  fertile, humus-rich, moist but well-drained soil",
+      "growth": "Rate of growth:  average",
+      "care": "Garden care:  Incorporate lots of well-rotted leaf mould, composted pine needles or garden compost into the planting hole.Remove dead foliage in spring."
+    },
+    {
+      "name": "hart's tongue fern",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/17/pl2000011772.jpg?width=940&height=940",
+      "position": "Position: partial shade",
+      "soil": "Soil: humus-rich, moist, well-drained, preferably alkaline soil",
+      "growth": "Rate of growth: average",
+      "care": "Garden care: Plant in soil that has been improved with organic matter. Water regularly during the growing season, ensuring that the soil or compost does not dry out while the plant is getting established."
+    },
+    {
+      "name": "buckler fern",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/18/pl0000001823.jpg?width=940&height=940",
+      "position": "Position: partial shade",
+      "soil": "Soil: moist, humus-rich soil",
+      "growth": "Rate of growth: slow-growing",
+      "care": "Garden care: Incorporate lots of well-rotted leaf mould, composted pine needles or garden compost into the planting hole. Cut back decayed fronds in winter to allow new growth to emerge."
+    },
+    {
+      "name": "painted lady fern",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/13/pl2000021310.jpg?width=940&height=940",
+      "position": "Position: full or partial shade",
+      "soil": "Soil: moist, fertile, neutral to acid soil",
+      "growth": "Rate of growth: average",
+      "care": "Garden care: Incorporate lots of well-rotted leaf mould, composted pine needles or garden compost into the planting hole. In cold areas in late autumn protect the crown of the plant with a dry mulch of straw or bracken."
+    },
+    {
+      "name": "golden male fern  (The King)",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/18/pl0000001819.jpg?width=940&height=940",
+      "position": "Position: partial shade",
+      "soil": "Soil: moist, humus-rich soil",
+      "growth": "Rate of growth: slow-growing",
+      "care": "Garden care: Incorporate lots of well-rotted leaf mould, composted pine needles or garden compost into the planting hole. Cut back decayed fronds in winter to allow new growth to emerge."
+    },
+    {
+      "name": "male fern",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/17/pl2000011777.jpg?width=940&height=940",
+      "position": "Position: partial shade",
+      "soil": "Soil: moist, humus-rich soil",
+      "growth": "Rate of growth: average",
+      "care": "Garden care: Incorporate lots of well-rotted leaf mould, composted pine needles or garden compost into the planting hole.   Cut back dead fronds in winter."
+    },
+    {
+      "name": "giant chain fern",
+      "image-src": "https://i.pinimg.com/originals/b7/b6/3c/b7b63ca1f2b6f3b45664ff228a8c0157.png",
+      "position": "Position: partial shade",
+      "soil": "Soil: moderately fertile, damp soil with a neutral to acidic pH",
+      "growth": "Rate of growth: average",
+      "care": "Garden care: Water regularly during the growing season, ensuring that the soil or compost does not dry out while the plant is getting established. Shelter from cold, drying winds and apply a generous layer of protective mulch in autumn. Remove any tatty or damaged fronds in early spring before the new growth emerges."
+    },
+    {
+      "name": "hard shield fern",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/18/pl0000001836.jpg?width=940&height=940",
+      "position": "Position:  full or partial shade",
+      "soil": "Soil:  fertile, humus-rich, well-drained soil",
+      "growth": "Rate of growth:  average",
+      "care": "Garden care:  Incorporate lots of well-rotted leaf mould, composted pine needles or garden compost into the planting hole. Remove dead foliage in spring."
+    },
+    {
+      "name": "golden male fern (The King)",
+      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/63/pl2000026391.jpg?width=940&height=940",
+      "position": "Position: partial shade",
+      "soil": "Soil: moist, humus-rich soil",
+      "growth": "Rate of growth: slow-growing",
+      "care": "Garden care: Incorporate lots of well-rotted leaf mould, composted pine needles or garden compost into the planting hole. Cut back decayed fronds in winter to allow new growth to emerge."
+    }
+  ]
+}

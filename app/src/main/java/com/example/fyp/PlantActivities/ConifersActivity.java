@@ -6,6 +6,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 
 import com.example.fyp.Adapters.PlantAdapter;
@@ -42,6 +44,13 @@ public class ConifersActivity extends AppCompatActivity implements PlantAdapter.
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_conifers);
+
+        if (android.os.Build.VERSION.SDK_INT >= 21) {
+            Window window = this.getWindow();
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            window.setStatusBarColor(this.getResources().getColor(R.color.statusBar));
+        }
 
         recyclerView = findViewById(R.id.myRecycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -108,14 +117,14 @@ public class ConifersActivity extends AppCompatActivity implements PlantAdapter.
     public void onItemClick(int position) {
 
         Intent i = new Intent(this, PlantsActivity.class);
-        Plant clickedWeatherItem = list.get(position);
+        Plant clickedPlantItem = list.get(position);
 
-        i.putExtra(NAME, clickedWeatherItem.getName());
-        i.putExtra(IMAGE, clickedWeatherItem.getPicture());
-        i.putExtra(POSITION, clickedWeatherItem.getPosition());
-        i.putExtra(SOIL, clickedWeatherItem.getSoil());
-        i.putExtra(GROWTH, clickedWeatherItem.getGrowth());
-        i.putExtra(CARE, clickedWeatherItem.getCare());
+        i.putExtra(NAME, clickedPlantItem.getName());
+        i.putExtra(IMAGE, clickedPlantItem.getPicture());
+        i.putExtra(POSITION, clickedPlantItem.getPosition());
+        i.putExtra(SOIL, clickedPlantItem.getSoil());
+        i.putExtra(GROWTH, clickedPlantItem.getGrowth());
+        i.putExtra(CARE, clickedPlantItem.getCare());
 
 
         startActivity(i);

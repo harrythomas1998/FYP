@@ -24,7 +24,7 @@ import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
-public class AlpineRockeryActivity extends AppCompatActivity implements PlantAdapter.OnItemClickListener {
+public class ExoticActivity extends AppCompatActivity implements PlantAdapter.OnItemClickListener {
 
     RecyclerView recyclerView;
     ArrayList<Plant> list = new ArrayList<>();
@@ -42,7 +42,7 @@ public class AlpineRockeryActivity extends AppCompatActivity implements PlantAda
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_alpine_rockery);
+        setContentView(R.layout.activity_exotic);
 
         if (android.os.Build.VERSION.SDK_INT >= 21) {
             Window window = this.getWindow();
@@ -55,19 +55,16 @@ public class AlpineRockeryActivity extends AppCompatActivity implements PlantAda
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
 
-
         b1 = findViewById(R.id.addButton);
 
-
         loadJSONFromAsset();
-
     }
 
     public void loadJSONFromAsset() {
 
         String json;
         try {
-            InputStream is = getAssets().open("alpinesRockeries.json");
+            InputStream is = getAssets().open("exotic.json");
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
@@ -76,7 +73,7 @@ public class AlpineRockeryActivity extends AppCompatActivity implements PlantAda
 
 
             JSONObject obj = new JSONObject(json);
-            JSONArray m_jArry = obj.getJSONArray("alpinesRockeries");
+            JSONArray m_jArry = obj.getJSONArray("exotic");
 
 
 
@@ -89,16 +86,16 @@ public class AlpineRockeryActivity extends AppCompatActivity implements PlantAda
                 String image = jo_inside.getString("image-src");
                 String position = jo_inside.getString("position");
                 String soil = jo_inside.getString("soil");
-                String growth = jo_inside.getString("rateOfGrowth");
+                String growth = jo_inside.getString("growth");
                 String care = jo_inside.getString("care");
 
 
                 list.add(new Plant(name, image, position, soil, growth, care));
 
 
-                adapter = new PlantAdapter(AlpineRockeryActivity.this, list);
+                adapter = new PlantAdapter(ExoticActivity.this, list);
                 recyclerView.setAdapter(adapter);
-                adapter.setOnItemClickListener(AlpineRockeryActivity.this);
+                adapter.setOnItemClickListener(ExoticActivity.this);
 
             }
 
@@ -125,9 +122,6 @@ public class AlpineRockeryActivity extends AppCompatActivity implements PlantAda
         i.putExtra(GROWTH, clickedPlantItem.getGrowth());
         i.putExtra(CARE, clickedPlantItem.getCare());
 
-
         startActivity(i);
-
-
     }
 }

@@ -88,4 +88,70 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"/>
 
+    <Button
+        android:id="@+id/exoticButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:drawableEnd="@drawable/arrow2"
+        android:text="-Exotics"
+        android:textAlignment="viewStart"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <View
+        style="@style/Divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <Button
+    android:id="@+id/fernButton"
+    style="@style/Widget.AppCompat.Button.Borderless"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:drawableEnd="@drawable/arrow2"
+    android:text="-Ferns"
+    android:textAlignment="viewStart"
+    android:textSize="20dp"
+    android:textStyle="bold"/>
+
+    <View
+        style="@style/Divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <Button
+        android:id="@+id/grassesButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:drawableEnd="@drawable/arrow2"
+        android:text="-Grasses"
+        android:textAlignment="viewStart"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <View
+        style="@style/Divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <Button
+        android:id="@+id/hedgesButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:drawableEnd="@drawable/arrow2"
+        android:text="-Hedges"
+        android:textAlignment="viewStart"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <View
+        style="@style/Divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+
 </LinearLayout>
