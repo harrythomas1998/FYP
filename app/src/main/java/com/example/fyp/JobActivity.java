@@ -93,7 +93,9 @@ public class JobActivity extends AppCompatActivity {
 
                 myRef.push().setValue(job);
 
-                Toast.makeText(JobActivity.this, "Job has been created", Toast.LENGTH_SHORT).show();
+
+
+                Toast.makeText(JobActivity.this, "Job has been created", Toast.LENGTH_LONG).show();
 
 
             }

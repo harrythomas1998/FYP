@@ -20,12 +20,11 @@ public class MyGarden extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_garden);
 
-        if (android.os.Build.VERSION.SDK_INT >= 21) {
             Window window = this.getWindow();
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             window.setStatusBarColor(this.getResources().getColor(R.color.statusBar));
-        }
+
 
         soilB = findViewById(R.id.soilButton);
         plantsB = findViewById(R.id.plantsButton);
@@ -46,6 +45,9 @@ public class MyGarden extends AppCompatActivity {
         plantsB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                Intent i = new Intent(MyGarden.this, MyPlantsActivity.class);
+                startActivity(i);
 
 
             }

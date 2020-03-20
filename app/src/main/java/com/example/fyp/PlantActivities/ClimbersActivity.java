@@ -11,6 +11,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 
 import com.example.fyp.Adapters.PlantAdapter;
+import com.example.fyp.ArrayInterface;
 import com.example.fyp.Objects.Plant;
 import com.example.fyp.PlantsActivity;
 import com.example.fyp.R;
@@ -24,10 +25,9 @@ import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
-public class ClimbersActivity extends AppCompatActivity implements PlantAdapter.OnItemClickListener {
+public class ClimbersActivity extends AppCompatActivity implements PlantAdapter.OnItemClickListener, ArrayInterface {
 
     RecyclerView recyclerView;
-    ArrayList<Plant> list = new ArrayList<>();
     PlantAdapter adapter;
     Button b1;
 
@@ -93,10 +93,10 @@ public class ClimbersActivity extends AppCompatActivity implements PlantAdapter.
                 String care = jo_inside.getString("care");
 
 
-                list.add(new Plant(name, image, position, soil, growth, care));
+                climbers.add(new Plant(name, image, position, soil, growth, care));
 
 
-                adapter = new PlantAdapter(ClimbersActivity.this, list);
+                adapter = new PlantAdapter(ClimbersActivity.this, climbers);
                 recyclerView.setAdapter(adapter);
                 adapter.setOnItemClickListener(ClimbersActivity.this);
 
@@ -116,7 +116,7 @@ public class ClimbersActivity extends AppCompatActivity implements PlantAdapter.
     public void onItemClick(int position) {
 
         Intent i = new Intent(this, PlantsActivity.class);
-        Plant clickedPlantItem = list.get(position);
+        Plant clickedPlantItem = climbers.get(position);
 
         i.putExtra(NAME, clickedPlantItem.getName());
         i.putExtra(IMAGE, clickedPlantItem.getPicture());

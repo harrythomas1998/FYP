@@ -11,6 +11,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -25,22 +27,23 @@ import com.squareup.picasso.Picasso;
 import java.io.File;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.List;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder>{
+public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder> {
 
-    Context mContext;
-    ArrayList<Plant> mPlants;
+    private Context mContext;
+    private ArrayList<Plant> mPlants;
     private OnItemClickListener mListener;
 
-    String name;
-    String image;
+    private String name;
+    private String image;
     String pos;
     String soil;
     String growth;
     String care;
-
 
     public interface OnItemClickListener{
 
@@ -121,9 +124,10 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
         }
     }
 
+    public void filterList(ArrayList<Plant> filteredList){
 
-
-
-
+        mPlants = filteredList;
+        notifyDataSetChanged();
+    }
 }
 

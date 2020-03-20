@@ -6,11 +6,19 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.SearchView;
 
 import com.example.fyp.Adapters.PlantAdapter;
+import com.example.fyp.ArrayInterface;
 import com.example.fyp.Objects.Plant;
 import com.example.fyp.PlantsActivity;
 import com.example.fyp.R;
@@ -25,12 +33,12 @@ import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
-public class ConifersActivity extends AppCompatActivity implements PlantAdapter.OnItemClickListener {
+public class ConifersActivity extends AppCompatActivity implements PlantAdapter.OnItemClickListener, ArrayInterface {
 
     RecyclerView recyclerView;
-    ArrayList<Plant> list = new ArrayList<>();
     PlantAdapter adapter;
     Button b1;
+    EditText search;
 
     public static final String NAME = "name";
     public static final String IMAGE = "image";
@@ -56,9 +64,9 @@ public class ConifersActivity extends AppCompatActivity implements PlantAdapter.
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
 
-
         b1 = findViewById(R.id.addButton);
 
+        search = findViewById(R.id.coniferSearch);
 
         loadJSONFromAsset();
 
@@ -94,14 +102,15 @@ public class ConifersActivity extends AppCompatActivity implements PlantAdapter.
                 String care = jo_inside.getString("care");
 
 
-                list.add(new Plant(name, image, position, soil, growth, care));
+                conifers.add(new Plant(name, image, position, soil, growth, care));
 
 
-                adapter = new PlantAdapter(ConifersActivity.this, list);
+                adapter = new PlantAdapter(ConifersActivity.this, conifers);
                 recyclerView.setAdapter(adapter);
                 adapter.setOnItemClickListener(ConifersActivity.this);
 
             }
+            
 
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
@@ -117,7 +126,7 @@ public class ConifersActivity extends AppCompatActivity implements PlantAdapter.
     public void onItemClick(int position) {
 
         Intent i = new Intent(this, PlantsActivity.class);
-        Plant clickedPlantItem = list.get(position);
+        Plant clickedPlantItem = conifers.get(position);
 
         i.putExtra(NAME, clickedPlantItem.getName());
         i.putExtra(IMAGE, clickedPlantItem.getPicture());
@@ -126,9 +135,7 @@ public class ConifersActivity extends AppCompatActivity implements PlantAdapter.
         i.putExtra(GROWTH, clickedPlantItem.getGrowth());
         i.putExtra(CARE, clickedPlantItem.getCare());
 
-
         startActivity(i);
-
 
     }
 }

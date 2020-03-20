@@ -26,7 +26,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="40dp"
-        android:background="#69A730" />
+        android:background="#8DBE5E" />
 
     <Spinner
         android:id="@+id/spinnerArea"
@@ -35,7 +35,7 @@
         android:layout_marginLeft="40dp"
         android:layout_marginTop="70dp"
         android:layout_marginRight="40dp"
-        android:background="#69A730" />
+        android:background="#8DBE5E" />
 
     <Button
         android:id="@+id/button"
@@ -43,7 +43,7 @@
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
-        android:background="#69A730"
+        android:background="#8DBE5E"
         android:text="Finish"/>
 
 

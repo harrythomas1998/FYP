@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,75 +12,75 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginBottom="390dp"
-        android:src="@drawable/menuimage"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        android:layout_height="270dp"
+        android:src="@drawable/menuimage" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_marginBottom="345dp"
         android:text="MY GARDEN"
-        android:textAlignment="textStart"
-        android:layout_marginLeft="10dp"
-        android:textColor="#020202"
+        android:textAlignment="center"
+        android:textColor="#fff"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        android:fontFamily=""
+        android:layout_marginBottom="65dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        style="@style/Divider" />
 
     <Button
         android:id="@+id/soilButton"
         style="@android:style/Widget.DeviceDefault.Button.Borderless.Small"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="65dp"
-        android:text="-SOIL"
-        android:textAlignment="textStart"
+        android:text="My Garden Info"
+        android:textAlignment="center"
         android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/plantsButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        style="@style/Divider" />
 
     <Button
         android:id="@+id/plantsButton"
         style="@android:style/Widget.DeviceDefault.Button.Borderless"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="-View My Plants"
-        android:textAlignment="textStart"
+        android:text="View My Plants"
+        android:textAlignment="center"
+        android:textColor="#fff"
         android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/addPlantsButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/soilButton" />
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        style="@style/Divider" />
 
     <Button
         android:id="@+id/addPlantsButton"
         style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="120dp"
-        android:text="-Add Plants"
-        android:textAlignment="textStart"
+        android:text="Add Plants"
+        android:textColor="#fff"
+        android:textAlignment="center"
         android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/plantsButton" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        style="@style/Divider" />
+
+</LinearLayout>
 
 
 

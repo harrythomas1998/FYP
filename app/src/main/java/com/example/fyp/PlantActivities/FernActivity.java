@@ -11,6 +11,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 
 import com.example.fyp.Adapters.PlantAdapter;
+import com.example.fyp.ArrayInterface;
 import com.example.fyp.Objects.Plant;
 import com.example.fyp.PlantsActivity;
 import com.example.fyp.R;
@@ -24,10 +25,9 @@ import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
-public class FernActivity extends AppCompatActivity implements PlantAdapter.OnItemClickListener {
+public class FernActivity extends AppCompatActivity implements PlantAdapter.OnItemClickListener, ArrayInterface {
 
     RecyclerView recyclerView;
-    ArrayList<Plant> list = new ArrayList<>();
     PlantAdapter adapter;
     Button b1;
 
@@ -91,10 +91,10 @@ public class FernActivity extends AppCompatActivity implements PlantAdapter.OnIt
                 String care = jo_inside.getString("care");
 
 
-                list.add(new Plant(name, image, position, soil, growth, care));
+                ferns.add(new Plant(name, image, position, soil, growth, care));
 
 
-                adapter = new PlantAdapter(FernActivity.this, list);
+                adapter = new PlantAdapter(FernActivity.this, ferns);
                 recyclerView.setAdapter(adapter);
                 adapter.setOnItemClickListener(FernActivity.this);
 
@@ -114,7 +114,7 @@ public class FernActivity extends AppCompatActivity implements PlantAdapter.OnIt
     public void onItemClick(int position) {
 
         Intent i = new Intent(this, PlantsActivity.class);
-        Plant clickedPlantItem = list.get(position);
+        Plant clickedPlantItem = ferns.get(position);
 
         i.putExtra(NAME, clickedPlantItem.getName());
         i.putExtra(IMAGE, clickedPlantItem.getPicture());
