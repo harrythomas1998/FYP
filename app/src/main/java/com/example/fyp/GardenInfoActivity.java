@@ -7,10 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.example.fyp.Objects.SoilType;
@@ -22,10 +19,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class SoilActivity extends AppCompatActivity {
+public class GardenInfoActivity extends AppCompatActivity {
 
 
     Button b1;
@@ -92,7 +86,7 @@ public class SoilActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(SoilActivity.this, FindSoilType.class);
+                Intent i = new Intent(GardenInfoActivity.this, FindSoilType.class);
                 startActivity(i);
             }
         });

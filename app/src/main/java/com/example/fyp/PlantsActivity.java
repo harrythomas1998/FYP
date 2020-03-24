@@ -19,8 +19,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
-import java.util.ArrayList;
-
 import static com.example.fyp.PlantActivities.ConifersActivity.CARE;
 import static com.example.fyp.PlantActivities.ConifersActivity.GROWTH;
 import static com.example.fyp.PlantActivities.ConifersActivity.IMAGE;

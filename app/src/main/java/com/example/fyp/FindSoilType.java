@@ -10,9 +10,7 @@ import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 import com.example.fyp.Objects.SoilType;
 import com.google.firebase.auth.FirebaseAuth;
@@ -248,12 +246,10 @@ public class FindSoilType extends AppCompatActivity {
             public void onClick(View v) {
 
 
+                myRef.removeValue();
                 myRef.push().setValue(soilType);
 
-
-
-
-                Intent intent= new Intent(FindSoilType.this, SoilActivity.class);
+                Intent intent= new Intent(FindSoilType.this, GardenInfoActivity.class);
 
                 startActivity(intent);
             }

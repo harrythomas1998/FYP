@@ -49,12 +49,10 @@ public class MyJobs extends AppCompatActivity implements JobAdapter.OnItemClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_jobs);
 
-        if (android.os.Build.VERSION.SDK_INT >= 21) {
             Window window = this.getWindow();
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             window.setStatusBarColor(this.getResources().getColor(R.color.statusBar));
-        }
 
 
         recyclerView = findViewById(R.id.jobs_recycler);

@@ -9,12 +9,18 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.Toast;
 
 import com.example.fyp.Adapters.PlantAdapter;
 import com.example.fyp.ArrayInterface;
 import com.example.fyp.Objects.Plant;
 import com.example.fyp.PlantsActivity;
 import com.example.fyp.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -29,7 +35,11 @@ public class HedgesActivity extends AppCompatActivity implements PlantAdapter.On
 
     RecyclerView recyclerView;
     PlantAdapter adapter;
-    Button b1;
+    ImageButton b1;
+
+    private FirebaseUser mCurrentUser;
+    private FirebaseAuth firebaseAuth;
+    private DatabaseReference myRef;
 
     public static final String NAME = "name";
     public static final String IMAGE = "image";
@@ -53,7 +63,7 @@ public class HedgesActivity extends AppCompatActivity implements PlantAdapter.On
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
 
-        b1 = findViewById(R.id.addButton);
+        b1 = findViewById(R.id.add_from_card);
 
         loadJSONFromAsset();
 
@@ -125,5 +135,19 @@ public class HedgesActivity extends AppCompatActivity implements PlantAdapter.On
         startActivity(i);
 
 
+    }
+
+    @Override
+    public void onAddClick(int position) {
+
+        Plant selectedPlant = hedges.get(position);
+
+        firebaseAuth = FirebaseAuth.getInstance();
+        mCurrentUser = firebaseAuth.getCurrentUser();
+        myRef = FirebaseDatabase.getInstance().getReference().child("MyPlants").child(mCurrentUser.getUid());
+
+        myRef.push().setValue(selectedPlant);
+
+        Toast.makeText(this, "Plant Added!", Toast.LENGTH_SHORT).show();
     }
 }

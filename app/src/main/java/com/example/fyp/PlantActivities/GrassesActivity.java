@@ -9,12 +9,18 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.Toast;
 
 import com.example.fyp.Adapters.PlantAdapter;
 import com.example.fyp.ArrayInterface;
 import com.example.fyp.Objects.Plant;
 import com.example.fyp.PlantsActivity;
 import com.example.fyp.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -29,7 +35,11 @@ public class GrassesActivity extends AppCompatActivity implements PlantAdapter.O
 
     RecyclerView recyclerView;
     PlantAdapter adapter;
-    Button b1;
+    ImageButton b1;
+
+    private FirebaseUser mCurrentUser;
+    private FirebaseAuth firebaseAuth;
+    private DatabaseReference myRef;
 
     public static final String NAME = "name";
     public static final String IMAGE = "image";
@@ -44,18 +54,17 @@ public class GrassesActivity extends AppCompatActivity implements PlantAdapter.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grasses);
 
-        if (android.os.Build.VERSION.SDK_INT >= 21) {
             Window window = this.getWindow();
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             window.setStatusBarColor(this.getResources().getColor(R.color.statusBar));
-        }
+
 
         recyclerView = findViewById(R.id.myRecycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
 
-        b1 = findViewById(R.id.addButton);
+        b1 = findViewById(R.id.add_from_card);
 
         loadJSONFromAsset();
 
@@ -100,11 +109,7 @@ public class GrassesActivity extends AppCompatActivity implements PlantAdapter.O
 
             }
 
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (JSONException e) {
+        } catch (IOException | JSONException e) {
             e.printStackTrace();
         }
     }
@@ -127,5 +132,20 @@ public class GrassesActivity extends AppCompatActivity implements PlantAdapter.O
         startActivity(i);
 
 
+    }
+
+    @Override
+    public void onAddClick(int position) {
+
+        Plant selectedPlant = grasses.get(position);
+
+        firebaseAuth = FirebaseAuth.getInstance();
+        mCurrentUser = firebaseAuth.getCurrentUser();
+        myRef = FirebaseDatabase.getInstance().getReference().child("MyPlants").child(mCurrentUser.getUid());
+
+        myRef.push().setValue(selectedPlant);
+
+
+        Toast.makeText(this, "Plant Added!", Toast.LENGTH_SHORT).show();
     }
 }

@@ -60,6 +60,14 @@ public class JobAdapter extends RecyclerView.Adapter<JobAdapter.Viewholder> {
 
             holder.imageView.setImageResource(R.drawable.grass);
         }
+        else if(title.contains("Prune") || title.contains("prune")){
+
+            holder.imageView.setImageResource(R.drawable.shears);
+        }
+        else if(title.contains("plant") || title.contains("Plant")){
+
+            holder.imageView.setImageResource(R.drawable.spade);
+        }
 
 
 

@@ -13,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MyPlantsActivity"></activity>
+        <activity android:name=".MyJobsMenu"></activity>
+        <activity android:name=".ViewMyPlant" />
+        <activity android:name=".MyPlantsActivity" />
         <activity android:name=".PlantActivities.HedgesActivity" />
         <activity android:name=".PlantActivities.GrassesActivity" />
         <activity android:name=".PlantActivities.FernActivity" />
@@ -29,7 +31,7 @@
         <activity android:name=".PlantsActivity" />
         <activity android:name=".FindSoilType" />
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".SoilActivity" />
+        <activity android:name=".GardenInfoActivity" />
         <activity android:name=".MyGarden" />
 
         <meta-data

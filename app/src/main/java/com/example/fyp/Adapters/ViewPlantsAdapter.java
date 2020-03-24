@@ -1,40 +1,25 @@
 package com.example.fyp.Adapters;
 
+
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
-import android.net.Uri;
-import android.os.AsyncTask;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Filter;
-import android.widget.Filterable;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.target.ViewTarget;
-import com.davemorrissey.labs.subscaleview.ImageSource;
-import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView;
-import com.example.fyp.MyPlantsActivity;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.fyp.ArrayInterface;
 import com.example.fyp.Objects.Plant;
 import com.example.fyp.R;
 import com.squareup.picasso.Picasso;
 
-import java.io.File;
-import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.List;
 
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
-
-public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder> {
+public class ViewPlantsAdapter extends RecyclerView.Adapter<ViewPlantsAdapter.MyViewHolder> {
 
     private Context mContext;
     private ArrayList<Plant> mPlants;
@@ -50,7 +35,7 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
     public interface OnItemClickListener{
 
         void onItemClick(int position);
-        void onAddClick(int position);
+        void onDeleteClick(int position);
     }
 
     public void setOnItemClickListener(OnItemClickListener listener){
@@ -60,7 +45,7 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
 
 
 
-    public PlantAdapter(Context context, ArrayList<Plant> plants){
+    public ViewPlantsAdapter(Context context, ArrayList<Plant> plants){
 
         mContext = context;
         mPlants = plants;
@@ -70,8 +55,8 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-            View v = LayoutInflater.from(mContext).inflate(R.layout.plant_card_view, parent, false);
-            return new MyViewHolder(v);
+        View v = LayoutInflater.from(mContext).inflate(R.layout.my_plant_view_card, parent, false);
+        return new MyViewHolder(v);
     }
 
     @Override
@@ -88,8 +73,6 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
 
         holder.name.setText(name);
         Picasso.get().load(image).fit().centerInside().into(holder.plantPic);
-
-
     }
 
     @Override
@@ -101,14 +84,14 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
 
         TextView name;
         ImageView plantPic;
-        ImageButton add;
+        ImageButton delete;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            name = itemView.findViewById(R.id.name);
-            plantPic = itemView.findViewById(R.id.plantPic);
-            add = itemView.findViewById(R.id.add_from_card);
+            name = itemView.findViewById(R.id.view_plants_name);
+            plantPic = itemView.findViewById(R.id.view_plants_picture);
+            delete = itemView.findViewById(R.id.deletePlantButton);
 
 
             itemView.setOnClickListener(new View.OnClickListener() {
@@ -127,7 +110,7 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
                 }
             });
 
-            add.setOnClickListener(new View.OnClickListener() {
+            delete.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     if(mListener !=null){
@@ -136,7 +119,7 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
 
                         if(position != RecyclerView.NO_POSITION){
 
-                            mListener.onAddClick(position);
+                            mListener.onDeleteClick(position);
                         }
                     }
                 }
@@ -145,5 +128,5 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
         }
     }
 
-}
 
+}

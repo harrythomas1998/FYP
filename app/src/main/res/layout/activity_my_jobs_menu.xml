@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:text="Select a Plant type..."
+        android:text="My Jobs Menu"
         android:textColor="#fff"
         android:textSize="30sp"
         android:textStyle="bold"/>
@@ -24,14 +24,32 @@
         android:layout_height="1dp"
         android:layout_marginTop="60dp"/>
 
+
     <Button
-        android:id="@+id/conifersButton"
+        android:id="@+id/reoccuring_button"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="Conifers"
-        android:textAlignment="center"
-        android:textSize="20dp"
+        android:layout_height="70dp"
+        android:text="Re- occuring"
+        android:textAlignment="viewStart"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#fff" />
+
+    <View
+        style="@style/Divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />
+
+    <Button
+        android:id="@+id/created_by_me_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Created By Me"
+        android:textAlignment="viewStart"
+        android:textSize="25dp"
         android:textStyle="bold"
         android:textColor="#fff" />
 
@@ -41,13 +59,13 @@
         android:layout_height="1dp" />
 
     <Button
-        android:id="@+id/alpinesButton"
+        android:id="@+id/spring_button"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="Alpines and Rockeries"
-        android:textAlignment="center"
-        android:textSize="20dp"
+        android:layout_height="70dp"
+        android:text="Spring"
+        android:textAlignment="viewStart"
+        android:textSize="25dp"
         android:textColor="#fff"
         android:textStyle="bold" />
 
@@ -57,13 +75,13 @@
         android:layout_height="1dp" />
 
     <Button
-        android:id="@+id/beddingButton"
+        android:id="@+id/summer_button"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="Bedding"
-        android:textAlignment="center"
-        android:textSize="20dp"
+        android:layout_height="70dp"
+        android:text="Summer"
+        android:textAlignment="viewStart"
+        android:textSize="25dp"
         android:textStyle="bold"
         android:textColor="#fff" />
 
@@ -73,13 +91,13 @@
         android:layout_height="1dp"/>
 
     <Button
-        android:id="@+id/climbersButton"
+        android:id="@+id/autumn_button"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="Climbers"
-        android:textAlignment="center"
-        android:textSize="20dp"
+        android:layout_height="70dp"
+        android:text="Autumn"
+        android:textAlignment="viewStart"
+        android:textSize="25dp"
         android:textColor="#fff"
         android:textStyle="bold"/>
 
@@ -89,63 +107,15 @@
         android:layout_height="1dp"/>
 
     <Button
-        android:id="@+id/exoticButton"
+        android:id="@+id/winter_button"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="Exotics"
-        android:textAlignment="center"
-        android:textSize="20dp"
+        android:layout_height="70dp"
+        android:text="Winter"
+        android:textAlignment="viewStart"
+        android:textSize="25dp"
         android:textColor="#fff"
         android:textStyle="bold"/>
-
-    <View
-        style="@style/Divider"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"/>
-
-    <Button
-        android:id="@+id/fernButton"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="Ferns"
-        android:textAlignment="center"
-        android:textSize="20dp"
-        android:textColor="#fff"
-        android:textStyle="bold"/>
-
-    <View
-        style="@style/Divider"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"/>
-
-    <Button
-        android:id="@+id/grassesButton"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="Grasses"
-        android:textAlignment="center"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:textColor="#fff"/>
-
-    <View
-        style="@style/Divider"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"/>
-
-    <Button
-        android:id="@+id/hedgesButton"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="Hedges"
-        android:textAlignment="center"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:textColor="#fff"/>
 
     <View
         style="@style/Divider"

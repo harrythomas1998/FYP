@@ -8,8 +8,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Toast;
 
-import com.example.fyp.Adapters.PlantAdapter;
+import com.example.fyp.Adapters.ViewPlantsAdapter;
 import com.example.fyp.Objects.Plant;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -19,17 +20,14 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.util.ArrayList;
-
-public class MyPlantsActivity extends AppCompatActivity implements PlantAdapter.OnItemClickListener {
+public class MyPlantsActivity extends AppCompatActivity implements ViewPlantsAdapter.OnItemClickListener, ArrayInterface {
 
     DatabaseReference reference;
-    private FirebaseUser user;
-    private FirebaseAuth firebaseAuth;
+    FirebaseAuth firebaseAuth;
+    FirebaseUser user;
 
     private RecyclerView recyclerView;
-    private PlantAdapter adapter;
-    private ArrayList<Plant> myPlantsList;
+    private ViewPlantsAdapter adapter;
 
     public static final String NAME = "name";
     public static final String IMAGE = "image";
@@ -52,27 +50,31 @@ public class MyPlantsActivity extends AppCompatActivity implements PlantAdapter.
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        myPlantsList = new ArrayList<>();
 
         firebaseAuth = FirebaseAuth.getInstance();
-
         user = firebaseAuth.getCurrentUser();
+
+        adapter = new ViewPlantsAdapter(MyPlantsActivity.this, myPlants);
+        recyclerView.setAdapter(adapter);
+        adapter.setOnItemClickListener(MyPlantsActivity.this);
+
         reference = FirebaseDatabase.getInstance().getReference().child("MyPlants").child(user.getUid());
 
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
+                myPlants.clear();
+
                 for(DataSnapshot snapshot1: dataSnapshot.getChildren()){
 
                     Plant plant = snapshot1.getValue(Plant.class);
-                    myPlantsList.add(plant);
+                    assert plant != null;
+                    plant.setKey(snapshot1.getKey());
+                    myPlants.add(plant);
+
                 }
-
-                adapter = new PlantAdapter(MyPlantsActivity.this, myPlantsList);
-                recyclerView.setAdapter(adapter);
-                adapter.setOnItemClickListener(MyPlantsActivity.this);
-
+                adapter.notifyDataSetChanged();
             }
 
             @Override
@@ -87,7 +89,7 @@ public class MyPlantsActivity extends AppCompatActivity implements PlantAdapter.
     public void onItemClick(int position) {
 
         Intent i = new Intent(this, PlantsActivity.class);
-        Plant clickedPlantItem = myPlantsList.get(position);
+        Plant clickedPlantItem = myPlants.get(position);
 
         i.putExtra(NAME, clickedPlantItem.getName());
         i.putExtra(IMAGE, clickedPlantItem.getPicture());
@@ -100,4 +102,23 @@ public class MyPlantsActivity extends AppCompatActivity implements PlantAdapter.
 
 
     }
+
+    @Override
+    public void onDeleteClick(int position) {
+
+        Plant selectedPlant = myPlants.get(position);
+        String selectedKey = selectedPlant.getKey();
+        reference.child(selectedKey).removeValue();
+        removeItem(position);
+
+        Toast.makeText(this, "Plant Removed", Toast.LENGTH_SHORT).show();
+    }
+
+    public void removeItem(int position){
+
+        myPlants.remove(position);
+        adapter.notifyDataSetChanged();
+    }
+
+
 }

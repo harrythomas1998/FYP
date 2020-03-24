@@ -15,14 +15,19 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.SearchView;
+import android.widget.Toast;
 
 import com.example.fyp.Adapters.PlantAdapter;
 import com.example.fyp.ArrayInterface;
 import com.example.fyp.Objects.Plant;
 import com.example.fyp.PlantsActivity;
 import com.example.fyp.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -37,8 +42,11 @@ public class ConifersActivity extends AppCompatActivity implements PlantAdapter.
 
     RecyclerView recyclerView;
     PlantAdapter adapter;
-    Button b1;
-    EditText search;
+    ImageButton b1;
+
+    private FirebaseUser mCurrentUser;
+    private FirebaseAuth firebaseAuth;
+    private DatabaseReference myRef;
 
     public static final String NAME = "name";
     public static final String IMAGE = "image";
@@ -53,20 +61,17 @@ public class ConifersActivity extends AppCompatActivity implements PlantAdapter.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_conifers);
 
-        if (android.os.Build.VERSION.SDK_INT >= 21) {
             Window window = this.getWindow();
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             window.setStatusBarColor(this.getResources().getColor(R.color.statusBar));
-        }
+
 
         recyclerView = findViewById(R.id.myRecycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
 
-        b1 = findViewById(R.id.addButton);
-
-        search = findViewById(R.id.coniferSearch);
+        b1 = findViewById(R.id.add_from_card);
 
         loadJSONFromAsset();
 
@@ -112,11 +117,7 @@ public class ConifersActivity extends AppCompatActivity implements PlantAdapter.
             }
             
 
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (JSONException e) {
+        } catch (IOException | JSONException e) {
             e.printStackTrace();
         }
     }
@@ -136,6 +137,22 @@ public class ConifersActivity extends AppCompatActivity implements PlantAdapter.
         i.putExtra(CARE, clickedPlantItem.getCare());
 
         startActivity(i);
+
+    }
+
+    @Override
+    public void onAddClick(int position) {
+
+        Plant selectedPlant = conifers.get(position);
+
+        firebaseAuth = FirebaseAuth.getInstance();
+        mCurrentUser = firebaseAuth.getCurrentUser();
+        myRef = FirebaseDatabase.getInstance().getReference().child("MyPlants").child(mCurrentUser.getUid());
+
+        myRef.push().setValue(selectedPlant);
+
+
+        Toast.makeText(this, "Plant Added!", Toast.LENGTH_SHORT).show();
 
     }
 }
