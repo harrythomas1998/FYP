@@ -93,9 +93,7 @@ public class PlantsActivity extends AppCompatActivity implements ArrayInterface{
 
                 myRef.push().setValue(plant);
 
-                //conifers.remove(plant);
-
-                Toast.makeText(PlantsActivity.this, "Plant has been added to your Plants", Toast.LENGTH_LONG).show();
+                Toast.makeText(PlantsActivity.this, "Plant Added!", Toast.LENGTH_LONG).show();
             }
         });
 

@@ -71,12 +71,11 @@ public class MaintenancePlanner extends AppCompatActivity implements ArrayInterf
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maintenance_planner);
 
-        if (android.os.Build.VERSION.SDK_INT >= 21) {
             Window window = this.getWindow();
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             window.setStatusBarColor(this.getResources().getColor(R.color.statusBar));
-        }
+
 
         mondayData.clear();
         tuesdayData.clear();
@@ -196,9 +195,7 @@ public class MaintenancePlanner extends AppCompatActivity implements ArrayInterf
 
                             }
 
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        } catch (ParseException e) {
+                        } catch (JSONException | ParseException e) {
                             e.printStackTrace();
                         }
 

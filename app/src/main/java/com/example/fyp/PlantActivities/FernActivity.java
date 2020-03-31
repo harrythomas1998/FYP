@@ -73,6 +73,8 @@ public class FernActivity extends AppCompatActivity implements PlantAdapter.OnIt
 
     public void loadJSONFromAsset() {
 
+        ferns.clear();
+
         String json;
         try {
             InputStream is = getAssets().open("ferns.json");

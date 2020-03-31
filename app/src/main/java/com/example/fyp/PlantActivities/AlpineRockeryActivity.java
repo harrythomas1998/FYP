@@ -67,6 +67,8 @@ public class AlpineRockeryActivity extends AppCompatActivity implements PlantAda
 
     public void loadJSONFromAsset() {
 
+        alpines.clear();
+
         String json;
         try {
             InputStream is = getAssets().open("alpinesRockeries.json");
@@ -76,16 +78,12 @@ public class AlpineRockeryActivity extends AppCompatActivity implements PlantAda
             is.close();
             json = new String(buffer, StandardCharsets.UTF_8);
 
-
             JSONObject obj = new JSONObject(json);
             JSONArray m_jArry = obj.getJSONArray("alpinesRockeries");
-
-
 
             for (int i = 0; i < m_jArry.length(); i++) {
 
                 JSONObject jo_inside = m_jArry.getJSONObject(i);
-
 
                 String name = jo_inside.getString("name");
                 String image = jo_inside.getString("image-src");
@@ -94,9 +92,7 @@ public class AlpineRockeryActivity extends AppCompatActivity implements PlantAda
                 String growth = jo_inside.getString("rateOfGrowth");
                 String care = jo_inside.getString("care");
 
-
                 alpines.add(new Plant(name, image, position, soil, growth, care));
-
 
                 adapter = new PlantAdapter(AlpineRockeryActivity.this, alpines);
                 recyclerView.setAdapter(adapter);
@@ -123,9 +119,7 @@ public class AlpineRockeryActivity extends AppCompatActivity implements PlantAda
         i.putExtra(GROWTH, clickedPlantItem.getGrowth());
         i.putExtra(CARE, clickedPlantItem.getCare());
 
-
         startActivity(i);
-
 
     }
 
@@ -140,8 +134,6 @@ public class AlpineRockeryActivity extends AppCompatActivity implements PlantAda
 
         myRef.push().setValue(selectedPlant);
 
-
         Toast.makeText(this, "Plant Added!", Toast.LENGTH_SHORT).show();
-
     }
 }

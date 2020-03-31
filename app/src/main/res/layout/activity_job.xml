@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Create a Job..."
-        android:textSize="35dp"
+        android:textSize="35sp"
         android:textStyle="bold"
         android:textColor="#FFF"
         android:layout_marginTop="10dp"
@@ -31,10 +30,10 @@
         android:id="@+id/job_time"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="time goes here"
+        android:text=""
         android:textStyle="bold"
         android:textColor="#FFF"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:layout_marginLeft="10dp" />
 
     <TextView
@@ -49,10 +48,10 @@
         android:id="@+id/job_date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="date goes here"
+        android:text=""
         android:textStyle="bold"
         android:textColor="#FFF"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:layout_marginLeft="10dp"/>
 
     <TextView
@@ -67,10 +66,10 @@
         android:id="@+id/job_weather"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="weather goes here"
+        android:text=""
         android:textStyle="bold"
         android:textColor="#FFF"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:layout_marginLeft="10dp"/>
 
     <TextView
@@ -85,52 +84,65 @@
         android:id="@+id/job_temp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="temp goes here"
+        android:text=""
         android:textStyle="bold"
         android:textColor="#FFF"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:layout_marginLeft="10dp"/>
 
 
     <EditText
         android:id="@+id/job_title"
+        style="@style/Base.Widget.MaterialComponents.TextInputEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
         android:layout_marginRight="10dp"
         android:hint="Job Title"
-        android:textSize="25dp"
+        android:maxLines="1"
+        android:textColorHint="#fff"
+        android:backgroundTint="#fff"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFF"
-        android:layout_gravity="center"
-        android:layout_marginTop="25dp"
-        android:maxLines="1"/>
+        android:textSize="25sp" />
 
     <EditText
         android:id="@+id/job_description"
-        android:gravity="top|left"
-        android:inputType="textMultiLine"
-        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:lines="2"
-        android:textSize="12sp"
-        android:textColor="#FFF"
-        android:scrollHorizontally="false"
-        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:hint="Job Description" />
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+
+        android:backgroundTint="#fff"
+        android:textColorHint="#fff"
+        android:hint="Job Description"
+        android:inputType="textMultiLine"
+        android:lines="2"
+        android:scrollHorizontally="false"
+        android:textColor="#FFF"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
 
 
     <Button
         android:id="@+id/add_job_button"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
         android:layout_gravity="center"
         android:text="Add to My Jobs"
+        android:textColor="#fff"
         style="@style/Platform.MaterialComponents.Light"
-        android:textSize="20dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:background="#79A2CE"
         android:textStyle="bold"/>
 
 

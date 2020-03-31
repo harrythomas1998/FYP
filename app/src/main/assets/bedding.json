@@ -1,23 +1,6 @@
 {
   "bedding": [
-    {
-      "name": "Calendula officinalis 'Lemon Twist', Calendula lemon Twist",
-      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/36/pl2000033617.jpg?width=940&height=940",
-      "position": null,
-      "soil": null,
-      "growth": null,
-      "flowering": null,
-      "care": null
-    },
-    {
-      "name": "Coleus 'Chocolate Covered Cherry'",
-      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/60/pl2000036080.jpg?width=940&height=940",
-      "position": null,
-      "soil": null,
-      "growth": null,
-      "flowering": null,
-      "care": null
-    },
+
     {
       "name": "Fuchsia 'Lena', trailing hardy fuchsia",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/32/pl2000023202.jpg?width=940&height=940",
@@ -28,16 +11,7 @@
       "care": "Garden care: To encourage growth, pinch out the growing tips of young plants after the sixth or seventh pair of leaves.  During the growing season water regularly, applying a balanced liquid fertiliser each month. Cut back to the permanent framework in early spring. Protect the roots with a generous layer of mulch in autumn, or move potted plants to a sheltered position in the garden during the worst of the winter weather."
     },
     {
-      "name": "Trixi 'Petticoat', Trixi Petticoat",
-      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/69/pl2000036983.jpg?width=940&height=940",
-      "position": null,
-      "soil": null,
-      "growth": null,
-      "flowering": null,
-      "care": null
-    },
-    {
-      "name": "Fuchsia 'Sophia' (PBR) (Bella Series), fuchsia",
+      "name": "Fuchsia 'Sophia'",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/31/pl2000023177.jpg?width=940&height=940",
       "position": "Position: full sun or partial shade",
       "soil": "Soil: moderately fertile, humus-rich, well-drained soil",
@@ -46,7 +20,7 @@
       "care": "Garden care: To encourage growth, pinch out the growing tips of young plants after the sixth or seventh pair of leaves.  During the growing season water regularly, applying a balanced liquid fertiliser each month."
     },
     {
-      "name": "Fuchsia 'Delta's Sara', hardy fuchsia  (syn  Fuchsia Deltas Sarah )",
+      "name": "Fuchsia 'Delta's Sara'",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/05/pl2000030593.jpg?width=940&height=940",
       "position": "Position: full sun or partial shade",
       "soil": "Soil: fertile, moist, well-drained soil",
@@ -55,7 +29,7 @@
       "care": "Garden care: To encourage growth, pinch out the growing tips of young plants after the sixth or seventh pair of leaves.  During the growing season water regularly, applying a balanced liquid fertiliser each month. Cut back to the permanent framework in early spring."
     },
     {
-      "name": "Pelargonium 'Tip Top Duet', pelargonium 'Tip Top Duet'",
+      "name": "Pelargonium 'Tip Top Duet'",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/32/pl2000023215.jpg?width=940&height=940",
       "position": "Position: full sun or partial shade",
       "soil": "Soil: fertile, well-drained soil",
@@ -73,7 +47,7 @@
       "care": "Garden care: Incorporate lots of well-rotted organic matter in the planting hole. Feed with a high potash fertiliser such as Tomorite to encourage plenty of flowers  and keep cutting them so that you get plenty more!"
     },
     {
-      "name": "Euphorbia hypericifolia Diamond Frost ('Inneuphe') (PBR), Euphorbia Diamond Frost",
+      "name": "Euphorbia hypericifolia Diamond Frost 'Inneuphe'",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/00/66/pl2000006637.jpg?width=940&height=940",
       "position": "Position: full sun or partial shade",
       "soil": "Soil: light, well-drained soil",
@@ -82,7 +56,7 @@
       "care": null
     },
     {
-      "name": "Thunbergia alata 'Suzie Orange with Eye' (Suzie Series), black-eyed Susan vine",
+      "name": "Thunbergia alata 'Suzie Orange with Eye'",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/85/pl2000028594.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil:  fertile, moist but well drained",
@@ -118,7 +92,7 @@
       "care": "Garden care: To encourage growth, pinch out the growing tips of young plants after the sixth or seventh pair of leaves.  During the growing season water regularly, applying a balanced liquid fertiliser each month. Cut back to the permanent framework in early spring. Protect the roots with a generous layer of mulch in autumn, or move potted plants to a sheltered position in the garden during the worst of the winter weather."
     },
     {
-      "name": "Pelargonium sidoides, species pelargoniums",
+      "name": "Pelargonium sidoides",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/02/pl2000010252.jpg?width=940&height=940",
       "position": "Position: full sun or partial shade",
       "soil": "Soil: fertile, well-drained soil",
@@ -127,7 +101,7 @@
       "care": "Garden care: Pot up your pelargoniums, but only place them outside in the garden after the risk of frost has passed. Remove the spent   flowers as they fade, and keep them well fed using a dilute solution of a  high-potash liquid fertiliser (Tomorite is ideal) at regular intervals. If you  want to keep them over the winter, move them to a frost free environment and avoid overwatering during the colder months."
     },
     {
-      "name": "Ammi majus 'Graceland', false bishop's weed 'Graceland'",
+      "name": "False bishop's weed 'Graceland'",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/86/pl2000028601.jpg?width=940&height=940",
       "position": "Position:  full sun or partial shade",
       "soil": "Soil:  any moist but well-drained soil",
@@ -136,7 +110,7 @@
       "care": "Garden care: It may need staking - particularly in more  exposed positions. Avoid cutting back some of the flowers before they have  had a chance to set seed if you want to sow them for the following year."
     },
     {
-      "name": "Visnaga daucoides, bishop's weed  syn Ammi visnaga )",
+      "name": "Visnaga daucoides, bishop's weed",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/62/pl2000026282.jpg?width=940&height=940",
       "position": "Position:  full sun or partial shade",
       "soil": "Soil:  any moist but well-drained soil",
@@ -144,17 +118,9 @@
       "flowering": "Flowering period: June to September",
       "care": "Garden care:Ammis may need staking - particularly in more  exposed positions. Avoid cutting back some of the flowers before they have  had a chance to set seed if you want to sow them for the following year."
     },
+
     {
-      "name": "Trixi 'Shades of Blue', Trixi Shades of Blue",
-      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/69/pl2000036980.jpg?width=940&height=940",
-      "position": null,
-      "soil": null,
-      "growth": null,
-      "flowering": null,
-      "care": null
-    },
-    {
-      "name": "Cerinthe major 'Purpurascens', honeywort",
+        "name": "Cerinthe major, Honeywort",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/71/pl2000017162.jpg?width=940&height=940",
       "position": "Position:  full sun or partial shade",
       "soil": "Soil: fertile, well-drained soil",
@@ -163,7 +129,7 @@
       "care": "Garden care: In autumn group container-grown plants close to a warm house wall, ensuring that containers are raised off the ground using pot feet."
     },
     {
-      "name": "Osteospermum 'Sunny Mary' (PBR) (Sunny Series), African daisy",
+      "name": "Osteospermum 'Sunny Mary', African daisy",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/31/pl2000023174.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: moderately fertile, well-drained soil",
@@ -181,7 +147,7 @@
       "care": "Garden care: Pot up your pelargoniums, but only place them outside in the garden after the risk of frost has passed. Remove the spent   flowers as they fade, and keep them well fed using a dilute solution of a  high-potash liquid fertiliser (Tomorite is ideal) at regular intervals. If you  want to keep them over the winter, move them to a frost free environment and avoid overwatering during the colder months."
     },
     {
-      "name": "wallflower 'Purple Shades', wallflower - Erysimum",
+      "name": "wallflower 'Purple Shades'",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/10/pl2000021034.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: poor to moderately fertile, well-drained, neutral to alkaline soil",
@@ -190,7 +156,7 @@
       "care": "Garden care: Provide cloche protection where frosts are very severe or prolonged.\n\nPlease note that these wallflowers should be planted out as soon as they arrive!"
     },
     {
-      "name": "Chrysanthemum 'Jasoda Pink' (PBR), pot mum",
+      "name": "Chrysanthemum 'Jasoda Pink'",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/09/pl2000030902.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: well-drained",
@@ -199,7 +165,7 @@
       "care": "Hardiness: tender perennial, but usually treated as an annual\n\nThis is an instant impact plant, which will give your borders and pots a bold splash of colour, that will last well into the autumn. A new form, it has a dense, branching habit, but its the lashings of pink daisies that are the star attraction. \n\n  These are large, garden ready plants already approx 40cm tall  (including the pot), and they will be sent out with flowers already forming,   so are perfect for creating instant impact."
     },
     {
-      "name": "Helianthus annuus 'Sunsation Yellow (Sunsation Series)', sunflower",
+      "name": "Helianthus annuus 'Sunsation Yellow', sunflower",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/06/pl2000030616.jpg?width=940&height=940",
       "position": "Position:  full sun",
       "soil": "Soil:  moderately fertile, humus-rich, moist but well-drained, neutral to alkaline soil",
@@ -208,7 +174,7 @@
       "care": "Garden care: Pot up or plant out into a sunny spot and  keep well watered during the warm weather. Feed with a high potash  fertiliser (Tomorite is ideal) and   deadhead the spent flowers as they fade."
     },
     {
-      "name": "Dianthus  Green Trick ('Temarisou') (PBR), pink",
+      "name": "Dianthus  Green Trick, pink",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/48/pl2000024846.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: well-drained, neutral soil",
@@ -217,16 +183,7 @@
       "care": "Garden care: Incorporate lots of well-rotted manure or garden compost into the planting hole. Apply a balanced fertiliser in spring and deadhead to prolong flowering."
     },
     {
-      "name": "Sweet Pea collection 'Highly Scented',  Highly scented sweet pea plant collection",
-      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/74/pl2000037424.jpg?width=940&height=940",
-      "position": "Position: full sun",
-      "soil": "Soil: fertile, humus-rich, well-drained soil",
-      "growth": "Rate of growth: average to fast-growing",
-      "flowering": "Flowering period: June to September",
-      "care": "'Linda C:Highly scented lavender-blue flowers add an alluring touch to cottage gardens or informal planting schemes, when they can be allowed to scramble over supporting obelisks, arches or trellis. Their soft colouring mixes well with stronger purples, blues and pinks. Height to 1.8m"
-    },
-    {
-      "name": "Pelargonium  Mosquitaway Lizzy ('FLOANG01') (PBR),  pelargonium 'Mosquitaway Lizzy'",
+      "name": "Pelargonium  Mosquitaway Lizzy",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/48/pl2000024845.jpg?width=940&height=940",
       "position": "Position: full sun or partial shade",
       "soil": "Soil: fertile, well-drained soil",
@@ -235,7 +192,7 @@
       "care": "Garden care: Place them outside in the garden after the risk of frost has passed. Remove the spent   flowers as they fade, and keep them well fed using a dilute solution of a  high-potash liquid fertiliser (Tomorite is ideal) at regular intervals. If you  want to keep them over the winter, move them to a frost free environment and avoid overwatering during the colder months."
     },
     {
-      "name": "Cyclamen persicum Verano Red (Super Verano Series),  cyclamen",
+      "name": "Cyclamen persicum Verano Red, cyclamen",
       "image-src": "//img.crocdn.co.uk/images/products2/pl/20/00/02/85/pl2000028549.jpg?width=940&height=940",
       "position": "Position:  full sun to partial shade",
       "soil": "Soil:  humus-rich, well-drained soil",
@@ -253,16 +210,7 @@
       "care": "Garden care: If you do not want them to set seed, then you should remove the spent flowers as they fade."
     },
     {
-      "name": "Trixi 'Pink Petticoat', Trixi Pink Petticoat",
-      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/69/pl2000036982.jpg?width=940&height=940",
-      "position": null,
-      "soil": null,
-      "growth": null,
-      "flowering": null,
-      "care": null
-    },
-    {
-      "name": "Fuchsia 'Royal Mosaic' (California Dreamers Series),  trailing hardy fuchsia",
+      "name": "'Royal Mosaic', trailing hardy fuchsia",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/32/pl2000023203.jpg?width=940&height=940",
       "position": "Position: full sun or partial shade",
       "soil": "Soil: fertile, moist, well-drained soil",
@@ -280,7 +228,7 @@
       "care": "Garden care: Keep the soil or compost moist by watering regularly during dry spells and feed with a balanced fertiliser every fourteen days.  Take care not to overwater in the early stages. Although usually grown as an annual in this country, plants that are protected with a dry mulch may survive mild winters where temperatures only occasionally fall below 6 to 8�C (42 to 46�F)"
     },
     {
-      "name": "Ammi majus,  bishop's weed",
+      "name": "Ammi majus, bishop's weed",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/62/pl2000026281.jpg?width=940&height=940",
       "position": "Position:  full sun or partial shade",
       "soil": "Soil:  any moist but well-drained soil",
@@ -298,7 +246,7 @@
       "care": "Garden care:  Feed with a liquid fertiliser every two weeks when it is actively growing. Once the plant has finished flowering you can collect the seed and sow immediately to propagate more plants for the following year."
     },
     {
-      "name": "wallflower 'Fire King',  wallflower - Erysimum",
+      "name": "wallflower 'Fire King', wallflower - Erysimum",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/00/58/pl2000005899.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: poor to moderately fertile, well-drained, neutral to alkaline soil",
@@ -316,16 +264,7 @@
       "care": "Garden care: Make sure there is adequate support for it to  climb up, but do not plant it outside until all risk of frost has passed. Water freely when in growth and apply a liquid fertiliser at   monthly intervals. If it is not going to be overwintered in a warm place,  cut it back to ground level after it is hit by a frost and start again  with a new plant the following spring."
     },
     {
-      "name": "Rhodochiton atrosanguineus, Rhodochiton Purple Bells",
-      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/69/pl2000036985.jpg?width=940&height=940",
-      "position": null,
-      "soil": null,
-      "growth": null,
-      "flowering": null,
-      "care": null
-    },
-    {
-      "name": "Dianthus Pink Kisses ('Kledg12163') (PBR), pink",
+      "name": "Dianthus Pink Kisses, pink",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/75/pl2000027509.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: well-drained, neutral to alkaline soil",
@@ -343,7 +282,7 @@
       "care": "Garden care: Incorporate lots of well-rotted manure or garden compost into the planting hole. Apply a balanced fertiliser in spring and deadhead to prolong flowering."
     },
     {
-      "name": "Fuchsia 'Bella Rosella' (California Dreamers Series), fuchsia  'Giant Flowered' Bella Rosella",
+      "name": "Fuchsia 'Bella Rosella','Giant Flowered'",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/05/pl2000030596.jpg?width=940&height=940",
       "position": "Position: full sun or partial shade",
       "soil": "Soil: moderately fertile, humus-rich, well-drained soil",
@@ -352,16 +291,7 @@
       "care": "Garden care: To encourage growth, pinch out the growing tips of young plants after the sixth or seventh pair of leaves.  During the growing season water regularly, applying a balanced liquid fertiliser each month."
     },
     {
-      "name": "Velvet sweet pea collection, plants grown in root trainers",
-      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/80/pl2000018000.jpg?width=940&height=940",
-      "position": "Position: full sun or partial shade",
-      "soil": "Soil: fertile, humus-rich, well-drained soil",
-      "growth": "Rate of growth: average to fast-growing",
-      "flowering": "Flowering period: June to September",
-      "care": null
-    },
-    {
-      "name": "Thunbergia alata 'Suzie White Black Eye' (Suzie Series), black-eyed Susan vine",
+      "name": "Thunbergia alata, black-eyed Susan vine",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/85/pl2000028595.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil:  fertile, moist but well drained",
@@ -379,7 +309,7 @@
       "care": "Garden care: Divide congested plants in early spring or late summer. Protect young plants from slugs and snails. Trim after flowering."
     },
     {
-      "name": "Osteospermum Flowerpower Ice White ('KLEO06123') (Flowerpower Series), African daisy",
+      "name": "Osteospermum Flowerpower Ice White, African daisy",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/31/pl2000023175.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: moderately fertile, well-drained soil",
@@ -388,7 +318,7 @@
       "care": "Garden care: Grow in full sun to allow the flowers to fully open and deadhead regularly to prolong flowering."
     },
     {
-      "name": "Dianthus Peach Party ('Kledg12163'), pink",
+      "name": "Dianthus Peach Party, pink",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/45/pl2000034557.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: well-drained, neutral to alkaline soil",
@@ -406,7 +336,7 @@
       "care": "Garden care: To encourage growth, pinch out the growing tips of young plants after the sixth or seventh pair of leaves.  During the growing season water regularly, applying a balanced liquid fertiliser each month. Cut back to the permanent framework in early spring. Protect the roots with a generous layer of mulch in autumn, or move potted plants to a sheltered position in the garden during the worst of the winter weather."
     },
     {
-      "name": "Lathyrus odoratus 'Princess Elizabeth', sweet pea Princess Elizabeth",
+      "name": "Lathyrus odoratus 'Princess Elizabeth', sweet pea",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/74/pl2000037423.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: fertile, humus-rich, well-drained soil",
@@ -415,7 +345,7 @@
       "care": "Garden care: Incorporate lots of well-rotted organic matter in the planting hole. Feed with a high potash fertiliser, such as Tomorite for plenty of flowers and keep cutting them so that you get plenty more!"
     },
     {
-      "name": "Chrysanthemum 'Jasoda Mauve' (PBR), pot mum",
+      "name": "Chrysanthemum 'Jasoda Mauve'",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/09/pl2000030900.jpg?width=940&height=940",
       "position": "Position: full sun or partial shade",
       "soil": "Soil: well-drained",
@@ -424,7 +354,7 @@
       "care": "Hardiness: hardy annual\n\nThis free-flowering chrysanthemum puts on an unbeatable display in  late summer and autumn when the foliage virtually disappears  beneath a sea of flowers. Perfect for pots or borders,  they will add a much needed blast of colour when many other plants are well past their best. \n\n  These are large garden ready plants already approx 40cm tall in pot and are sent out with flowers forming all ready to be planted out and create instant impact."
     },
     {
-      "name": "Ipomoea purpurea 'Star of Yelta', morning glory  Star of Yelta",
+      "name": "Ipomoea purpurea 'Star of Yelta', morning glory",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/69/pl2000036984.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: moderately fertile, well-drained soil",
@@ -451,7 +381,7 @@
       "care": "Garden care: Incorporate lots of well-rotted organic matter in the planting hole. Feed with a high potash fertiliser, such as Tomorite for plenty of flowers and keep cutting them so that you get plenty more!"
     },
     {
-      "name": "Osteospermum Lavender Pink ('14')  (PBR) Flowerpower series), African daisy",
+      "name": "Osteospermum Lavender Pink, African daisy",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/31/pl2000023176.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: moderately fertile, well-drained soil",
@@ -469,7 +399,7 @@
       "care": "Garden care: Pot up your pelargoniums, but only place them outside in the garden after the risk of frost has passed. Remove the spent   flowers as they fade, and keep them well fed using a dilute solution of a  high-potash liquid fertiliser (Tomorite is ideal) at regular intervals. If you  want to keep them over the winter, move them to a frost free environment and avoid overwatering during the colder months."
     },
     {
-      "name": "Fuchsia Mariska  ('Bf01') (PBR) (Bella Series), fuchsia",
+      "name": "Fuchsia Mariska, fuchsia",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/31/pl2000023169.jpg?width=940&height=940",
       "position": "Position: full sun or partial shade",
       "soil": "Soil: moderately fertile, humus-rich, well-drained soil",
@@ -478,7 +408,7 @@
       "care": "Garden care: To encourage growth, pinch out the growing tips of young plants after the sixth or seventh pair of leaves.  During the growing season water regularly, applying a balanced liquid fertiliser each month."
     },
     {
-      "name": "Osteospermum '3D Berry White', African daisy 3D Berry White",
+      "name": "Osteospermum '3D Berry White', African daisy",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/36/pl2000033615.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: moderately fertile, well-drained soil",
@@ -487,7 +417,7 @@
       "care": "Garden care: Avoid winter wet and protect plants in very cold areas.  Semi-ripe cuttings can be taken in late summer and over-wintered in a  frost-free place."
     },
     {
-      "name": "wallflower 'Primrose Dame', wallflower - Erysimum",
+      "name": "wallflower 'Primrose Dame', Erysimum",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/10/pl2000021033.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: poor to moderately fertile, well-drained, neutral to alkaline soil",
@@ -503,15 +433,6 @@
       "growth": "Rate of growth: average",
       "flowering": "Flowering period: June to October",
       "care": null
-    },
-    {
-      "name": "Persian wallflower collection, wallflower collection",
-      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/10/pl2000021038.jpg?width=940&height=940",
-      "position": "Position: full sun",
-      "soil": "Soil: poor to moderately fertile, well-drained, neutral to alkaline soil",
-      "growth": "Rate of growth: average to fast-growing",
-      "flowering": "Flowering period: March to May",
-      "care": "'Primrose Dame'Opening soft lemon before quickly turning a pale buttery shade, the flowers of this wallflower provide a soothing backdrop for strong purples and plums, as well as strengthening predominantly white and creamy bedding dispalys. A firm favourite in the spring garden, they are very easy to grow and the flowers also have a spicy scent."
     },
     {
       "name": "Nicotiana 'Lime Green', tobacco plant",
@@ -577,7 +498,7 @@
       "care": "Garden care: To encourage growth, pinch out the growing tips of young plants after the sixth or seventh pair of leaves.  During the growing season water regularly, applying a balanced liquid fertiliser each month. Cut back to the permanent framework in early spring. Protect the roots with a generous layer of mulch in autumn, or move potted plants to a sheltered position in the garden during the worst of the winter weather."
     },
     {
-      "name": "Cyclamen persicum Verano Neon Pink (Super Verano Series)",
+      "name": "Cyclamen persicum Verano Neon Pink",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/85/pl2000028547.jpg?width=940&height=940",
       "position": "Position:  full sun to partial shade",
       "soil": "Soil:  humus-rich, well-drained soil",
@@ -586,7 +507,7 @@
       "care": "Garden care:  These half hardy annual will need protection from  frosts so place them in a sheltered spot or where you can cover them with a frost fleece. Deadheading will prolonge flowering."
     },
     {
-      "name": "Nemesia Myrtille ('Fleurmyr') (PBR), nemesia Myrtille",
+      "name": "Nemesia Myrtille",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/31/pl2000023184.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: moist, but well-drained",
@@ -595,7 +516,7 @@
       "care": "Garden care: Keep plants well watered throughout the summer to maintain flower production and trim fading flowers. Pinching out the tips of the stemes will encourage bushier growth. Feed through the growing season with a high potash fertiliser. Protect the plants in winter."
     },
     {
-      "name": "Osteospermum '3D Pink', African daisy",
+      "name": "Osteospermum, African daisy",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/69/pl2000036979.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: moderately fertile, well-drained soil",
@@ -604,7 +525,7 @@
       "care": "Garden care: Avoid winter wet and protect plants in very cold areas.  Semi-ripe cuttings can be taken in late summer and over-wintered in a  frost-free place."
     },
     {
-      "name": "Pelargonium 'Don Palido' (PBR), regal pelargonium",
+      "name": "Pelargonium 'Don Palido', regal",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/31/pl2000023163.jpg?width=940&height=940",
       "position": "Position: full sun or partial shade",
       "soil": "Soil: fertile, well-drained soil",
@@ -613,7 +534,7 @@
       "care": "Garden care: Pot up your pelargoniums, but only place them outside in the garden after the risk of frost has passed. Remove the spent   flowers as they fade, and keep them well fed using a dilute solution of a  high-potash liquid fertiliser (Tomorite is ideal) at regular intervals. If you  want to keep them over the winter, move them to a frost free environment and avoid overwatering during the colder months."
     },
     {
-      "name": "Nemesia 'Nesia Burgundy' (Nesia Series), Nemesia Nesia Burgundy",
+      "name": "Nemesia 'Nesia Burgundy'",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/36/pl2000033619.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: moist, but well-drained",
@@ -622,22 +543,13 @@
       "care": "Garden care: Keep plants well watered throughout the summer to maintain flower production and trim fading flowers. Pinching out the tips of the stemes will encourage bushier growth. Feed through the growing season with a high potash fertiliser. Protect the plants in winter."
     },
     {
-      "name": "Pelargonium 'Don Mila' (PBR), regal pelargonium",
+      "name": "Pelargonium 'Don Mila', regal",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/31/pl2000023165.jpg?width=940&height=940",
       "position": "Position: full sun or partial shade",
       "soil": "Soil: fertile, well-drained soil",
       "growth": "Rate of growth:  fast growing",
       "flowering": "Flowering period:  May to November",
       "care": "Garden care: Pot up your pelargoniums, but only place them outside in the garden after the risk of frost has passed. Remove the spent   flowers as they fade, and keep them well fed using a dilute solution of a  high-potash liquid fertiliser (Tomorite is ideal) at regular intervals. If you  want to keep them over the winter, move them to a frost free environment and avoid overwatering during the colder months."
-    },
-    {
-      "name": "Diascia 'Diamond' Collection",
-      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/83/pl2000038326.jpg?width=940&height=940",
-      "position": "Position: full sun",
-      "soil": "Soil: moist, but well-drained",
-      "growth": "Rate of growth: average",
-      "flowering": "Flowering period: May to September",
-      "care": "Diascia Diamond Fuchsia"
     },
     {
       "name": "Fuchsia 'Hawkshead', hardy fuchsia",
@@ -649,7 +561,7 @@
       "care": "Garden care: To encourage growth, pinch out the growing tips of young plants after the sixth or seventh pair of leaves.  During the growing season water regularly, applying a balanced liquid fertiliser each month. Cut back to the permanent framework in early spring. Protect the roots with a generous layer of mulch in autumn, or move potted plants to a sheltered position in the garden during the worst of the winter weather."
     },
     {
-      "name": "Pelargonium 'Elegance Imperial',  pelargonium 'Elegance Imperial'",
+      "name": "Pelargonium 'Elegance Imperial'",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/35/pl2000023550.jpg?width=940&height=940",
       "position": "Position: full sun or partial shade",
       "soil": "Soil: fertile, well-drained soil",
@@ -658,7 +570,7 @@
       "care": "Garden care: Pot up your pelargoniums, but only place them outside in the garden after the risk of frost has passed. Remove the spent   flowers as they fade, and keep them well fed using a dilute solution of a  high-potash liquid fertiliser (Tomorite is ideal) at regular intervals. If you  want to keep them over the winter, move them to a frost free environment and avoid overwatering during the colder months."
     },
     {
-      "name": "Fuchsia 'Maori Maid', trailing fuchsia Maori Maid",
+      "name": "Fuchsia 'Maori Maid', trailing",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/06/pl2000030603.jpg?width=940&height=940",
       "position": "Position: full sun or partial shade",
       "soil": "Soil: moderately fertile, humus-rich, well-drained soil",
@@ -667,7 +579,7 @@
       "care": "Garden care: To encourage growth, pinch out the growing tips of young plants after the sixth or seventh pair of leaves.  During the growing season water regularly, applying a balanced liquid fertiliser each month."
     },
     {
-      "name": "Nemesia 'Aroma Rhubarb & Custard' (Aroma Series), nemesia",
+      "name": "Nemesia 'Aroma Rhubarb & Custard'",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/31/pl2000023185.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: moist, but well-drained",
@@ -676,7 +588,7 @@
       "care": "Garden care: Keep plants well watered throughout the summer to maintain flower production and trim fading flowers. Pinching out the tips of the stemes will encourage bushier growth. Feed through the growing season with a high potash fertiliser. Protect the plants in winter."
     },
     {
-      "name": "Osteospermum Blue Eyed Beauty ('Balostlueye')  (PBR), African daisy",
+      "name": "Osteospermum Blue Eyed Beauty, African daisy",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/31/pl2000023173.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: moderately fertile, well-drained soil",
@@ -685,7 +597,7 @@
       "care": "Garden care: Avoid winter wet  and protect plants in colder areas. Plants grown in pots can be moved to a  sheltered spot to overwinter."
     },
     {
-      "name": "Nemesia Berries and Cream ('Fleurbac') (PBR), nemesia",
+      "name": "Nemesia Berries and Cream, nemesia",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/31/pl2000023180.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: moist, but well-drained",
@@ -712,7 +624,7 @@
       "care": "Garden care: Keep the soil or compost moist by watering regularly during dry spells and feed with a balanced fertiliser every fourteen days. Although usually grown as an annual, plants that are protected with a dry mulch may survive mild winters where temperatures only occasionally fall below -5�C (23�F)"
     },
     {
-      "name": "Nemesia 'Easter Bonnet' (French Connection Series), nemesia",
+      "name": "Nemesia 'Easter Bonnet'",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/31/pl2000023183.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: moist, but well-drained",
@@ -748,7 +660,7 @@
       "care": "Garden care: Feed regularly with a high potash fertiliser, such as Tomorite, throughout the summer"
     },
     {
-      "name": "Nemesia Framboise ('Fleurfram') (PBR), nemesia Framboise",
+      "name": "Nemesia Framboise, nemesia Framboise",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/31/pl2000023182.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: moist, but well-drained",
@@ -757,7 +669,7 @@
       "care": "Garden care: Keep plants well watered throughout the summer to maintain flower production and trim fading flowers. Pinching out the tips of the stemes will encourage bushier growth. Feed through the growing season with a high potash fertiliser. Protect the plants in winter."
     },
     {
-      "name": "Diascia 'Diamond Fuchsia', diascia",
+      "name": "Diascia 'Diamond Fuchsia'",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/70/pl2000037030.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: fertile, moist but well-drained soil",
@@ -766,7 +678,7 @@
       "care": "Garden care: Divide congested plants in early spring or late summer. Protect young plants from slugs and snails. Trim after flowering."
     },
     {
-      "name": "Pelargonium 'Elegance Jeanette', Pelargonium 'Elegance Jeanette'",
+      "name": "Pelargonium 'Elegance Jeanette'",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/48/pl2000024844.jpg?width=940&height=940",
       "position": "Position: full sun or partial shade",
       "soil": "Soil: fertile, well-drained soil",
@@ -784,7 +696,7 @@
       "care": "Garden care: Pot up your pelargoniums, but only place them outside in the garden after the risk of frost has passed. Remove the spent   flowers as they fade, and keep them well fed using a dilute solution of a  high-potash liquid fertiliser (Tomorite is ideal) at regular intervals. If you  want to keep them over the winter, move them to a frost free environment and avoid overwatering during the colder months."
     },
     {
-      "name": "Diascia 'Diamond Light Pink', diascia",
+      "name": "Diascia 'Diamond Light Pink'",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/70/pl2000037031.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: fertile, moist but well-drained soil",
@@ -811,7 +723,7 @@
       "care": "Garden care: Incorporate lots of well-rotted organic matter in the planting hole. Feed with a high potash fertiliser, such as Tomorite for plenty of flowers and keep cutting them so that you get plenty more!"
     },
     {
-      "name": "Fuchsia 'Evita' (PBR) (Bella Series), fuchsia",
+      "name": "Fuchsia 'Evita', fuchsia",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/31/pl2000023178.jpg?width=940&height=940",
       "position": "Position: full sun or partial shade",
       "soil": "Soil: moderately fertile, humus-rich, well-drained soil",
@@ -829,7 +741,7 @@
       "care": "Garden care:"
     },
     {
-      "name": "Fuchsia 'New Millennium', trailing fuchsia New Millennium",
+      "name": "Fuchsia 'New Millennium', trailing fuchsia",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/05/pl2000030594.jpg?width=940&height=940",
       "position": "Position: full sun or partial shade",
       "soil": "Soil: moderately fertile, humus-rich, well-drained soil",
@@ -838,7 +750,7 @@
       "care": "Garden care: To encourage growth, pinch out the growing tips of young plants after the sixth or seventh pair of leaves.  During the growing season water regularly, applying a balanced liquid fertiliser each month."
     },
     {
-      "name": "Lathyrus odoratus 'High Scent', modern grandiflora sweet pea (syn. King's High Scent)",
+      "name": "Lathyrus odoratus 'High Scent', modern grandiflora sweet pea",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/79/pl2000017976.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: fertile, humus-rich, well-drained soil",
@@ -856,7 +768,7 @@
       "care": "Garden care  It may need staking - particularly in more exposed positions."
     },
     {
-      "name": "Chrysanthemum 'Jasoda Yellow' (PBR)",
+      "name": "Chrysanthemum 'Jasoda Yellow'",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/09/pl2000030901.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: well-drained",
@@ -865,7 +777,7 @@
       "care": "Hardiness: tender perennial, but usually treated as an annual\n\nThis new chrysanthemum has a compact habit, and forms a natural  dome shaped bush of foliage, that is practically smothered with  yellow flowers from late summer to the first frosts. Ideal for pots and borders, they will give you a bright splash of colour, long after many other plants are well past their best."
     },
     {
-      "name": "Campanula portenschlagianaAmbella Intens Purple ('Ptdb141301') (PBR), dalmatian bellflower",
+      "name": "Campanula portenschlagiana Ambella Intens Purple, dalmatian bellflower",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/06/pl2000030617.jpg?width=940&height=940",
       "position": "Position: full sun or partial shade",
       "soil": "Soil: moist, well-drained, fertile soil",
@@ -874,7 +786,7 @@
       "care": "Garden care: Protect the foliage from slug damage using environmentally friendly slug pellets or beer traps. During the growing season water freely."
     },
     {
-      "name": "Fuchsia 'Celia Smedley', hardy fuchsia Celia Smedley",
+      "name": "Fuchsia 'Celia Smedley'",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/05/pl2000030592.jpg?width=940&height=940",
       "position": "Position: full sun or partial shade",
       "soil": "Soil: moderately fertile, humus-rich, well-drained soil",
@@ -883,7 +795,7 @@
       "care": "Garden care: To encourage growth, pinch out the growing tips of young plants after the sixth or seventh pair of leaves.  During the growing season water regularly, applying a balanced liquid fertiliser each month. Cut back to the permanent framework in early spring. Protect the roots with a generous layer of mulch in autumn, or move potted plants to a sheltered position in the garden during the worst of the winter weather."
     },
     {
-      "name": "Osteospermum '3D Blueberry Shake', African daisy Blueberry Shake",
+      "name": "Osteospermum, African daisy Blueberry Shake",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/36/pl2000033614.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: moderately fertile, well-drained soil",
@@ -892,7 +804,7 @@
       "care": "Garden care: Avoid winter wet and protect plants in very cold areas.  Semi-ripe cuttings can be taken in late summer and over-wintered in a  frost-free place."
     },
     {
-      "name": "Nemesia 'Wisley Vanilla', nemesia",
+      "name": "Nemesia 'Wisley Vanilla'",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/31/pl2000023181.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: moist, but well-drained,",
@@ -901,7 +813,7 @@
       "care": "Garden care: Keep plants well watered throughout the summer to maintain flower production. Protect plants in winter"
     },
     {
-      "name": "Lathyrus 'Linda C', sweet pea 'Linda C'",
+      "name": "Lathyrus 'Linda C', sweet pea",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/74/pl2000037422.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: fertile, humus-rich, well-drained soil",
@@ -910,7 +822,7 @@
       "care": "Garden care: Incorporate lots of well-rotted organic matter in the planting hole. Feed with a high potash fertiliser, such as Tomorite for plenty of flowers and keep cutting them so that you get plenty more!"
     },
     {
-      "name": "Cyclamen persicum Winfall White ('Synwinfwhi') (Winfall Series), cyclamen",
+      "name": "Cyclamen persicum Winfall White, cyclamen",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/85/pl2000028550.jpg?width=940&height=940",
       "position": "Position:  full sun to partial shade",
       "soil": "Soil:  humus-rich, well-drained soil",
@@ -919,7 +831,7 @@
       "care": "Garden care:  These half hardy annual will need protection from  frosts so place them in a sheltered spot or where you can cover them with a frost fleece. Deadheading will prolonge flowering."
     },
     {
-      "name": "Chrysanthemum 'Jasoda Dark Orange' (PBR), pot mum",
+      "name": "Chrysanthemum 'Jasoda Dark Orange', pot mum",
       "image-src": "//img.crocdn.co.uk/images/products2/pl/20/00/03/09/pl2000030904.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: well-drained",
@@ -946,7 +858,7 @@
       "care": "Garden care: Keep under glass where temperatures dip below  5C, only moving outside after the frosts have passed.   A twining climber, it will need support, and it should be watered freely when in growth - and apply a balanced liquid fertiliser monthly."
     },
     {
-      "name": "Chrysanthemum 'Jasoda White' (PBR), pot mum",
+      "name": "Chrysanthemum 'Jasoda White', pot mum",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/09/pl2000030903.jpg?width=940&height=940",
       "position": "Position: full sun",
       "soil": "Soil: well-drained",

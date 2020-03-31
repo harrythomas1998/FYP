@@ -72,6 +72,8 @@ public class GrassesActivity extends AppCompatActivity implements PlantAdapter.O
 
     public void loadJSONFromAsset() {
 
+        grasses.clear();
+
         String json;
         try {
             InputStream is = getAssets().open("grasses.json");

@@ -79,6 +79,8 @@ public class ConifersActivity extends AppCompatActivity implements PlantAdapter.
 
     public void loadJSONFromAsset() {
 
+        conifers.clear();
+
         String json;
         try {
             InputStream is = getAssets().open("conifers.json");

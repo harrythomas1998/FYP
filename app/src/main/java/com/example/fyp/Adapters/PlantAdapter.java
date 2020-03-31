@@ -1,35 +1,27 @@
 package com.example.fyp.Adapters;
 
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
-import android.net.Uri;
-import android.os.AsyncTask;
-import android.util.Log;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Filter;
-import android.widget.Filterable;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.target.ViewTarget;
-import com.davemorrissey.labs.subscaleview.ImageSource;
-import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView;
-import com.example.fyp.MyPlantsActivity;
 import com.example.fyp.Objects.Plant;
+import com.example.fyp.Objects.SoilType;
 import com.example.fyp.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
-import java.io.File;
-import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -77,6 +69,10 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
     @Override
     public void onBindViewHolder(@NonNull final MyViewHolder holder, int position) {
 
+        DatabaseReference reference;
+        FirebaseUser user;
+        FirebaseAuth firebaseAuth;
+
         Plant currentItem = mPlants.get(position);
 
         name = currentItem.getName();
@@ -88,6 +84,86 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
 
         holder.name.setText(name);
         Picasso.get().load(image).fit().centerInside().into(holder.plantPic);
+
+        firebaseAuth = FirebaseAuth.getInstance();
+
+        user = firebaseAuth.getCurrentUser();
+        reference = FirebaseDatabase.getInstance().getReference().child("SoilType").child(user.getUid());
+
+        reference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+
+                for(DataSnapshot snapshot1: dataSnapshot.getChildren()){
+
+                    SoilType st = snapshot1.getValue(SoilType.class);
+                    assert st != null;
+                    String fertility = st.getFertility();
+                    String drainage = st.getDrainage();
+
+                    //Suitable
+                    if(soil.contains("well-drained") && fertility.contains("High") && drainage.contains("Very Good") ){
+
+                        holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
+                        holder.suitability.setText("Plant is suitable");
+                    }
+                    else if(soil.contains("Well-drained") && fertility.contains("High") && drainage.contains("Very Good") ){
+
+                        holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
+                        holder.suitability.setText("Plant is suitable");
+                    }
+                    else if(soil.contains("well drained") && fertility.contains("High") && drainage.contains("Very Good") ){
+
+                        holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
+                        holder.suitability.setText("Plant is suitable");
+                    }
+                    else if(soil.contains("well-drained") && soil.contains("humus-rich") && fertility.contains("High") && drainage.contains("Very Good")){
+
+                        holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
+                        holder.suitability.setText("Plant is suitable");
+                    }
+                    else if(soil.contains("well drained") && soil.contains("humus-rich") && fertility.contains("High") && drainage.contains("Very Good")){
+
+                        holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
+                        holder.suitability.setText("Plant is suitable");
+                    }
+                    else if(soil.contains("well-drained") && soil.contains("moist") && fertility.contains("High") && drainage.contains("Very Good")){
+
+                        holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
+                        holder.suitability.setText("Plant is suitable");
+                    }
+                    else if(soil.contains("well drained") && soil.contains("moist") && fertility.contains("High") && drainage.contains("Very Good")){
+
+                        holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
+                        holder.suitability.setText("Plant is suitable");
+                    }
+
+                    else if(soil.contains("freely draining") && soil.contains("humus-rich") && fertility.contains("High") && drainage.contains("Very Good")){
+
+                        holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
+                        holder.suitability.setText("Plant is suitable");
+                    }
+
+                    else if(soil.contains("freely draining") && soil.contains("moist") && fertility.contains("High") && drainage.contains("Very Good")){
+
+                        holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
+                        holder.suitability.setText("Plant is suitable");
+                    }
+                    else{
+
+                        holder.suitability.setTextColor(Color.parseColor("#FF2233"));
+                        holder.suitability.setText("Plant is not suitable");
+                    }
+                }
+
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
 
 
     }
@@ -102,6 +178,8 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
         TextView name;
         ImageView plantPic;
         ImageButton add;
+        TextView suitability;
+
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -109,6 +187,8 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
             name = itemView.findViewById(R.id.name);
             plantPic = itemView.findViewById(R.id.plantPic);
             add = itemView.findViewById(R.id.add_from_card);
+            suitability = itemView.findViewById(R.id.suitability_text);
+
 
 
             itemView.setOnClickListener(new View.OnClickListener() {

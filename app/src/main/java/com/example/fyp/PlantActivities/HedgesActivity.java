@@ -8,10 +8,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
-
 import com.example.fyp.Adapters.PlantAdapter;
 import com.example.fyp.ArrayInterface;
 import com.example.fyp.Objects.Plant;
@@ -29,7 +27,7 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
-import java.util.ArrayList;
+import java.nio.charset.StandardCharsets;
 
 public class HedgesActivity extends AppCompatActivity implements PlantAdapter.OnItemClickListener, ArrayInterface {
 
@@ -71,6 +69,8 @@ public class HedgesActivity extends AppCompatActivity implements PlantAdapter.On
 
     public void loadJSONFromAsset() {
 
+        hedges.clear();
+
         String json;
         try {
             InputStream is = getAssets().open("hedges.json");
@@ -78,7 +78,7 @@ public class HedgesActivity extends AppCompatActivity implements PlantAdapter.On
             byte[] buffer = new byte[size];
             is.read(buffer);
             is.close();
-            json = new String(buffer, "UTF-8");
+            json = new String(buffer, StandardCharsets.UTF_8);
 
 
             JSONObject obj = new JSONObject(json);

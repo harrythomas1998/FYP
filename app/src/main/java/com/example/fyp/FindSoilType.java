@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
+import com.example.fyp.Objects.Orientation;
 import com.example.fyp.Objects.SoilType;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -24,15 +25,15 @@ import java.util.List;
 public class FindSoilType extends AppCompatActivity {
 
 
-    private Spinner s1, s2;
+    private Spinner s1, s2, s3;
     private Button b2;
 
-
     private SoilType soilType;
+    private Orientation or;
 
     private FirebaseUser mCurrentUser;
     private FirebaseAuth firebaseAuth;
-    private DatabaseReference myRef;
+    private DatabaseReference myRef, myRef2;
 
 
     @Override
@@ -40,17 +41,23 @@ public class FindSoilType extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_find_soil_type);
 
-        if (android.os.Build.VERSION.SDK_INT >= 21) {
+
             Window window = this.getWindow();
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             window.setStatusBarColor(this.getResources().getColor(R.color.statusBar));
-        }
 
-
+        s3 = findViewById(R.id.spinnerOrientation);
         s2 = findViewById(R.id.spinnerProvince);
         s1 = findViewById(R.id.spinnerArea);
         b2 = findViewById(R.id.button);
+
+        List<String> orientations = new ArrayList<>();
+        orientations.add("-Choose your Orientation-");
+        orientations.add("North");
+        orientations.add("South");
+        orientations.add("East");
+        orientations.add("West");
 
 
         List<String> provinces = new ArrayList<>();
@@ -126,6 +133,10 @@ public class FindSoilType extends AppCompatActivity {
         provinceAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         s2.setAdapter(provinceAdapter);
 
+        ArrayAdapter<String> orientationAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, orientations);
+        orientationAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        s3.setAdapter(orientationAdapter);
+
         final ArrayAdapter<String> leinsterAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, leinster);
         leinsterAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
@@ -139,7 +150,20 @@ public class FindSoilType extends AppCompatActivity {
         ulsterAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
 
+        s3.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
+                String orientation = s3.getSelectedItem().toString();
+
+                or.setOrientation(orientation);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 
 
 
@@ -236,10 +260,13 @@ public class FindSoilType extends AppCompatActivity {
         });
 
         soilType = new SoilType();
+        or = new Orientation();
 
         firebaseAuth = FirebaseAuth.getInstance();
         mCurrentUser = firebaseAuth.getCurrentUser();
         myRef = FirebaseDatabase.getInstance().getReference().child("SoilType").child(mCurrentUser.getUid());
+        myRef2 = FirebaseDatabase.getInstance().getReference().child("Orientation").child(mCurrentUser.getUid());
+
 
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -248,6 +275,9 @@ public class FindSoilType extends AppCompatActivity {
 
                 myRef.removeValue();
                 myRef.push().setValue(soilType);
+
+                myRef2.removeValue();
+                myRef2.push().setValue(or);
 
                 Intent intent= new Intent(FindSoilType.this, GardenInfoActivity.class);
 

@@ -10,6 +10,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.fyp.Objects.Orientation;
 import com.example.fyp.Objects.SoilType;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -23,9 +24,9 @@ public class GardenInfoActivity extends AppCompatActivity {
 
 
     Button b1;
-    TextView soilType, ph, fertility, vegetation, climate, drainage;
+    TextView soilType, ph, fertility, vegetation, climate, drainage, orientation;
 
-    DatabaseReference reference;
+    DatabaseReference reference, reference2;
     private FirebaseUser user;
     private FirebaseAuth firebaseAuth;
 
@@ -34,12 +35,10 @@ public class GardenInfoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_soil);
 
-        if (android.os.Build.VERSION.SDK_INT >= 21) {
             Window window = this.getWindow();
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             window.setStatusBarColor(this.getResources().getColor(R.color.statusBar));
-        }
 
 
         b1 = findViewById(R.id.findSoilBtn);
@@ -51,6 +50,7 @@ public class GardenInfoActivity extends AppCompatActivity {
         vegetation = findViewById(R.id.vegetation);
         climate = findViewById(R.id.climate);
         drainage = findViewById(R.id.drainage);
+        orientation = findViewById(R.id.orientation);
 
 
         firebaseAuth = FirebaseAuth.getInstance();
@@ -80,6 +80,28 @@ public class GardenInfoActivity extends AppCompatActivity {
 
             }
         });
+
+        reference2 = FirebaseDatabase.getInstance().getReference().child("Orientation").child(user.getUid());
+        reference2.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+
+                for(DataSnapshot snapshot1: dataSnapshot.getChildren()){
+
+                    Orientation o = snapshot1.getValue(Orientation.class);
+
+                    orientation.setText(o.getOrientation());
+
+                }
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
 
 
         b1.setOnClickListener(new View.OnClickListener() {

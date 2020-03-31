@@ -70,6 +70,8 @@ public class ExoticActivity extends AppCompatActivity implements PlantAdapter.On
 
     public void loadJSONFromAsset() {
 
+        exotic.clear();
+
         String json;
         try {
             InputStream is = getAssets().open("exotic.json");

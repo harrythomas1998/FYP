@@ -8,18 +8,20 @@ public class SoilType {
     String comVeg;
     String climate;
     String drainage;
+    String orientation;
 
 
     public SoilType() {
     }
 
-    public SoilType(String name, String ph, String fertility, String comVeg, String climate, String drainage) {
+    public SoilType(String name, String ph, String fertility, String comVeg, String climate, String drainage, String orientation) {
         this.name = name;
         this.ph = ph;
         this.fertility = fertility;
         this.comVeg = comVeg;
         this.climate = climate;
         this.drainage = drainage;
+        this.orientation = orientation;
     }
 
     public String getName() {
@@ -68,5 +70,13 @@ public class SoilType {
 
     public void setDrainage(String drainage) {
         this.drainage = drainage;
+    }
+
+    public String getOrientation() {
+        return orientation;
+    }
+
+    public void setOrientation(String orientation) {
+        this.orientation = orientation;
     }
 }

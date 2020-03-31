@@ -19,6 +19,8 @@
         android:layout_marginBottom="420dp"
         android:ems="10"
         android:hint="E-mail"
+        android:backgroundTint="#fff"
+        android:textColorHint="#fff"
         android:inputType="textEmailAddress"
         android:textColor="#FFF"
         android:textStyle="normal"
@@ -40,6 +42,8 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:textColor="#FFF"
+        android:backgroundTint="#fff"
+        android:textColorHint="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,7 +52,6 @@
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
-
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginTop="65dp"
@@ -75,6 +78,7 @@
         android:layout_marginBottom="91dp"
         android:background="#8DBE5E"
         android:text="Sign In"
+        android:textColor="#fff"
         app:layout_constraintBottom_toTopOf="@+id/textView1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"

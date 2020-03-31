@@ -21,61 +21,92 @@
             android:layout_height="wrap_content"
             android:text="Title goes here"
             android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textAlignment="center"
             android:textColor="#FFF"
-            android:textSize="35sp"
-            android:layout_marginLeft="10dp"/>
-
+            android:textSize="35sp" />
 
         <TextView
-            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
             android:id="@+id/view_job_time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="time goes here"
+            android:text=""
             android:textStyle="bold"
             android:textColor="#FFF"
             android:textSize="25sp"
             android:layout_marginLeft="10dp"/>
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
             android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
             android:id="@+id/view_job_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="date goes here"
+            android:text=""
             android:textStyle="bold"
             android:textColor="#FFF"
             android:textSize="25sp"
             android:layout_marginLeft="10dp"/>
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weather"
             android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
             android:id="@+id/view_job_weather"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="weather goes here"
+            android:text=""
             android:textStyle="bold"
             android:textColor="#FFF"
             android:textSize="25sp"
             android:layout_marginLeft="10dp"/>
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Temperature"
             android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
             android:id="@+id/view_job_temp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="temp goes here"
+            android:text=""
             android:textStyle="bold"
             android:textColor="#FFF"
             android:textSize="25sp"
             android:layout_marginLeft="10dp"/>
 
         <TextView
-            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+
             android:id="@+id/view_job_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="description goes here"
+            android:text=""
             android:textStyle="bold"
             android:textColor="#FFF"
             android:textSize="25sp"

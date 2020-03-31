@@ -75,6 +75,8 @@ public class ClimbersActivity extends AppCompatActivity implements PlantAdapter.
 
     public void loadJSONFromAsset() {
 
+        climbers.clear();
+
         String json;
         try {
             InputStream is = getAssets().open("climbers.json");

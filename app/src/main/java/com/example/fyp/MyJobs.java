@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.CheckBox;
+import android.widget.Toast;
 
 import com.example.fyp.Adapters.JobAdapter;
 import com.example.fyp.Objects.Job;
@@ -23,15 +24,14 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
-public class MyJobs extends AppCompatActivity implements JobAdapter.OnItemClickListener {
+public class MyJobs extends AppCompatActivity implements JobAdapter.OnItemClickListener, ArrayInterface{
 
     private RecyclerView recyclerView;
     private JobAdapter jobAdapter;
-    private ArrayList<Job> jobData;
+
     DatabaseReference reference;
     private FirebaseUser user;
     private FirebaseAuth firebaseAuth;
-    private CheckBox checkBox;
 
     public static final String WEATHER = "weather";
     public static final String TIME = "time";
@@ -60,7 +60,7 @@ public class MyJobs extends AppCompatActivity implements JobAdapter.OnItemClickL
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
 
-        jobData = new ArrayList<>();
+
 
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -70,13 +70,17 @@ public class MyJobs extends AppCompatActivity implements JobAdapter.OnItemClickL
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
+                jobs.clear();
+
                 for(DataSnapshot snapshot1: dataSnapshot.getChildren()){
 
                     Job job = snapshot1.getValue(Job.class);
-                    jobData.add(job);
+                    assert job != null;
+                    job.setKey(snapshot1.getKey());
+                    jobs.add(job);
                 }
 
-                jobAdapter = new JobAdapter(MyJobs.this, jobData);
+                jobAdapter = new JobAdapter(MyJobs.this, jobs);
                 recyclerView.setAdapter(jobAdapter);
                 jobAdapter.setOnItemClickListener(MyJobs.this);
 
@@ -97,7 +101,7 @@ public class MyJobs extends AppCompatActivity implements JobAdapter.OnItemClickL
     public void onItemClick(int position) {
 
         Intent i = new Intent(this, ViewJob.class);
-        Job clickedJobItem = jobData.get(position);
+        Job clickedJobItem = jobs.get(position);
 
         i.putExtra(WEATHER, clickedJobItem.getWeatherType());
         i.putExtra(TIME, clickedJobItem.getTime());
@@ -110,6 +114,24 @@ public class MyJobs extends AppCompatActivity implements JobAdapter.OnItemClickL
 
 
     }
+
+    @Override
+    public void onDeleteClick(int position) {
+
+        Job selectedJob = jobs.get(position);
+        String selectedKey = selectedJob.getKey();
+        reference.child(selectedKey).removeValue();
+        removeItem(position);
+
+        Toast.makeText(this, "Job Removed", Toast.LENGTH_SHORT).show();
+    }
+
+    public void removeItem(int position){
+
+        jobs.remove(position);
+        jobAdapter.notifyDataSetChanged();
+    }
+
 
 
 

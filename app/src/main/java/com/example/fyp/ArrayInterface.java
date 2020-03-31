@@ -1,5 +1,7 @@
 package com.example.fyp;
 
+import com.example.fyp.Objects.Job;
+import com.example.fyp.Objects.MaintenancePlant;
 import com.example.fyp.Objects.Plant;
 import com.example.fyp.Objects.Weather;
 
@@ -27,5 +29,12 @@ public interface ArrayInterface {
     ArrayList<Plant> alpines = new ArrayList<>();
 
     ArrayList<Plant> myPlants = new ArrayList<>();
+
+    ArrayList<Job> jobs = new ArrayList<>();
+
+    ArrayList<MaintenancePlant> summer = new ArrayList<>();
+    ArrayList<MaintenancePlant> winter = new ArrayList<>();
+    ArrayList<MaintenancePlant> spring = new ArrayList<>();
+    ArrayList<MaintenancePlant> autumn = new ArrayList<>();
 
 }

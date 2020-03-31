@@ -88,7 +88,7 @@ public class MyPlantsActivity extends AppCompatActivity implements ViewPlantsAda
     @Override
     public void onItemClick(int position) {
 
-        Intent i = new Intent(this, PlantsActivity.class);
+        Intent i = new Intent(this, ViewMyPlant.class);
         Plant clickedPlantItem = myPlants.get(position);
 
         i.putExtra(NAME, clickedPlantItem.getName());

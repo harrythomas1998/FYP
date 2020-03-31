@@ -17,14 +17,32 @@
         android:textColor="#fff"
         android:textSize="34sp"
         android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
         android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:text="Note: You must fill in all the details"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Soil"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_marginLeft="40dp"
+        android:textSize="18sp"/>
 
     <Spinner
         android:id="@+id/spinnerProvince"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="100dp"
         android:layout_marginEnd="40dp"
         android:background="#8DBE5E" />
 
@@ -33,17 +51,48 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="50dp"
         android:layout_marginRight="40dp"
         android:background="#8DBE5E" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        style="@style/Divider"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Orientation"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"
+        android:textSize="18sp"/>
+
+    <Spinner
+        android:id="@+id/spinnerOrientation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="#8DBE5E" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
 
     <Button
         android:id="@+id/button"
         android:layout_width="150dp"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:background="#8DBE5E"
+        android:layout_marginBottom="20dp"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:background="#79A2CE"
         android:text="Finish"/>
 
 

@@ -13,7 +13,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MyJobsMenu"></activity>
+        <activity android:name=".seasons.Autumn"></activity>
+        <activity android:name=".seasons.Spring" />
+        <activity android:name=".seasons.Summer" />
+        <activity android:name=".seasons.Winter" />
+        <activity android:name=".MyJobsMenu" />
         <activity android:name=".ViewMyPlant" />
         <activity android:name=".MyPlantsActivity" />
         <activity android:name=".PlantActivities.HedgesActivity" />

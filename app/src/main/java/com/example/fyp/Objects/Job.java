@@ -1,9 +1,12 @@
 package com.example.fyp.Objects;
 
+import com.google.firebase.database.Exclude;
+
 public class Job {
 
-    String date, time, weatherType, title, description;
-    double temp;
+    private String date, time, weatherType, title, description, key;
+
+    private double temp;
 
 
     public Job() {
@@ -65,5 +68,13 @@ public class Job {
 
     public void setTemp(double temp) {
         this.temp = temp;
+    }
+
+    @Exclude
+    public String getKey(){ return key; }
+
+    @Exclude
+    public void setKey(String key) {
+        this.key = key;
     }
 }

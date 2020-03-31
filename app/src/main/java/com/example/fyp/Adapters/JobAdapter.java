@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -25,6 +26,7 @@ public class JobAdapter extends RecyclerView.Adapter<JobAdapter.Viewholder> {
     public interface OnItemClickListener{
 
         void onItemClick(int position);
+        void onDeleteClick(int position);
     }
 
     public void setOnItemClickListener(OnItemClickListener listener){
@@ -52,7 +54,6 @@ public class JobAdapter extends RecyclerView.Adapter<JobAdapter.Viewholder> {
         Job currentItem = mJobList.get(position);
 
         String title = currentItem.getTitle();
-
 
         holder.jobTxt.setText(title);
 
@@ -82,14 +83,14 @@ public class JobAdapter extends RecyclerView.Adapter<JobAdapter.Viewholder> {
 
         public TextView jobTxt;
         public ImageView imageView;
-
-
+        ImageButton delete;
 
         public Viewholder(@NonNull View itemView) {
             super(itemView);
 
             jobTxt = itemView.findViewById(R.id.title_text);
             imageView = itemView.findViewById(R.id.image_view_job);
+            delete = itemView.findViewById(R.id.delete_job_button);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -107,6 +108,20 @@ public class JobAdapter extends RecyclerView.Adapter<JobAdapter.Viewholder> {
                 }
             });
 
+            delete.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if(mListener !=null){
+
+                        int position = getAdapterPosition();
+
+                        if(position != RecyclerView.NO_POSITION){
+
+                            mListener.onDeleteClick(position);
+                        }
+                    }
+                }
+            });
 
         }
     }

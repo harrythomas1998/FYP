@@ -74,6 +74,8 @@ public class BeddingActivity extends AppCompatActivity  implements PlantAdapter.
 
     public void loadJSONFromAsset() {
 
+        bedding.clear();
+
         String json;
         try {
             InputStream is = getAssets().open("bedding.json");

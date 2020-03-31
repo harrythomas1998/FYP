@@ -24,7 +24,7 @@ import static com.example.fyp.MaintenancePlanner.TEMP;
 import static com.example.fyp.MaintenancePlanner.TIME;
 import static com.example.fyp.MaintenancePlanner.WEATHER;
 
-public class JobActivity extends AppCompatActivity {
+public class JobActivity extends AppCompatActivity implements ArrayInterface {
 
     Button addJob;
     EditText title, description;
@@ -32,7 +32,6 @@ public class JobActivity extends AppCompatActivity {
     private FirebaseUser mCurrentUser;
     private FirebaseAuth firebaseAuth;
 
-    ArrayList<Job> jobs;
 
 
     private DatabaseReference myRef;
@@ -42,12 +41,11 @@ public class JobActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_job);
 
-        if (android.os.Build.VERSION.SDK_INT >= 21) {
             Window window = this.getWindow();
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             window.setStatusBarColor(this.getResources().getColor(R.color.statusBar));
-        }
+
 
         Intent intent = getIntent();
         final String weather = intent.getStringExtra(WEATHER);
@@ -63,8 +61,6 @@ public class JobActivity extends AppCompatActivity {
         description = findViewById(R.id.job_description);
 
         addJob = findViewById(R.id.add_job_button);
-
-        jobs = new ArrayList<>();
 
         weatherTxt.setText(weather);
         timeTxt.setText(time);
