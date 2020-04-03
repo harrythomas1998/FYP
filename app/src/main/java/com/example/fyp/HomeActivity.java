@@ -9,7 +9,9 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
+import com.example.fyp.Objects.User;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -25,10 +27,12 @@ public class HomeActivity extends AppCompatActivity {
     Button maintainPlnr;
     Button myGarden;
     Button myJobs;
-    Button forum;
+    Button addPlants;
+    Button myPlants;
     ImageView info;
+    TextView t1;
 
-    DatabaseReference reference;
+    DatabaseReference reference, ref2;
     private FirebaseUser user;
     private FirebaseAuth firebaseAuth;
 
@@ -51,12 +55,16 @@ public class HomeActivity extends AppCompatActivity {
         maintainPlnr = findViewById(R.id.menuButton2);
         myGarden = findViewById(R.id.menuButton1);
         myJobs = findViewById(R.id.menuButton5);
-        forum = findViewById(R.id.menuButton4);
+        addPlants = findViewById(R.id.menuButton4);
+        myPlants = findViewById(R.id.menuButton3);
+        t1 = findViewById(R.id.helloBox);
 
         firebaseAuth = FirebaseAuth.getInstance();
 
         user = firebaseAuth.getCurrentUser();
         reference = FirebaseDatabase.getInstance().getReference().child("SoilType").child(user.getUid());
+
+
 
         reference.addListenerForSingleValueEvent(new ValueEventListener() {
            @Override
@@ -70,6 +78,27 @@ public class HomeActivity extends AppCompatActivity {
            public void onCancelled(DatabaseError databaseError) {
 
            }
+        });
+
+        ref2 = FirebaseDatabase.getInstance().getReference().child("User").child(user.getUid());
+        ref2.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+
+                     dataSnapshot.getChildren();
+
+                    User user = dataSnapshot.getValue(User.class);
+
+                    t1.setText("Hi, " + user.getFirstName() + "!");
+
+
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
         });
         info = findViewById(R.id.info);
 
@@ -121,11 +150,22 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-
-        forum.setOnClickListener(new View.OnClickListener() {
+        myPlants.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+                Intent intToMyPlants = new Intent(HomeActivity.this, MyPlantsActivity.class);
+                startActivity(intToMyPlants);
+
+            }
+        });
+
+        addPlants.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intToPlants = new Intent(HomeActivity.this, SelectPlantsMenu.class);
+                startActivity(intToPlants);
 
 
             }
