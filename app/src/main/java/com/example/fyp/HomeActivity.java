@@ -85,13 +85,11 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
-                     dataSnapshot.getChildren();
+                dataSnapshot.getChildren();
 
-                    User user = dataSnapshot.getValue(User.class);
+                User user = dataSnapshot.getValue(User.class);
 
-                    t1.setText("Hi, " + user.getFirstName() + "!");
-
-
+                t1.setText("Hi, " + user.getFirstName() + "!");
 
             }
 
@@ -136,7 +134,7 @@ public class HomeActivity extends AppCompatActivity {
         myGarden.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intToGarden = new Intent(HomeActivity.this, MyGarden.class);
+                Intent intToGarden = new Intent(HomeActivity.this, GardenInfoActivity.class);
                 startActivity(intToGarden);
             }
         });

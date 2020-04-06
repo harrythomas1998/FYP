@@ -161,31 +161,31 @@ public class MaintenancePlanner extends AppCompatActivity implements ArrayInterf
 
                                 if(reformattedDate.contains("Mon")){
 
-                                    mondayData.add(new Weather(weatherType, time, temp, reformattedDate));
+                                    mondayData.add(new Weather(weatherType, time, temp, reformattedDate, dateTime));
                                 }
                                 else if(reformattedDate.contains("Tue")){
 
-                                    tuesdayData.add(new Weather(weatherType, time, temp, reformattedDate));
+                                    tuesdayData.add(new Weather(weatherType, time, temp, reformattedDate, dateTime));
                                 }
                                 else if(reformattedDate.contains("Wed")){
 
-                                    wednesdayData.add(new Weather(weatherType, time, temp, reformattedDate));
+                                    wednesdayData.add(new Weather(weatherType, time, temp, reformattedDate, dateTime));
                                 }
                                 else if(reformattedDate.contains("Thu")){
 
-                                    thursdayData.add(new Weather(weatherType, time, temp, reformattedDate));
+                                    thursdayData.add(new Weather(weatherType, time, temp, reformattedDate, dateTime));
                                 }
                                 else if(reformattedDate.contains("Fri")){
 
-                                    fridayData.add(new Weather(weatherType, time, temp, reformattedDate));
+                                    fridayData.add(new Weather(weatherType, time, temp, reformattedDate, dateTime));
                                 }
                                 else if(reformattedDate.contains("Sat")){
 
-                                    saturdayData.add(new Weather(weatherType, time, temp, reformattedDate));
+                                    saturdayData.add(new Weather(weatherType, time, temp, reformattedDate, dateTime));
                                 }
                                 else if(reformattedDate.contains("Sun")){
 
-                                    sundayData.add(new Weather(weatherType, time, temp, reformattedDate));
+                                    sundayData.add(new Weather(weatherType, time, temp, reformattedDate, dateTime));
                                 }
 
                                 else{
