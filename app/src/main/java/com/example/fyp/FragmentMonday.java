@@ -18,7 +18,7 @@ import com.example.fyp.Objects.Weather;
 
 public class FragmentMonday extends Fragment implements ArrayInterface, WeatherAdapter.OnItemClickListener {
 
-    View v;
+    private View v;
     private RecyclerView recyclerView;
 
     public static final String WEATHER = "weather";

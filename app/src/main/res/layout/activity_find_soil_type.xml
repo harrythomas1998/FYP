@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:text="Edit Garden Details"
         android:textStyle="bold"
-        android:textColor="#fff"
+        android:textColor="#000"
         android:textSize="34sp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="50dp"
@@ -22,7 +22,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#fff"
+        android:textColor="#000"
         android:textSize="16sp"
         android:text="Note: You must fill in all the details"
         android:layout_marginStart="40dp"
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:text="Soil"
         android:textStyle="bold"
-        android:textColor="#fff"
+        android:textColor="#000"
         android:layout_marginLeft="40dp"
         android:textSize="18sp"/>
 
@@ -65,7 +65,7 @@
         android:layout_height="wrap_content"
         android:text="Orientation"
         android:textStyle="bold"
-        android:textColor="#fff"
+        android:textColor="#000"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="25dp"
         android:textSize="18sp"/>
@@ -89,7 +89,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="20dp"
-        android:textColor="#fff"
+        android:textColor="#000"
         android:textSize="18sp"
         android:background="#79A2CE"
         android:text="Finish"/>

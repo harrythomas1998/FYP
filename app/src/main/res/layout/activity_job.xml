@@ -14,7 +14,7 @@
         android:text="Create a Job..."
         android:textSize="35sp"
         android:textStyle="bold"
-        android:textColor="#FFF"
+        android:textColor="#000"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"/>
 
@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:text=""
         android:textStyle="bold"
-        android:textColor="#FFF"
+        android:textColor="#000"
         android:textSize="25sp"
         android:layout_marginLeft="10dp" />
 
@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:text=""
         android:textStyle="bold"
-        android:textColor="#FFF"
+        android:textColor="#000"
         android:textSize="25sp"
         android:layout_marginLeft="10dp"/>
 
@@ -68,7 +68,7 @@
         android:layout_height="wrap_content"
         android:text=""
         android:textStyle="bold"
-        android:textColor="#FFF"
+        android:textColor="#000"
         android:textSize="25sp"
         android:layout_marginLeft="10dp"/>
 
@@ -86,7 +86,7 @@
         android:layout_height="wrap_content"
         android:text=""
         android:textStyle="bold"
-        android:textColor="#FFF"
+        android:textColor="#000"
         android:textSize="25sp"
         android:layout_marginLeft="10dp"/>
 
@@ -102,10 +102,10 @@
         android:layout_marginRight="10dp"
         android:hint="Job Title"
         android:maxLines="1"
-        android:textColorHint="#fff"
-        android:backgroundTint="#fff"
+        android:textColorHint="#000"
+        android:backgroundTint="#000"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#FFF"
+        android:textColor="#000"
         android:textSize="25sp" />
 
     <EditText
@@ -117,13 +117,13 @@
         android:layout_marginTop="15dp"
         android:layout_marginRight="10dp"
 
-        android:backgroundTint="#fff"
-        android:textColorHint="#fff"
+        android:backgroundTint="#000"
+        android:textColorHint="#000"
         android:hint="Job Description"
         android:inputType="textMultiLine"
         android:lines="2"
         android:scrollHorizontally="false"
-        android:textColor="#FFF"
+        android:textColor="#000"
         android:textSize="14sp" />
 
     <TextView
@@ -138,7 +138,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Add to My Jobs"
-        android:textColor="#fff"
+        android:textColor="#000"
         style="@style/Platform.MaterialComponents.Light"
         android:textSize="20sp"
         android:layout_marginBottom="20dp"

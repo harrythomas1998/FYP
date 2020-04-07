@@ -43,6 +43,7 @@
                 android:text="Date goes here"
                 android:textSize="20dp"
                 android:textStyle="bold"
+                android:textColor="#000"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"/>
 
@@ -63,6 +64,7 @@
                     android:layout_height="wrap_content"
                     android:text="Time: "
                     android:textSize="14dp"
+                    android:textColor="#000"
                     android:textStyle="bold"
                     android:layout_marginLeft="5dp" />
 
@@ -74,6 +76,7 @@
                     android:text="Weather: "
                     android:textSize="14dp"
                     android:textStyle="bold"
+                    android:textColor="#000"
                     android:layout_marginLeft="5dp"/>
 
                 <TextView
@@ -83,6 +86,7 @@
                     android:text="Temperature: "
                     android:textSize="14dp"
                     android:textStyle="bold"
+                    android:textColor="#000"
                     android:layout_marginLeft="5dp"
                     android:layout_marginBottom="5dp"/>
 
@@ -98,6 +102,7 @@
                     android:id="@+id/time"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="#000"
                     android:textSize="14dp" />
 
 
@@ -105,13 +110,15 @@
                     android:id="@+id/weather"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="14dp"/>
+                    android:textSize="14dp"
+                    android:textColor="#000"/>
 
                 <TextView
                     android:id="@+id/degrees"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="14dp"
+                    android:textColor="#000"
                     android:layout_marginBottom="5dp"/>
 
             </LinearLayout>

@@ -14,7 +14,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:text="Select a Plant type..."
-        android:textColor="#fff"
+        android:textColor="#000"
         android:textSize="30sp"
         android:textStyle="bold"/>
 
@@ -33,7 +33,7 @@
         android:textAlignment="center"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:textColor="#fff" />
+        android:textColor="#000" />
 
     <View
         style="@style/Divider"
@@ -48,7 +48,7 @@
         android:text="Alpines and Rockeries"
         android:textAlignment="center"
         android:textSize="20dp"
-        android:textColor="#fff"
+        android:textColor="#000"
         android:textStyle="bold" />
 
     <View
@@ -65,7 +65,7 @@
         android:textAlignment="center"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:textColor="#fff" />
+        android:textColor="#000" />
 
     <View
         style="@style/Divider"
@@ -80,7 +80,7 @@
         android:text="Climbers"
         android:textAlignment="center"
         android:textSize="20dp"
-        android:textColor="#fff"
+        android:textColor="#000"
         android:textStyle="bold"/>
 
     <View
@@ -96,7 +96,7 @@
         android:text="Exotics"
         android:textAlignment="center"
         android:textSize="20dp"
-        android:textColor="#fff"
+        android:textColor="#000"
         android:textStyle="bold"/>
 
     <View
@@ -112,7 +112,7 @@
         android:text="Ferns"
         android:textAlignment="center"
         android:textSize="20dp"
-        android:textColor="#fff"
+        android:textColor="#000"
         android:textStyle="bold"/>
 
     <View
@@ -129,7 +129,7 @@
         android:textAlignment="center"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:textColor="#fff"/>
+        android:textColor="#000"/>
 
     <View
         style="@style/Divider"
@@ -145,7 +145,7 @@
         android:textAlignment="center"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:textColor="#fff"/>
+        android:textColor="#000"/>
 
     <View
         style="@style/Divider"

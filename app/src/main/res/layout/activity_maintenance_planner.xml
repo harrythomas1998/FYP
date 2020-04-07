@@ -15,7 +15,7 @@
         android:background="#69A730"
         android:text=" Select a Time..."
         android:textSize="30sp"
-        android:textColor="#fff"
+        android:textColor="#000"
         android:textStyle="bold"/>
 
 
@@ -27,7 +27,7 @@
         app:tabGravity="fill"
         app:tabIndicatorColor="@color/colorAccent"
         android:id="@+id/tab_layout"
-        app:tabTextColor="#fff"/>
+        app:tabTextColor="#000"/>
 
 
     <androidx.viewpager.widget.ViewPager

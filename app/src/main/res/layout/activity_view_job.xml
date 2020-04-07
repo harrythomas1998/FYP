@@ -23,7 +23,7 @@
             android:textStyle="bold"
             android:textAllCaps="true"
             android:textAlignment="center"
-            android:textColor="#FFF"
+            android:textColor="#000"
             android:textSize="35sp" />
 
         <TextView
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:text=""
             android:textStyle="bold"
-            android:textColor="#FFF"
+            android:textColor="#000"
             android:textSize="25sp"
             android:layout_marginLeft="10dp"/>
 
@@ -56,7 +56,7 @@
             android:layout_height="wrap_content"
             android:text=""
             android:textStyle="bold"
-            android:textColor="#FFF"
+            android:textColor="#000"
             android:textSize="25sp"
             android:layout_marginLeft="10dp"/>
 
@@ -73,7 +73,7 @@
             android:layout_height="wrap_content"
             android:text=""
             android:textStyle="bold"
-            android:textColor="#FFF"
+            android:textColor="#000"
             android:textSize="25sp"
             android:layout_marginLeft="10dp"/>
 
@@ -90,7 +90,7 @@
             android:layout_height="wrap_content"
             android:text=""
             android:textStyle="bold"
-            android:textColor="#FFF"
+            android:textColor="#000"
             android:textSize="25sp"
             android:layout_marginLeft="10dp"/>
 
@@ -108,7 +108,7 @@
             android:layout_height="wrap_content"
             android:text=""
             android:textStyle="bold"
-            android:textColor="#FFF"
+            android:textColor="#000"
             android:textSize="25sp"
             android:layout_marginLeft="10dp"/>
 
@@ -136,7 +136,8 @@
                     android:layout_marginBottom="10dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="15dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:background="#79A2CE"/>
 
             </LinearLayout>
 
@@ -156,7 +157,8 @@
                 android:layout_marginBottom="10dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="15dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:background="#79A2CE"/>
 
             </LinearLayout>
         </LinearLayout>

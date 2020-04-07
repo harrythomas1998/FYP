@@ -40,7 +40,7 @@
         android:elevation="10dp"
         android:textSize="22sp"
         android:textStyle="bold"
-        android:textColor="#fff"
+        android:textColor="#000"
         android:background="#69A730"/>
 
     <View
@@ -60,6 +60,6 @@
         android:text="Register"
         android:textSize="22sp"
         android:textStyle="bold"
-        android:textColor="#fff"
+        android:textColor="#000"
         android:background="#69A730"/>
 </LinearLayout>

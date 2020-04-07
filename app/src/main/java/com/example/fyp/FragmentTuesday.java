@@ -46,7 +46,7 @@ public class FragmentTuesday extends Fragment implements ArrayInterface, Weather
     public void onItemClick(int position) {
 
         Intent i = new Intent(getActivity(), JobActivity.class);
-        Weather clickedWeatherItem = mondayData.get(position);
+        Weather clickedWeatherItem = tuesdayData.get(position);
 
         i.putExtra(WEATHER, clickedWeatherItem.getWeatherType());
         i.putExtra(TIME, clickedWeatherItem.getTime());

@@ -50,7 +50,7 @@
                     android:layout_marginTop="5dp"
                     android:textStyle="bold"
                     android:textAllCaps="true"
-                    android:textColor="#FFF"
+                    android:textColor="#000"
                     android:text="Plant Name"
                     android:gravity="center"/>
 
@@ -63,7 +63,7 @@
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_marginTop="30dp"
-                    android:textColor="#FFF"
+                    android:textColor="#000"
                     android:text="Position" />
 
                 <TextView
@@ -75,7 +75,7 @@
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_marginTop="20dp"
-                    android:textColor="#FFF"
+                    android:textColor="#000"
                     android:text="Soil" />
 
                 <TextView
@@ -87,7 +87,7 @@
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_marginTop="20dp"
-                    android:textColor="#FFF"
+                    android:textColor="#000"
                     android:text="Rate of Growth" />
 
                 <TextView
@@ -99,7 +99,7 @@
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_marginTop="20dp"
-                    android:textColor="#FFF"
+                    android:textColor="#000"
                     android:text="Care" />
 
 
@@ -118,8 +118,9 @@
             android:id="@+id/add_to_my_plants_button"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="#79A2CE"
             android:text="Add to my plants"
             android:textColor="#000"/>
 

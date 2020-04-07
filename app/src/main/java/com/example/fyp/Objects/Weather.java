@@ -9,15 +9,13 @@ public class Weather {
     private String time;
     private double temperature;
     private String date;
-    private String timestamp;
 
 
-    public Weather(String weatherType, String time, int temperature, String date, String timestamp) {
+    public Weather(String weatherType, String time, int temperature, String date) {
         this.weatherType = weatherType;
         this.time = time;
         this.temperature = temperature;
         this.date = date;
-        this.timestamp = timestamp;
     }
 
 
@@ -53,11 +51,4 @@ public class Weather {
         this.date = date;
     }
 
-    public String getTimestamp() {
-        return timestamp;
-    }
-
-    public void setTimestamp(String timestamp) {
-        this.timestamp = timestamp;
-    }
 }

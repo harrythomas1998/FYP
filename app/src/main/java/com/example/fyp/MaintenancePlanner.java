@@ -161,31 +161,31 @@ public class MaintenancePlanner extends AppCompatActivity implements ArrayInterf
 
                                 if(reformattedDate.contains("Mon")){
 
-                                    mondayData.add(new Weather(weatherType, time, temp, reformattedDate, dateTime));
+                                    mondayData.add(new Weather(weatherType, time, temp, reformattedDate));
                                 }
                                 else if(reformattedDate.contains("Tue")){
 
-                                    tuesdayData.add(new Weather(weatherType, time, temp, reformattedDate, dateTime));
+                                    tuesdayData.add(new Weather(weatherType, time, temp, reformattedDate));
                                 }
                                 else if(reformattedDate.contains("Wed")){
 
-                                    wednesdayData.add(new Weather(weatherType, time, temp, reformattedDate, dateTime));
+                                    wednesdayData.add(new Weather(weatherType, time, temp, reformattedDate));
                                 }
                                 else if(reformattedDate.contains("Thu")){
 
-                                    thursdayData.add(new Weather(weatherType, time, temp, reformattedDate, dateTime));
+                                    thursdayData.add(new Weather(weatherType, time, temp, reformattedDate));
                                 }
                                 else if(reformattedDate.contains("Fri")){
 
-                                    fridayData.add(new Weather(weatherType, time, temp, reformattedDate, dateTime));
+                                    fridayData.add(new Weather(weatherType, time, temp, reformattedDate));
                                 }
                                 else if(reformattedDate.contains("Sat")){
 
-                                    saturdayData.add(new Weather(weatherType, time, temp, reformattedDate, dateTime));
+                                    saturdayData.add(new Weather(weatherType, time, temp, reformattedDate));
                                 }
                                 else if(reformattedDate.contains("Sun")){
 
-                                    sundayData.add(new Weather(weatherType, time, temp, reformattedDate, dateTime));
+                                    sundayData.add(new Weather(weatherType, time, temp, reformattedDate));
                                 }
 
                                 else{
@@ -236,7 +236,7 @@ public class MaintenancePlanner extends AppCompatActivity implements ArrayInterf
 
                             }
                             else{
-                                Toast.makeText(MaintenancePlanner.this, "Didnt get location", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(MaintenancePlanner.this, "Couldn't get your location", Toast.LENGTH_LONG).show();
                             }
                         }
                     });

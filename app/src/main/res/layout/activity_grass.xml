@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:text="Grass Planner"
-        android:textColor="#fff"
+        android:textColor="#000"
         android:textSize="34sp"
         android:textAlignment="viewStart"
         android:textStyle="bold"
