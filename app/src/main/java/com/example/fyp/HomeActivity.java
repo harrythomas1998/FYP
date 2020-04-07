@@ -125,7 +125,7 @@ public class HomeActivity extends AppCompatActivity {
         maintainPlnr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intToPlanner = new Intent(HomeActivity.this, MaintenancePlanner.class);
+                Intent intToPlanner = new Intent(HomeActivity.this, MaintenancePlannerMenu.class);
                 startActivity(intToPlanner);
 
             }

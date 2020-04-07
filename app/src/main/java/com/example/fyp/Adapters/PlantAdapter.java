@@ -101,7 +101,9 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
                     String name = st.getName();
 
                     //Brown
+
                     //Suitable
+                    
                     if(soil.contains("well-drained") && soil.contains("moist") || soil.contains("Moist") && name.equals("Brown Soil")  ){
 
                         holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
@@ -149,6 +151,7 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
                     }
 
                     //moderate
+
                     if(soil.contains("moderately") && soil.contains("well-drained") || soil.contains("well drained") || soil.contains("Well-drained") || soil.contains("Well drained")&& name.equals("Brown Soil")  ){
 
                         holder.suitability.setTextColor(Color.parseColor("#FFC409"));
@@ -161,6 +164,7 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
                     }
 
                     //bad
+
                     if(name.equals("Brown Soil") && soil.contains("alkaline") ){
                         holder.suitability.setTextColor(Color.parseColor("#FF2233"));
                         holder.suitability.setText("Plant is not suitable");
@@ -180,7 +184,9 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
 
 
                     //Peaty Soil
+
                     //Good
+
                     if(name.equals("Peaty Soil") && soil.contains("poor") ){
                         holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
                         holder.suitability.setText("Plant is suitable");
@@ -201,6 +207,7 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
                     }
 
                     //okay
+
                     if(soil.contains("moderately") && name.equals("Peaty Soil")){
 
                         holder.suitability.setTextColor(Color.parseColor("#FFC409"));
@@ -218,6 +225,7 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
                     }
 
                     //bad
+
                     if(name.equals("Peaty Soil") && soil.contains("alkaline") ){
                         holder.suitability.setTextColor(Color.parseColor("#FF2233"));
                         holder.suitability.setText("Plant is not suitable");
@@ -232,7 +240,9 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
                     }
 
                     //Podzol Soil
+
                     //Good
+
                     if(name.equals("Podzol Soil") && soil.contains("poor") ){
                         holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
                         holder.suitability.setText("Plant is suitable");
@@ -253,6 +263,7 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
                     }
 
                     //okay
+
                     if(soil.contains("moderately") && name.equals("Podzol Soil")){
 
                         holder.suitability.setTextColor(Color.parseColor("#FFC409"));
@@ -285,7 +296,9 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
                     }
 
                     //Gley Soil
+
                     //Good
+
                     if(name.equals("Gley Soil") && soil.contains("humus-rich") || soil.contains("humus rich") ){
                         holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
                         holder.suitability.setText("Plant is suitable");
@@ -304,6 +317,7 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
                     }
 
                     //okay
+
                     if(soil.contains("moderately") && name.equals("Gley Soil")){
 
                         holder.suitability.setTextColor(Color.parseColor("#FFC409"));
@@ -378,12 +392,6 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
                         holder.suitability.setTextColor(Color.parseColor("#FF2233"));
                         holder.suitability.setText("Plant is not suitable");
                     }
-
-
-
-
-
-
 
                 }
 

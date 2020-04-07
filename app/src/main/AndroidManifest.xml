@@ -13,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".seasons.Autumn"></activity>
+        <activity android:name=".GrassActivity"></activity>
+        <activity android:name=".MaintenancePlannerMenu" />
+        <activity android:name=".seasons.Autumn" />
         <activity android:name=".seasons.Spring" />
         <activity android:name=".seasons.Summer" />
         <activity android:name=".seasons.Winter" />
