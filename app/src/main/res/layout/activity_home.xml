@@ -25,7 +25,8 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
 
                         <TextView
                             android:id="@+id/helloBox"
@@ -46,7 +47,8 @@
                             android:layout_height="30dp"
                             android:layout_gravity="right"
                             android:layout_marginRight="5dp"
-                            android:layout_marginBottom="50dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="45dp"
                             android:src="@drawable/info"/>
 
                     </LinearLayout>

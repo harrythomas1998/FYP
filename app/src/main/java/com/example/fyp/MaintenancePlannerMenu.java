@@ -25,10 +25,19 @@ public class MaintenancePlannerMenu extends AppCompatActivity {
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         window.setStatusBarColor(this.getResources().getColor(R.color.statusBar));
 
-        b1 = findViewById(R.id.grassesButton);
+        b1 = findViewById(R.id.grassButton);
         b2 = findViewById(R.id.toWeatherButton);
         b3 = findViewById(R.id.toPlantsButton);
 
+
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intToPlanner = new Intent(MaintenancePlannerMenu.this, GrassActivity.class);
+                startActivity(intToPlanner);
+            }
+        });
 
 
         b2.setOnClickListener(new View.OnClickListener() {

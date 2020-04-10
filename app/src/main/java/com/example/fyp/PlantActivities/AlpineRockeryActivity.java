@@ -8,7 +8,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.SearchView;
 import android.widget.Toast;
 
 import com.example.fyp.Adapters.PlantAdapter;
@@ -34,6 +36,7 @@ public class AlpineRockeryActivity extends AppCompatActivity implements PlantAda
 
     RecyclerView recyclerView;
     PlantAdapter adapter;
+    SearchView search;
 
     private FirebaseUser mCurrentUser;
     private FirebaseAuth firebaseAuth;
@@ -61,7 +64,23 @@ public class AlpineRockeryActivity extends AppCompatActivity implements PlantAda
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
 
+        search = findViewById(R.id.searchAlpine);
+
         loadJSONFromAsset();
+
+        search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                adapter.getFilter().filter(newText);
+                return false;
+            }
+        });
+
 
     }
 

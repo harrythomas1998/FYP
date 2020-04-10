@@ -10,6 +10,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.SearchView;
 import android.widget.Toast;
 
 import com.example.fyp.Adapters.PlantAdapter;
@@ -37,6 +38,7 @@ public class BeddingActivity extends AppCompatActivity  implements PlantAdapter.
 
     PlantAdapter adapter;
     ImageButton b1;
+    SearchView search;
 
     private FirebaseUser mCurrentUser;
     private FirebaseAuth firebaseAuth;
@@ -69,6 +71,21 @@ public class BeddingActivity extends AppCompatActivity  implements PlantAdapter.
 
 
         loadJSONFromAsset();
+
+        search = findViewById(R.id.searchBedding);
+
+        search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                adapter.getFilter().filter(newText);
+                return false;
+            }
+        });
 
     }
 

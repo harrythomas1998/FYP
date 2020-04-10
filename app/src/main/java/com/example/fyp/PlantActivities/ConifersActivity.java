@@ -43,6 +43,7 @@ public class ConifersActivity extends AppCompatActivity implements PlantAdapter.
     RecyclerView recyclerView;
     PlantAdapter adapter;
     ImageButton b1;
+    SearchView search;
 
     private FirebaseUser mCurrentUser;
     private FirebaseAuth firebaseAuth;
@@ -74,6 +75,22 @@ public class ConifersActivity extends AppCompatActivity implements PlantAdapter.
         b1 = findViewById(R.id.add_from_card);
 
         loadJSONFromAsset();
+
+        search = findViewById(R.id.searchConifers);
+
+        search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                adapter.getFilter().filter(newText);
+                return false;
+            }
+        });
+
 
     }
 

@@ -22,7 +22,7 @@
         android:backgroundTint="#000"
         android:textColorHint="#000"
         android:inputType="textEmailAddress"
-        android:textColor="#FFF"
+        android:textColor="#000"
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageButton;
+import android.widget.SearchView;
 import android.widget.Toast;
 import com.example.fyp.Adapters.PlantAdapter;
 import com.example.fyp.ArrayInterface;
@@ -34,6 +35,7 @@ public class HedgesActivity extends AppCompatActivity implements PlantAdapter.On
     RecyclerView recyclerView;
     PlantAdapter adapter;
     ImageButton b1;
+    SearchView search;
 
     private FirebaseUser mCurrentUser;
     private FirebaseAuth firebaseAuth;
@@ -64,6 +66,22 @@ public class HedgesActivity extends AppCompatActivity implements PlantAdapter.On
         b1 = findViewById(R.id.add_from_card);
 
         loadJSONFromAsset();
+
+        search = findViewById(R.id.searchHedges);
+
+        search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                adapter.getFilter().filter(newText);
+                return false;
+            }
+        });
+
 
     }
 

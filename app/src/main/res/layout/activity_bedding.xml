@@ -10,14 +10,18 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Bedding"
+        android:text=" Bedding"
+        android:background="#69A730"
         android:textColor="#000"
         android:textStyle="bold"
-        android:textSize="30sp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="10dp"/>
+        android:textSize="30sp"/>
 
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#69A730"
+        android:queryHint="Search Bedding"
+        android:id="@+id/searchBedding"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"

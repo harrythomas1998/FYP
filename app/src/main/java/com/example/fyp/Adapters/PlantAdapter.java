@@ -5,6 +5,8 @@ import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -22,14 +24,16 @@ import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder> {
+public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder> implements Filterable {
 
     private Context mContext;
     private ArrayList<Plant> mPlants;
+    private ArrayList<Plant> mPlants2;
     private OnItemClickListener mListener;
 
     private String name;
@@ -38,6 +42,44 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
     String soil;
     String growth;
     String care;
+
+    @Override
+    public Filter getFilter() {
+        return exampleFilter;
+    }
+
+    private Filter exampleFilter = new Filter() {
+        @Override
+        protected FilterResults performFiltering(CharSequence constraint) {
+            List<Plant> filteredList = new ArrayList<>();
+
+            if(constraint == null || constraint.length() == 0){
+                filteredList.addAll(mPlants2);
+            }
+            else{
+                String filterPattern = constraint.toString().toLowerCase().trim();
+
+                for(Plant p : mPlants2){
+                    if(p.getName().toLowerCase().contains(filterPattern)){
+                        filteredList.add(p);
+                    }
+                }
+            }
+
+            FilterResults results = new FilterResults();
+            results.values = filteredList;
+
+            return results;
+        }
+
+        @Override
+        protected void publishResults(CharSequence constraint, FilterResults results) {
+
+            mPlants.clear();
+            mPlants.addAll((List)results.values);
+            notifyDataSetChanged();
+        }
+    };
 
     public interface OnItemClickListener{
 
@@ -56,6 +98,7 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
 
         mContext = context;
         mPlants = plants;
+        mPlants2 = new ArrayList<>(mPlants);
     }
 
     @NonNull
@@ -103,65 +146,134 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
                     //Brown
 
                     //Suitable
-                    
-                    if(soil.contains("well-drained") && soil.contains("moist") || soil.contains("Moist") && name.equals("Brown Soil")  ){
+                    if(soil.contains("freely draining") && name.equals("Brown Soil")  ){
 
                         holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
                         holder.suitability.setText("Plant is suitable");
                     }
-                    if(soil.contains("well drained") || soil.contains("Well drained") && soil.contains("moist") || soil.contains("Moist") && name.equals("Brown Soil")  ){
+                    if(soil.contains("freely-draining") && name.equals("Brown Soil")  ){
 
                         holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
                         holder.suitability.setText("Plant is suitable");
                     }
-                    if(soil.contains("moist") || soil.contains("Moist") && soil.contains("humus-rich") && name.equals("Brown Soil")  ){
+                    if(soil.contains("Well-drained") && name.equals("Brown Soil")){
+                        holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
+                        holder.suitability.setText("Plant is suitable");
+                    }
+                    if(soil.contains("Well drained") && name.equals("Brown Soil")){
+                        holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
+                        holder.suitability.setText("Plant is suitable");
+                    }
+                    if(soil.contains("well-drained") && name.equals("Brown Soil")){
+                        holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
+                        holder.suitability.setText("Plant is suitable");
+                    }
+                    if(soil.contains("well drained") && name.equals("Brown Soil")){
+                        holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
+                        holder.suitability.setText("Plant is suitable");
+                    }
+
+                    if(soil.contains("moist") && soil.contains("well drained") && name.equals("Brown Soil")  ){
 
                         holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
                         holder.suitability.setText("Plant is suitable");
                     }
-                    if(soil.contains("moist") || soil.contains("Moist") && soil.contains("freely-draining") && name.equals("Brown Soil")  ){
+                    if(soil.contains("moist") && soil.contains("well-drained") && name.equals("Brown Soil")  ){
 
                         holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
                         holder.suitability.setText("Plant is suitable");
                     }
-                    if(soil.contains("moist") || soil.contains("Moist") && soil.contains("freely draining") && name.equals("Brown Soil")  ){
+                    if(soil.contains("moist") && soil.contains("Well drained") && name.equals("Brown Soil")  ){
 
                         holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
                         holder.suitability.setText("Plant is suitable");
                     }
-                    if(soil.contains("humus-rich") && soil.contains("freely draining") && name.equals("Brown Soil")  ){
+                    if(soil.contains("moist") && soil.contains("Well-drained") && name.equals("Brown Soil")  ){
 
                         holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
                         holder.suitability.setText("Plant is suitable");
                     }
-                    if(soil.contains("humus rich") && soil.contains("freely-draining") && name.equals("Brown Soil")  ){
+                    if(soil.contains("Moist") && soil.contains("well-drained")&& name.equals("Brown Soil")  ){
 
                         holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
                         holder.suitability.setText("Plant is suitable");
                     }
-                    if(soil.contains("moist") || soil.contains("Moist")  && soil.contains("humus rich") && name.equals("Brown Soil")  ){
+                    if(soil.contains("Moist") && soil.contains("well drained")&& name.equals("Brown Soil")  ){
 
                         holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
                         holder.suitability.setText("Plant is suitable");
                     }
-                    if(soil.contains("well-drained") || soil.contains("Well drained") && name.equals("Brown Soil")  ){
+                    if(soil.contains("Moist") && soil.contains("Well-drained")&& name.equals("Brown Soil")  ){
 
                         holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
                         holder.suitability.setText("Plant is suitable");
                     }
+                    if(soil.contains("Moist") && soil.contains("Well drained")&& name.equals("Brown Soil")  ){
+
+                        holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
+                        holder.suitability.setText("Plant is suitable");
+                    }
+                    if(soil.contains("humus-rich") && soil.contains("Well drained")&& name.equals("Brown Soil")  ){
+
+                        holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
+                        holder.suitability.setText("Plant is suitable");
+                    }
+                    if(soil.contains("humus-rich") && soil.contains("Well-drained")&& name.equals("Brown Soil")  ){
+
+                        holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
+                        holder.suitability.setText("Plant is suitable");
+                    }
+                    if(soil.contains("humus-rich") && soil.contains("well-drained")&& name.equals("Brown Soil")  ){
+
+                        holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
+                        holder.suitability.setText("Plant is suitable");
+                    }
+                    if(soil.contains("humus-rich") && soil.contains("well drained")&& name.equals("Brown Soil")  ){
+
+                        holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
+                        holder.suitability.setText("Plant is suitable");
+                    }
+                    if(soil.contains("humus rich") && soil.contains("well drained")&& name.equals("Brown Soil")  ){
+
+                        holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
+                        holder.suitability.setText("Plant is suitable");
+                    }
+                    if(soil.contains("humus rich") && soil.contains("well-drained")&& name.equals("Brown Soil")  ){
+
+                        holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
+                        holder.suitability.setText("Plant is suitable");
+                    }
+                    if(soil.contains("humus rich") && soil.contains("Well-drained")&& name.equals("Brown Soil")  ){
+
+                        holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
+                        holder.suitability.setText("Plant is suitable");
+                    }
+                    if(soil.contains("humus rich") && soil.contains("Well drained")&& name.equals("Brown Soil")  ){
+
+                        holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
+                        holder.suitability.setText("Plant is suitable");
+                    }
+                    if(soil.contains("humus-rich") && soil.contains("moist")&& name.equals("Brown Soil")  ){
+
+                        holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
+                        holder.suitability.setText("Plant is suitable");
+                    }
+                    if(soil.contains("humus rich") && soil.contains("Moist")&& name.equals("Brown Soil")  ){
+
+                        holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
+                        holder.suitability.setText("Plant is suitable");
+                    }
+
+
 
                     //moderate
 
-                    if(soil.contains("moderately") && soil.contains("well-drained") || soil.contains("well drained") || soil.contains("Well-drained") || soil.contains("Well drained")&& name.equals("Brown Soil")  ){
+                    if (soil.contains("moderately") && name.equals("Brown Soil")  ){
 
                         holder.suitability.setTextColor(Color.parseColor("#FFC409"));
                         holder.suitability.setText("Plant is okay");
                     }
-                    if(soil.contains("well drained") && soil.contains("moderately") && name.equals("Brown Soil")  ){
 
-                        holder.suitability.setTextColor(Color.parseColor("#FFC409"));
-                        holder.suitability.setText("Plant is okay");
-                    }
 
                     //bad
 
@@ -201,6 +313,16 @@ public class PlantAdapter extends RecyclerView.Adapter<PlantAdapter.MyViewHolder
 
                     }
                     if(name.equals("Peaty Soil") && soil.contains("Acid") || soil.contains("Acidic")){
+                        holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
+                        holder.suitability.setText("Plant is suitable");
+
+                    }
+                    if(name.equals("Peaty Soil") && soil.contains("acidic") || soil.contains("Acidic")){
+                        holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
+                        holder.suitability.setText("Plant is suitable");
+
+                    }
+                    if(name.equals("Peaty Soil") && soil.contains("Acidic") || soil.contains("Acidic")){
                         holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
                         holder.suitability.setText("Plant is suitable");
 

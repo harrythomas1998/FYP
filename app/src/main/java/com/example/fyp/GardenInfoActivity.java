@@ -24,7 +24,7 @@ public class GardenInfoActivity extends AppCompatActivity {
 
 
     Button b1;
-    TextView soilType, ph, fertility, vegetation, climate, drainage, orientation;
+    TextView soilType, ph, fertility, vegetation, climate, drainage, orientation, areaBox;
 
     DatabaseReference reference, reference2;
     private FirebaseUser user;
@@ -51,7 +51,13 @@ public class GardenInfoActivity extends AppCompatActivity {
         climate = findViewById(R.id.climate);
         drainage = findViewById(R.id.drainage);
         orientation = findViewById(R.id.orientation);
+        areaBox = findViewById(R.id.areaTxt);
 
+        Intent intent = getIntent();
+
+        final String area = intent.getStringExtra("AREA");
+
+        areaBox.setText(area);
 
         firebaseAuth = FirebaseAuth.getInstance();
 
