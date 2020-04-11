@@ -13,7 +13,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GrassActivity"></activity>
+        <activity android:name=".FullSunActivities.FullSunHedges"></activity>
+        <activity android:name=".FullSunActivities.FullSunGrasses" />
+        <activity android:name=".FullSunActivities.FullSunFerns" />
+        <activity android:name=".FullSunActivities.FullSunExotics" />
+        <activity android:name=".FullSunActivities.FullSunConifers" />
+        <activity android:name=".FullSunActivities.FullSunClimbers" />
+        <activity android:name=".FullSunActivities.FullSunBedding" />
+        <activity android:name=".FullSunActivities.FullSunAlpines" />
+        <activity android:name=".Shade.FullSun" />
+        <activity android:name=".Shade.HalfShade" />
+        <activity android:name=".Shade.FullShade" />
+        <activity android:name=".GrassActivity" />
         <activity android:name=".MaintenancePlannerMenu" />
         <activity android:name=".seasons.Autumn" />
         <activity android:name=".seasons.Spring" />
@@ -50,6 +61,7 @@
         <activity android:name=".FirstScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

@@ -28,6 +28,15 @@ public interface ArrayInterface {
     ArrayList<Plant> grasses = new ArrayList<>();
     ArrayList<Plant> alpines = new ArrayList<>();
 
+    ArrayList<Plant> fullSunConifersList = new ArrayList<>();
+    ArrayList<Plant> fullSunHedgesList = new ArrayList<>();
+    ArrayList<Plant> fullSunFernsList = new ArrayList<>();
+    ArrayList<Plant> fullSunBeddingList = new ArrayList<>();
+    ArrayList<Plant> fullSunClimbersList = new ArrayList<>();
+    ArrayList<Plant> fullSunExoticsList = new ArrayList<>();
+    ArrayList<Plant> fullSunGrassesList = new ArrayList<>();
+    ArrayList<Plant> fullSunAlpinesList = new ArrayList<>();
+
     ArrayList<Plant> myPlants = new ArrayList<>();
 
     ArrayList<Job> jobs = new ArrayList<>();

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Shade.FullShade"
+    android:background="@drawable/background9">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Full Shade Plants"
+        android:background="#69A730"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="30sp"/>
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#69A730"
+        android:queryHint="Search Here"
+        android:id="@+id/searchFerns"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fullShadeRecycler"/>
+
+</LinearLayout>

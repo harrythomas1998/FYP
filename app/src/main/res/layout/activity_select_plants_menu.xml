@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,150 +7,268 @@
     android:orientation="vertical"
     tools:context=".SelectPlantsMenu">
 
-    <TextView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:text="Select a Plant type..."
-        android:textColor="#000"
-        android:textSize="30sp"
-        android:textStyle="bold"/>
+        android:layout_height="wrap_content">
 
-    <View
-        style="@style/Divider"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="60dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/conifersButton"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="Conifers"
-        android:textAlignment="center"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:textColor="#000" />
 
-    <View
-        style="@style/Divider"
-        android:layout_width="match_parent"
-        android:layout_height="1dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="50dp"
+                android:text="Select a Plant type..."
+                android:textColor="#000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/alpinesButton"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="Alpines and Rockeries"
-        android:textAlignment="center"
-        android:textSize="20dp"
-        android:textColor="#000"
-        android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Browse by Suitablity:"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="italic" />
 
-    <View
-        style="@style/Divider"
-        android:layout_width="match_parent"
-        android:layout_height="1dp" />
+            <View
+                style="@style/Divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
 
-    <Button
-        android:id="@+id/beddingButton"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="Bedding"
-        android:textAlignment="center"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:textColor="#000" />
+            <Button
+                android:id="@+id/suitablePlantsButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Suitable Plants"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#000" />
 
-    <View
-        style="@style/Divider"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"/>
+            <View
+                style="@style/Divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
 
-    <Button
-        android:id="@+id/climbersButton"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="Climbers"
-        android:textAlignment="center"
-        android:textSize="20dp"
-        android:textColor="#000"
-        android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Browse by Shade:"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"/>
 
-    <View
-        style="@style/Divider"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"/>
+            <View
+                style="@style/Divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
 
-    <Button
-        android:id="@+id/exoticButton"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="Exotics"
-        android:textAlignment="center"
-        android:textSize="20dp"
-        android:textColor="#000"
-        android:textStyle="bold"/>
+            <Button
+                android:id="@+id/fullShadeButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Full Shade"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
-    <View
-        style="@style/Divider"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"/>
+            <View
+                style="@style/Divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
 
-    <Button
-        android:id="@+id/fernButton"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="Ferns"
-        android:textAlignment="center"
-        android:textSize="20dp"
-        android:textColor="#000"
-        android:textStyle="bold"/>
+            <Button
+                android:id="@+id/partialShadeButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Partial Shade"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
-    <View
-        style="@style/Divider"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"/>
+            <View
+                style="@style/Divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
 
-    <Button
-        android:id="@+id/grassesButton"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="Grasses"
-        android:textAlignment="center"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:textColor="#000"/>
+            <Button
+                android:id="@+id/noShadeButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Full Sun"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
-    <View
-        style="@style/Divider"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"/>
+            <View
+                style="@style/Divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
 
-    <Button
-        android:id="@+id/hedgesButton"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="Hedges"
-        android:textAlignment="center"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:textColor="#000"/>
 
-    <View
-        style="@style/Divider"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Browse by Type:"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"/>
 
+            <View
+                style="@style/Divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/conifersButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Conifers"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <View
+                style="@style/Divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/alpinesButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Alpines and Rockeries"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <View
+                style="@style/Divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/beddingButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Bedding"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <View
+                style="@style/Divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/climbersButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Climbers"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <View
+                style="@style/Divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/exoticButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Exotics"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <View
+                style="@style/Divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/fernButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Ferns"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <View
+                style="@style/Divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/grassesButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Grasses"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <View
+                style="@style/Divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/hedgesButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Hedges"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <View
+                style="@style/Divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
 
 
 </LinearLayout>

@@ -17,6 +17,9 @@ import com.example.fyp.PlantActivities.ExoticActivity;
 import com.example.fyp.PlantActivities.FernActivity;
 import com.example.fyp.PlantActivities.GrassesActivity;
 import com.example.fyp.PlantActivities.HedgesActivity;
+import com.example.fyp.Shade.FullShade;
+import com.example.fyp.Shade.FullSun;
+import com.example.fyp.Shade.HalfShade;
 
 public class SelectPlantsMenu extends AppCompatActivity {
 
@@ -29,17 +32,21 @@ public class SelectPlantsMenu extends AppCompatActivity {
     Button grasses;
     Button hedges;
 
+    Button fullShade;
+    Button halfShade;
+    Button fullSun;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_plants_menu);
 
-        if (android.os.Build.VERSION.SDK_INT >= 21) {
-            Window window = this.getWindow();
-            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-            window.setStatusBarColor(this.getResources().getColor(R.color.statusBar));
-        }
+
+        Window window = this.getWindow();
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        window.setStatusBarColor(this.getResources().getColor(R.color.statusBar));
+
 
         conifers = findViewById(R.id.conifersButton);
         alpines = findViewById(R.id.alpinesButton);
@@ -49,6 +56,10 @@ public class SelectPlantsMenu extends AppCompatActivity {
         ferns = findViewById(R.id.fernButton);
         grasses = findViewById(R.id.grassesButton);
         hedges = findViewById(R.id.hedgesButton);
+
+        fullSun = findViewById(R.id.noShadeButton);
+        halfShade = findViewById(R.id.partialShadeButton);
+        fullShade = findViewById(R.id.fullShadeButton);
 
 
         conifers.setOnClickListener(new View.OnClickListener() {
@@ -122,5 +133,16 @@ public class SelectPlantsMenu extends AppCompatActivity {
                 startActivity(vii);
             }
         });
+
+        fullSun.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent vii = new Intent(SelectPlantsMenu.this, FullSun.class);
+                startActivity(vii);
+            }
+        });
+
+
     }
 }
