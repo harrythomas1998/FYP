@@ -26,7 +26,7 @@
         android:layout_height="1dp" />
 
     <Button
-        android:id="@+id/conifersButton"
+        android:id="@+id/halfconifersButton"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -42,7 +42,7 @@
         android:layout_height="1dp" />
 
     <Button
-        android:id="@+id/alpinesButton"
+        android:id="@+id/halfalpinesButton"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -58,7 +58,7 @@
         android:layout_height="1dp" />
 
     <Button
-        android:id="@+id/beddingButton"
+        android:id="@+id/halfbeddingButton"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -74,7 +74,7 @@
         android:layout_height="1dp" />
 
     <Button
-        android:id="@+id/climbersButton"
+        android:id="@+id/halfclimbersButton"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -90,7 +90,7 @@
         android:layout_height="1dp" />
 
     <Button
-        android:id="@+id/exoticButton"
+        android:id="@+id/halfexoticButton"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -106,7 +106,7 @@
         android:layout_height="1dp" />
 
     <Button
-        android:id="@+id/fernButton"
+        android:id="@+id/halffernButton"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -122,7 +122,7 @@
         android:layout_height="1dp" />
 
     <Button
-        android:id="@+id/grassesButton"
+        android:id="@+id/halfgrassesButton"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -138,7 +138,7 @@
         android:layout_height="1dp" />
 
     <Button
-        android:id="@+id/hedgesButton"
+        android:id="@+id/halfhedgesButton"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="60dp"

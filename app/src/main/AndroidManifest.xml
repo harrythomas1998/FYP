@@ -13,7 +13,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FullSunActivities.FullSunHedges"></activity>
+        <activity android:name=".Halfshade.HalfHedges"></activity>
+        <activity android:name=".Halfshade.HalfGrasses" />
+        <activity android:name=".Halfshade.HalfFerns" />
+        <activity android:name=".Halfshade.HalfConifers" />
+        <activity android:name=".Halfshade.HalfClimbers" />
+        <activity android:name=".Halfshade.HalfBedding" />
+        <activity android:name=".Halfshade.HalfExotics" />
+        <activity android:name=".Halfshade.HalfAlpines" />
+        <activity android:name=".FullSunActivities.FullSunHedges" />
         <activity android:name=".FullSunActivities.FullSunGrasses" />
         <activity android:name=".FullSunActivities.FullSunFerns" />
         <activity android:name=".FullSunActivities.FullSunExotics" />

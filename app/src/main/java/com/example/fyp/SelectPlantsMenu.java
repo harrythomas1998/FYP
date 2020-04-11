@@ -134,6 +134,8 @@ public class SelectPlantsMenu extends AppCompatActivity {
             }
         });
 
+
+
         fullSun.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -142,6 +144,27 @@ public class SelectPlantsMenu extends AppCompatActivity {
                 startActivity(vii);
             }
         });
+
+        halfShade.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent vii = new Intent(SelectPlantsMenu.this, HalfShade.class);
+                startActivity(vii);
+            }
+        });
+
+        fullShade.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent vii = new Intent(SelectPlantsMenu.this, FullShade.class);
+                startActivity(vii);
+            }
+        });
+
+
+
 
 
     }

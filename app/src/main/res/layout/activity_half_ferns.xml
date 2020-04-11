@@ -6,13 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Shade.FullShade"
-    android:background="@drawable/background9">
+    android:background="@drawable/background9"
+    tools:context=".Halfshade.HalfFerns">
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=" Full Shade Plants"
+        android:text=" Ferns"
         android:background="#69A730"
         android:textColor="#000"
         android:textStyle="bold"
@@ -23,11 +24,10 @@
         android:layout_height="50dp"
         android:background="#69A730"
         android:queryHint="Search Here"
-        android:id="@+id/searchaFullShade"/>
+        android:id="@+id/searchHalfFerns"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/fullShadeRecycler"/>
-
+        android:id="@+id/halfFernsRecycler"/>
 </LinearLayout>
