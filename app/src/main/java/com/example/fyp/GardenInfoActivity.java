@@ -10,7 +10,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.fyp.Objects.Orientation;
+import com.example.fyp.Objects.OtherDetails;
 import com.example.fyp.Objects.SoilType;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -94,9 +94,11 @@ public class GardenInfoActivity extends AppCompatActivity {
 
                 for(DataSnapshot snapshot1: dataSnapshot.getChildren()){
 
-                    Orientation o = snapshot1.getValue(Orientation.class);
+                    OtherDetails o = snapshot1.getValue(OtherDetails.class);
 
+                    assert o != null;
                     orientation.setText(o.getOrientation());
+                    areaBox.setText(o.getArea());
 
                 }
 

@@ -12,7 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
-import com.example.fyp.Objects.Orientation;
+import com.example.fyp.Objects.OtherDetails;
 import com.example.fyp.Objects.SoilType;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -29,7 +29,7 @@ public class FindSoilType extends AppCompatActivity {
     private Button b2;
 
     private SoilType soilType;
-    private Orientation or;
+    private OtherDetails or;
 
     private FirebaseUser mCurrentUser;
     private FirebaseAuth firebaseAuth;
@@ -204,52 +204,90 @@ public class FindSoilType extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String areaSelected = s1.getSelectedItem().toString();
 
-                if(areaSelected.equals("Monaghan- South") || areaSelected.equals("Louth- East") || areaSelected.equals("Mayo- South-East") || areaSelected.equals("Galway- East") || areaSelected.equals("Roscommon- South") || areaSelected.equals("Longford") || areaSelected.equals("Meath") || areaSelected.equals("Westmeath") || areaSelected.equals("Dublin") || areaSelected.equals("Offaly- West") || areaSelected.equals("Kildare- East")
-                        || areaSelected.equals("Laois") || areaSelected.equals("Clare- North") || areaSelected.equals("Clare- East") || areaSelected.equals("Tipperary") || areaSelected.equals("Wicklow")
-                        || areaSelected.equals("Carlow") || areaSelected.equals("Kilkenny") || areaSelected.equals("Limerick- East") || areaSelected.equals("Waterford") || areaSelected.equals("Cork")){
+                or.setArea(areaSelected);
 
-                    soilType.setName("Brown Soil");
-                    soilType.setPh("Slightly Acidic");
-                    soilType.setFertility("High");
-                    soilType.setComVeg("Grassland, Woodland, Farmland");
-                    soilType.setClimate("Humid");
-                    soilType.setDrainage("Very Good");
+                switch (areaSelected) {
+                    case "Monaghan- South":
+                    case "Louth- East":
+                    case "Mayo- South-East":
+                    case "Galway- East":
+                    case "Roscommon- South":
+                    case "Longford":
+                    case "Meath":
+                    case "Westmeath":
+                    case "Dublin":
+                    case "Offaly- West":
+                    case "Kildare- East":
+                    case "Laois":
+                    case "Clare- North":
+                    case "Clare- East":
+                    case "Tipperary":
+                    case "Wicklow":
+                    case "Carlow":
+                    case "Kilkenny":
+                    case "Limerick- East":
+                    case "Waterford":
+                    case "Cork":
+
+                        soilType.setName("Brown Soil");
+                        soilType.setPh("Slightly Acidic");
+                        soilType.setFertility("High");
+                        soilType.setComVeg("Grassland, Woodland, Farmland");
+                        soilType.setClimate("Humid");
+                        soilType.setDrainage("Very Good");
 
 
-                }
-                else if( areaSelected.equals("Donegal") || areaSelected.equals("Sligo") || areaSelected.equals("Leitrim- North-West") || areaSelected.equals("Mayo- South-West") || areaSelected.equals("Mayo- North") || areaSelected.equals("Galway- West")
-                        || areaSelected.equals("Offaly- East") || areaSelected.equals("Kildare- West") || areaSelected.equals("Laois- North-East") || areaSelected.equals("Wicklow- Central") || areaSelected.equals("Wexford- North-West")
-                        || areaSelected.equals("Cork- South-West") || areaSelected.equals("Kerry- South")){
+                        break;
+                    case "Donegal":
+                    case "Sligo":
+                    case "Leitrim- North-West":
+                    case "Mayo- South-West":
+                    case "Mayo- North":
+                    case "Galway- West":
+                    case "Offaly- East":
+                    case "Kildare- West":
+                    case "Laois- North-East":
+                    case "Wicklow- Central":
+                    case "Wexford- North-West":
+                    case "Cork- South-West":
+                    case "Kerry- South":
 
-                    soilType.setName("Peaty Soil");
-                    soilType.setPh("Strongly Acidic");
-                    soilType.setFertility("Poor");
-                    soilType.setComVeg("Bogland");
-                    soilType.setClimate("Humid");
-                    soilType.setDrainage("Poor");
+                        soilType.setName("Peaty Soil");
+                        soilType.setPh("Strongly Acidic");
+                        soilType.setFertility("Poor");
+                        soilType.setComVeg("Bogland");
+                        soilType.setClimate("Humid");
+                        soilType.setDrainage("Poor");
 
 
-                }
+                        break;
+                    case "Leitrim":
+                    case "Cavan- North":
+                    case "Monaghan- North":
+                    case "Mayo- East":
+                    case "Roscommon- North":
+                    case "Clare- West":
+                    case "Clare- Central":
+                    case "Limerick- West":
+                    case "Kerry- North":
 
-                else if(areaSelected.equals("Leitrim") || areaSelected.equals("Cavan- North") || areaSelected.equals("Monaghan- North") || areaSelected.equals("Mayo- East") || areaSelected.equals("Roscommon- North") || areaSelected.equals("Clare- West") ||
-                        areaSelected.equals("Clare- Central") || areaSelected.equals("Limerick- West") || areaSelected.equals("Kerry- North")){
+                        soilType.setName("Gley Soil");
+                        soilType.setPh("Acidic");
+                        soilType.setFertility("High");
+                        soilType.setComVeg("Bogland, Farmland");
+                        soilType.setClimate("All Cliamtes");
+                        soilType.setDrainage("Poor");
 
-                    soilType.setName("Gley Soil");
-                    soilType.setPh("Acidic");
-                    soilType.setFertility("High");
-                    soilType.setComVeg("Bogland, Farmland");
-                    soilType.setClimate("All Cliamtes");
-                    soilType.setDrainage("Poor");
+                        break;
+                    default:
 
-                }
-                else{
-
-                    soilType.setName("Podzol Soil");
-                    soilType.setPh("Strongly Acidic");
-                    soilType.setFertility("Poor");
-                    soilType.setComVeg("Coniferous Woodland, Grazing");
-                    soilType.setClimate("Humid");
-                    soilType.setDrainage("Poor");
+                        soilType.setName("Podzol Soil");
+                        soilType.setPh("Strongly Acidic");
+                        soilType.setFertility("Poor");
+                        soilType.setComVeg("Coniferous Woodland, Grazing");
+                        soilType.setClimate("Humid");
+                        soilType.setDrainage("Poor");
+                        break;
                 }
             }
 
@@ -260,7 +298,7 @@ public class FindSoilType extends AppCompatActivity {
         });
 
         soilType = new SoilType();
-        or = new Orientation();
+        or = new OtherDetails();
 
         firebaseAuth = FirebaseAuth.getInstance();
         mCurrentUser = firebaseAuth.getCurrentUser();

@@ -31,16 +31,15 @@
 
     <Button
         android:id="@+id/loginBtn"
-        style="@android:style/Widget.Material.Button"
+        style="@android:style/Widget.Material.Button.Colored"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
-        android:fontFamily="sans-serif-condensed"
+        android:background="#69A730"
         android:text="Login"
-        android:textSize="22sp"
-        android:textStyle="bold"
         android:textColor="#000"
-        android:background="#69A730"/>
+        android:textSize="22sp"
+        android:textStyle="bold" />
 
     <View
         style="@style/Divider2"
@@ -50,14 +49,13 @@
 
     <Button
         android:id="@+id/registerBtn"
-        style="@android:style/Widget.Material.Button"
+        style="@android:style/Widget.Material.Button.Colored"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
-        android:fontFamily="sans-serif-condensed"
+        android:background="#69A730"
         android:text="Register"
-        android:textSize="22sp"
-        android:textStyle="bold"
         android:textColor="#000"
-        android:background="#69A730"/>
+        android:textSize="22sp"
+        android:textStyle="bold" />
 </LinearLayout>
