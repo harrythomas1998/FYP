@@ -53,12 +53,6 @@ public class GardenInfoActivity extends AppCompatActivity {
         orientation = findViewById(R.id.orientation);
         areaBox = findViewById(R.id.areaTxt);
 
-        Intent intent = getIntent();
-
-        final String area = intent.getStringExtra("AREA");
-
-        areaBox.setText(area);
-
         firebaseAuth = FirebaseAuth.getInstance();
 
         user = firebaseAuth.getCurrentUser();

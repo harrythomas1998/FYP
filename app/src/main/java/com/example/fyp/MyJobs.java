@@ -41,9 +41,6 @@ public class MyJobs extends AppCompatActivity implements JobAdapter.OnItemClickL
     public static final String TITLE = "title";
 
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,9 +56,7 @@ public class MyJobs extends AppCompatActivity implements JobAdapter.OnItemClickL
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-
-
-
+        
         firebaseAuth = FirebaseAuth.getInstance();
 
         user = firebaseAuth.getCurrentUser();

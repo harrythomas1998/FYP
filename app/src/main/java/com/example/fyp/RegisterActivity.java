@@ -38,12 +38,11 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        if (android.os.Build.VERSION.SDK_INT >= 21) {
             Window window = this.getWindow();
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             window.setStatusBarColor(this.getResources().getColor(R.color.statusBar));
-        }
+
 
         mFirebaseAuth = FirebaseAuth.getInstance();
         databaseReference = FirebaseDatabase.getInstance().getReference("User");
@@ -81,6 +80,10 @@ public class RegisterActivity extends AppCompatActivity {
                 }
                 else if(passwordText.contains(" ")){
                     Toast.makeText(getApplicationContext(),"Password cannot have a space!",Toast.LENGTH_LONG).show();
+                    password.requestFocus();
+                }
+                else if(passwordText.length() <= 6){
+                    Toast.makeText(getApplicationContext(),"Password must be over 6 characters!",Toast.LENGTH_LONG).show();
                     password.requestFocus();
                 }
                 else {
