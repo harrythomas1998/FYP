@@ -303,7 +303,7 @@ public class FindSoilType extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
         mCurrentUser = firebaseAuth.getCurrentUser();
         myRef = FirebaseDatabase.getInstance().getReference().child("SoilType").child(mCurrentUser.getUid());
-        myRef2 = FirebaseDatabase.getInstance().getReference().child("Orientation").child(mCurrentUser.getUid());
+        myRef2 = FirebaseDatabase.getInstance().getReference().child("OtherDetails").child(mCurrentUser.getUid());
 
 
         b2.setOnClickListener(new View.OnClickListener() {

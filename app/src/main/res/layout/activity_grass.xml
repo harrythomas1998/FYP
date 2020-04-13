@@ -26,8 +26,83 @@
         android:layout_marginTop="30dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:text="Here we will"
+        android:textStyle="bold"
+        android:text="Here GardenPal analyses your Gardens Attributes to detemine how often you should cut your grass"
         android:textColor="#000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start cutting grass:"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/startCuttingBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stop cutting grass:"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/stopcuttingBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/grass3"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        android:text="Click the button at the bottom to automatically add all the days you should cut your grass this year to your calendar."
+        android:textColor="#000"/>
+
 
     <TextView
         android:layout_width="match_parent"
@@ -39,6 +114,7 @@
         android:layout_height="wrap_content"
         android:text="Add to Calendar"
         android:id="@+id/addToCalendar"
+        android:background="#79A2CE"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginBottom="10dp"/>

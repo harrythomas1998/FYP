@@ -81,7 +81,7 @@ public class GardenInfoActivity extends AppCompatActivity {
             }
         });
 
-        reference2 = FirebaseDatabase.getInstance().getReference().child("Orientation").child(user.getUid());
+        reference2 = FirebaseDatabase.getInstance().getReference().child("OtherDetails").child(user.getUid());
         reference2.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
