@@ -10,6 +10,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 
 import com.example.fyp.seasons.Autumn;
+import com.example.fyp.seasons.OtherJobs;
 import com.example.fyp.seasons.Spring;
 import com.example.fyp.seasons.Summer;
 import com.example.fyp.seasons.Winter;
@@ -30,18 +31,20 @@ public class MyJobsMenu extends AppCompatActivity {
         window.setStatusBarColor(this.getResources().getColor(R.color.statusBar));
 
 
-        b1 = findViewById(R.id.reoccuring_button);
+        b1 = findViewById(R.id.other_button);
         b2 = findViewById(R.id.created_by_me_button);
         b3 = findViewById(R.id.spring_button);
         b4 = findViewById(R.id.summer_button);
         b5 = findViewById(R.id.autumn_button);
         b6 = findViewById(R.id.winter_button);
 
+
+
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(MyJobsMenu.this, MyJobs.class);
+                Intent i = new Intent(MyJobsMenu.this, OtherJobs.class);
                 startActivity(i);
             }
         });

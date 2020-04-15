@@ -31,17 +31,6 @@
             android:orientation="vertical">
 
 
-    <Button
-        android:id="@+id/reoccuring_button"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:text="Re- occuring"
-        android:textAlignment="viewStart"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:textColor="#000" />
-
     <View
         style="@style/Divider"
         android:layout_width="match_parent"
@@ -69,7 +58,7 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:text="Spring"
+        android:text="Spring Jobs"
         android:textAlignment="viewStart"
         android:textSize="25dp"
         android:textColor="#000"
@@ -85,7 +74,7 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:text="Summer"
+        android:text="Summer Jobs"
         android:textAlignment="viewStart"
         android:textSize="25dp"
         android:textStyle="bold"
@@ -101,7 +90,7 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:text="Autumn"
+        android:text="Autumn Jobs"
         android:textAlignment="viewStart"
         android:textSize="25dp"
         android:textColor="#000"
@@ -117,12 +106,28 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:text="Winter"
+        android:text="Winter Jobs"
         android:textAlignment="viewStart"
         android:textSize="25dp"
         android:textColor="#000"
         android:textStyle="bold"/>
 
+            <View
+                style="@style/Divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                />
+
+            <Button
+                android:id="@+id/other_button"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="Other Jobs"
+                android:textAlignment="viewStart"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#000" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

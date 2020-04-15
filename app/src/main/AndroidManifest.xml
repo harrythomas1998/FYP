@@ -15,7 +15,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".seasons.OtherJobs"></activity>
+        <activity android:name=".RateOfGrowth.FastGrowing"></activity>
+        <activity android:name=".RateOfGrowth.AverageGrowing" />
+        <activity android:name=".RateOfGrowth.SlowGrowing" />
+        <activity android:name=".seasons.OtherJobs" />
         <activity android:name=".MaintenancePlantActivity" />
         <activity android:name=".Halfshade.HalfHedges" />
         <activity android:name=".Halfshade.HalfGrasses" />
