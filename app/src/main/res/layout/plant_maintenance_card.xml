@@ -58,6 +58,7 @@
                 android:textAllCaps="true"
                 android:textColor="#000"
                 android:layout_weight="1"
+                android:textSize="18sp"
                 android:layout_marginTop="10dp" />
 
             <LinearLayout
@@ -69,7 +70,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="View what has to be done"
-                    android:layout_marginTop="20dp"
                     android:layout_weight="1"/>
 
                 <ImageButton
@@ -79,6 +79,7 @@
                     android:background="#fff"
                     android:src="@drawable/done"
                     android:padding="3dp"
+                    android:layout_marginBottom="20dp"
                     android:contentDescription="Picture" />
 
             </LinearLayout>

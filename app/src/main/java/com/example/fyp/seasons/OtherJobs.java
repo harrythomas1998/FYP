@@ -22,14 +22,16 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class Winter extends AppCompatActivity implements MaintenancePlantAdapter.OnItemClickListener, ArrayInterface {
+public class OtherJobs extends AppCompatActivity implements MaintenancePlantAdapter.OnItemClickListener, ArrayInterface {
+
+
     RecyclerView recyclerView;
     MaintenancePlantAdapter adapter;
 
-    String NAME = "name";
-    String IMAGE = "image";
-    String LINK = "link";
-    String CARE = "care";
+    public static final String NAME = "name";
+    public static final String IMAGE = "image";
+    public static final String LINK = "link";
+    public static final String CARE = "care";
 
     DatabaseReference reference;
     private FirebaseUser user;
@@ -38,27 +40,27 @@ public class Winter extends AppCompatActivity implements MaintenancePlantAdapter
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_winter);
+        setContentView(R.layout.activity_other_jobs);
 
         Window window = this.getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         window.setStatusBarColor(this.getResources().getColor(R.color.statusBar));
 
-        recyclerView = findViewById(R.id.winter_recycler);
+        recyclerView = findViewById(R.id.other_recycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
 
         firebaseAuth = FirebaseAuth.getInstance();
 
         user = firebaseAuth.getCurrentUser();
-        reference = FirebaseDatabase.getInstance().getReference().child("WinterPlants").child(user.getUid());
+        reference = FirebaseDatabase.getInstance().getReference().child("OtherPlants").child(user.getUid());
 
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
-                spring.clear();
+                otherJobs.clear();
 
                 for (DataSnapshot snapshot1 : dataSnapshot.getChildren()) {
 
@@ -66,20 +68,19 @@ public class Winter extends AppCompatActivity implements MaintenancePlantAdapter
                     assert mp != null;
 
                     mp.setKey(snapshot1.getKey());
-                    winter.add(mp);
+                    otherJobs.add(mp);
 
                 }
 
-                adapter = new MaintenancePlantAdapter(Winter.this, winter);
+                adapter = new MaintenancePlantAdapter(OtherJobs.this, otherJobs);
                 recyclerView.setAdapter(adapter);
-                adapter.setOnItemClickListener(Winter.this);
+                adapter.setOnItemClickListener(OtherJobs.this);
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
 
             }
-
 
         });
 
@@ -89,7 +90,7 @@ public class Winter extends AppCompatActivity implements MaintenancePlantAdapter
     public void onItemClick(int position) {
 
         Intent i = new Intent(this, MaintenancePlantActivity.class);
-        MaintenancePlant clickedPlantItem = winter.get(position);
+        MaintenancePlant clickedPlantItem = otherJobs.get(position);
 
         i.putExtra(NAME, clickedPlantItem.getName());
         i.putExtra(IMAGE, clickedPlantItem.getImage());
@@ -97,7 +98,6 @@ public class Winter extends AppCompatActivity implements MaintenancePlantAdapter
         i.putExtra(CARE, clickedPlantItem.getCare());
 
         startActivity(i);
-
     }
 
     @Override
@@ -107,3 +107,4 @@ public class Winter extends AppCompatActivity implements MaintenancePlantAdapter
 
     }
 }
+

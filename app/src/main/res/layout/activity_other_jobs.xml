@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".seasons.Autumn"
-    android:background="@drawable/background9">
+    android:background="@drawable/background9"
+    tools:context=".seasons.OtherJobs">
 
     <TextView
         android:layout_width="match_parent"
@@ -16,11 +16,9 @@
         android:textStyle="bold"
         android:textSize="30sp"/>
 
-
-
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/autumn_recycler"/>
+        android:id="@+id/other_recycler"/>
 
 </LinearLayout>

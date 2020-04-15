@@ -68,10 +68,12 @@ public class PlantsActivity extends AppCompatActivity implements ArrayInterface{
 
         nameBox.setText(name);
         Picasso.get().load(image).fit().into(imageBox);
-        positionBox.setText(position);
-        soilBox.setText(soil);
-        growthBox.setText(growth);
-        careBox.setText(care);
+        positionBox.setText(position.replace("Position:", ""));
+        soilBox.setText(soil.replace("Soil:", ""));
+        assert growth != null;
+        growthBox.setText(growth.replace("Rate of growth:", ""));
+        assert care != null;
+        careBox.setText(care.replace("Garden Care:", ""));
 
         plant = new Plant();
 

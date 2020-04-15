@@ -57,5 +57,6 @@ public interface ArrayInterface {
     ArrayList<MaintenancePlant> winter = new ArrayList<>();
     ArrayList<MaintenancePlant> spring = new ArrayList<>();
     ArrayList<MaintenancePlant> autumn = new ArrayList<>();
+    ArrayList<MaintenancePlant> otherJobs = new ArrayList<>();
 
 }

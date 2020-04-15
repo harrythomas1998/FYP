@@ -1,11 +1,14 @@
 package com.example.fyp.Objects;
 
+import com.google.firebase.database.Exclude;
+
 public class MaintenancePlant {
 
     private String name;
     private String image;
     private String link;
     private String care;
+    private String key;
 
     public MaintenancePlant() {
     }
@@ -47,5 +50,13 @@ public class MaintenancePlant {
 
     public void setCare(String care) {
         this.care = care;
+    }
+
+    @Exclude
+    public String getKey(){ return key; }
+
+    @Exclude
+    public void setKey(String key) {
+        this.key = key;
     }
 }

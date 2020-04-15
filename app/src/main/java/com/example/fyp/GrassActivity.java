@@ -270,10 +270,8 @@ public class GrassActivity extends AppCompatActivity {
                                     calIntent.putExtra(CalendarContract.Events.DTSTART, cal.getTimeInMillis());
                                     calIntent.putExtra(CalendarContract.Events.RRULE, "FREQ=WEEKLY;BYDAY=SA;INTERVAL=1;UNTIL=20201031T000000Z");
                                     calIntent.putExtra(CalendarContract.Events.ALL_DAY, 1); // 0 for false, 1 for true
-
                                     calIntent.putExtra(CalendarContract.Events.STATUS, 1);
                                     calIntent.putExtra(CalendarContract.Events.HAS_ALARM, 1); // 0 for false, 1 for true
-
                                     calIntent.putExtra(CalendarContract.Events.DURATION, "P3600S");
                                     startActivity(calIntent);
 

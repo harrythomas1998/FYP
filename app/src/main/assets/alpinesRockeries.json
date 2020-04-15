@@ -105,7 +105,7 @@
     "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/61/pl2000036168.jpg?width=940&height=940",
     "position": "Position:  full sun",
     "soil": "Soil: poor to moderately fertile, well-drained soil with added grit",
-    "rateOfGrowth": "Hardiness:  fully hardy\n\nThese decorative evergreen groundcovering plants can be used to great effect in troughs, alpine beds, stone walls and even to soften the gaps between paving slabs.",
+    "rateOfGrowth": "",
     "flowering": null,
     "care": "Garden care: Cut back spreading species after flowering. Water moderately when actively growing and avoid winter wet."
   },
@@ -321,7 +321,7 @@
     "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/89/pl2000018956.jpg?width=940&height=940",
     "position": "Position:  full sun or partial shade",
     "soil": "Soil:  moist, humus-rich, neutral to acid soil",
-    "rateOfGrowth": "Rate of growth:   average",
+    "rateOfGrowth": "Rate of growth: average",
     "flowering": "Flowering period:  April to May",
     "care":  null
   },
@@ -358,45 +358,18 @@
     "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/32/pl2000013202.jpg?width=940&height=940",
     "position": "Position:  full sun",
     "soil": "Soil: fertile, well-drained soil",
-    "rateOfGrowth": "Rate of Growth: average",
+    "rateOfGrowth": "Rate of growth: average",
     "flowering": "Flowering period: June to October",
     "care": "Garden care: Trouble free. Avoid excessive winter wet and trim lanky stems in autumn."
-  },
-  {
-    "name": "Siberian squill bulbs",
-    "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/00/82/pl2000008272.jpg?width=940&height=940",
-    "position": "Position: full sun or partial shade",
-    "soil": "Soil: moderately fertile, humus-rich, moist, well-drained soil",
-    "rateOfGrowth": "Rate of growth:  average",
-    "flowering": "Flowering period:  March and April",
-    "care": "Bulb size: 7/8\n\nDainty spikes of up to five nodding, bell-shaped, violet-blue flowers in March and April and slender, strap-shaped, glossy, mid-green leaves. Siberian squills are perfect for naturalising in areas of semi- shade underneath deciduous shrubs. To achieve a naturalistic display scatter bulbs in bold drifts on the ground, planting them where they fall. They originate from the area around the Black Sea so they are extremely robust."
   },
   {
     "name": "bugle",
     "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/88/pl2000018818.jpg?width=940&height=940",
     "position": "Position:    full sun or partial shade",
     "soil": "Soil:  any moist, well-drained soil",
-    "rateOfGrowth": "Rate of growth:  fast-growing",
-    "flowering": "Flowering period:  May to June",
+    "rateOfGrowth": "Rate of growth: fast-growing",
+    "flowering": "Flowering period: May to June",
     "care": "Garden care: Sow thinly in a lidded propagator, just covering the seed with a sprinkling of compost before placing in a greenhouse or conservatory. Germination can be a little slow (usually within a month), but for best results keep the soil moist but not waterlogged at temperatures between 10 and 16�C. Prick out when large enough to handle and grow on in small pots before planting out in summer. Protect the young plants from slugs and snails and avoid overhead watering while still in the seedling stage."
-  },
-  {
-    "name": "false goatsbeard",
-    "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/51/pl2000025100.jpg?width=940&height=940",
-    "position": "Position: full sun partial shade",
-    "soil": "Soil: moist, humus-rich soil",
-    "rateOfGrowth": "Rate of Growth: fast",
-    "flowering": "Flowering period: July - August",
-    "care": null
-  },
-  {
-    "name": "snake's head fritillary bulbs",
-    "image-src": "http://img.crocdn.co.uk/images/products2/pl/10/00/00/02/pl1000000282.jpg?width=940&height=940",
-    "position": "Position: full sun or partial shade",
-    "soil": "Soil: humus-rich, moisture-retentive soil",
-    "rateOfGrowth": "Rate of growth:  average",
-    "flowering": "Flowering period:  April and May",
-    "care": null
   },
   {
     "name": "cowslip",
@@ -406,15 +379,6 @@
     "rateOfGrowth": "Rate of growth:  average",
     "flowering": "Flowering period:  April to May",
     "care": "Garden care:  Generally, problem-free but do ensure that the ground remains moist, especially where the plant is growing in full sun."
-  },
-  {
-    "name": "grape hyacinth bulbs",
-    "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/77/pl2000027795.jpg?width=940&height=940",
-    "position": "Position: full sun or partial shade",
-    "soil": "Soil: moderately fertile, well-drained soil (for container-grown bulbs use two parts John Innes No2 compost to one part sharp grit)",
-    "rateOfGrowth": "Rate of growth:  fast-growing",
-    "flowering": "Flowering period:  April and May",
-    "care": null
   },
   {
     "name": "ice plant",
@@ -430,7 +394,7 @@
     "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/02/pl0000000233.jpg?width=940&height=940",
     "position": "Position:    full sun or partial shade",
     "soil": "Soil:  humus-rich soil",
-    "rateOfGrowth": "Rate of Growth:  fast-growing",
+    "rateOfGrowth": "Rate of growth:  fast-growing",
     "flowering": "Flowering period:  June to September",
     "care": "Garden care: Cut back the faded flower heads and foliage in August and the plant will often produce a second flush of flowers. Alchemilla has a tendency to self-seedfreely, so to minimise the spread  of the plant remove the seedheads carefully after flowering."
   },
@@ -488,22 +452,12 @@
     "flowering": "Flowering period:  June to July",
     "care": "Garden care: Stake with bamboo canes or brushwood  before the flowers appear. Deadhead regularly to prolong flowering.  Apply a generous 5-7cm (2-3in) mulch of bark chippings, well-rotted  leaf mould or composted pine needles around the base of the plant in spring."
   },
-
-  {
-    "name": "saxifrage collection",
-    "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/51/pl2000025121.jpg?width=940&height=940",
-    "position": "Position:  full sun with a little shade during the hottest part of  the day",
-    "soil": "Soil: freely draining in winter, but able to hold some moisture  during the warmer months",
-    "rateOfGrowth": "Hardiness:  frost hardy to fully hardy\n\nSaxifrage are a wonderful and diverse group of plants, and this collection is a great way to start off a collection. Each plant in the 6-pack is un-named, but all six will be different. As they are all un-labelled however, we are not  able to specify which ones will be sent out in a particular order. These are great little plants though, and they can either be potted up or planted out into an alpine bed. They can be planted between paving slabs, or gaps in dry stone walls, where their spring, summer or autumn  flowers and attractive foliage will soften the  hard lines.",
-    "flowering": "Garden care: Cut back spreading species after flowering. Water moderately when actively growing and avoid winter wet.",
-    "care": null
-  },
   {
     "name": "auricula (Syn Lucky Locket)",
     "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/97/pl2000019769.jpg?width=940&height=940",
     "position": "Position:  full sun or partial shade",
     "soil": "Soil:  moist, humus-rich, neutral to acid soil",
-    "rateOfGrowth": "Rate of growth:   average",
+    "rateOfGrowth": "Rate of growth: average",
     "flowering": "Flowering period:  April to May",
     "care": "Garden care:   Divide large clumps after the plant has flowered, preferably during a wet spell."
   },
@@ -512,7 +466,7 @@
     "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/69/pl2000036905.jpg?width=940&height=940",
     "position": "Position:  full sun or lightly dappled shade",
     "soil": "Soil: humus-rich, moist but freely draining soil",
-    "rateOfGrowth": "Rate of growth:  average",
+    "rateOfGrowth": "Rate of growth: average",
     "flowering": "Flowering period:May - June",
     "care": "Garden care:  Give it a trim after the flowers have faded and  lift and divide clumps in autumn."
   },
@@ -530,36 +484,9 @@
     "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/72/pl2000017286.jpg?width=940&height=940",
     "position": "Position: partial shade",
     "soil": "Soil: moist, humus-rich, neutral to acid soil",
-    "rateOfGrowth": "Rate of growth:  average to fast",
+    "rateOfGrowth": "Rate of growth: average to fast",
     "flowering": "Flowering period:  May to June",
     "care": "Garden care:  Divide large clumps after the plant has flowered, preferably during a wet spell."
-  },
-  {
-    "name": "autumn daffodil bulbs",
-    "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/50/pl2000015047.jpg?width=940&height=940",
-    "position": "Position: full sun",
-    "soil": "Soil: gritty, poor to moderately fertile, well-drained soil",
-    "rateOfGrowth": "Rate of growth:  fast-growing",
-    "flowering": "Flowering period:  September to November",
-    "care": "Bulb size:  8/-\n\nAn autumn carpet of goblet-shaped, luminous yellow flowers can be achieved over time with these delightful bulbs. They are incredubly floriferous in the right setting and will brighten up the drabbest autumn day. Plant them where they get loads of sun and wont get too wet in winter and they will multipy over the years to form generous drifts."
-  },
-  {
-    "name": "auricula",
-    "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/89/pl2000018955.jpg?width=940&height=940",
-    "position": "Position:  full sun or partial shade",
-    "soil": "Soil:  moist, humus-rich, neutral to acid soil",
-    "rateOfGrowth": "Rate of growth:   average",
-    "flowering": "Flowering period:  April to May",
-    "care": "Hardiness:  fully hardy\n\nConcentric rings of yellow and white adorn the flat-faced flowers of this spreading auricula from mid-spring. Well suited to a woodland floor or lightly shaded rockery, it also makes a great addition to a seasonal potted display and can be underplanted with spring flowering bulbs including miniature daffodils, species tulips and even crocus."
-  },
-  {
-    "name": "house leek ( chick charms series houseleek )",
-    "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/28/pl2000022887.jpg?width=940&height=940",
-    "position": "Position:  full sun",
-    "soil": "Soil: poor to moderately fertile, well-drained soil with added grit",
-    "rateOfGrowth": "Hardiness:  fully hardy\n\nThese decorative evergreen groundcovering plants can be used to great effect in troughs, alpine beds, stone walls and even to soften the gaps between paving slabs.",
-    "flowering": "Garden care: Cut back spreading species after flowering. Water moderately when actively growing and avoid winter wet.",
-    "care": null
   },
   {
     "name": "winter heath",
@@ -575,7 +502,7 @@
     "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/69/pl2000036904.jpg?width=940&height=940",
     "position": "Position:  full sun or lightly dappled shade",
     "soil": "Soil: humus-rich, moist but freely draining soil",
-    "rateOfGrowth": "Rate of growth:  average",
+    "rateOfGrowth": "Rate of growth: average",
     "flowering": "Flowering period:May - June",
     "care": "Garden care:  Give it a trim after the flowers have faded and  lift and divide clumps in autumn."
   },
@@ -584,7 +511,7 @@
     "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/08/pl2000010846.jpg?width=940&height=940",
     "position": "Position:  partial shade",
     "soil": "Soil: moist, humus rich, neutral to acid soil",
-    "rateOfGrowth": "Rate of growth:  average",
+    "rateOfGrowth": "Rate of growth: average",
     "flowering": "Flowering period:  June to July",
     "care": "Garden care:  Divide large clumps after the plant has  flowered, preferably during a wet spell."
   },
@@ -665,7 +592,7 @@
     "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/47/pl2000024787.jpg?width=940&height=940",
     "position": "Position: full sun or partial shade",
     "soil": "Soil: fertile, well-drained soil",
-    "rateOfGrowth": "Rate of growth:  average to fast growing",
+    "rateOfGrowth": "Rate of growth: average to fast growing",
     "flowering": "Flowering period:  May to September",
     "care": "Garden care: Carefully weed by hand as hoeing can break rhizomes, which are very close to the surface. Lift and divide large colonies in spring."
   },
@@ -683,9 +610,9 @@
     "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/28/pl2000022890.jpg?width=940&height=940",
     "position": "Position:  full sun",
     "soil": "Soil: poor to moderately fertile, well-drained soil with added grit",
-    "rateOfGrowth": "Hardiness:  fully hardy\n\nThese decorative evergreen groundcovering plants can be used to great effect in troughs, alpine beds, stone walls and even to soften the gaps between paving slabs.",
-    "flowering": "Garden care: Cut back spreading species after flowering. Water moderately when actively growing and avoid winter wet.",
-    "care": null
+    "rateOfGrowth": " average",
+    "flowering": null,
+    "care": "Garden care: Cut back spreading species after flowering. Water moderately when actively growing and avoid winter wet."
   },
   {
     "name": "cyclamineus daffodil bulbs",
@@ -701,9 +628,9 @@
     "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/61/pl2000036172.jpg?width=940&height=940",
     "position": "Position:  full sun",
     "soil": "Soil: poor to moderately fertile, well-drained soil with added grit",
-    "rateOfGrowth": "Hardiness:  fully hardy\n\nThese decorative evergreen groundcovering plants can be used to great effect in troughs, alpine beds, stone walls and even to soften the gaps between paving slabs.",
-    "flowering": "Garden care: Cut back spreading species after flowering. Water moderately when actively growing and avoid winter wet.",
-    "care": null
+    "rateOfGrowth": "average",
+    "flowering": null,
+    "care": "Garden care: Cut back spreading species after flowering. Water moderately when actively growing and avoid winter wet."
   },
   {
     "name": "pink",
@@ -722,15 +649,6 @@
     "rateOfGrowth": "Rate of growth: average",
     "flowering": "Flowering period: July to September",
     "care": "Garden care: Incorporate lots of well-rotted manure or garden compost into the planting hole. Apply a balanced fertiliser in spring and deadhead regularly to prolong flowering."
-  },
-  {
-    "name": "grape hyacinth bulbs",
-    "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/06/pl2000030692.jpg?width=940&height=940",
-    "position": "Position: full sun",
-    "soil": "Soil: moderately fertile, well-drained soil (for container-grown bulbs use two parts John Innes No2 compost to one part sharp grit)",
-    "rateOfGrowth": "Rate of growth:  average",
-    "flowering": "Flowering period:  April and May",
-    "care": "Bulb size: 7/8\n\n Densely crowded on the upright flower spike, the green buds open to reveal   small, pale blue scented flowers, each with a puckered white mouth.  A well-behaved addition to a naturalised setting, it also looks wonderful when used in pots and windowboxes."
   },
   {
     "name": "pink",
@@ -805,15 +723,6 @@
     "care": "Garden care: Avoid waterlogging, particularly in winter, and  to keep the plants looking bushy, cut them back hard immediately after  flowering. This may also encourage a second, less prolific, flush of   flowers."
   },
   {
-    "name": "squill bulbs",
-    "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/77/pl2000017703.jpg?width=940&height=940",
-    "position": "Position: full sun or partial shade",
-    "soil": "Soil: moderately fertile, humus-rich, moist, well-drained soil",
-    "rateOfGrowth": "Rate of growth:  average",
-    "flowering": "Flowering period:  February to March",
-    "care": "Bulb size: 8+\n\nIn late winter or early spring, star-shaped, pale blue flowers, which have a darker stripe along the length of their petals, appear with the narrow basal foliage."
-  },
-  {
     "name": "aubrieta Axcent Deep Purple",
     "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/68/pl2000036896.jpg?width=940&height=940",
     "position": "Position: full sun",
@@ -839,15 +748,6 @@
     "rateOfGrowth": "Rate of growth:  fast-growing",
     "flowering": "Flowering period:  March to April",
     "care": "Bulb Size: 5/7\n\nIn spring, large white daisy-like flowers (to 4cm across) emerge above the attractively lobed, dark green foliage. Each petal has a pink flushed reverse and they all sit around a boss of yellow stamens. Wood anemones are ideal for underplanting shrubs or trees."
-  },
-  {
-    "name": "daffodil bulbs",
-    "image-src": "http://img.crocdn.co.uk/images/products2/pl/10/00/00/03/pl1000000302.jpg?width=940&height=940",
-    "position": "Position: full sun or partial shade",
-    "soil": "Soil: well-drained soil",
-    "rateOfGrowth": "Rate of growth:  fast-growing",
-    "flowering": "Flowering period:  late February to April",
-    "care": "Bulb size:   10/11\n\nClusters of up three deep golden-yellow flowers with slightly reflexed petals and deep yellow cups appear in March and April above the narrow, strap-shaped leaves. One of the most popular forms, this delightful dwarf narcissus makes a fabulous early spring display for a sunny window-box. Blue grape hyacinths and slow-growing variegated ivies help to extend the season of interest."
   },
   {
     "name": "perennial phlox",
@@ -895,15 +795,6 @@
     "care": "Garden care: Avoid waterlogging, particularly in winter, and  to keep the plants looking bushy, cut them back hard immediately after  flowering. This may also encourage a second, less prolific, flush of   flowers."
   },
   {
-    "name": "house leek ( chick charms series houseleek )",
-    "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/28/pl2000022889.jpg?width=940&height=940",
-    "position": "Position:  full sun",
-    "soil": "Soil: poor to moderately fertile, well-drained soil with added grit",
-    "rateOfGrowth": "Hardiness:  fully hardy\n\nThese decorative evergreen groundcovering plants can be used to great effect in troughs, alpine beds, stone walls and even to soften the gaps between paving slabs.",
-    "flowering": "Garden care: Cut back spreading species after flowering. Water moderately when actively growing and avoid winter wet.",
-    "care": null
-  },
-  {
     "name": "oxslip",
     "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/00/58/pl2000005850.jpg?width=940&height=940",
     "position": "Position: full sun or partial shade",
@@ -917,9 +808,9 @@
     "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/39/pl0000003930.jpg?width=940&height=940",
     "position": "Position: full sun or partial shade",
     "soil": "Soil: poor or moderately fertile, moist, well-drained neutral to slightly alkaline soil",
-    "rateOfGrowth": "Rate of growth:                average",
+    "rateOfGrowth": "Rate of growth: average",
     "flowering": "Flowering period: June and July",
-    "care": "Garden care:  Needs minimal pruning. Remove misplaced    or frost damaged branches in late spring"
+    "care": "Garden care:  Needs minimal pruning. Remove misplaced or frost damaged branches in late spring"
   },
   {
     "name": "hepatica",
@@ -1034,7 +925,7 @@
     "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/34/pl2000033418.jpg?width=940&height=940",
     "position": "Position: full sun",
     "soil": "Soil: fertile, well-drained soil",
-    "rateOfGrowth": "Rate of Growth: average",
+    "rateOfGrowth": "Rate of growth: average",
     "flowering": "Flowering period: June to August",
     "care": "Garden care:   Cut back to ground level  in autumn and avoid winter wet."
   },
@@ -1055,24 +946,6 @@
     "rateOfGrowth": "Rate of growth: average",
     "flowering": "Flowering period: May to October",
     "care": "Garden care: Avoid overwatering - particularly in winter."
-  },
-  {
-    "name": "house leek ( chick charms series houseleek )",
-    "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/61/pl2000036175.jpg?width=940&height=940",
-    "position": "Position:  full sun",
-    "soil": "Soil: poor to moderately fertile, well-drained soil with added grit",
-    "rateOfGrowth": "Hardiness:  fully hardy\n\nThese decorative evergreen groundcovering plants can be used to great effect in troughs, alpine beds, stone walls and even to soften the gaps between paving slabs.",
-    "flowering": "Garden care: Cut back spreading species after flowering. Water moderately when actively growing and avoid winter wet.",
-    "care": null
-  },
-  {
-    "name": "cyclamineus daffodil bulbs",
-    "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/00/82/pl2000008254.jpg?width=940&height=940",
-    "position": "Position: full sun or partial shade",
-    "soil": "Soil: well-drained soil",
-    "rateOfGrowth": "Rate of growth:  fast-growing",
-    "flowering": "Flowering period:  March and April",
-    "care": "Bulb size: 12/14\n\nElegant flowers appear in March and April with milky-white petals and a lemon trumpet which gradually fades to creamy-white. These daffs have distinctive flowers with long trumpets and windswept petals. It is a dainty cyclamineus hybrid narcissus and is ideal for naturalising in a sunny, well-drained border or for planting in large swathes through grassland. The flowers stand up well to wind and rain - an important consideration when choosing spring bulbs for an exposed site."
   },
   {
     "name": "bellflower",
@@ -1111,15 +984,6 @@
     "care": "Garden care: Plant in naturalistic drifts when they arrive.  Where bulbs are planted in grass do not cut the grass until after the leaves have died back. Divide large colonies immediately after flowering while the leaves are still green."
   },
   {
-    "name": "winter windflower blue-flowered bulbs",
-    "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/52/pl2000015250.jpg?width=940&height=940",
-    "position": "Position: full sun or partial shade",
-    "soil": "Soil: well-drained, humus-rich soil",
-    "rateOfGrowth": "Rate of growth:  fast-growing",
-    "flowering": "Flowering period:  March to April",
-    "care": "Bulb size: 4/5\n\nThis is a wonderful plant that produces cheerful, daisy-like flowers in shades of blue and purple in March and April. These are perfect plants for naturalising in a mixed border around the base of deciduous shrubs, or adding spring colour to the edge of a woodland garden. For maximum impact, plant wood anemones in bold drifts in September or October, and if happy, they should spread quite quickly."
-  },
-  {
     "name": "pink",
     "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/45/pl2000034556.jpg?width=940&height=940",
     "position": "Position: full sun",
@@ -1153,14 +1017,14 @@
     "soil": "Soil: poor to moderately fertile, moist but well-drained neutral to alkaline soil",
     "rateOfGrowth": "Rate of growth: average",
     "flowering": "Flowering period: May to September",
-    "care": "Hardiness: fully hardy\n\nWhite flowers open from pink-flushed buds forming large (to 7cm across), flattened flowerheads, which cover the shrubby, evergreen foliage from late spring to early summer. Excellent for edging a sunny path or border, the plants will become drought tolerant once established, while the flowers very are attractive to butterflies."
+    "care": ""
   },
   {
     "name": "Mexican fleabane (syn. Profusion )",
     "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/27/pl0000002751.jpg?width=940&height=940",
     "position": "Position:  full sun",
     "soil": "Soil: fertile, well-drained soil",
-    "rateOfGrowth": "Rate of Growth: average",
+    "rateOfGrowth": "Rate of growth: average",
     "flowering": "Flowering period: June to October",
     "care": "Garden care: Trouble free. Avoid excessive winter wet and trim lanky stems in autumn."
   },
@@ -1201,15 +1065,6 @@
     "care": "Garden care: Dianthus should be trimmed back lightly after flowering to promote new basal growth.  Prune more closely in spring, as new shoots emerge to maintain a tidy shape. To maintain healthy growth, it is important to make sure the plants are protected from excessive winter wet."
   },
   {
-    "name": "white-flowered snake's head fritillary bulbs",
-    "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/00/82/pl2000008230.jpg?width=940&height=940",
-    "position": "Position: full sun or partial shade",
-    "soil": "Soil: humus-rich, moisture-retentive soil",
-    "rateOfGrowth": "Rate of growth:  average",
-    "flowering": "Flowering period:  April and May",
-    "care": "Bulb size: 5/-\n\nPretty, pendent, white  bells on slender stems emerge in April and May. These delightful wildflowers were once widespread throughout the UK, and are perfect for naturalising in a moist woodland edge or wildflower garden. It's essential to select a site where the soil remains moist in spring."
-  },
-  {
     "name": "bugle",
     "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/02/pl0000000218.jpg?width=940&height=940",
     "position": "Position: full sun or partial shade",
@@ -1233,7 +1088,7 @@
     "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/59/pl2000025906.jpg?width=940&height=940",
     "position": "Position:    full sun or partial shade",
     "soil": "Soil:  humus-rich soil",
-    "rateOfGrowth": "Rate of Growth:  fast-growing",
+    "rateOfGrowth": "Rate of growth:  fast-growing",
     "flowering": "Flowering period:  June to September",
     "care": "Garden care: Cut back the faded flower heads and foliage in August and the plant will often produce a second flush of flowers. Alchemilla has a tendency to self-seedfreely, so to minimise the spread  of the plant remove the seedheads carefully after flowering."
   },
@@ -1254,15 +1109,6 @@
     "rateOfGrowth": "Rate of growth:  fast growing",
     "flowering": "Flowering period:  April to June",
     "care": "Garden care: Divide large clumps after the plant has  flowered, preferably during a wet spell."
-  },
-  {
-    "name": "house leek ( chick charms series houseleek )",
-    "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/61/pl2000036171.jpg?width=940&height=940",
-    "position": "Position:  full sun",
-    "soil": "Soil: poor to moderately fertile, well-drained soil with added grit",
-    "rateOfGrowth": "Hardiness:  fully hardy\n\nThese decorative evergreen groundcovering plants can be used to great effect in troughs, alpine beds, stone walls and even to soften the gaps between paving slabs.",
-    "flowering": "Garden care: Cut back spreading species after flowering. Water moderately when actively growing and avoid winter wet.",
-    "care": null
   },
   {
     "name": "pasque flower",
@@ -1346,24 +1192,6 @@
     "care": "Garden care: Avoid waterlogging, particularly in winter, and  to keep the plants looking bushy, cut them back hard immediately after  flowering. This may also encourage a second, less prolific, flush of   flowers."
   },
   {
-    "name": "house leek ( chick charms series houseleek )",
-    "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/61/pl2000036170.jpg?width=940&height=940",
-    "position": "Position:  full sun",
-    "soil": "Soil: poor to moderately fertile, well-drained soil with added grit",
-    "rateOfGrowth": "Hardiness:  fully hardy\n\nThese decorative evergreen groundcovering plants can be used to great effect in troughs, alpine beds, stone walls and even to soften the gaps between paving slabs.",
-    "flowering": "Garden care: Cut back spreading species after flowering. Water moderately when actively growing and avoid winter wet.",
-    "care": null
-  },
-  {
-    "name": "house leek ( chick charms series houseleek )",
-    "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/61/pl2000036176.jpg?width=940&height=940",
-    "position": "Position:  full sun",
-    "soil": "Soil: poor to moderately fertile, well-drained soil with added grit",
-    "rateOfGrowth": "Hardiness:  fully hardy\n\nThese decorative evergreen groundcovering plants can be used to great effect in troughs, alpine beds, stone walls and even to soften the gaps between paving slabs.",
-    "flowering": "Garden care: Cut back spreading species after flowering. Water moderately when actively growing and avoid winter wet.",
-    "care": null
-  },
-  {
     "name": "darley dale heath",
     "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/05/pl0000000565.jpg?width=940&height=940",
     "position": "Position: full sun",
@@ -1371,15 +1199,6 @@
     "rateOfGrowth": "Rate of growth: average",
     "flowering": "Flowering period: December to May",
     "care": "Garden care: During the growing season water regularly, applying a half-strength application of a balanced liquid fertiliser every four weeks. After the plant has flowered trim with shears or secateurs to remove the dead flowers and encourage bushy growth."
-  },
-  {
-    "name": "house leek ( chick charms series houseleek )",
-    "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/28/pl2000022891.jpg?width=940&height=940",
-    "position": "Position:  full sun",
-    "soil": "Soil: poor to moderately fertile, well-drained soil with added grit",
-    "rateOfGrowth": "Hardiness:  fully hardy\n\nThese decorative evergreen groundcovering plants can be used to great effect in troughs, alpine beds, stone walls and even to soften the gaps between paving slabs.",
-    "flowering": "Garden care: Cut back spreading species after flowering. Water moderately when actively growing and avoid winter wet.",
-    "care": null
   },
   {
     "name": "Saxifraga Highlander Red",
@@ -1395,36 +1214,9 @@
     "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/72/pl2000037208.jpg?width=940&height=940",
     "position": "Position:  full sun",
     "soil": "Soil: fertile, well-drained neutral to alkaline soil",
-    "rateOfGrowth": "Rate of growth:   average",
+    "rateOfGrowth": "Rate of growth: average",
     "flowering": "Flowering period:  April to July",
     "care": "Garden Care:  Prune in mid to late summer after flowering,  cutting back any straggly stems."
-  },
-  {
-    "name": "snowdrop bulbs",
-    "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/45/pl2000014516.jpg?width=940&height=940",
-    "position": "Position:  cool, partial shade",
-    "soil": "Soil:  moderately-fertile, moist but well-drained alkaline to neutral soil.  Snowdrops dislike acid soils.",
-    "rateOfGrowth": "Rate of growth:   average",
-    "flowering": "Flowering period:   February-March",
-    "care": "Bulb size:  5/6\n\nA rare, relatively large and vigorous form, named after Samuel Arnott (born in Dumfries in 1852) who was a keen gardener and snowdrop offocinado. He first discovered this in his garden and later introduced it into cultivation. Like a pumped-up version of the common snowdrop, this super-sized version has deliciously honey-scented flowers."
-  },
-  {
-    "name": "Natural - organic bulbs - Narcissus Tete a Tete",
-    "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/30/pl2000023066.jpg?width=940&height=940",
-    "position": "Position: full sun or partial shade",
-    "soil": "Soil: well-drained soil",
-    "rateOfGrowth": "Rate of growth:  fast-growing",
-    "flowering": "Flowering period:  late February to April",
-    "care": "Bulb size:   10/11\n\nClusters of up three deep golden-yellow flowers with slightly reflexed petals and deep yellow cups appear in March and April above the narrow, strap-shaped leaves. One of the most popular forms, this delightful dwarf narcissus makes a fabulous early spring display for a sunny window-box. Blue grape hyacinths and slow-growing variegated ivies help to extend the season of interest."
-  },
-  {
-    "name": "trillium collection",
-    "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/16/pl2000021662.jpg?width=940&height=940",
-    "position": "Position: deep or partial shade",
-    "soil": "Soil: humus-rich, moist, well-drained soil",
-    "rateOfGrowth": "Rate of growth: average",
-    "flowering": "Flowering period: April",
-    "care": "Garden care: Plant rhizomes 5cm deep and 5cm apart in autumn.  Once planted they are best left undisturbed so they can build up their numbers.  Mulch in the autumn with a generous layer of leaf mould."
   },
   {
     "name": "phlox",
@@ -1463,15 +1255,6 @@
     "care": "Garden care: Keep the seeds chilled until they can be sown. Early sowings can be done in a cold frame, into trays of good seed compost and gradually hardened off before planting out. Alternatively sow directly into a well-prepared seed bed. Gently thin the seedlings out to 15cm apart when they are large enough to handle."
   },
   {
-    "name": "house leek ( chick charms series houseleek )",
-    "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/28/pl2000022888.jpg?width=940&height=940",
-    "position": "Position:  full sun",
-    "soil": "Soil: poor to moderately fertile, well-drained soil with added grit",
-    "rateOfGrowth": "Hardiness:  fully hardy\n\nThese decorative evergreen groundcovering plants can be used to great effect in troughs, alpine beds, stone walls and even to soften the gaps between paving slabs.",
-    "flowering": "Garden care: Cut back spreading species after flowering. Water moderately when actively growing and avoid winter wet.",
-    "care": null
-  },
-  {
     "name": "bleeding heart",
     "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/01/23/pl2000012378.jpg?width=940&height=940",
     "position": "Position: full sun or partial shade",
@@ -1486,18 +1269,9 @@
     "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/34/pl2000033419.jpg?width=940&height=940",
     "position": "Position:  full sun",
     "soil": "Soil: fertile, well-drained soil",
-    "rateOfGrowth": "Rate of Growth: average",
+    "rateOfGrowth": "Rate of growth: average",
     "flowering": "Flowering period: June to August",
     "care": "Garden care:   Cut back to ground level  in autumn and avoid winter wet."
-  },
-  {
-    "name": "cyclamineus daffodil bulbs",
-    "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/00/82/pl2000008255.jpg?width=940&height=940",
-    "position": "Position: full sun or partial shade",
-    "soil": "Soil: well-drained soil",
-    "rateOfGrowth": "Rate of growth:  fast-growing",
-    "flowering": "Flowering period:  March and April",
-    "care": "Bulb size: 10/12\n\nA miniature trumpet daffodil with petals that open up and curl backwards, making the flower look a little like it has been grown in a wind tunnel. The other feature of this small daff is the bi-coloured flowers - white outer petals with a yellow central cup. Good for adding early spring colour to a mixed border, or pot them up and move them to a prominent position on the patio when they start to flower."
   },
   {
     "name": "shrubby veronica",
@@ -1509,15 +1283,6 @@
     "care": "Garden care:  Needs minimal pruning. Remove misplaced    or frost damaged branches in late spring."
   },
   {
-    "name": "sowbread",
-    "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/02/02/pl2000020261.jpg?width=940&height=940",
-    "position": "Position: partial shade",
-    "soil": "Soil: well-drained soil",
-    "rateOfGrowth": "Rate of growth:   average",
-    "flowering": "Flowering period:  September to November",
-    "care": "Bulb size: 13/15\n\nSlender pale to rose pink flowers give this pretty cyclamen a more delicate appearance than many of the other species. Made up of five twisted and recurved petals, which have a magenta blotch at their mouth, the nodding flowers appear at the same time as the foliage in autumn and usually last for several weeks. The mid-green leaves are heavily patterned with silver on the upper surface and have a purplish sheen underneath, and these will remain attractive throughout the winter before dying back in spring. Originating from coniferous forests in Southern Turkey  where they are found growing amongst rocks and screes, they prefer a sheltered spot with freely draining soil in partial shade."
-  },
-  {
     "name": "perennial phlox",
     "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/73/pl0000007333.jpg?width=940&height=940",
     "position": "Position: partial shade",
@@ -1525,15 +1290,6 @@
     "rateOfGrowth": "Rate of growth: average",
     "flowering": "Flowering period: June to July",
     "care": "Garden care: Add lots of leaf-mould or composted pine needles to the soil when planting. Lift and divide large clumps in autumn or spring."
-  },
-  {
-    "name": "house leek ( chick charms series houseleek )",
-    "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/61/pl2000036174.jpg?width=940&height=940",
-    "position": "Position:  full sun",
-    "soil": "Soil: poor to moderately fertile, well-drained soil with added grit",
-    "rateOfGrowth": "Hardiness:  fully hardy\n\nThese decorative evergreen groundcovering plants can be used to great effect in troughs, alpine beds, stone walls and even to soften the gaps between paving slabs.",
-    "flowering": "Garden care: Cut back spreading species after flowering. Water moderately when actively growing and avoid winter wet.",
-    "care": null
   },
   {
     "name": "birthroot bulbs",
@@ -1588,24 +1344,6 @@
     "rateOfGrowth": "Rate of growth: average",
     "flowering": "Flowering period: May and June",
     "care": "Garden care:Needs minimal pruning. Remove misplaced   or frost damaged branches in late spring."
-  },
-  {
-    "name": "house leek / houseleek",
-    "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/34/pl2000033447.jpg?width=940&height=940",
-    "position": "Position:  full sun",
-    "soil": "Soil: poor to moderately fertile, well-drained soil with added grit",
-    "rateOfGrowth": "Hardiness:  fully hardy\n\nThese decorative evergreen groundcovering plants can be used to great effect in troughs, alpine beds, stone walls and even to soften the gaps between paving slabs. Please note that the pot in the photograph is not supplied with the plant (which is sent out in a black plastic pot). They do however make excellent potted plants, and if you wish to pot yours up, we do have a wide range of pots on our website to choose from.",
-    "flowering": "Garden care: Cut back spreading species after flowering. Water moderately when actively growing and avoid winter wet.",
-    "care": null
-  },
-  {
-    "name": "house leek ( chick charms series houseleek )",
-    "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/61/pl2000036169.jpg?width=940&height=940",
-    "position": "Position:  full sun",
-    "soil": "Soil: poor to moderately fertile, well-drained soil with added grit",
-    "rateOfGrowth": "Hardiness:  fully hardy\n\nThese decorative evergreen groundcovering plants can be used to great effect in troughs, alpine beds, stone walls and even to soften the gaps between paving slabs.",
-    "flowering": "Garden care: Cut back spreading species after flowering. Water moderately when actively growing and avoid winter wet.",
-    "care": null
   }
 ]
 

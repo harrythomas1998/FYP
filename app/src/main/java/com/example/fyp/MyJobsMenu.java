@@ -9,6 +9,11 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 
+import com.example.fyp.seasons.Autumn;
+import com.example.fyp.seasons.Spring;
+import com.example.fyp.seasons.Summer;
+import com.example.fyp.seasons.Winter;
+
 public class MyJobsMenu extends AppCompatActivity {
 
     Button b1, b2, b3, b4, b5, b6;
@@ -54,7 +59,7 @@ public class MyJobsMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(MyJobsMenu.this, MyJobs.class);
+                Intent i = new Intent(MyJobsMenu.this, Spring.class);
                 startActivity(i);
             }
         });
@@ -63,7 +68,7 @@ public class MyJobsMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(MyJobsMenu.this, MyJobs.class);
+                Intent i = new Intent(MyJobsMenu.this, Summer.class);
                 startActivity(i);
             }
         });
@@ -72,7 +77,7 @@ public class MyJobsMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(MyJobsMenu.this, MyJobs.class);
+                Intent i = new Intent(MyJobsMenu.this, Autumn.class);
                 startActivity(i);
             }
         });
@@ -81,7 +86,7 @@ public class MyJobsMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(MyJobsMenu.this, MyJobs.class);
+                Intent i = new Intent(MyJobsMenu.this, Winter.class);
                 startActivity(i);
             }
         });

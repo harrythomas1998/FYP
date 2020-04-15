@@ -55,6 +55,16 @@
                     android:gravity="center"/>
 
                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textSize="14sp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="#000"
+                    android:textStyle="italic"
+                    android:text="Position" />
+                <TextView
                     android:id="@+id/plant_view_position"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -62,9 +72,19 @@
                     android:layout_marginRight="5dp"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:layout_marginTop="30dp"
                     android:textColor="#000"
                     android:text="Position" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textSize="14sp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#000"
+                    android:textStyle="italic"
+                    android:text="Soil" />
 
                 <TextView
                     android:id="@+id/plant_view_soil"
@@ -74,9 +94,19 @@
                     android:layout_marginRight="5dp"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:layout_marginTop="20dp"
                     android:textColor="#000"
                     android:text="Soil" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textSize="14sp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#000"
+                    android:textStyle="italic"
+                    android:text="Rate of Growth" />
 
                 <TextView
                     android:layout_marginLeft="5dp"
@@ -86,9 +116,19 @@
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:layout_marginTop="20dp"
                     android:textColor="#000"
                     android:text="Rate of Growth" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textSize="14sp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#000"
+                    android:textStyle="italic"
+                    android:text="Garden Care" />
 
                 <TextView
                     android:layout_marginLeft="5dp"
@@ -98,7 +138,6 @@
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:layout_marginTop="20dp"
                     android:textColor="#000"
                     android:text="Care" />
 
