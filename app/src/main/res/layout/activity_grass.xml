@@ -20,15 +20,30 @@
         android:layout_marginLeft="10dp"
         android:layout_marginBottom="10dp"/>
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:textStyle="bold"
-        android:text="Here GardenPal analyses your Gardens Attributes to detemine how often you should cut your grass"
-        android:textColor="#000"/>
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:text="Here GardenPal analyses your Gardens Attributes to determine when to start and stop cutting your grass and how often you should cut your grass"
+            android:textColor="#000"
+            android:layout_weight="10"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/grass3"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -86,17 +101,39 @@
 
     </LinearLayout>
 
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@drawable/grass3"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cut every:"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/cutEveryBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:textStyle="bold"

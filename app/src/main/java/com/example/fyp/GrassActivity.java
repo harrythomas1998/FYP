@@ -41,7 +41,7 @@ public class GrassActivity extends AppCompatActivity {
     DatabaseReference reference, reference2;
     FirebaseUser user;
     FirebaseAuth firebaseAuth;
-    TextView startGrass, stopGrass;
+    TextView startGrass, stopGrass, cutEvery;
 
 
     @Override
@@ -58,8 +58,9 @@ public class GrassActivity extends AppCompatActivity {
 
         startGrass = findViewById(R.id.startCuttingBox);
         stopGrass = findViewById(R.id.stopcuttingBox);
+        cutEvery = findViewById(R.id.cutEveryBox);
 
-        stopGrass.setText("End of October");
+        stopGrass.setText("31st of October");
 
 
         firebaseAuth = FirebaseAuth.getInstance();
@@ -68,6 +69,134 @@ public class GrassActivity extends AppCompatActivity {
         assert user != null;
         reference = FirebaseDatabase.getInstance().getReference().child("SoilType").child(user.getUid());
         reference2 = FirebaseDatabase.getInstance().getReference().child("OtherDetails").child(user.getUid());
+
+        reference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                for(DataSnapshot snapshot1: dataSnapshot.getChildren()) {
+
+                    SoilType st = snapshot1.getValue(SoilType.class);
+                    assert st != null;
+                    String name = st.getName();
+
+                    switch (name) {
+                        case "Brown Soil":
+
+                            cutEvery.setText("7 days");
+
+                            break;
+                        case "Podzol Soil":
+
+                            reference2.addValueEventListener(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(DataSnapshot dataSnapshot) {
+
+                                    for (DataSnapshot snapshot2 : dataSnapshot.getChildren()) {
+
+                                        OtherDetails od = snapshot2.getValue(OtherDetails.class);
+                                        assert od != null;
+                                        String orientation = od.getOrientation();
+
+                                        if (orientation.equals("South")) {
+
+                                            cutEvery.setText("13 days");
+
+                                        } else if (orientation.equals("East") || orientation.equals("West") || orientation.equals("North")) {
+
+                                            cutEvery.setText("14 days");
+
+                                        }
+
+                                    }
+
+                                }
+
+                                @Override
+                                public void onCancelled(DatabaseError databaseError) {
+
+                                }
+                            });
+
+
+                            break;
+                        case "Gley Soil":
+
+                            reference2.addValueEventListener(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(DataSnapshot dataSnapshot) {
+
+                                    for (DataSnapshot snapshot2 : dataSnapshot.getChildren()) {
+
+                                        OtherDetails od = snapshot2.getValue(OtherDetails.class);
+                                        assert od != null;
+                                        String orientation = od.getOrientation();
+
+                                        if (orientation.equals("South")) {
+
+                                            cutEvery.setText("5 days");
+
+                                        } else if (orientation.equals("East") || orientation.equals("West") || orientation.equals("North")) {
+
+                                            cutEvery.setText("6 days");
+
+                                        }
+
+                                    }
+
+                                }
+
+                                @Override
+                                public void onCancelled(DatabaseError databaseError) {
+
+                                }
+                            });
+
+
+                            break;
+                        case "Peaty Soil":
+
+                            reference2.addValueEventListener(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(DataSnapshot dataSnapshot) {
+
+                                    for (DataSnapshot snapshot2 : dataSnapshot.getChildren()) {
+
+                                        OtherDetails od = snapshot2.getValue(OtherDetails.class);
+                                        assert od != null;
+                                        String orientation = od.getOrientation();
+
+                                        if (orientation.equals("South")) {
+
+                                            cutEvery.setText("6 days");
+
+                                        } else if (orientation.equals("East") || orientation.equals("West") || orientation.equals("North")) {
+
+                                            cutEvery.setText("7 days");
+                                        }
+
+                                    }
+
+                                }
+
+                                @Override
+                                public void onCancelled(DatabaseError databaseError) {
+
+                                }
+                            });
+
+
+                            break;
+                    }
+
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
 
         reference.addValueEventListener(new ValueEventListener() {
             @Override
