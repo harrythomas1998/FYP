@@ -202,6 +202,7 @@ public class FindSoilType extends AppCompatActivity {
         s1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
                 String areaSelected = s1.getSelectedItem().toString();
 
                 or.setArea(areaSelected);

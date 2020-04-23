@@ -47,6 +47,15 @@ public interface ArrayInterface {
     ArrayList<Plant> halfGrassesList = new ArrayList<>();
     ArrayList<Plant> halfAlpinesList = new ArrayList<>();
 
+    ArrayList<Plant> suitableAlpinesList = new ArrayList<>();
+    ArrayList<Plant> suitableConifersList = new ArrayList<>();
+    ArrayList<Plant> suitableHedgesList = new ArrayList<>();
+    ArrayList<Plant> suitableFernsList = new ArrayList<>();
+    ArrayList<Plant> suitableBeddingList = new ArrayList<>();
+    ArrayList<Plant> suitableClimbersList = new ArrayList<>();
+    ArrayList<Plant> suitableExoticsList = new ArrayList<>();
+    ArrayList<Plant> suitableGrassesList = new ArrayList<>();
+
     ArrayList<Plant> fullShadeList = new ArrayList<>();
 
     ArrayList<Plant> myPlants = new ArrayList<>();

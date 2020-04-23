@@ -20,6 +20,7 @@ import com.example.fyp.PlantActivities.HedgesActivity;
 import com.example.fyp.Shade.FullShade;
 import com.example.fyp.Shade.FullSun;
 import com.example.fyp.Shade.HalfShade;
+import com.example.fyp.suitable.SuitableMenu;
 
 public class SelectPlantsMenu extends AppCompatActivity {
 
@@ -36,6 +37,7 @@ public class SelectPlantsMenu extends AppCompatActivity {
     Button halfShade;
     Button fullSun;
 
+    Button suitable;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,6 +62,8 @@ public class SelectPlantsMenu extends AppCompatActivity {
         fullSun = findViewById(R.id.noShadeButton);
         halfShade = findViewById(R.id.partialShadeButton);
         fullShade = findViewById(R.id.fullShadeButton);
+
+        suitable = findViewById(R.id.suitablePlantsButton);
 
 
         conifers.setOnClickListener(new View.OnClickListener() {
@@ -163,6 +167,14 @@ public class SelectPlantsMenu extends AppCompatActivity {
             }
         });
 
+        suitable.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent vii = new Intent(SelectPlantsMenu.this, SuitableMenu.class);
+                startActivity(vii);
+            }
+        });
 
 
 

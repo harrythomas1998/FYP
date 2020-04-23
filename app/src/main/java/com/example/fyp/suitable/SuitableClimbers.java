@@ -1,4 +1,4 @@
-package com.example.fyp.PlantActivities;
+package com.example.fyp.suitable;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -8,12 +8,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.SearchView;
 import android.widget.Toast;
 
-import com.example.fyp.Adapters.PlantAdapter;
+import com.example.fyp.Adapters.SuitablePlantsAdapter;
 import com.example.fyp.ArrayInterface;
 import com.example.fyp.Objects.Plant;
 import com.example.fyp.PlantsActivity;
@@ -30,12 +29,12 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.io.InputStream;
 
-import java.nio.charset.StandardCharsets;
-
-public class AlpineRockeryActivity extends AppCompatActivity implements PlantAdapter.OnItemClickListener, ArrayInterface {
+public class SuitableClimbers extends AppCompatActivity implements SuitablePlantsAdapter.OnItemClickListener, ArrayInterface {
 
     RecyclerView recyclerView;
-    PlantAdapter adapter;
+
+    SuitablePlantsAdapter adapter;
+    ImageButton b1;
     SearchView search;
 
     private FirebaseUser mCurrentUser;
@@ -53,20 +52,25 @@ public class AlpineRockeryActivity extends AppCompatActivity implements PlantAda
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_alpine_rockery);
+        setContentView(R.layout.activity_suitable_climbers);
 
         Window window = this.getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         window.setStatusBarColor(this.getResources().getColor(R.color.statusBar));
 
-        recyclerView = findViewById(R.id.myRecycler);
+        recyclerView = findViewById(R.id.suitableClimbersRecycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
 
-        search = findViewById(R.id.searchAlpine);
+
+
+        b1 = findViewById(R.id.add_from_card);
+
 
         loadJSONFromAsset();
+
+        search = findViewById(R.id.searchSuitableClimbers);
 
         search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
@@ -81,28 +85,31 @@ public class AlpineRockeryActivity extends AppCompatActivity implements PlantAda
             }
         });
 
-
     }
 
     public void loadJSONFromAsset() {
 
-        alpines.clear();
+        suitableClimbersList.clear();
 
         String json;
         try {
-            InputStream is = getAssets().open("alpinesRockeries.json");
+            InputStream is = getAssets().open("climbers.json");
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
             is.close();
-            json = new String(buffer, StandardCharsets.UTF_8);
+            json = new String(buffer, "UTF-8");
+
 
             JSONObject obj = new JSONObject(json);
-            JSONArray m_jArry = obj.getJSONArray("alpinesRockeries");
+            JSONArray m_jArry = obj.getJSONArray("climbers");
+
+
 
             for (int i = 0; i < m_jArry.length(); i++) {
 
                 JSONObject jo_inside = m_jArry.getJSONObject(i);
+
 
                 String name = jo_inside.getString("name");
                 String image = jo_inside.getString("image-src");
@@ -111,15 +118,19 @@ public class AlpineRockeryActivity extends AppCompatActivity implements PlantAda
                 String growth = jo_inside.getString("rateOfGrowth");
                 String care = jo_inside.getString("care");
 
-                alpines.add(new Plant(name, image, position, soil, growth, care));
 
-                adapter = new PlantAdapter(AlpineRockeryActivity.this, alpines);
+                suitableClimbersList.add(new Plant(name, image, position, soil, growth, care));
+
+
+                recyclerView.getRecycledViewPool().clear();
+                adapter = new SuitablePlantsAdapter(SuitableClimbers.this, suitableClimbersList);
                 recyclerView.setAdapter(adapter);
-                adapter.setOnItemClickListener(AlpineRockeryActivity.this);
+                adapter.setOnItemClickListener(SuitableClimbers.this);
+
 
             }
 
-        } catch (IOException | JSONException e) {
+        } catch (JSONException | IOException e) {
             e.printStackTrace();
         }
     }
@@ -129,7 +140,7 @@ public class AlpineRockeryActivity extends AppCompatActivity implements PlantAda
     public void onItemClick(int position) {
 
         Intent i = new Intent(this, PlantsActivity.class);
-        Plant clickedPlantItem = alpines.get(position);
+        Plant clickedPlantItem = suitableClimbersList.get(position);
 
         i.putExtra(NAME, clickedPlantItem.getName());
         i.putExtra(IMAGE, clickedPlantItem.getPicture());
@@ -138,14 +149,16 @@ public class AlpineRockeryActivity extends AppCompatActivity implements PlantAda
         i.putExtra(GROWTH, clickedPlantItem.getGrowth());
         i.putExtra(CARE, clickedPlantItem.getCare());
 
+
         startActivity(i);
+
 
     }
 
     @Override
     public void onAddClick(int position) {
 
-        Plant selectedPlant = alpines.get(position);
+        Plant selectedPlant = suitableClimbersList.get(position);
 
         firebaseAuth = FirebaseAuth.getInstance();
         mCurrentUser = firebaseAuth.getCurrentUser();
@@ -153,6 +166,9 @@ public class AlpineRockeryActivity extends AppCompatActivity implements PlantAda
 
         myRef.push().setValue(selectedPlant);
 
+
         Toast.makeText(this, "Plant Added!", Toast.LENGTH_SHORT).show();
     }
 }
+
+

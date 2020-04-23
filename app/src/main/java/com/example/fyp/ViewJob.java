@@ -74,9 +74,6 @@ public class ViewJob extends AppCompatActivity {
                 String month = dateParts[1];
                 String year = dateParts[2];
 
-
-                Toast.makeText(ViewJob.this, "Day: " + day + " Month: " + month + " Year: " + year, Toast.LENGTH_LONG).show();
-
                 Intent calIntent = new Intent(Intent.ACTION_INSERT);
                 calIntent.setType("vnd.android.cursor.item/event");
                 calIntent.putExtra(CalendarContract.Events.TITLE, title);

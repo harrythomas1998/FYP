@@ -128,6 +128,7 @@ public class BeddingActivity extends AppCompatActivity  implements PlantAdapter.
                 recyclerView.setAdapter(adapter);
                 adapter.setOnItemClickListener(BeddingActivity.this);
 
+
             }
 
         } catch (JSONException | IOException e) {

@@ -469,15 +469,6 @@
       "care": "Garden care: If planting in winter, choose a frost-free spell when the soil is not frozen. Roses are quite deep-rooted plants so dig a deep hole roughly twice as wide as the plants roots and mix in a generous amount of composted organic matter. A top-dressing of a general purpose fertiliser can be worked into the surrounding soil and we also recommend using Rose Rootgrow at this stage to encourage better root development. This is particularly important when planting into a bed where roses have previously been grown as Rose Rootgrow is said to combat rose sickness (aka. replant disease).\n\n Remove the plants from their pots and gently spread out the roots before placing them in the centre of the hole. Try to ensure that the 'bud union' (the point where the cultivated rose has been grafted onto the rootstock, and from where the shoots emerge) is at soil level. You can judge this quite easily by laying something flat, like a spade handle or bamboo cane, across the top of the hole. When they are at the right height, back-fill the hole, firming the soil down gently before watering the plant well.\n\nWater generously until well established, and apply a specialist rose fertiliser (following the manufacturers instructions) each spring. They will also benefit from a generous mulch of composted farmyard manure in spring, but make sure this is kept away from the stems.\n\nAs most shrub roses tend to flowers best on older stems, they only need a little light formative pruning. Hard pruning should be avoided unless absolutely necessary as it can often ruin the plants shape. The best time to prune is in late summer after they have finished flowering. While wearing tough gloves, remove dead, damaged, diseased or congested branches completely. If the centre of the shrub is becoming congested, remove one or two of the older stems to their base. If they have become too leggy, then you can often encourage new growth to form by cutting one or two stems back to within 10 - 15cm above ground level."
     },
     {
-      "name": "English holly",
-      "image-src": "//img.crocdn.co.uk/images/products2/pl/20/00/03/63/pl2000036312.jpg?width=940&height=940",
-      "position": null,
-      "soil": null,
-      "growth": null,
-      "flowering": null,
-      "care": null
-    },
-    {
       "name": "Californian lilac",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/07/pl0000000728.jpg?width=940&height=940",
       "position": "Position: full sun",
@@ -721,15 +712,6 @@
       "care": "Garden care: In February or March remove any misplaced or crossing branches to maintain a permanent, healthy framework. Maintain species grown as informal, flowering hedges by cutting back the flowered shoots immediately after flowering to strong buds or young lower growth."
     },
     {
-      "name": "English holly (Male)",
-      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/62/pl2000036297.jpg?width=940&height=940",
-      "position": "Position: full sun or partial shade",
-      "soil": "Soil: moist, well-drained, moderately fertile, humus-rich soil",
-      "growth": "Rate of growth: slow-growing",
-      "flowering": "Flowering period: May and June",
-      "care": null
-    },
-    {
       "name": "broad-leaved silver holly (female)",
       "image-src": "http://img.crocdn.co.uk/images/products2/pl/00/00/00/40/pl0000004010.jpg?width=940&height=940",
       "position": "Position: full sun or partial shade",
@@ -752,18 +734,9 @@
       "image-src": "http://img.crocdn.co.uk/images/products2/tr/00/00/00/06/tr0000000695.jpg?width=940&height=940",
       "position": "Position: full sun or partial shade",
       "soil": "Soil: fertile, well-drained soil",
-      "growth": "Rate of growth:  average",
+      "growth": "Rate of growth: average",
       "flowering": "Flowering period:  March",
       "care": "Garden care: To train as a central-leader standard remove  all of the lateral branches on the lowest third of the main stem and shorten the laterals by half on the middle third, making angled cuts  to an outward-facing bud. On the upper third remove only dead, diseased or damaged growth and crossing stems. It is essential though that any pruning is undertaken in late autumn or winter when they are fully dormant as the sap has a tendancy to 'bleed' if pruned at any other time of the year."
-    },
-    {
-      "name": "bamboo",
-      "image-src": "http://img.crocdn.co.uk/images/products2/pl/20/00/03/08/pl2000030881.jpg?width=940&height=940",
-      "position": "Position:  full sun or partial shade",
-      "soil": "Soil:  humus-rich, moist, well-drained soil",
-      "growth": "Rate of growth:   fast growing",
-      "flowering": "Leaves: mid-green",
-      "care": "Hardiness:  fully hardy\n\nVigorous and hardy, this decorative bamboo is one of the first to produce new canes each year. These canes appear in late spring or early summer and have a mainly upright habit, but do arch slightly. Their colour is green, but will sometimes have a purple flush, but over a period of several years, will fade to a yellow-green. They have a glossy finish and are clothed in rich green leaves, which cope well with adverse weather conditions. Initially forming really dense clumps, this bamboo is ideal for screening, but will spread with age."
     },
     {
       "name": "photinia",

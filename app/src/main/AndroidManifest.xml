@@ -15,7 +15,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RateOfGrowth.FastGrowing"></activity>
+        <activity android:name=".suitable.SuitableHedges"></activity>
+        <activity android:name=".suitable.SuitableGrasses" />
+        <activity android:name=".suitable.SuitableFerns" />
+        <activity android:name=".suitable.SuitableExotics" />
+        <activity android:name=".suitable.SuitableConifers" />
+        <activity android:name=".suitable.SuitableClimbers" />
+        <activity android:name=".suitable.SuitableBedding" />
+        <activity android:name=".suitable.SuitableAlpines" />
+        <activity android:name=".suitable.SuitableMenu" />
+        <activity android:name=".RateOfGrowth.FastGrowing" />
         <activity android:name=".RateOfGrowth.AverageGrowing" />
         <activity android:name=".RateOfGrowth.SlowGrowing" />
         <activity android:name=".seasons.OtherJobs" />

@@ -1,27 +1,31 @@
-package com.example.fyp.PlantActivities;
+package com.example.fyp.suitable;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.SearchView;
 import android.widget.Toast;
 
 import com.example.fyp.Adapters.PlantAdapter;
+import com.example.fyp.Adapters.SuitablePlantsAdapter;
 import com.example.fyp.ArrayInterface;
 import com.example.fyp.Objects.Plant;
+import com.example.fyp.Objects.SoilType;
 import com.example.fyp.PlantsActivity;
 import com.example.fyp.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -29,18 +33,17 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
-
 import java.nio.charset.StandardCharsets;
 
-public class AlpineRockeryActivity extends AppCompatActivity implements PlantAdapter.OnItemClickListener, ArrayInterface {
+public class SuitableAlpines extends AppCompatActivity implements SuitablePlantsAdapter.OnItemClickListener, ArrayInterface {
 
     RecyclerView recyclerView;
-    PlantAdapter adapter;
+    SuitablePlantsAdapter adapter;
     SearchView search;
 
-    private FirebaseUser mCurrentUser;
+    private FirebaseUser user;
     private FirebaseAuth firebaseAuth;
-    private DatabaseReference myRef;
+    private DatabaseReference reference;
 
     public static final String NAME = "name";
     public static final String IMAGE = "image";
@@ -50,21 +53,22 @@ public class AlpineRockeryActivity extends AppCompatActivity implements PlantAda
     public static final String CARE = "care";
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_alpine_rockery);
+        setContentView(R.layout.activity_suitable_alpines);
 
         Window window = this.getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         window.setStatusBarColor(this.getResources().getColor(R.color.statusBar));
 
-        recyclerView = findViewById(R.id.myRecycler);
+        recyclerView = findViewById(R.id.suitableAlpineRecycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
 
-        search = findViewById(R.id.searchAlpine);
+        search = findViewById(R.id.searchSuitableAlpines);
 
         loadJSONFromAsset();
 
@@ -82,11 +86,12 @@ public class AlpineRockeryActivity extends AppCompatActivity implements PlantAda
         });
 
 
+
     }
 
     public void loadJSONFromAsset() {
 
-        alpines.clear();
+        suitableAlpinesList.clear();
 
         String json;
         try {
@@ -105,17 +110,24 @@ public class AlpineRockeryActivity extends AppCompatActivity implements PlantAda
                 JSONObject jo_inside = m_jArry.getJSONObject(i);
 
                 String name = jo_inside.getString("name");
-                String image = jo_inside.getString("image-src");
-                String position = jo_inside.getString("position");
-                String soil = jo_inside.getString("soil");
-                String growth = jo_inside.getString("rateOfGrowth");
-                String care = jo_inside.getString("care");
+                final String image = jo_inside.getString("image-src");
+                final String position = jo_inside.getString("position");
+                final String soil = jo_inside.getString("soil");
+                final String growth = jo_inside.getString("rateOfGrowth");
+                final String care = jo_inside.getString("care");
 
-                alpines.add(new Plant(name, image, position, soil, growth, care));
+                firebaseAuth = FirebaseAuth.getInstance();
 
-                adapter = new PlantAdapter(AlpineRockeryActivity.this, alpines);
+                user = firebaseAuth.getCurrentUser();
+                assert user != null;
+                reference = FirebaseDatabase.getInstance().getReference().child("SoilType").child(user.getUid());
+
+                suitableAlpinesList.add(new Plant(name, image, position, soil, growth, care));
+
+                recyclerView.getRecycledViewPool().clear();
+                adapter = new SuitablePlantsAdapter(SuitableAlpines.this, suitableAlpinesList);
                 recyclerView.setAdapter(adapter);
-                adapter.setOnItemClickListener(AlpineRockeryActivity.this);
+                adapter.setOnItemClickListener(SuitableAlpines.this);
 
             }
 
@@ -129,7 +141,7 @@ public class AlpineRockeryActivity extends AppCompatActivity implements PlantAda
     public void onItemClick(int position) {
 
         Intent i = new Intent(this, PlantsActivity.class);
-        Plant clickedPlantItem = alpines.get(position);
+        Plant clickedPlantItem = suitableAlpinesList.get(position);
 
         i.putExtra(NAME, clickedPlantItem.getName());
         i.putExtra(IMAGE, clickedPlantItem.getPicture());
@@ -145,14 +157,15 @@ public class AlpineRockeryActivity extends AppCompatActivity implements PlantAda
     @Override
     public void onAddClick(int position) {
 
-        Plant selectedPlant = alpines.get(position);
+        Plant selectedPlant = suitableAlpinesList.get(position);
 
         firebaseAuth = FirebaseAuth.getInstance();
-        mCurrentUser = firebaseAuth.getCurrentUser();
-        myRef = FirebaseDatabase.getInstance().getReference().child("MyPlants").child(mCurrentUser.getUid());
+        user = firebaseAuth.getCurrentUser();
+        reference = FirebaseDatabase.getInstance().getReference().child("MyPlants").child(user.getUid());
 
-        myRef.push().setValue(selectedPlant);
+        reference.push().setValue(selectedPlant);
 
         Toast.makeText(this, "Plant Added!", Toast.LENGTH_SHORT).show();
+
     }
 }
