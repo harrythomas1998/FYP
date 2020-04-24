@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="#69A730"
-        android:queryHint="Search Bedding"
+        android:queryHint="Search Here"
         android:id="@+id/searchBedding"/>
 
     <androidx.recyclerview.widget.RecyclerView

@@ -2,6 +2,8 @@ package com.example.fyp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +13,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.example.fyp.Objects.OtherDetails;
 import com.example.fyp.Objects.SoilType;
@@ -318,9 +321,29 @@ public class FindSoilType extends AppCompatActivity {
                 myRef2.removeValue();
                 myRef2.push().setValue(or);
 
-                Intent intent= new Intent(FindSoilType.this, GardenInfoActivity.class);
+                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(FindSoilType.this, R.style.MyDialogTheme);
+                alertDialogBuilder.setTitle("Great!");
+                alertDialogBuilder.setMessage("Why not go select some plants to add to your garden?");
+                alertDialogBuilder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
 
-                startActivity(intent);
+                        Toast.makeText(FindSoilType.this, "Garden Details Updated", Toast.LENGTH_SHORT).show();
+                        Intent i = new Intent(FindSoilType.this, SelectPlantsMenu.class);
+                        startActivity(i);
+                    }
+                });
+                alertDialogBuilder.setNegativeButton("No thanks", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(FindSoilType.this, "Garden Details Updated", Toast.LENGTH_SHORT).show();
+
+                    }
+                });
+                alertDialogBuilder.create().show();
+
+
+
             }
         });
 

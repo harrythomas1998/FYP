@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="#69A730"
-        android:queryHint="Search Climbers"
+        android:queryHint="Search Here"
         android:id="@+id/searchClimbers"/>
 
     <androidx.recyclerview.widget.RecyclerView
