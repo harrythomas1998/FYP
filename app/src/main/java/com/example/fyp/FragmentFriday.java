@@ -34,7 +34,7 @@ public class FragmentFriday extends Fragment implements ArrayInterface, WeatherA
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         v = inflater.inflate(R.layout.friday_fragment, container, false);
         recyclerView = v.findViewById(R.id.friday_recycler);
-        WeatherAdapter weatherAdapter = new WeatherAdapter(getContext(), fridayData);
+        WeatherAdapter weatherAdapter = new WeatherAdapter(getActivity(), fridayData);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(weatherAdapter);
         weatherAdapter.setOnItemClickListener(FragmentFriday.this);

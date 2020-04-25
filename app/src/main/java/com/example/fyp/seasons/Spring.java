@@ -53,7 +53,7 @@ public class Spring extends AppCompatActivity implements MaintenancePlantAdapter
         firebaseAuth = FirebaseAuth.getInstance();
 
         user = firebaseAuth.getCurrentUser();
-        reference = FirebaseDatabase.getInstance().getReference().child("SpringPlants").child(user.getUid());
+        reference = FirebaseDatabase.getInstance().getReference().child("SpringJobs").child(user.getUid());
 
         reference.addValueEventListener(new ValueEventListener() {
             @Override

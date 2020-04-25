@@ -24,7 +24,6 @@ import com.google.firebase.database.ValueEventListener;
 
 public class Autumn extends AppCompatActivity implements MaintenancePlantAdapter.OnItemClickListener, ArrayInterface {
 
-
     RecyclerView recyclerView;
     MaintenancePlantAdapter adapter;
 
@@ -54,7 +53,7 @@ public class Autumn extends AppCompatActivity implements MaintenancePlantAdapter
         firebaseAuth = FirebaseAuth.getInstance();
 
         user = firebaseAuth.getCurrentUser();
-        reference = FirebaseDatabase.getInstance().getReference().child("AutumnPlants").child(user.getUid());
+        reference = FirebaseDatabase.getInstance().getReference().child("AutumnJobs").child(user.getUid());
 
         reference.addValueEventListener(new ValueEventListener() {
             @Override

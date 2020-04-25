@@ -56,7 +56,7 @@ public class Summer extends AppCompatActivity implements MaintenancePlantAdapter
         firebaseAuth = FirebaseAuth.getInstance();
 
         user = firebaseAuth.getCurrentUser();
-        reference = FirebaseDatabase.getInstance().getReference().child("SummerPlants").child(user.getUid());
+        reference = FirebaseDatabase.getInstance().getReference().child("SummerJobs").child(user.getUid());
 
         reference.addValueEventListener(new ValueEventListener() {
             @Override

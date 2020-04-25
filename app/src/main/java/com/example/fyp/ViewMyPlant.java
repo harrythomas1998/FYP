@@ -77,11 +77,11 @@ public class ViewMyPlant extends AppCompatActivity {
 
         firebaseAuth = FirebaseAuth.getInstance();
         mCurrentUser = firebaseAuth.getCurrentUser();
-        autumnRef = FirebaseDatabase.getInstance().getReference().child("AutumnPlants").child(mCurrentUser.getUid());
-        springRef = FirebaseDatabase.getInstance().getReference().child("SpringPlants").child(mCurrentUser.getUid());
-        winterRef = FirebaseDatabase.getInstance().getReference().child("WinterPlants").child(mCurrentUser.getUid());
-        summerRef = FirebaseDatabase.getInstance().getReference().child("SummerPlants").child(mCurrentUser.getUid());
-        otherRef = FirebaseDatabase.getInstance().getReference().child("OtherPlants").child(mCurrentUser.getUid());
+        autumnRef = FirebaseDatabase.getInstance().getReference().child("AutumnJobs").child(mCurrentUser.getUid());
+        springRef = FirebaseDatabase.getInstance().getReference().child("SpringJobs").child(mCurrentUser.getUid());
+        winterRef = FirebaseDatabase.getInstance().getReference().child("WinterJobs").child(mCurrentUser.getUid());
+        summerRef = FirebaseDatabase.getInstance().getReference().child("SummerJobs").child(mCurrentUser.getUid());
+        otherRef = FirebaseDatabase.getInstance().getReference().child("OtherJobs").child(mCurrentUser.getUid());
 
 
         mp = new MaintenancePlant();

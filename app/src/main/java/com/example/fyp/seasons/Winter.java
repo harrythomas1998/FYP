@@ -52,7 +52,7 @@ public class Winter extends AppCompatActivity implements MaintenancePlantAdapter
         firebaseAuth = FirebaseAuth.getInstance();
 
         user = firebaseAuth.getCurrentUser();
-        reference = FirebaseDatabase.getInstance().getReference().child("WinterPlants").child(user.getUid());
+        reference = FirebaseDatabase.getInstance().getReference().child("WinterJobs").child(user.getUid());
 
         reference.addValueEventListener(new ValueEventListener() {
             @Override

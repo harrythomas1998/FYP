@@ -25,7 +25,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="50dp"
-                android:text="Select a Plant type..."
+                android:text="Add Plants Menu..."
                 android:textColor="#000"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -51,7 +51,7 @@
                     style="@style/Widget.AppCompat.Button.Borderless"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:text="Suitable Plants"
+                    android:text="Recommended for you"
                     android:textAlignment="center"
                     android:textSize="20dp"
                     android:textStyle="bold"
