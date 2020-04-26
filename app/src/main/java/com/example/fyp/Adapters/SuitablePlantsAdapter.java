@@ -151,10 +151,10 @@ public class SuitablePlantsAdapter extends RecyclerView.Adapter<SuitablePlantsAd
                                 mPlants.remove(currentItem);
                             } else if (soil.contains("well-drained")) {
                                 holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
-                                holder.suitability.setText("Plant is suitable");
+                                holder.suitability.setText("Suitable for your garden");
                             } else {
                                 holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
-                                holder.suitability.setText("Plant is suitable");
+                                holder.suitability.setText("Suitable for your garden");
                             }
                             break;
 
@@ -163,7 +163,7 @@ public class SuitablePlantsAdapter extends RecyclerView.Adapter<SuitablePlantsAd
 
                             if (soil.contains("Acid") || soil.contains("acid") || soil.contains("Acidic") || soil.contains("acidic")) {
                                 holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
-                                holder.suitability.setText("Plant is suitable");
+                                holder.suitability.setText("Suitable for your garden");
                             }
                             //okay
                             else if (soil.contains("moderately")) {
@@ -184,7 +184,7 @@ public class SuitablePlantsAdapter extends RecyclerView.Adapter<SuitablePlantsAd
                             //good
                             else {
                                 holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
-                                holder.suitability.setText("Plant is suitable");
+                                holder.suitability.setText("Suitable for your garden");
                             }
 
                             break;
@@ -196,7 +196,7 @@ public class SuitablePlantsAdapter extends RecyclerView.Adapter<SuitablePlantsAd
 
                             if (soil.contains("Acid") || soil.contains("acid") || soil.contains("Acidic") || soil.contains("acidic")) {
                                 holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
-                                holder.suitability.setText("Plant is suitable");
+                                holder.suitability.setText("Suitable for your garden");
                             }
                             //okay
                             else if (soil.contains("moderately")) {
@@ -218,7 +218,7 @@ public class SuitablePlantsAdapter extends RecyclerView.Adapter<SuitablePlantsAd
                             //good
                             else {
                                 holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
-                                holder.suitability.setText("Plant is suitable");
+                                holder.suitability.setText("Suitable for your garden");
                             }
 
                             break;
@@ -228,16 +228,16 @@ public class SuitablePlantsAdapter extends RecyclerView.Adapter<SuitablePlantsAd
                             //Good
                             if (soil.contains("humus-rich") || soil.contains("humus rich")) {
                                 holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
-                                holder.suitability.setText("Plant is suitable");
+                                holder.suitability.setText("Suitable for your garden");
                             } else if (soil.contains("Moist") || soil.contains("moist")) {
                                 holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
-                                holder.suitability.setText("Plant is suitable");
+                                holder.suitability.setText("Suitable for your garden");
                             } else if (soil.contains("acid") || soil.contains("acidic") || soil.contains("Acid") || soil.contains("Acidic")) {
                                 holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
-                                holder.suitability.setText("Plant is suitable");
+                                holder.suitability.setText("Suitable for your garden");
                             } else if (soil.contains("fertile")) {
                                 holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
-                                holder.suitability.setText("Plant is suitable");
+                                holder.suitability.setText("Suitable for your garden");
                             }
 
                             //okay
