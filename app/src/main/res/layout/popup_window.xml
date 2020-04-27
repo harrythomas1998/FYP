@@ -24,8 +24,8 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
                 android:textSize="22sp"
                 android:textStyle="bold"
                 android:text="Welcome to GardenPal"/>
@@ -36,29 +36,8 @@
                 android:layout_centerInParent="true"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
-                android:textSize="15sp"
-                android:text="This app will help you..."/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_marginLeft="40dp"
-                android:layout_marginRight="40dp"
-                android:layout_marginTop="5dp"
                 android:textSize="13sp"
-                android:text="-Plan Maintenance."/>
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_marginLeft="40dp"
-                android:layout_marginRight="40dp"
-
-                android:textSize="13sp"
-                android:text="-Give you recommendations on what plants would be suitable for your garden."/>
+                android:text="This app will help you to plan your garden maintenance and help decide on what plants to add to your garden"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -72,20 +51,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Here you can... "
+                android:text="Here you can create a job by viewing the weather forecast and picking a time that suits you "
                 android:layout_marginLeft="40dp"
                 android:layout_marginRight="40dp"
                 android:layout_marginTop="2dp"
                 android:textSize="13sp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=" -View the weather forecast and pick a time to  "
-                android:layout_marginLeft="40dp"
-                android:layout_marginRight="40dp"
-                android:layout_marginTop="2dp"
-                android:textSize="13sp"/>
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -136,7 +108,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:text="-My Garden-"
+                android:text="-Garden Info-"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="10dp"
                 android:textSize="15sp"/>
@@ -145,6 +117,42 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Here can view information about your gardens characteristics and edit them if you wish. "
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="2dp"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="-Add Plants-"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Here you can browse all the plants on GardenPal and add them to your garden "
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="2dp"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="-My Plants-"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All the plants you have added to your garden will appear here"
                 android:layout_marginLeft="40dp"
                 android:layout_marginRight="40dp"
                 android:layout_marginTop="2dp"
