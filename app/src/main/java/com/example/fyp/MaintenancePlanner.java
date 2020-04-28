@@ -121,9 +121,6 @@ public class MaintenancePlanner extends AppCompatActivity implements ArrayInterf
     private void parseJSON(String la, String lo) {
 
 
-        double latt = 53.338519;
-        double longg = -6.266483;
-
         String url = "https://api.openweathermap.org/data/2.5/forecast?lat=" + la + "&lon=" + lo + "&APPID=43ef55f9e03de2e95cc48537a99240ec";
 
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null,

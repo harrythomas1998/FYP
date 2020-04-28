@@ -54,7 +54,7 @@ public class OtherJobs extends AppCompatActivity implements MaintenancePlantAdap
         firebaseAuth = FirebaseAuth.getInstance();
 
         user = firebaseAuth.getCurrentUser();
-        reference = FirebaseDatabase.getInstance().getReference().child("OtherPlants").child(user.getUid());
+        reference = FirebaseDatabase.getInstance().getReference().child("OtherJobs").child(user.getUid());
 
         reference.addValueEventListener(new ValueEventListener() {
             @Override
