@@ -141,14 +141,19 @@ public class SuitablePlantsAdapter extends RecyclerView.Adapter<SuitablePlantsAd
 
                             if (soil.contains("alkaline")) {
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             } else if (soil.contains("moderately")) {
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             } else if (soil.contains("poor")) {
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             } else if (soil.contains("sandy")) {
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             } else if (soil.contains("peaty")) {
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             } else if (soil.contains("well-drained")) {
                                 holder.suitability.setTextColor(Color.parseColor("#8DBE5E"));
                                 holder.suitability.setText("Suitable for your garden");
@@ -168,18 +173,23 @@ public class SuitablePlantsAdapter extends RecyclerView.Adapter<SuitablePlantsAd
                             //okay
                             else if (soil.contains("moderately")) {
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             } else if (soil.contains("fertile")) {
                                 mPlants.remove(currentItem);
                             } else if (soil.contains("moist") || soil.contains("Moist")) {
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             }
                             //bad
                             else if (soil.contains("alkaline")) {
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             } else if (soil.contains("humus-rich") || soil.contains("humus rich")) {
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             } else if (soil.contains("Well-drained") || soil.contains("well-drained") || soil.contains("well drained") || soil.contains("Well drained")) {
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             }
                             //good
                             else {
@@ -201,18 +211,24 @@ public class SuitablePlantsAdapter extends RecyclerView.Adapter<SuitablePlantsAd
                             //okay
                             else if (soil.contains("moderately")) {
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             } else if (soil.contains("fertile")) {
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             }
                             //bad
                             else if (soil.contains("alkaline")) {
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             } else if (soil.contains("humus-rich") || soil.contains("humus rich")) {
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             } else if (soil.contains("Well-drained") || soil.contains("well-drained") || soil.contains("well drained") || soil.contains("Well drained")) {
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             } else if (soil.contains("peaty") || soil.contains("boggy")) {
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             }
 
                             //good
@@ -243,63 +259,69 @@ public class SuitablePlantsAdapter extends RecyclerView.Adapter<SuitablePlantsAd
                             //okay
                             else if (soil.contains("moderately")) {
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             } else if (soil.contains("well-drained") && soil.contains("moist") && soil.contains("Moist")) {
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             } else if (soil.contains("well drained") || soil.contains("Well drained") && soil.contains("Moist")) {
-
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             } else if (soil.contains("Well drained") && soil.contains("moist")) {
-
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             } else if (soil.contains("well drained") && soil.contains("moist")) {
-
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             } else if (soil.contains("moist") && soil.contains("Moist") && soil.contains("humus-rich")) {
-
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             }
                             if (soil.contains("moist") || soil.contains("Moist") && soil.contains("freely-draining")) {
-
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             }
                             if (soil.contains("moist") || soil.contains("Moist") && soil.contains("freely draining")) {
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             }
                             if (soil.contains("humus-rich") && soil.contains("freely draining")) {
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             }
                             if (soil.contains("humus rich") && soil.contains("freely-draining")) {
-
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             }
                             if (soil.contains("moist") || soil.contains("Moist") && soil.contains("humus rich")) {
-
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             }
                             if (soil.contains("well-drained") || soil.contains("Well drained")) {
-
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             }
                             //bad
                             if (soil.contains("alkaline")) {
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             }
                             if (soil.contains("well-drained") || soil.contains("well drained")) {
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             }
                             if (soil.contains("Well-drained") || soil.contains("Well drained")) {
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             }
                             if (soil.contains("freely") || soil.contains("well drained")) {
                                 mPlants.remove(currentItem);
+                                notifyDataSetChanged();
                             }
 
                             break;
                     }
 
-
                 }
-
 
             }
 

@@ -80,19 +80,23 @@ public class JobActivity extends AppCompatActivity implements ArrayInterface {
             public void onClick(View v) {
 
 
-               job.setDate(date);
-               job.setDescription(description.getText().toString());
-               job.setTemp(Math.round(temp - 273.15));
-               job.setTime(time);
-               job.setWeatherType(weather);
-               job.setTitle(title.getText().toString());
+                if(title.getText().toString().isEmpty() || description.getText().toString().isEmpty()){
 
-                myRef.push().setValue(job);
+                    Toast.makeText(JobActivity.this, "Fields cannot be empty", Toast.LENGTH_LONG).show();
+                }
+                else{
+                    job.setDate(date);
+                    job.setDescription(description.getText().toString());
+                    job.setTemp(Math.round(temp - 273.15));
+                    job.setTime(time);
+                    job.setWeatherType(weather);
+                    job.setTitle(title.getText().toString());
 
+                    myRef.push().setValue(job);
+                    Toast.makeText(JobActivity.this, "Job has been created", Toast.LENGTH_LONG).show();
 
-
-                Toast.makeText(JobActivity.this, "Job has been created", Toast.LENGTH_LONG).show();
-
+                }
+                
 
             }
         });
