@@ -28,6 +28,7 @@ public interface ArrayInterface {
     ArrayList<Plant> grasses = new ArrayList<>();
     ArrayList<Plant> alpines = new ArrayList<>();
 
+    //Full Sun Lists
     ArrayList<Plant> fullSunConifersList = new ArrayList<>();
     ArrayList<Plant> fullSunHedgesList = new ArrayList<>();
     ArrayList<Plant> fullSunFernsList = new ArrayList<>();
@@ -37,7 +38,7 @@ public interface ArrayInterface {
     ArrayList<Plant> fullSunGrassesList = new ArrayList<>();
     ArrayList<Plant> fullSunAlpinesList = new ArrayList<>();
 
-
+    //Partial Shade Lists
     ArrayList<Plant> halfConifersList = new ArrayList<>();
     ArrayList<Plant> halfHedgesList = new ArrayList<>();
     ArrayList<Plant> halfFernsList = new ArrayList<>();
@@ -47,6 +48,7 @@ public interface ArrayInterface {
     ArrayList<Plant> halfGrassesList = new ArrayList<>();
     ArrayList<Plant> halfAlpinesList = new ArrayList<>();
 
+    //Recommended Lists
     ArrayList<Plant> suitableAlpinesList = new ArrayList<>();
     ArrayList<Plant> suitableConifersList = new ArrayList<>();
     ArrayList<Plant> suitableHedgesList = new ArrayList<>();

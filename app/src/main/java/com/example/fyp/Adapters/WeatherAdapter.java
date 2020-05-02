@@ -80,6 +80,10 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.Viewhold
 
             holder.weatherImage.setImageResource(R.drawable.cold);
         }
+        if(weatherType.contains("scattered clouds") && temp > 10){
+
+            holder.weatherImage.setImageResource(R.drawable.sun);
+        }
 
 
     }
