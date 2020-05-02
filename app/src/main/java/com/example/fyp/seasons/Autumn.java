@@ -8,10 +8,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import com.example.fyp.Adapters.MaintenancePlantAdapter;
 import com.example.fyp.ArrayInterface;
 import com.example.fyp.MaintenancePlantActivity;
+import com.example.fyp.Objects.Job;
 import com.example.fyp.Objects.MaintenancePlant;
 import com.example.fyp.R;
 import com.google.firebase.auth.FirebaseAuth;
@@ -104,7 +106,17 @@ public class Autumn extends AppCompatActivity implements MaintenancePlantAdapter
     @Override
     public void onDoneClick(int position) {
 
+        MaintenancePlant selectedJob = autumn.get(position);
+        String selectedKey = selectedJob.getKey();
+        reference.child(selectedKey).removeValue();
+        removeItem(position);
 
+        Toast.makeText(this, "Job Removed", Toast.LENGTH_SHORT).show();
+    }
 
+    public void removeItem(int position){
+
+        autumn.remove(position);
+        adapter.notifyDataSetChanged();
     }
 }

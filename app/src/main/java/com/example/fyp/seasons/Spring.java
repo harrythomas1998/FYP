@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import com.example.fyp.Adapters.MaintenancePlantAdapter;
 import com.example.fyp.ArrayInterface;
@@ -104,7 +105,17 @@ public class Spring extends AppCompatActivity implements MaintenancePlantAdapter
     @Override
     public void onDoneClick(int position) {
 
+        MaintenancePlant selectedJob = spring.get(position);
+        String selectedKey = selectedJob.getKey();
+        reference.child(selectedKey).removeValue();
+        removeItem(position);
 
+        Toast.makeText(this, "Job Removed", Toast.LENGTH_SHORT).show();
+    }
 
+    public void removeItem(int position){
+
+        spring.remove(position);
+        adapter.notifyDataSetChanged();
     }
 }

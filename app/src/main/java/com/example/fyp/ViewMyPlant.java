@@ -103,7 +103,7 @@ public class ViewMyPlant extends AppCompatActivity {
 
                     Toast.makeText(ViewMyPlant.this, "Job added to Summer Jobs", Toast.LENGTH_LONG).show();
                }
-               else if(careBox.getText().toString().contains("winter") || careBox.getText().toString().contains("Winter") || careBox.getText().toString().contains("january") || careBox.getText().toString().contains("January") || careBox.getText().toString().contains("December") || careBox.getText().toString().contains("december")
+               if(careBox.getText().toString().contains("winter") || careBox.getText().toString().contains("Winter") || careBox.getText().toString().contains("january") || careBox.getText().toString().contains("January") || careBox.getText().toString().contains("December") || careBox.getText().toString().contains("december")
                         || careBox.getText().toString().contains("November") || careBox.getText().toString().contains("november")){
 
                     mp.setName(nameBox.getText().toString());
@@ -115,7 +115,7 @@ public class ViewMyPlant extends AppCompatActivity {
 
                     Toast.makeText(ViewMyPlant.this, "Job added to Winter Jobs", Toast.LENGTH_LONG).show();
                }
-               else if(careBox.getText().toString().contains("spring") || careBox.getText().toString().contains("Spring") || careBox.getText().toString().contains("February") || careBox.getText().toString().contains("february") || careBox.getText().toString().contains("March") || careBox.getText().toString().contains("march")
+               if(careBox.getText().toString().contains("spring") || careBox.getText().toString().contains("Spring") || careBox.getText().toString().contains("February") || careBox.getText().toString().contains("february") || careBox.getText().toString().contains("March") || careBox.getText().toString().contains("march")
                         || careBox.getText().toString().contains("April") || careBox.getText().toString().contains("april")){
 
                     mp.setName(nameBox.getText().toString());
@@ -127,7 +127,7 @@ public class ViewMyPlant extends AppCompatActivity {
 
                     Toast.makeText(ViewMyPlant.this, "Job added to Spring Jobs", Toast.LENGTH_LONG).show();
                }
-               else if(careBox.getText().toString().contains("autumn") || careBox.getText().toString().contains("Autumn") || careBox.getText().toString().contains("August") || careBox.getText().toString().contains("august") || careBox.getText().toString().contains("September") || careBox.getText().toString().contains("september")
+               if(careBox.getText().toString().contains("autumn") || careBox.getText().toString().contains("Autumn") || careBox.getText().toString().contains("August") || careBox.getText().toString().contains("august") || careBox.getText().toString().contains("September") || careBox.getText().toString().contains("september")
                         || careBox.getText().toString().contains("October") || careBox.getText().toString().contains("october")){
 
                     mp.setName(nameBox.getText().toString());

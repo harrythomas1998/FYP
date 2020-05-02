@@ -160,29 +160,30 @@ public class MaintenancePlanner extends AppCompatActivity implements ArrayInterf
 
                                     mondayData.add(new Weather(weatherType, time, temp, reformattedDate));
                                 }
-                                else if(reformattedDate.contains("Tue")){
+                                if(reformattedDate.contains("Tue")){
 
                                     tuesdayData.add(new Weather(weatherType, time, temp, reformattedDate));
                                 }
-                                else if(reformattedDate.contains("Wed")){
+                                if(reformattedDate.contains("Wed")){
 
                                     wednesdayData.add(new Weather(weatherType, time, temp, reformattedDate));
                                 }
-                                else if(reformattedDate.contains("Thu")){
+                                if(reformattedDate.contains("Thu")){
 
                                     thursdayData.add(new Weather(weatherType, time, temp, reformattedDate));
                                 }
-                                else if(reformattedDate.contains("Fri")){
+                                if(reformattedDate.contains("Fri")){
 
                                     fridayData.add(new Weather(weatherType, time, temp, reformattedDate));
                                 }
-                                else if(reformattedDate.contains("Sat")){
+                                if(reformattedDate.contains("Sat")){
 
                                     saturdayData.add(new Weather(weatherType, time, temp, reformattedDate));
                                 }
-                                else if(reformattedDate.contains("Sun")){
+                                if(reformattedDate.contains("Sun")){
 
                                     sundayData.add(new Weather(weatherType, time, temp, reformattedDate));
+
                                 }
 
                                 else{
