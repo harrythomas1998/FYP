@@ -187,8 +187,6 @@ public class MaintenancePlanner extends AppCompatActivity implements ArrayInterf
                                 }
 
                                 else{
-
-                                    Toast.makeText(MaintenancePlanner.this, "No data to display", Toast.LENGTH_SHORT).show();
                                 }
 
                             }
